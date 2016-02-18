@@ -117,7 +117,8 @@ h1, h2 {
     line-height: 1.2; }
   aside .links p {
     font-size: 6pt !important;
-    line-height: 1; }
+    line-height: 1;
+    padding-top: 5px !important; }
 
   .container {
     width: auto; }
@@ -138,11 +139,11 @@ h1, h2 {
   .col-md-12 {
     page-break-after: always; }
 
+  .left-background .links li i {
+    font-size: 8pt !important; }
   .left-background li h3 {
     margin-top: 5px !important;
     margin-bottom: 5px !important; }
-  .left-background .fa {
-    display: none; }
   .left-background .profile {
     text-align: left !important; }
 
