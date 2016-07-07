@@ -92,6 +92,9 @@ a {
 h1, h2 {
   font-family: "Roboto Slab", serif; }
 
+wow {
+  visibility: hidden; }
+
 @media only print {
   body {
     font-family: "Source Serif Pro", Georgia, "Times New Roman", Times, serif !important;
