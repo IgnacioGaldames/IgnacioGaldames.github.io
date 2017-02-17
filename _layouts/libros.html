@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<body>
+  {% include nav.html %}
+  <div class="container">
+    <div class="row">
+      <aside class="col-3">
+        {% include aside.html %}
+      </aside>
+      <section class="col-9">
+        {{ content }}
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <!-- /.container -->
+  {% include footer.html %} {% include scripts.html %}
+</body>
+
+</html>
