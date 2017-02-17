@@ -1,0 +1,1 @@
+"use strict";console.log("Cargando"),$(document).ready(function(){console.log("Bienvenido");var a=window.location.pathname;$('.navbar-nav > li > a[href="'+a+'"]').parent().addClass("active")});

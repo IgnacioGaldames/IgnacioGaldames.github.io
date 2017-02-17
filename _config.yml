@@ -1,3 +1,3 @@
-name: Jekyll Blog
+name: Ignacio Galdames
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+permalink: pretty

@@ -1,1 +1,0 @@
-$(".container").addClass("animated fadeIn"),$(".left-background").addClass("animated fadeInLeftBig"),$(".right-background").addClass("animated fadeInRightBig");var wow=new WOW({boxClass:"wow",animateClass:"animated",offset:0,mobile:!0,live:!0,callback:function(a){},scrollContainer:null});wow.init();
