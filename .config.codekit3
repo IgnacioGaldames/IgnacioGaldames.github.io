@@ -63,6 +63,12 @@
 		"oAP": "\/_includes\/scripts.html",
 		"oF": 0
 		},
+	"\/_layouts\/curriculum.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_layouts\/curriculum.html",
+		"oF": 0
+		},
 	"\/_layouts\/default.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -73,6 +79,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/_layouts\/inicio.html",
+		"oF": 0
+		},
+	"\/_layouts\/libros.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_layouts\/libros.html",
 		"oF": 0
 		},
 	"\/_layouts\/post.html": {
@@ -177,6 +189,18 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/_site\/css\/ignaciogaldames.css.map",
+		"oF": 0
+		},
+	"\/_site\/curriculum\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_site\/curriculum\/index.html",
+		"oF": 0
+		},
+	"\/_site\/cv\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_site\/cv\/index.html",
 		"oF": 0
 		},
 	"\/_site\/img\/iconos\/android-icon-144x144.png": {
@@ -487,6 +511,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/css\/ignaciogaldames.css.map",
+		"oF": 0
+		},
+	"\/cv.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/cv.html",
 		"oF": 0
 		},
 	"\/img\/iconos\/android-icon-144x144.png": {
