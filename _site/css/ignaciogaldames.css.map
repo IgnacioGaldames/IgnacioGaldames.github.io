@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "AAAA,EAAE,CACD,YAAY,CAAE,IAAI",
-"sources": ["../sass/ignaciogaldames.sass"],
-"names": [],
-"file": "ignaciogaldames.css"
-}
+{"version":3,"sources":["../sass/ignaciogaldames.sass"],"names":[],"mappings":"AAAA,GACC,iBAAkB,CAAA","file":"ignaciogaldames.css"}
