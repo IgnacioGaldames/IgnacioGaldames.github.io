@@ -6,11 +6,9 @@
   {% include nav.html %}
   <div class="container">
     <div class="row">
-      <aside class="col-3">
-        {% include aside.html %}
-      </aside>
-      <section class="col-9">
-      {{ content }}
+      {% include aside.html %}
+      <section class="col-8">
+        {{ content }}
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
@@ -32,7 +30,6 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-        
       </section>
     </div>
   </div>
