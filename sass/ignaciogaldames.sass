@@ -1,6 +1,8 @@
-$primario: #ccc
+$primario: rgba(204,204,204,0.90)
 header
 	background-color: $primario
+	-webkit-backdrop-filter: blur(5px)
+	backdrop-filter: blur(5px)
 li
 	margin-right: 1rem
 aside
@@ -10,3 +12,5 @@ aside
 .gravatar
 	border: solid 0.5rem white
 	border-radius: 100%
+	overflow: hidden
+	background-color: $primario
