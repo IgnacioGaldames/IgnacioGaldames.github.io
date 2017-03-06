@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "AACA,MAAM,CACL,gBAAgB,CAFN,qBAAsB,CAGhC,uBAAuB,CAAE,SAAS,CAClC,eAAe,CAAE,SAAS,CAC3B,EAAE,CACD,YAAY,CAAE,IAAI,CACnB,KAAK,CAGJ,gBAAgB,CAVN,qBAAsB,CAQhC,SAAG,CACF,SAAS,CAAE,IAAI,CAEjB,SAAS,CACR,MAAM,CAAE,gBAAkB,CAC1B,aAAa,CAAE,IAAI,CACnB,QAAQ,CAAE,MAAM,CAChB,gBAAgB,CAfN,qBAAsB",
-"sources": ["../sass/ignaciogaldames.sass"],
-"names": [],
-"file": "ignaciogaldames.css"
-}
+{"version":3,"sources":["../sass/ignaciogaldames.sass"],"names":[],"mappings":"AAEA,KACC,gBAAiB,CAClB,GACC,iBAAkB,CACnB,EACC,kBAAmB,CACpB,OACC,uCACA,kCACA,yBAA0B,CAC3B,MAGC,sCAfgC,CAahC,UACC,cAAe,CAEjB,UACC,wBACA,mBACA,gBACA,sCApBgC,CAAA","file":"ignaciogaldames.css"}

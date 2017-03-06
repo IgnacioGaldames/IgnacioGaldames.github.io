@@ -8,6 +8,7 @@ $(document).ready(function() {
 
 $('#scene').parallax();
 $('#scene').parallax({
+  clipRelativeInput: true,
   calibrateX: false,
   calibrateY: true,
   invertX: false,
