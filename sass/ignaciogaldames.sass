@@ -1,3 +1,10 @@
+@import "material/material-design-lite"
+@import "material/variables"
+@import "material/mixins"
+
+@import "bootstrap/bootstrap"
+@import "bootstrap/bootstrap-reboot"
+
 $primario: rgba(204,204,204,0.90)
 
 body
@@ -19,3 +26,8 @@ aside
 	border-radius: 100%
 	overflow: hidden
 	background-color: $primario
+.card-img-top
+	width: 100%
+	height: auto
+.mdl-button:hover
+	@include shadow-2dp()

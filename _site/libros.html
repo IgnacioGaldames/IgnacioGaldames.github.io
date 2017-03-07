@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700" rel="stylesheet" type="text/css">
   <!-- Material -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap-reboot.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -117,7 +117,7 @@
         <li><a class="nav-item nav-link disabled" href="/cv">Curriculum</a></li>
         <li><a class="nav-item nav-link disabled" href="/blog">Blog</a></li>
         <li><a class="nav-item nav-link disabled" href="/portafolio">Portafolio</a></li>
-        <li><a class="nav-item nav-link disabled" href="/libros">Libros</a></li>
+        <li><a class="nav-item nav-link" href="/libros">Libros</a></li>
       </div>
     </div>
   </nav>
@@ -125,7 +125,7 @@
 
   <div class="container">
     <div class="row">
-      <aside class="col-3 py-3">
+      <aside class="col-md-3 py-3 mdl-shadow--2dp">
   <article>
     <div id="scene" class="gravatar">
        <div class="layer" data-depth="0.5"><img src="http://0.gravatar.com/avatar/e666a0139beba19eb778eaf6e4cdacc6?size=800" alt="Ignacio Galdames"></div>
@@ -170,8 +170,26 @@
   </article>
 </aside>
 
-      <section class="col-9">
-        	<h1>Mis Libros</h1>
+      <section class="col-md-9">
+        <h1 class="display-1">Mis Libros</h1>
+
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="card mdl-shadow--4dp">
+      <img class="card-img-top" src="/img/libros/paraguas_silencio.png" alt="Card image cap">
+      <div class="card-block">
+        <h4 class="card-title">El Paraguas y el Silencio</h4>
+        <p class="card-text text-justify">Un paraguas abierto en medio de la cocina. Un pequeño gran misterio para una imaginación muy fértil.</p>
+        <div class="text-right">
+          <a href="https://www.books2read.com/u/bpG2A9" target="_blank" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Comprar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
         </div>
       </section>
     </div>
