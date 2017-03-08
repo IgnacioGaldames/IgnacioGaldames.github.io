@@ -218,6 +218,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/_site\/img\/carrusel\/el_paraguas_y_el_silencio.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 452838,
+		"inputAbbreviatedPath": "\/_site\/img\/carrusel\/el_paraguas_y_el_silencio.png",
+		"outputAbbreviatedPath": "\/_site\/img\/carrusel\/el_paraguas_y_el_silencio.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_site\/img\/iconos\/android-icon-144x144.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -2767,6 +2778,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/img\/carrusel\/el_paraguas_y_el_silencio.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/img\/carrusel\/el_paraguas_y_el_silencio.png",
+		"outputAbbreviatedPath": "\/img\/carrusel\/el_paraguas_y_el_silencio.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/img\/iconos\/android-icon-144x144.png": {
 		"fileType": 32768,
