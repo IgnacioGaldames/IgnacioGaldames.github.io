@@ -1,14 +1,15 @@
 @import "material/material-design-lite"
-@import "material/variables"
-@import "material/mixins"
 
 @import "bootstrap/bootstrap"
 @import "bootstrap/bootstrap-reboot"
+@import "gradients"
 
 $primario: rgba(204,204,204,0.90)
 
 body
 	padding-top: 4rem
+	background-color: $gris_obscuro
+
 i
 	margin-right: 1rem
 a
@@ -17,6 +18,7 @@ header
 	background-color: $primario
 	-webkit-backdrop-filter: blur(5px)
 	backdrop-filter: blur(5px)
+	top: 1rem !important
 aside
 	img
 		max-width: 100%
@@ -31,3 +33,13 @@ aside
 	height: auto
 .mdl-button:hover
 	@include shadow-2dp()
+.card-block
+	@include gradient_card-block()
+h1
+	color: $gris_claro
+	text-shadow: 0 -1px 0 white
+
+.container
+	padding-top: 3rem
+.back_grad
+	@include background_gradient()
