@@ -5,8 +5,4 @@ date: 2017-03-07
 excerpt: Mi primer cuento que está a la venta.
 ---
 
-&quot;
-"
-˝
-'
-El paraguas y el silencio es mi primer cuento que está a la venta. Admito que no es uno de mis favoritos, ni menos el que yo siento es el mejor. Mejores cuentos y ojalá un libro que los recopile todos saldrá en algún momento. [Puedes comprarla acá.](https://books2read.com/u/bpG2A9)
+"El paraguas y el silencio" es el primer cuento que est\'{a} disponible para la venta. Admito que no es uno de mis mejores trabajos, ni tampoco uno de mis favoritos, pero es el primero que puede ser adquirido. En un futuro espero vender otroscuentos y ojal\'{a} un libro que los recopile. Mientras tanto, [puedes comprarla ac\'{a}.](https://books2read.com/u/bpG2A9)
