@@ -1,0 +1,6 @@
+name: Ignacio Galdames
+markdown: kramdown
+permalink: pretty
+
+collections:
+ libros:
