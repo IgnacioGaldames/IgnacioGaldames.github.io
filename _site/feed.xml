@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
   <channel>
     <title>Ignacio Galdames - Blog</title>
     <description>Mis últimas entradas</description>
@@ -8,8 +9,7 @@
       
         <item>
           <title>Mi primer cuento</title>
-          <description>&lt;p&gt;“El paraguas y el silencio” es mi primer cuento que está a la venta. Admito que no es uno de mis favoritos, ni menos el que yo siento es el mejor. Mejores cuentos y ojalá un libro que los recopile todos saldrá en algún momento. Puedes comprarla acá: https://books2read.com/u/bpG2A9&lt;/p&gt;
-</description>
+          <description>&quot;El paraguas y el silencio&quot; es mi primer cuento que está a la venta. Admito que no es uno de mis favoritos, ni menos el que yo siento es el mejor. Mejores cuentos y ojalá un libro que los recopile todos saldrá en algún momento. [Puedes comprarla acá.](https://books2read.com/u/bpG2A9)</description>
           <pubDate>2017-03-07T00:00:00-03:00</pubDate>
           <link>/2017/03/07/primer-cuento/</link>
           <guid isPermaLink="true">/2017/03/07/primer-cuento/</guid>
