@@ -6,4 +6,6 @@ permalink: pretty
 
 collections:
   cuentos:
+    output: true
   libros:
+    output: true
