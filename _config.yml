@@ -5,4 +5,5 @@ kramdown:
 permalink: pretty
 
 collections:
- libros:
+  cuentos:
+  libros:

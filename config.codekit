@@ -148,6 +148,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_site\/img\/cuentos\/el_insecto.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 661722,
+		"inputAbbreviatedPath": "\/_site\/img\/cuentos\/el_insecto.jpg",
+		"outputAbbreviatedPath": "\/_site\/img\/cuentos\/el_insecto.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/img\/cuentos\/paraguas_silencio.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 184673,
+		"inputAbbreviatedPath": "\/_site\/img\/cuentos\/paraguas_silencio.png",
+		"outputAbbreviatedPath": "\/_site\/img\/cuentos\/paraguas_silencio.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_site\/img\/iconos\/android-icon-144x144.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -412,13 +434,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/_site\/img\/libros\/paraguas_silencio.png": {
+	"\/_site\/img\/libros\/cover_tiempos_alterados.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 682300,
+		"inputAbbreviatedPath": "\/_site\/img\/libros\/cover_tiempos_alterados.jpg",
+		"outputAbbreviatedPath": "\/_site\/img\/libros\/cover_tiempos_alterados.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/img\/portafolio\/manifiesto_cyberpunk.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 184673,
-		"inputAbbreviatedPath": "\/_site\/img\/libros\/paraguas_silencio.png",
-		"outputAbbreviatedPath": "\/_site\/img\/libros\/paraguas_silencio.png",
+		"initialSize": 213569,
+		"inputAbbreviatedPath": "\/_site\/img\/portafolio\/manifiesto_cyberpunk.png",
+		"outputAbbreviatedPath": "\/_site\/img\/portafolio\/manifiesto_cyberpunk.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2623,6 +2656,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/cuentos\/el_insecto.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 661722,
+		"inputAbbreviatedPath": "\/img\/cuentos\/el_insecto.jpg",
+		"outputAbbreviatedPath": "\/img\/cuentos\/el_insecto.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cuentos\/paraguas_silencio.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 184673,
+		"inputAbbreviatedPath": "\/img\/cuentos\/paraguas_silencio.png",
+		"outputAbbreviatedPath": "\/img\/cuentos\/paraguas_silencio.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/iconos\/android-icon-144x144.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -2887,13 +2942,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/libros\/paraguas_silencio.png": {
+	"\/img\/libros\/cover_tiempos_alterados.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 682300,
+		"inputAbbreviatedPath": "\/img\/libros\/cover_tiempos_alterados.jpg",
+		"outputAbbreviatedPath": "\/img\/libros\/cover_tiempos_alterados.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/portafolio\/manifiesto_cyberpunk.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 184673,
-		"inputAbbreviatedPath": "\/img\/libros\/paraguas_silencio.png",
-		"outputAbbreviatedPath": "\/img\/libros\/paraguas_silencio.png",
+		"initialSize": 213569,
+		"inputAbbreviatedPath": "\/img\/portafolio\/manifiesto_cyberpunk.png",
+		"outputAbbreviatedPath": "\/img\/portafolio\/manifiesto_cyberpunk.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -7492,7 +7558,7 @@
 	"sassUseLibsass": 0,
 	"shouldRunAutoprefixer": 0,
 	"shouldRunBless": 0,
-	"skippedItemsString": ".svn, .git, .hg, log, _logs, _cache, cache, logs, node_modules, .md, sass\/bootstrap, sass\/material, _posts, _libros",
+	"skippedItemsString": ".svn, .git, .hg, log, _logs, _cache, cache, logs, node_modules, .md, sass\/bootstrap, sass\/material, _posts, _libros, _cuentos",
 	"slimAutoOutputPathEnabled": 1,
 	"slimAutoOutputPathFilenamePattern": "*.html",
 	"slimAutoOutputPathRelativePath": "",

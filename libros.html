@@ -3,21 +3,46 @@ layout: default
 title: Mis Libros
 permalink: libros.html
 ---
-<h1 class="display-1">{{ page.title }}</h1>
-
-{% for libro in site.libros %}
-<div class="row">
-  <div class="col-md-4">
-    <div class="card mdl-shadow--4dp">
-      <img class="card-img-top" src="/img/libros/{{ libro.img }}" alt="Card image cap">
-      <div class="card-block gradiente">
-        <h4 class="card-title">{{ libro.title }}</h4>
-        <p class="card-text text-justify">{{ libro.text }}</p>
-        <div class="text-right">
-          <a href="{{ libro.link }}" target="_blank" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Comprar</a>
+<article class="mb-5">
+  <h1 class="display-1">Mis Libros</h1>
+  <div class="row">
+    {% for libro in site.libros %}
+    <div class="col-md-3 rounded">
+      <div class="card mdl-shadow--2dp">
+        <img class="card-img-top" src="/img/libros/{{ libro.img }}" alt="Card image cap">
+        <div class="card-block gradiente">
+          <h4 class="card-title">{{ libro.title }}</h4>
+          <p class="card-text text-justify">{{ libro.text }}</p>
+          {% if libro.link != null %}
+          <div class="text-right">
+            <a href="{{ libro.link }}" target="_blank" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Comprar</a>
+          </div>
+          {% else %} {% endif %}
         </div>
       </div>
     </div>
+    {% endfor %}
   </div>
-</div>
-{% endfor %}
+</article>
+<article>
+  <h1 class="display-1">Mis Cuentos</h1>
+  <div class="row">
+    {% for cuento in site.cuentos %}
+    <div class="col-md-3 rounded">
+      <div class="card mdl-shadow--2dp">
+        <img class="card-img-top" src="/img/cuentos/{{ cuento.img }}" alt="Card image cap">
+        <div class="card-block gradiente">
+          <h4 class="card-title">{{ cuento.title }}</h4>
+          <p class="card-text text-justify">{{ cuento.text }}</p>
+          {% if cuento.link != null %}
+          <div class="text-right">
+            <a href="{{ cuento.link }}" target="_blank" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Comprar</a>
+          </div>
+          {% else %} {% endif %}
+        </div>
+      </div>
+    </div>
+
+    {% endfor %}
+  </div>
+</article>
