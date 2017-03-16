@@ -184,6 +184,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_site\/img\/carrusel\/portafolio.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 307946,
+		"inputAbbreviatedPath": "\/_site\/img\/carrusel\/portafolio.jpg",
+		"outputAbbreviatedPath": "\/_site\/img\/carrusel\/portafolio.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_site\/img\/cuentos\/cover_tiempos_alterados.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -521,6 +532,28 @@
 		"initialSize": 213569,
 		"inputAbbreviatedPath": "\/_site\/img\/portafolio\/manifiesto_cyberpunk.png",
 		"outputAbbreviatedPath": "\/_site\/img\/portafolio\/manifiesto_cyberpunk.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/img\/portafolio\/poster_behance.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 275731,
+		"inputAbbreviatedPath": "\/_site\/img\/portafolio\/poster_behance.jpg",
+		"outputAbbreviatedPath": "\/_site\/img\/portafolio\/poster_behance.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/img\/portafolio\/poster_github.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 116632,
+		"inputAbbreviatedPath": "\/_site\/img\/portafolio\/poster_github.jpg",
+		"outputAbbreviatedPath": "\/_site\/img\/portafolio\/poster_github.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2743,6 +2776,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/carrusel\/portafolio.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 307946,
+		"inputAbbreviatedPath": "\/img\/carrusel\/portafolio.jpg",
+		"outputAbbreviatedPath": "\/img\/carrusel\/portafolio.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/cuentos\/cover_tiempos_alterados.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -3047,6 +3091,28 @@
 		"initialSize": 213569,
 		"inputAbbreviatedPath": "\/img\/portafolio\/manifiesto_cyberpunk.png",
 		"outputAbbreviatedPath": "\/img\/portafolio\/manifiesto_cyberpunk.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/portafolio\/poster_behance.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 275731,
+		"inputAbbreviatedPath": "\/img\/portafolio\/poster_behance.jpg",
+		"outputAbbreviatedPath": "\/img\/portafolio\/poster_behance.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/portafolio\/poster_github.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 116632,
+		"inputAbbreviatedPath": "\/img\/portafolio\/poster_github.jpg",
+		"outputAbbreviatedPath": "\/img\/portafolio\/poster_github.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
