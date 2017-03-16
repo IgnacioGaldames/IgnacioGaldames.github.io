@@ -2787,17 +2787,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/cuentos\/cover_tiempos_alterados.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 682300,
-		"inputAbbreviatedPath": "\/img\/cuentos\/cover_tiempos_alterados.jpg",
-		"outputAbbreviatedPath": "\/img\/cuentos\/cover_tiempos_alterados.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/cuentos\/el_insecto.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2805,6 +2794,17 @@
 		"initialSize": 661722,
 		"inputAbbreviatedPath": "\/img\/cuentos\/el_insecto.jpg",
 		"outputAbbreviatedPath": "\/img\/cuentos\/el_insecto.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cuentos\/paraguas_silencio.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 184673,
+		"inputAbbreviatedPath": "\/img\/cuentos\/paraguas_silencio.png",
+		"outputAbbreviatedPath": "\/img\/cuentos\/paraguas_silencio.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -3073,13 +3073,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/libros\/paraguas_silencio.png": {
-		"fileType": 32768,
+	"\/img\/libros\/cover_tiempos_alterados.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 184673,
-		"inputAbbreviatedPath": "\/img\/libros\/paraguas_silencio.png",
-		"outputAbbreviatedPath": "\/img\/libros\/paraguas_silencio.png",
+		"initialSize": 682300,
+		"inputAbbreviatedPath": "\/img\/libros\/cover_tiempos_alterados.jpg",
+		"outputAbbreviatedPath": "\/img\/libros\/cover_tiempos_alterados.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
