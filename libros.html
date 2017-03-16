@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Mis Libros
-permalink: libros.html
+permalink: /libros/index.html
 ---
 <article class="mb-5">
   <h1 class="display-1">Mis Libros</h1>
@@ -13,40 +13,12 @@ permalink: libros.html
         <div class="card-block gradiente">
           <h4 class="card-title">{{ libro.title }}</h4>
           <p class="card-text text-justify">{{ libro.text }}</p>
-          {% if libro.link != null %}
-          <div class="text-right">
-            <a href="{{ libro.link }}" target="_blank" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Comprar</a>
-          </div>
-          {% else %}
-            <div href="" target="_blank" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect disabled" disabled>Pronto</div>
-          {% endif %}
-        </div>
-      </div>
+            <div class="text-center">
+              <a href="{{ libro.url }}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Ver más</a>
+            </div>
+        </div> <!-- end card-block -->
+      </div><!-- end card -->
     </div>
-    {% endfor %}
-  </div>
-</article>
-<article>
-  <h1 class="display-1">Mis Cuentos</h1>
-  <div class="row">
-    {% for cuento in site.cuentos %}
-    <div class="col-md-3 rounded">
-      <div class="card mdl-shadow--2dp">
-        <img class="card-img-top" src="/img/cuentos/{{ cuento.img }}" alt="Card image cap">
-        <div class="card-block gradiente">
-          <h4 class="card-title">{{ cuento.title }}</h4>
-          <p class="card-text text-justify">{{ cuento.text }}</p>
-          {% if cuento.link != null %}
-          <div class="text-right">
-            <a href="{{ cuento.link }}" target="_blank" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Comprar</a>
-          </div>
-          {% else %}
-            <div href="" target="_blank" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect disabled" disabled>Pronto</div>
-          {% endif %}
-        </div>
-      </div>
-    </div>
-
     {% endfor %}
   </div>
 </article>

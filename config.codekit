@@ -47,15 +47,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/_layouts\/curriculum.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_layouts\/curriculum.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/_layouts\/default.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -79,6 +70,24 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_layouts\/post.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_layouts\/template_cuentos.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_layouts\/template_cuentos.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_layouts\/template_libros.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_layouts\/template_libros.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -128,6 +137,33 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/_site\/cuentos\/el_insecto\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/cuentos\/el_insecto\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/cuentos\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/cuentos\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/cuentos\/paraguas_silencio\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/cuentos\/paraguas_silencio\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/_site\/cv\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -144,6 +180,17 @@
 		"initialSize": 452838,
 		"inputAbbreviatedPath": "\/_site\/img\/carrusel\/el_paraguas_y_el_silencio.png",
 		"outputAbbreviatedPath": "\/_site\/img\/carrusel\/el_paraguas_y_el_silencio.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/img\/cuentos\/cover_tiempos_alterados.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 682300,
+		"inputAbbreviatedPath": "\/_site\/img\/cuentos\/cover_tiempos_alterados.jpg",
+		"outputAbbreviatedPath": "\/_site\/img\/cuentos\/cover_tiempos_alterados.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -445,6 +492,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_site\/img\/libros\/el_insecto.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 661722,
+		"inputAbbreviatedPath": "\/_site\/img\/libros\/el_insecto.jpg",
+		"outputAbbreviatedPath": "\/_site\/img\/libros\/el_insecto.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/img\/libros\/paraguas_silencio.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 184673,
+		"inputAbbreviatedPath": "\/_site\/img\/libros\/paraguas_silencio.png",
+		"outputAbbreviatedPath": "\/_site\/img\/libros\/paraguas_silencio.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_site\/img\/portafolio\/manifiesto_cyberpunk.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -520,11 +589,20 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/_site\/libros.html": {
+	"\/_site\/libros\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/libros.html",
+		"inputAbbreviatedPath": "\/_site\/libros\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/libros\/tiempos_alterados\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/libros\/tiempos_alterados\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -618,11 +696,11 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/_site\/sass\/css\/bootstrap-grid.css": {
+	"\/_site\/sass\/css\/template.css": {
 		"fileType": 16,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/sass\/css\/bootstrap-grid.css",
+		"inputAbbreviatedPath": "\/_site\/sass\/css\/template.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -642,6 +720,15 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/_site\/sass\/ignaciogaldames.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/sass\/ignaciogaldames.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/_site\/sass\/ignaciogaldames.sass": {
 		"createSourceMap": 0,
@@ -2627,6 +2714,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/cuentos.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/cuentos.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/cv.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -2647,6 +2743,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/cuentos\/cover_tiempos_alterados.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 682300,
+		"inputAbbreviatedPath": "\/img\/cuentos\/cover_tiempos_alterados.jpg",
+		"outputAbbreviatedPath": "\/img\/cuentos\/cover_tiempos_alterados.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/cuentos\/el_insecto.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2654,17 +2761,6 @@
 		"initialSize": 661722,
 		"inputAbbreviatedPath": "\/img\/cuentos\/el_insecto.jpg",
 		"outputAbbreviatedPath": "\/img\/cuentos\/el_insecto.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/cuentos\/paraguas_silencio.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 184673,
-		"inputAbbreviatedPath": "\/img\/cuentos\/paraguas_silencio.png",
-		"outputAbbreviatedPath": "\/img\/cuentos\/paraguas_silencio.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2933,13 +3029,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/libros\/cover_tiempos_alterados.jpg": {
-		"fileType": 16384,
+	"\/img\/libros\/paraguas_silencio.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 682300,
-		"inputAbbreviatedPath": "\/img\/libros\/cover_tiempos_alterados.jpg",
-		"outputAbbreviatedPath": "\/img\/libros\/cover_tiempos_alterados.jpg",
+		"initialSize": 184673,
+		"inputAbbreviatedPath": "\/img\/libros\/paraguas_silencio.png",
+		"outputAbbreviatedPath": "\/img\/libros\/paraguas_silencio.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -4396,6 +4492,15 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/sass\/css\/template.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/css\/template.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/sass\/gradients.scss": {
 		"createSourceMap": 0,

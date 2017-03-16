@@ -4,6 +4,11 @@ $(document).ready(function() {
   console.log("Bienvenido");
   var pathname = window.location.pathname;
   $('.navbar-nav > li > a[href="' + pathname + '"]').parent().addClass('active');
+
+$( ".nav-item" ).hover(function() {
+  $('.dropdown-toggle').dropdown();
+});
+  
 });
 
 $('#scene').parallax();
@@ -42,3 +47,4 @@ var feed = new Instafeed({
 });
 feed.run();
 */
+
