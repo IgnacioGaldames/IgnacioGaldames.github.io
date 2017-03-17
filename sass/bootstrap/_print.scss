@@ -113,6 +113,9 @@
         border: 1px solid #ddd !important;
       }
     }
+    .hidden-print {
+      display: none;
+    }
 
     // Bootstrap specific changes end
   }
