@@ -40,8 +40,19 @@ h1
 .container
 	padding-top: 1rem
 .back_grad
-	@include background_gradient()
+	position: relative
+	pointer-events: none
 .contenido
 	background-color: rgba(240, 240, 240, 0.9)
 .disabled 
 	cursor: not-allowed !important
+#particles-js
+	@include background_gradient()
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	z-index: 0 
+header, .container
+	pointer-events: all
