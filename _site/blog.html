@@ -104,7 +104,7 @@
 
 <body>
   <body>
-  <div class="back_grad">
+  <div class="back_grad" >
     <header class=" fixed-top mdl-shadow--4dp hidden-print">
       <nav class="navbar navbar-toggleable-md navbar-light container" id="nav">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -113,10 +113,10 @@
         <a class="navbar-brand" href="#">Ignacio Galdames</a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <li><a class="nav-item nav-link" href="/" id="nav_inicio">Inicio <span class="sr-only">(current)</span></a></li>
-            <li><a class="nav-item nav-link" href="/portafolio">Portafolio</a></li>
-            <li><a class="nav-item nav-link" href="/cv">Curriculum</a></li>
-            <li class="nav-item dropdown">
+            <li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s"><a class="nav-item nav-link" href="/" id="nav_inicio">Inicio <span class="sr-only">(current)</span></a></li>
+            <li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s"><a class="nav-item nav-link" href="/portafolio">Portafolio</a></li>
+            <li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s"><a class="nav-item nav-link" href="/cv">Curriculum</a></li>
+            <li class="nav-item dropdown wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
               <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Mis Escritos
               </a>
@@ -125,7 +125,7 @@
                 <a class="dropdown-item" href="/cuentos">Cuentos</a>
               </div>
             </li>
-            <li><a class="nav-item nav-link disabled" href="#">Blog</a></li>
+            <li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s"><a class="nav-item nav-link disabled" href="#">Blog</a></li>
           </div>
         </div>
       </nav>
@@ -139,46 +139,46 @@
     <div id="scene" class="gravatar">
        <div class="layer" data-depth="0.5"><img src="http://0.gravatar.com/avatar/e666a0139beba19eb778eaf6e4cdacc6?size=800" alt="Ignacio Galdames"></div>
     </div>
-    <h3>Contacto</h3>
-    <ul class="nav flex-column my-3 wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
+    <h3>Contacto</h3 class="  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+    <ul class="nav flex-column my-3">
       <!--<li><i class="fa fa-wordpress"></i><a href="http://ignaciogaldames.com" target="_blank">http://ignaciogaldames.com</a></li>-->
-      <li>
+      <li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1">
         <a href="mailto:ignacio.galdames@me.com" target="_blank">
-          <i class="fa fa-envelope"></i>ignacio.galdames@me.com
+          <i class="fa fa-envelope  1s"></i>ignacio.galdames@me.com
         </a>
       </li>
-      <li>
+      <li class="  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
         <a href="https://www.linkedin.com/in/ignaciogaldames" target="_blank">
           <i class="fa fa-linkedin"></i><strong>linkedin.com/in/</strong>ignaciogaldames
         </a>
       </li>
-      <li>
+      <li class="  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
         <a href="http://github.com/IgnacioGaldames" target="_blank">
           <i class="fa fa-github"></i><strong>github.com/</strong>IgnacioGaldames
         </a>
       </li>
-      <li>
+      <li class="  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
         <a href="https://gist.github.com/IgnacioGaldames" target="_blank">
           <i class="fa fa-github"></i><strong>gist.github.com/</strong>IgnacioGaldames
         </a>
       </li>
-      <li>
+      <li class="  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
         <a href="http://behance.net/IgnacioGaldames" target="_blank">
           <i class="fa fa-behance"></i><strong>behance.net/</strong>IgnacioGaldames
         </a>
       </li>
-      <li>
+      <li class="  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
         <a href="https://about.me/ignaciogaldames" target="_blank">
           <i class="fa fa-globe"></i><strong>about.me/</strong>ignaciogaldames
         </a>
       </li>
-      <li>
+      <li class="  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
         <a href="https://profiles.wordpress.org/ignaciogaldames" target="_blank">
           <i class="fa fa-wordpress"></i><strong>wordpress.org/</strong>ignaciogaldames
         </a>
       </li>
 
-      <li>
+      <li class="  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
         <a href="https://www.goodreads.com/IgnacioGaldames" target="_blank">
           <i class="fa fa-book"></i><strong>goodreads.com/</strong>ignaciogaldames
         </a>
@@ -236,5 +236,11 @@ wow = new WOW({
   live: true // default
 })
 wow.init();
+</script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+	particlesJS.load('particles-js', 'js/particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
 </script>
 
