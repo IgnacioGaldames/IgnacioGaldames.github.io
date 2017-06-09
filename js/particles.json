@@ -1,10 +1,10 @@
 {
   "particles": {
     "number": {
-      "value": 80,
+      "value": 50,
       "density": {
         "enable": true,
-        "value_area": 800
+        "value_area": 500
       }
     },
     "color": {
@@ -27,16 +27,16 @@
     },
     "opacity": {
       "value": 0.5,
-      "random": false,
+      "random": true,
       "anim": {
-        "enable": false,
+        "enable": true,
         "speed": 1,
         "opacity_min": 0.1,
         "sync": false
       }
     },
     "size": {
-      "value": 5,
+      "value": 2,
       "random": true,
       "anim": {
         "enable": false,
@@ -47,14 +47,14 @@
     },
     "line_linked": {
       "enable": true,
-      "distance": 300,
+      "distance": 150,
       "color": "#f2f2f2",
       "opacity": 0.4,
       "width": 1
     },
     "move": {
       "enable": true,
-      "speed": 12,
+      "speed": 10,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -62,8 +62,8 @@
       "bounce": false,
       "attract": {
         "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
+        "rotateX": 300,
+        "rotateY": 600
       }
     }
   },
