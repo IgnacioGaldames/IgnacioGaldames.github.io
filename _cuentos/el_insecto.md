@@ -5,4 +5,4 @@ text: Un paraguas abierto en medio de la cocina. Un pequeño gran misterio para 
 img: el_insecto.jpg
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quibusdam quasi vel inventore consequuntur sapiente consectetur laborum non adipisci, rerum minus, repellat eaque, id saepe, fuga illo expedita veritatis ut!
+Tras el terremoto debe acostumbrarse a vivir en las ruinas de su pueblo y sobrevivir de las sombras que lo persiguen por las noches.
