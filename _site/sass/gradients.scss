@@ -64,3 +64,11 @@ background-repeat: initial initial;
   background: linear-gradient(to bottom, $gris_claro 0%,$gris_medio 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$gris_claro', endColorstr='$gris_medio',GradientType=0 );
 }
+
+@mixin gradient_card-block_args ($args) {
+  background: $gris_claro;
+  background: -moz-linear-gradient($args, $gris_claro 0%, $gris_medio 100%);
+  background: -webkit-linear-gradient($args, $gris_claro 0%,$gris_medio 100%);
+  background: linear-gradient($args, $gris_claro 0%,$gris_medio 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$gris_claro', endColorstr='$gris_medio',GradientType=0 );
+}
