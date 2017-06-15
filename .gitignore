@@ -2,3 +2,8 @@
 
 sass/.sass-cache/
 .sass-cache
+*.codekit
+
+*.codekit
+
+.jekyll-metadata
