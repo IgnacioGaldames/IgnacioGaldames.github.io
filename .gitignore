@@ -7,3 +7,5 @@ sass/.sass-cache/
 *.codekit
 
 .jekyll-metadata
+
+*.codekit
