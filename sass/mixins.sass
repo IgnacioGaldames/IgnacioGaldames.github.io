@@ -1,0 +1,25 @@
+@mixin border-radius($radius)
+	-webkit-border-radius: $radius + px
+	-webkit-border-radius: ($radius/10) + rem
+	-moz-border-radius: $radius + px
+	-moz-border-radius: ($radius/10) + rem
+	-ms-border-radius: $radius + px
+	-ms-border-radius: ($radius/10) + rem
+	border-radius: $radius + px
+	border-radius: ($radius/10) + rem
+
+@mixin font-size($size)
+	font-size: ($size) + px
+	font-size: ($size/10) + rem
+
+@mixin min-height($min-height)
+	min-height: ($min-height) + px
+	min-height: ($min-height/10) + rem
+
+@mixin height($height)
+	height: ($height) + px
+	height: ($height/10) + rem
+
+@mixin width($width)
+	width: ($width) + px
+	width: ($width/10) + rem

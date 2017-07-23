@@ -7,12 +7,12 @@ permalink: /cuentos/index.html
   <h1 class="display-1">Mis cuentos</h1>
   <div class="row">
     {% for cuento in site.cuentos %}
-    <div class="col-md-4 rounded d-flex align-content-stretch">
+    <div class="col-md-4 rounded d-flex align-content-stretch mb-4">
       <div class="card mdl-shadow--2dp">
         <img class="card-img-top" src="/img/cuentos/{{ cuento.img }}" alt="Card image cap">
         <div class="card-block gradiente">
           <h4 class="card-title">{{ cuento.title }}</h4>
-          <p class="card-text text-justify">{{ cuento.text }}</p>
+          <p class="card-text">{{ cuento.text }}</p>
             <div class="text-center">
               <a href="{{ cuento.url }}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Ver más</a>
             </div>

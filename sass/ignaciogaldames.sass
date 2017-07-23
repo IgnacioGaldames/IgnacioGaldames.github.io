@@ -3,13 +3,14 @@
 @import "bootstrap/bootstrap"
 @import "bootstrap/bootstrap-reboot"
 @import "gradients"
+@import "mixins"
 
 $primario: rgba(204,204,204,0.90)
 
 body
 	padding-top: 4rem
 	background-color: $gris_obscuro
-
+	font-size: 62.5% !important
 i
 	margin-right: 1rem
 a
@@ -18,10 +19,14 @@ header
 	background-color: $primario
 	-webkit-backdrop-filter: blur(5px)
 	backdrop-filter: blur(5px)
-aside
+nav
+	@include font-size(10)
+aside .background-primario
 	img
 		max-width: 100%
 	background-color: $primario
+	ul
+		font-size: 12px
 .gravatar
 	border: solid 0.5rem white
 	border-radius: 100%
@@ -61,3 +66,5 @@ header, article, .navbar-nav, .carousel, .navbar-light .navbar-toggler
 	visibility: hidden
 .gradiente
 	@include gradient_card-block ()
+.gradiente-diagonal
+	@include gradiente-diagonal(white, rgba(229,229,229,1), $primario)

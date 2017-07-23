@@ -72,3 +72,12 @@ background-repeat: initial initial;
   background: linear-gradient($args, $gris_claro 0%,$gris_medio 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$gris_claro', endColorstr='$gris_medio',GradientType=0 );
 }
+
+@mixin gradiente-diagonal ($args, $args2, $args3) {
+  background: $args;
+background: -moz-linear-gradient(-45deg, $args 0%, $args2 36%, $args3 100%);
+background: -webkit-linear-gradient(-45deg,  $args 0%, $args2 36%, $args3 100%);
+background: linear-gradient(135deg,  $args 0%, $args2 36%, $args3 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=1 );
+
+}
