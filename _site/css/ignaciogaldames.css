@@ -17955,7 +17955,7 @@ a {
 .contenido .fa {
   font-size: 2rem; }
 .contenido p {
-  line-height: 1; }
+  line-height: 1.5; }
 
 header {
   background-color: rgba(204, 204, 204, 0.9);
@@ -18080,6 +18080,13 @@ header, article, .navbar-nav, .carousel, .navbar-light .navbar-toggler {
     visibility: visible !important; }
 
   a[href]:after {
-    content: none !important; } }
+    content: none !important; }
+
+  aside a {
+    font-size: 8px !important; }
+  aside i {
+    margin-right: -10px; }
+  aside .fa {
+    display: none; } }
 
 /*# sourceMappingURL=ignaciogaldames.css.map */
