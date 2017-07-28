@@ -19,3 +19,4 @@ sass/.sass-cache/
 *.codekit
 
 *.codekit
+.DS_Store
