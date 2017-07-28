@@ -15,6 +15,11 @@ i
 	margin-right: 1rem
 a
 	font-weight: normal
+.contenido 
+	.fa
+		font-size: 2rem
+	p
+		line-height: 1
 header
 	background-color: $primario
 	-webkit-backdrop-filter: blur(5px)
@@ -73,3 +78,5 @@ header, article, .navbar-nav, .carousel, .navbar-light .navbar-toggler
 @media print
 	.wow
 		visibility: visible !important
+	a[href]:after
+		content: none !important
