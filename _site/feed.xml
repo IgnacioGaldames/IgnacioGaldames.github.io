@@ -3,7 +3,7 @@
   <channel>
     <title>Ignacio Galdames - Blog</title>
     <description>Mis últimas entradas</description>
-    <link>http://localhost:4000</link>
+    <link></link>
     
       
         <item>
@@ -11,8 +11,8 @@
           <description>&lt;p&gt;&amp;#8220;El paraguas y el silencio&amp;#8221; es el primer cuento que está disponible para la venta. Admito que no es uno de mis mejores trabajos, ni tampoco uno de mis favoritos, pero es el primero que puede ser adquirido. En un futuro espero vender otroscuentos y ojal'{a} un libro que los recopile. Mientras tanto, &lt;a href=&quot;https://books2read.com/u/bpG2A9&quot;&gt;puedes comprarla ac'{a}.&lt;/a&gt;&lt;/p&gt;
 </description>
           <pubDate>2017-03-07T00:00:00-03:00</pubDate>
-          <link>http://localhost:4000/2017/03/07/primer-cuento/</link>
-          <guid isPermaLink="true">http://localhost:4000/2017/03/07/primer-cuento/</guid>
+          <link>/2017/03/07/primer-cuento/</link>
+          <guid isPermaLink="true">/2017/03/07/primer-cuento/</guid>
         </item>
       
     
