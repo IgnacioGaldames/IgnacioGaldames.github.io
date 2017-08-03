@@ -1,0 +1,1 @@
+sass build --watch --style compressed sass/ignaciogaldames.sass:/css/ignaciogaldames.css
