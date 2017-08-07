@@ -35,6 +35,20 @@ layout: default
             </div>
         </div>
     </div>
+    {% if page.notas == true %}
+    <div class="col-md-12 rounded mdl-shadow--2dp p-5 gradiente-diagonal mt-3">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="">Notas del Autor</h1>
+            </div>
+            <div class="col-md-12">
+                {{ page.content }}
+            </div>
+        </div>   
+    </div>
+    {% else %}
+    <hr>
+    {% endif %}
     <div class="col-md-12 rounded mdl-shadow--2dp p-5 gradiente-diagonal mt-3">
         <div class="row">
             <div class="col-md-12">

@@ -10,3 +10,5 @@ collections:
   libros:
     output: true
 
+plugins:
+  - jekyll-sitemap
