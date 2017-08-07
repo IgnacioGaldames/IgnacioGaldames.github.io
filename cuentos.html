@@ -10,7 +10,13 @@ permalink: /cuentos/index.html
     {% for cuento in site.cuentos  %}
     <div class="col-md-6 col-lg-4 rounded d-flex align-content-stretch mb-4">
       <div class="card mdl-shadow--2dp">
-        <img class="card-img-top" src="/img/cuentos/{{ cuento.img }}" alt="Card image cap">
+        {% if cuento.img != null %}
+        <a href="{{ cuento.url }}">
+          <img class="card-img-top" src="/img/cuentos/{{ cuento.img }}" alt="{{ cuento.title }}">
+        </a>
+        {% else %}
+        <img class="card-img-top" src="/img/cuentos/pronto.jpg" alt="Pronto">
+        {% endif %}
         <div class="card-block gradiente">
           <h4 class="card-title">{{ cuento.title }}</h4>
           <p class="card-text">{{ cuento.texto }}</p>
