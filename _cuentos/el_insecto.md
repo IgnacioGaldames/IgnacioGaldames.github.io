@@ -1,9 +1,7 @@
 ---
 layout: template_cuentos
 title: El insecto
-text: Un paraguas abierto en medio de la cocina. Un pequeño gran misterio para una imaginación muy fértil.
+texto: Tras el terremoto debe acostumbrarse a vivir en las ruinas de su pueblo y sobrevivir de las sombras que lo persiguen por las noches.
 img: el_insecto.jpg
 link: https://www.books2read.com/u/4EWON0
 ---
-
-Tras el terremoto debe acostumbrarse a vivir en las ruinas de su pueblo y sobrevivir de las sombras que lo persiguen por las noches.
