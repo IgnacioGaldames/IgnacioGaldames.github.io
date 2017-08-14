@@ -1,4 +1,5 @@
 name: Ignacio Galdames
+url: http://ignaciogaldames.com
 markdown: kramdown
 kramdown:
   entity_output: :as_input
