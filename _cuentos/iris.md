@@ -5,6 +5,10 @@ texto: Una ginoide flota a la deriva en el espacio. Antes de quedar perdida en e
 img: iris.jpg
 link: https://www.books2read.com/u/mYgB7p
 notas: true
+isbn: 9781386644545
+Editor: Editorial Antielectrón
+Autor: Ignacio Galdames
+Colección: Tiempos Alterados
 ---
 
 Este cuento fue uno de los últimos que escribí de la antología "Tiempos Alterados", pero aún así fue uno de los primeros en publicar.
