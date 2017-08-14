@@ -8,13 +8,13 @@ permalink: /libros/index.html
   <div class="row">
     {% for libro in site.libros %}
     <div class="col-md-4 rounded d-flex align-content-stretch">
-      <div class="card mdl-shadow--2dp">
+      <div class="card">
         <img class="card-img-top" src="/img/libros/{{ libro.img }}" alt="Card image cap">
         <div class="card-block gradiente">
           <h4 class="card-title">{{ libro.title }}</h4>
           <p class="card-text text-justify">{{ libro.text }}</p>
             <div class="text-center">
-              <a href="{{ libro.url }}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Ver más</a>
+              <a href="{{ libro.url }}" class="btn btn-primary">Ver más</a>
             </div>
         </div> <!-- end card-block -->
       </div><!-- end card -->

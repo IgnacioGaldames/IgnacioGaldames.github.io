@@ -3,11 +3,11 @@
 	
 	function loaded()
 	{
-		var h2Title = document.querySelector("h2 a");
-		var connectionStatus = ((navigator.onLine) ? 'online' : 'offline');
+		//var h2Title = document.querySelector("h2 a");
+		//var connectionStatus = ((navigator.onLine) ? 'online' : 'offline');
 		
-		h2Title.textContent = h2Title.textContent + " - currently: " + connectionStatus;
-		document.title = document.title.replace(" | "," - currently: " + connectionStatus + " | ");
+		//h2Title.textContent = h2Title.textContent + " - currently: " + connectionStatus;
+		//document.title = document.title.replace(" | "," - currently: " + connectionStatus + " | ");
 		
 		switch(webappCache.status)
 		{

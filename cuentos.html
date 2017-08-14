@@ -9,7 +9,7 @@ permalink: /cuentos/index.html
     {% assign items = site.cuentos | sort: 'date' %}
     {% for cuento in site.cuentos  %}
     <div class="col-sm-6 col-md-4 col-lg-3 rounded d-flex align-content-stretch mb-4">
-      <div class="card mdl-shadow--2dp">
+      <div class="card">
         {% if cuento.img != null %}
         <a href="{{ cuento.url }}">
           <img class="card-img-top" src="/img/cuentos/{{ cuento.img }}" alt="{{ cuento.title }}">
@@ -21,7 +21,7 @@ permalink: /cuentos/index.html
           <h4 class="card-title">{{ cuento.title }}</h4>
           <p class="card-text">{{ cuento.texto }}</p>
             <div class="text-center">
-              <a href="{{ cuento.url }}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Ver más</a>
+              <a href="{{ cuento.url }}" class="btn btn-primary">Ver más</a>
             </div>
         </div> <!-- end card-block -->
       </div><!-- end card -->
