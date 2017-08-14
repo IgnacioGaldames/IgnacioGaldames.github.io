@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Cache manifest version 0.0.1
+# Cache manifest version 0.0.3
 
 /css/ignaciogaldames.css
 /img/carrusel/el_paraguas_y_el_silencio.png
@@ -17,7 +17,7 @@ NETWORK:
 # are whitelisted.
 http://platform.twitter.com/widgets.js
 http://0.gravatar.com/avatar/e666a0139beba19eb778eaf6e4cdacc6?size=800
-https://cdn.syndication.twimg.com/timeline/profile?callback=__twttr.callbacks.tl_i0_profile_GaldamesIgnacio_old&dnt=false&domain=ignaciogaldames.com&lang=es&screen_name=GaldamesIgnacio&suppress_response_codes=true&t=1669686&tweet_limit=3&tz=GMT-0700&with_replies=false
+http://fonts.googleapis.com/css?family=Roboto+Slab%7CSource+Sans+Pro%7CSource+Serif+Pro%7CEB+Garamond
  
 CACHE:
 # Additional items to cache.
