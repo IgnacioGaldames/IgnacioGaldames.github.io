@@ -1,11 +1,12 @@
 ---
 layout: default
 ---
+<h1 class="display-1">{{ page.title }}</h4>
 
-
+<section class="">
 <div class="card mdl-shadow--4dp">
   <div class="card-block">
-    <h4 class="card-title">{{ page.title }}</h4>
+    
 	<p class="meta">{{ page.date | date_to_string }}</p>
     <p class="card-text text-justify">{{ content }}</p>
   </div>
@@ -20,3 +21,4 @@ layout: default
     <li class="page-item"><a class="page-link" href="{{ page.next.url }}">Siguiente</a></li>
   </ul>
 </nav>
+</section>
