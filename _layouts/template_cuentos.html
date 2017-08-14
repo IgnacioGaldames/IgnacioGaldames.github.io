@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<article class="row">
+<article class="row cuentos">
     <div class="col-md-12 ">
         <h1 class="display-1">{{ page.title }}</h1>
     </div>
@@ -55,8 +55,8 @@ layout: default
                 <h2 class="">Otros Cuentos</h1>
             </div>
         {% for cuento in site.cuentos %}
-            <div class="col-md-3 col-lg-2 rounded d-flex align-content-stretch">
-                <div class="card mdl-shadow--2dp">
+            <div class="col-4 col-md-3 col-lg-2 rounded d-flex align-content-stretch">
+                <div class="card mdl-shadow--2dp my-4">
                     {% if cuento.img != null %}
                     <a href="{{ cuento.url }}" class="">
                     <img class="card-img-top" src="/img/cuentos/{{ cuento.img }}" alt="{{ cuento.title }}">
