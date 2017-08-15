@@ -1,10 +1,9 @@
 ---
 layout: default
 title: Mis cuentos
-permalink: /cuentos/index.html
+permalink: /cuentos
 ---
 <article class="mb-5 cuentos">
-  <h1 class="display-1">Mis cuentos</h1>
   <div class="row">
     {% assign items = site.cuentos | sort: 'date' %}
     {% for cuento in site.cuentos  %}

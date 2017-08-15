@@ -11,5 +11,5 @@ collections:
   libros:
     output: true
 
-plugins:
+plugins_dir:
   - jekyll-sitemap

@@ -1,5 +1,5 @@
  <!DOCTYPE html>
-<html lang="es" manifest="http://localhost:4000/cache.manifest">
+<html lang="es" manifest="http://ignaciogaldames.com/cache.manifest">
 
 <head>
   <title>Ignacio Galdames</title>
@@ -100,6 +100,7 @@
 <body>
   <body>
 <div id="particles-js" class="hidden-print"></div>
+<div class="overlay"></div>
   <div class="back_grad" >
     <header class=" fixed-top mdl-shadow--4dp hidden-print">
       <nav class="navbar navbar-toggleable-md navbar-light container" id="nav">
@@ -213,8 +214,15 @@
 
 </div>
       </aside>
-      <section class="col-xl-9 col-lg-8 col-md-7">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <section class="col-xl-9 col-lg-8 col-md-7 py-3">
+        <article class="mb-5">
+          <div class="glitch-container">
+            <div class="glitch" data-text="Ignacio Galdames" id="Ignacio Galdames">
+              <h1 class="inherit">Ignacio Galdames</h1>
+            </div>
+          </div>
+        </article>
+        <div id="carouselExampleControls" class="carousel slide card" data-ride="carousel">
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
       <a href="/libros"><img class="d-block img-fluid" src="/img/carrusel/el_paraguas_y_el_silencio.png" alt="First slide"></a>
@@ -260,7 +268,7 @@ Ignacio Galdames, 2017
 <script type="text/javascript" src="/js/jquery.parallax.min.js"></script>
 <script type="text/javascript" src="/js/parallax.min.js"></script>
 <!-- Main JS -->
-<script type="text/javascript" src="/js/ignaciogaldames-min.js"></script>
+<script type="text/javascript" src="/js/ignaciogaldames.js"></script>
 <script type="text/javascript" src="/js/cacheupdate.js"></script>
 <script type="text/javascript" src="/js/wow.min.js"></script>
 <script>
@@ -300,7 +308,7 @@ wow.init();
 <script>
   WebFont.load({
     google: {
-      families: ['Roboto Slab', 'Source Sans Pro', 'Source Serif Pro', 'EB Garamond']
+      families: ['Roboto Slab', 'Source Code Pro', 'Source Sans Pro', 'Source Serif Pro', 'EB Garamond']
     }
   });
 </script>

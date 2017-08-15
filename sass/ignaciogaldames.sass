@@ -1,18 +1,27 @@
+@import "colores"
+@import "fonts"
 @import "../node_modules/bootstrap/scss/bootstrap.scss"
 @import "gradients"
 @import "mixins"
+@import "glitch"
+@import "overlay"
 
-$primario: rgba(204,204,204,0.90)
 html
 	font-size: 62.5%
 body
 	padding-top: 4rem
 	background-color: $gris_obscuro
 	font-size: 62.5% !important
+	text-rendering: optimizeLegibility
 i
 	margin-right: 1rem
 a
 	font-weight: normal
+.inherit
+	font-size: inherit !important
+	font-weight: inherit !important
+	color: inherit !important
+	text-shadow: inherit !important
 .contenido 
 	.fa
 		font-size: 2rem
@@ -46,7 +55,8 @@ aside
 	@include gradient_card-block()
 h1
 	color: $gris_claro
-	text-shadow: 0 -1px 0 white
+	font-weight: 500
+	font-family: $SourceCodePro
 .container
 	padding-top: 1rem
 .back_grad

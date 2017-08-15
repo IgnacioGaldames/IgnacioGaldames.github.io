@@ -1,5 +1,5 @@
  <!DOCTYPE html>
-<html lang="es" manifest="http://localhost:4000/cache.manifest">
+<html lang="es" manifest="http://ignaciogaldames.com/cache.manifest">
 
 <head>
   <title>Portafolio</title>
@@ -100,6 +100,7 @@
 <body>
   <body>
 <div id="particles-js" class="hidden-print"></div>
+<div class="overlay"></div>
   <div class="back_grad" >
     <header class=" fixed-top mdl-shadow--4dp hidden-print">
       <nav class="navbar navbar-toggleable-md navbar-light container" id="nav">
@@ -213,9 +214,15 @@
 
 </div>
       </aside>
-      <section class="col-xl-9 col-lg-8 col-md-7">
+      <section class="col-xl-9 col-lg-8 col-md-7 py-3">
         <article class="mb-5">
-  <h1 class="display-1">Portafolio</h1>
+          <div class="glitch-container">
+            <div class="glitch" data-text="Portafolio" id="Portafolio">
+              <h1 class="inherit">Portafolio</h1>
+            </div>
+          </div>
+        </article>
+        <article class="mb-5">
   <div class="row">
     <div class="col-md-6 rounded wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
       <div class="card">
@@ -277,7 +284,7 @@ Ignacio Galdames, 2017
 <script type="text/javascript" src="/js/jquery.parallax.min.js"></script>
 <script type="text/javascript" src="/js/parallax.min.js"></script>
 <!-- Main JS -->
-<script type="text/javascript" src="/js/ignaciogaldames-min.js"></script>
+<script type="text/javascript" src="/js/ignaciogaldames.js"></script>
 <script type="text/javascript" src="/js/cacheupdate.js"></script>
 <script type="text/javascript" src="/js/wow.min.js"></script>
 <script>
@@ -317,7 +324,7 @@ wow.init();
 <script>
   WebFont.load({
     google: {
-      families: ['Roboto Slab', 'Source Sans Pro', 'Source Serif Pro', 'EB Garamond']
+      families: ['Roboto Slab', 'Source Code Pro', 'Source Sans Pro', 'Source Serif Pro', 'EB Garamond']
     }
   });
 </script>
