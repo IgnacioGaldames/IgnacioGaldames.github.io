@@ -19,16 +19,18 @@ i
 	margin-right: 1rem
 a
 	font-weight: normal
+	color: #0092cc
 .inherit
 	font-size: inherit !important
 	font-weight: inherit !important
 	color: inherit !important
 	text-shadow: inherit !important
 .contenido 
-	.fa
-		font-size: 2rem
 	p
 		line-height: 1.5
+.fa
+	@include min-width(15)
+	@include min-width(20)
 header
 	background-color: $primario
 	-webkit-backdrop-filter: blur(5px)
@@ -38,13 +40,12 @@ nav
 .dropdown-menu
 	@extend nav
 aside
-
 	.background-primario
 		img
 			max-width: 100%
 		background-color: $primario
 		ul
-			@include font-size(13)
+			@include font-size(15)
 .gravatar
 	border: solid 0.5rem white
 	border-radius: 100%
@@ -70,7 +71,7 @@ h1
 .disabled 
 	cursor: not-allowed !important
 #particles-js
-	@include background_gradient()
+	@include background_gradient(#250033,#002533)
 	position: fixed
 	top: 0
 	right: 0
