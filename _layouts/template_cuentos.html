@@ -1,19 +1,12 @@
----
-layout: default
----
+--- layout: default ---
 <article class="row cuentos">
-    <div class="col-md-12 ">
-        <h1 class="display-1">{{ page.title }}</h1>
-    </div>
     <div class="col-md-12 rounded mdl-shadow--2dp p-5 gradiente-diagonal">
         <div class="row">
             <div class="d-flex align-items-center">
                 <div class="col-md-3 ">
                     {% if page.img != null %}
-                    <img class="card-img-top rounded mdl-shadow--2dp" src="/img/cuentos/{{ page.img }}" alt="Card image cap">
-                    {% else %}
-                    <img class="card-img-top" src="/img/cuentos/pronto.jpg" alt="Pronto">
-                    {% endif %}
+                    <img class="card-img-top rounded mdl-shadow--2dp" src="/img/cuentos/{{ page.img }}" alt="Card image cap"> {% else %}
+                    <img class="card-img-top" src="/img/cuentos/pronto.jpg" alt="Pronto"> {% endif %}
                 </div>
                 <div class="col-md-9">
                     <div class="col-md-12">
@@ -44,29 +37,28 @@ layout: default
             <div class="col-md-12 nota">
                 {{ page.content }}
             </div>
-        </div>   
+        </div>
     </div>
     {% else %}
-    <hr>
-    {% endif %}
+    <hr> {% endif %}
     <div class="col-md-12 rounded mdl-shadow--2dp p-5 gradiente-diagonal mt-3">
         <div class="row">
             <div class="col-md-12">
                 <h2 class="">Otros Cuentos</h1>
             </div>
-        {% for cuento in site.cuentos %}
+            {% for cuento in site.cuentos %}
             <div class="col-4 col-md-3 col-lg-2 rounded d-flex align-content-stretch">
                 <div class="card mdl-shadow--2dp my-4">
                     {% if cuento.img != null %}
                     <a href="{{ cuento.url }}" class="">
-                    <img class="card-img-top" src="/img/cuentos/{{ cuento.img }}" alt="{{ cuento.title }}">
+                        <img class="card-img-top" src="/img/cuentos/{{ cuento.img }}" alt="{{ cuento.title }}">
                     </a>
                     {% else %}
-                    <img class="card-img-top" src="/img/cuentos/pronto.jpg" alt="Pronto">
-                    {% endif %}
-                </div><!-- end card -->
+                    <img class="card-img-top" src="/img/cuentos/pronto.jpg" alt="Pronto"> {% endif %}
+                </div>
+                <!-- end card -->
             </div>
-        {% endfor %}
+            {% endfor %}
         </div>
     </div>
 </article>

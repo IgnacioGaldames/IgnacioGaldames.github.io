@@ -7,6 +7,13 @@
 @import "glitch"
 @import "overlay"
 
+.wow
+	visibility: hidden
+*
+	transition: all .2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+	-webkit-transition: all .2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+	-moz-transition: all .2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+	-o-transition: all .2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
 html
 	font-size: 62.5%
 body
@@ -19,7 +26,10 @@ i
 	margin-right: 1rem
 a
 	font-weight: normal
-	color: #0092cc
+	color: $celeste
+	&:hover
+		color: darken($celeste,10%)
+		text-decoration: none
 .inherit
 	font-size: inherit !important
 	font-weight: inherit !important
@@ -32,7 +42,7 @@ a
 	@include min-width(15)
 	@include min-width(20)
 header
-	background-color: $primario
+	background-color: rgba($primario,0)
 	-webkit-backdrop-filter: blur(5px)
 	backdrop-filter: blur(5px)
 nav
@@ -67,7 +77,7 @@ h1
 .container, .back_grad
 	pointer-events: none
 .contenido
-	background-color: rgba(240, 240, 240, 0.9)
+	background-color: rgba($primario, 0.9)
 .disabled 
 	cursor: not-allowed !important
 #particles-js
@@ -80,8 +90,6 @@ h1
 	z-index: 0 
 a, header, nav, article, .navbar-nav, .carousel, .navbar-light .navbar-toggler, navbar-brand
 	pointer-events: all
-.wow
-	visibility: hidden
 .gradiente
 	@include gradient_card-block ()
 
