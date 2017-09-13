@@ -42,7 +42,7 @@ a
 	@include min-width(15)
 	@include min-width(20)
 header
-	background-color: rgba($primario,0)
+	background-color: rgba($primario,0.75)
 	-webkit-backdrop-filter: blur(5px)
 	backdrop-filter: blur(5px)
 nav
@@ -81,7 +81,7 @@ h1
 .disabled 
 	cursor: not-allowed !important
 #particles-js
-	@include background_gradient(#250033,#002533)
+	@include background_gradient(darken($morado, 35%),darken($celeste, 35%))
 	position: fixed
 	top: 0
 	right: 0
