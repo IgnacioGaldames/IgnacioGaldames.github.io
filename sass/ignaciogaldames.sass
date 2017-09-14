@@ -24,12 +24,6 @@ body
 	font-family: $SourceSansPro
 i
 	margin-right: 1rem
-a
-	font-weight: normal
-	color: $celeste
-	&:hover
-		color: darken($celeste,10%)
-		text-decoration: none
 .inherit
 	font-size: inherit !important
 	font-weight: inherit !important
@@ -42,9 +36,16 @@ a
 	@include min-width(15)
 	@include min-width(20)
 header
-	background-color: rgba($primario,0.75)
+	@include  gradiente-diagonal(rgba($celeste,0.75),darken(rgba($morado,0.75), 10%),darken(rgba($morado,0.75), 20%))
 	-webkit-backdrop-filter: blur(5px)
 	backdrop-filter: blur(5px)
+	a
+		font-weight: normal
+		color: lighten($celeste,20%)
+		&:hover
+			color: lighten($morado,33%)
+			text-decoration: none
+			text-shadow: 0px 0px 5px rgba($morado,0.75)
 nav
 	@include font-size(15)
 .dropdown-menu
@@ -56,6 +57,13 @@ aside
 		background-color: $primario
 		ul
 			@include font-size(15)
+	a
+		font-weight: normal
+		color: darken($celeste,20%)
+		&:hover
+			color: darken($morado,10%)
+			text-decoration: none
+			text-shadow: 0px 0px 5px rgba($morado,0.75)
 .gravatar
 	border: solid 0.5rem white
 	border-radius: 100%
@@ -81,7 +89,7 @@ h1
 .disabled 
 	cursor: not-allowed !important
 #particles-js
-	@include background_gradient(darken($morado, 35%),darken($celeste, 35%))
+	@include background_gradient(darken($morado, 20%),darken($celeste, 35%))
 	position: fixed
 	top: 0
 	right: 0

@@ -13,15 +13,15 @@ gulp.task('sass', function() {
     return gulp.src('sass/ignaciogaldames.sass')
         .pipe(sourcemaps.init())
         .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
-        .pipe(sourcemaps.write('css'))
-        .pipe(gulp.dest('css'))
+        .pipe(sourcemaps.write('_site/css'))
+        .pipe(gulp.dest('_site/css'))
         .pipe(browserSync.reload({
             stream: true
         }))
 });
 
 gulp.task('jekyll', function() {
-    const jekyll = child.spawn('jekyll', ['build']);
+    const jekyll = child.spawn('jekyll', ['build','--watch', '--incremental']);
 });
 
 gulp.task('browserSync', function() {
@@ -34,7 +34,7 @@ gulp.task('browserSync', function() {
 });
 
 gulp.task('watch', ['sass', 'jekyll', 'browserSync'], function() {
-    gulp.watch('sass/ignaciogaldames.sass', ['sass','jekyll']);
+    gulp.watch(['sass/*.sass', 'sass/*.scss'], ['sass','jekyll']);
     // Other watchers
     gulp.watch('_site/*', browserSync.reload);
 });

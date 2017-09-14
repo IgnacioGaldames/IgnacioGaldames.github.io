@@ -69,7 +69,7 @@
 
 @mixin gradiente-diagonal ($args, $args2, $args3) {
     background: $args;
-    background: -moz-linear-gradient(-45deg, $args 0%, $args2 36%, $args3 100%);
-    background: -webkit-linear-gradient(-45deg, $args 0%, $args2 36%, $args3 100%);
-    background: linear-gradient(135deg, $args 0%, $args2 36%, $args3 100%);
+    background: -moz-linear-gradient(-45deg, $args 0%, $args2 50%, $args3 100%);
+    background: -webkit-linear-gradient(-45deg, $args 0%, $args2 50%, $args3 100%);
+    background: linear-gradient(135deg, $args 0%, $args2 50%, $args3 100%);
 }

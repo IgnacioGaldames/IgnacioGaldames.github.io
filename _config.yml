@@ -13,3 +13,5 @@ collections:
 
 plugins_dir:
   - jekyll-sitemap
+
+source: _source
