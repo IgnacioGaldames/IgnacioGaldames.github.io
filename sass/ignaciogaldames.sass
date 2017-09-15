@@ -36,16 +36,16 @@ i
 	@include min-width(15)
 	@include min-width(20)
 header
-	@include  gradiente-diagonal(rgba($celeste,0.75),darken(rgba($morado,0.75), 10%),darken(rgba($morado,0.75), 20%))
+	@include  gradiente-diagonal(darken(rgba($morado,0.33), 10%),darken(rgba($morado,0.33), 20%),rgba($celeste,0.33))
 	-webkit-backdrop-filter: blur(5px)
 	backdrop-filter: blur(5px)
 	a
 		font-weight: normal
 		color: lighten($celeste,20%)
 		&:hover
-			color: lighten($morado,33%)
+			color: white
 			text-decoration: none
-			text-shadow: 0px 0px 5px rgba($morado,0.75)
+			text-shadow: 0px 0px 3px rgba($morado,1)
 nav
 	@include font-size(15)
 .dropdown-menu
@@ -59,11 +59,12 @@ aside
 			@include font-size(15)
 	a
 		font-weight: normal
-		color: darken($celeste,20%)
+		color: $celeste
+		text-shadow: 0px 0px 2px lighten(rgba($celeste,0.25), 25%), 0px 0px 6px lighten(rgba($celeste,0.75), 33%)
 		&:hover
-			color: darken($morado,10%)
+			color: white
 			text-decoration: none
-			text-shadow: 0px 0px 5px rgba($morado,0.75)
+			text-shadow: 0px 0px 2px darken(rgba($morado,0.75), 10%), 0px 0px 6px darken(rgba($morado,1), 25%)
 .gravatar
 	border: solid 0.5rem white
 	border-radius: 100%
