@@ -42,6 +42,7 @@ gulp.task('watch', ['sass', 'jekyll', 'browserSync'], function() {
     // Other watchers
     gulp.watch(['_source/**/*.html'], ['sass','jekyll']);
     gulp.watch(['_source/**/*.js'], ['sass','jekyll']);
+    gulp.watch('_site/**/*.*').on('change', browserSync.reload);
 });
 
 gulp.task('default', ['watch'], function() {
