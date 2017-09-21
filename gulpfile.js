@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync').create();
+var sourcemaps = require('gulp-sourcemaps');
 
 const child = require('child_process');
 
@@ -13,7 +13,7 @@ gulp.task('sass', function() {
     return gulp.src('sass/ignaciogaldames.sass')
         .pipe(sourcemaps.init())
         .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
-        .pipe(sourcemaps.write('_site/css'))
+        .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest('_site/css'))
         .pipe(browserSync.reload({
             stream: true
