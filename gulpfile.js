@@ -21,7 +21,11 @@ gulp.task('sass', function() {
 });
 
 gulp.task('jekyll', function() {
-    const jekyll = child.spawn('jekyll', ['build','--watch', '--incremental']);
+    const jekyll = child.spawn('jekyll', ['build','--watch', '--incremental'])
+    return gulp.src('_site')
+        .pipe(browserSync.reload({
+            stream: true
+        }))
 });
 
 gulp.task('browserSync', function() {
@@ -34,9 +38,10 @@ gulp.task('browserSync', function() {
 });
 
 gulp.task('watch', ['sass', 'jekyll', 'browserSync'], function() {
-    gulp.watch(['sass/*.sass', 'sass/*.scss'], ['sass','jekyll']);
+    gulp.watch(['sass/**/*.sass', 'sass/**/*.scss'], ['sass','jekyll']);
     // Other watchers
-    gulp.watch('_site/*', browserSync.reload);
+    gulp.watch(['_source/**/*.html'], ['sass','jekyll']);
+    gulp.watch(['_source/**/*.js'], ['sass','jekyll']);
 });
 
 gulp.task('default', ['watch'], function() {

@@ -1,5 +1,5 @@
 console.log('Cargando');
-
+$('.dropdown-toggle').dropdown();
 $(document).ready(function() {
     console.log("Bienvenido");
     var pathname = window.location.pathname;
