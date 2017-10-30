@@ -1,0 +1,31 @@
+/*Neon*/
+
+$color_neon1: #fa05d1
+$color_neon2: #0588fa
+/*Neon*/
+
+@mixin neonGlow( $neonColor, $neonGlow, $neonTime)
+	@keyframes neonAnimation
+		from
+			text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px $neonGlow, 0 0 70px $neonGlow, 0 0 80px $neonGlow, 0 0 100px $neonGlow, 0 0 150px $neonGlow
+		to
+			text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px $neonGlow, 0 0 35px $neonGlow, 0 0 40px $neonGlow, 0 0 50px $neonGlow, 0 0 75px $neonGlow
+	animation: neonAnimation $neonTime cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite alternate
+	color: white
+
+.neon 
+	a
+		text-decoration: none
+	a:hover
+		color: white
+	#neonInverse 
+		a
+			@include neonGlow( $celeste, $rosado, 1s)
+		a:hover
+			color: $color_neon1
+			animation: none
+	#neonHover
+		a
+			color: $color_neon2
+		a:hover
+			@include neonGlow( $celeste, $rosado, 1s)

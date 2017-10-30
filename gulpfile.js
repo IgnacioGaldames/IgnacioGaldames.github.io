@@ -2,11 +2,22 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var sourcemaps = require('gulp-sourcemaps');
+var useref = require('gulp-useref');
+var uglify = require('gulp-uglify');
+var gulpIf = require('gulp-if');
 
 const child = require('child_process');
 
 gulp.task('hello', function() {
     console.log('Hello Ignacio');
+});
+
+gulp.task('useref', function(){
+    return gulp.src('_site/*.html')
+      .pipe(useref())
+      // Minifies only if it's a JavaScript file
+      .pipe(gulpIf('*.js', uglify()))
+      .pipe(gulp.dest('_site'))
 });
 
 gulp.task('sass', function() {
