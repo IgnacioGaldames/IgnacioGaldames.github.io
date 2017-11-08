@@ -12,7 +12,8 @@ gulp.task('hello', function() {
     console.log('Hello Ignacio');
 });
 
-gulp.task('useref', function(){
+gulp.task('useref'
+, function(){
     return gulp.src('_site/*.html')
       .pipe(useref())
       // Minifies only if it's a JavaScript file
