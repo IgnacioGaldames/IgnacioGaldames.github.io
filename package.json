@@ -1,34 +1,22 @@
 {
-  "name": "IgnacioGaldames.github.io",
+  "name": "ignaciogaldames.github.io",
   "version": "1.0.0",
-  "description": "ignaciogaldames ===============",
+  "description": "sitio web de ignacio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/IgnacioGaldames/IgnacioGaldames.github.io.git"
   },
-  "keywords": [],
   "author": "Ignacio Galdames",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/IgnacioGaldames/IgnacioGaldames.github.io/issues"
   },
   "homepage": "https://github.com/IgnacioGaldames/IgnacioGaldames.github.io#readme",
-  "dependencies": {
-    "animate.sass": "^1.0.1",
-    "bootstrap": "^4.0.0-beta",
-    "browser-sync": "^2.18.13",
-    "gulp": "^3.9.1",
-    "gulp-if": "^2.0.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.1",
-    "gulp-uglify": "^3.0.0",
-    "gulp-useref": "^3.1.2",
-    "gulp-util": "^3.0.8",
-    "jquery": "^3.2.1",
-    "popper.js": "^1.12.5"
+  "devDependencies": {
+    "gulp": "^3.9.1"
   }
 }
