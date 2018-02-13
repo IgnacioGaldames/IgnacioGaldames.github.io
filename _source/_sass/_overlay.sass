@@ -1,0 +1,31 @@
+@keyframes animatedOverlay
+	0%
+		opacity: 0.3
+		background-image: linear-gradient(transparent 0%, rgba(10, 16, 10, 1) 50%)
+
+	50%
+		opacity: 0.35
+		background-image: linear-gradient(transparent 0%, rgba(10, 16, 10, 1) 50%)
+
+	100%
+		opacity: 0.3
+		background-image: linear-gradient(transparent 0%, rgba(10, 16, 10, 1) 50%)
+		background-image: moz-linear-gradient(transparent 0%, rgba(10, 16, 10, 1) 50%)
+.overlay
+	color: white
+	background-size: 100% 2px
+	bottom: 0
+	content: ''
+	left: 0
+	position: absolute
+	right: 0
+	top: 0
+	animation: animatedOverlay 0.1s ease-in-out infinite
+	animation-duration: 0.1s
+	animation-name: animatedOverlay
+	animation-iteration-count: infinite
+	background-image: -webkit-linear-gradient(transparent 0%, rgba(10, 16, 10, 0.35) 50%)
+	background-image: -o-linear-gradient(transparent 0%, rgba(10, 16, 10, 0.35) 50%)
+	background-image: linear-gradient(transparent 0%, rgba(10, 16, 10, 0.35) 50%)
+	pointer-events: none
+	position: fixed

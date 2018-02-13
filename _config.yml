@@ -19,7 +19,7 @@ encoding: UTF-8
 title: Ignacio Galdames
 email: caminantestelar@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Cyberpunk, escritor de ciencia ficción y desarrollador web.
+  Ignacio Galdames | Cyberpunk, escritor de ciencia ficción y desarrollador web.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: http://ignaciogaldames.com
 
