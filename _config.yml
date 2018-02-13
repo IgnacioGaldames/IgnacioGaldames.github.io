@@ -47,6 +47,12 @@ google_analytics:  UA-37371147-2
 
 
 # Build settings
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+source: _source
 markdown: kramdown
 #theme: minima
 plugins:
@@ -63,7 +69,7 @@ collections:
  libros:
  output: true
 
-source: _source
+
 timezone: America/Santiago
 
 # Exclude from processing.
