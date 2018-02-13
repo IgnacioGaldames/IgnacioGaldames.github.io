@@ -1,7 +1,19 @@
 <!DOCTYPE html>
 <html lang="es" manifest="{{site.url}}/cache.manifest">
 {% include head.html %}
-<body>
-    
+<body class="bg-secondary">
+        <div id="particles-js" class="hidden-print"></div>
+    {% include header.html %}
+    <div class="container">
+        <div class="row">
+                <aside class="col-md-3">
+                        {% include aside.html %}
+                </aside>
+                <section class="col-md-9">
+                        {{ content }}
+                </section>
+        </div>
+    </div>
+    {% include footer.html %}
 </body>
 </html>
