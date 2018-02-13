@@ -1,0 +1,25 @@
+CACHE MANIFEST
+# Cache manifest version 0.0.3
+
+/css/ignaciogaldames.css
+/img/carrusel/el_paraguas_y_el_silencio.png
+/img/carrusel/portafolio.jpg
+/js/ignaciogaldames-min.js
+/js/jquery.parallax.min.js
+/js/parallax.min.js
+/js/particles.json
+/js/wow.min.js
+
+
+ 
+NETWORK:
+# All URLs that start with the following lines
+# are whitelisted.
+http://platform.twitter.com/widgets.js
+http://0.gravatar.com/avatar/e666a0139beba19eb778eaf6e4cdacc6?size=800
+http://fonts.googleapis.com/css?family=Roboto+Slab%7CSource+Sans+Pro%7CSource+Serif+Pro%7CEB+Garamond
+ 
+CACHE:
+# Additional items to cache.
+ 
+FALLBACK:
