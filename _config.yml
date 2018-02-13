@@ -42,16 +42,19 @@ show_excerpts: false # set to true to show excerpts on the homepage
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
   date_format: "%b %-d, %Y"
-  
+
 google_analytics:  UA-37371147-2
 
 
 # Build settings
 markdown: kramdown
-theme: minima
+#theme: minima
 plugins:
  - jekyll-feed
-
+ - jekyll-seo-tag
+ - jekyll-github-metadata
+ #- jekyll-sitemap
+ 
 permalink: pretty
 
 collections:
