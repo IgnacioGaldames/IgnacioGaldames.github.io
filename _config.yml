@@ -1,3 +1,5 @@
+# jekyll build --incremental
+# jekyll serve --watch --incremental
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -25,16 +27,14 @@ url: http://ignaciogaldames.com
 
 # social links
 twitter_username: GaldamesIgnacio
-github_username:  jekyll
+github_username:  ignaciogaldames
 rss: rss
-dribbble_username: jekyll
 facebook_username: ignacio.galdames
-flickr_username: jekyll
+flickr_username: caminantestelar
 instagram_username: ignacio.galdames
 linkedin_username: ignaciogaldames
-pinterest_username: jekyll
-youtube_username: {{site.twitter_username}}
-googleplus_username: +jekyll
+pinterest_username: IgnacioGaldames
+googleplus_username: IgnacioGaldames
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
