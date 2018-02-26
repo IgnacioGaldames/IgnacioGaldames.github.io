@@ -4,10 +4,10 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 imagenes:
-  - ruta_imagen: http://via.placeholder.com/1920x1080/cccccc/000000
+  - ruta_imagen: http://via.placeholder.com/1920x817/cccccc/000000
     titulo_imagen: slide-1
-  - ruta_imagen: http://via.placeholder.com/1920x1080/000000/ffffff
+  - ruta_imagen: http://via.placeholder.com/1920x817/000000/ffffff
     titulo_imagen: slide-2
-  - ruta_imagen: http://via.placeholder.com/1920x1080/ccc/fff
+  - ruta_imagen: http://via.placeholder.com/1920x817/ccc/fff
     titulo_imagen: slide-2
 ---
