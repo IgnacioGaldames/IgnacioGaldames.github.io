@@ -1,5 +1,5 @@
 ---
-layout: template_cuentos
+layout: cuentos
 title: Los corceles azules
 texto: null
 img: null

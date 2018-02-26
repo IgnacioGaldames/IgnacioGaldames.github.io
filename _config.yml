@@ -72,6 +72,8 @@ collections:
   output: true
  libros:
   output: true
+ portafolio:
+  output: false
 
 
 timezone: America/Santiago
