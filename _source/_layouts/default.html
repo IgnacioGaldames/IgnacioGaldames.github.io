@@ -5,15 +5,8 @@
         <div id="particles-js" class="hidden-print"></div>
         <div class="overlay"></div>
     {% include nav.html %}
-    <div class="container">
-        <div class="row">
-                <aside class="col-md-3">
-                        {% include aside.html %}
-                </aside>
-                <section class="col-md-9">
-                        {{ content }}
-                </section>
-        </div>
+    <div class="container-fluid">
+                {{ content }}
     </div>
     {% include footer.html %}
 </body>
