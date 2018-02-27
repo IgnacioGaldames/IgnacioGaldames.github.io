@@ -19,4 +19,11 @@
         $('#glitch').text('miTitulo');
     }
     theGlitch();
+
+    WebFont.load({
+        google: {
+            families: ['Source Serif Pro','Source Sans Pro','Source Code Pro']
+        }
+    });
+	//$(".cuentos .glitch").lettering();
 });
