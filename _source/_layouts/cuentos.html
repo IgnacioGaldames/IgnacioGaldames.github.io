@@ -2,9 +2,9 @@
 layout: default 
 ---
 
-<section class="container-fluid cuentos">
+<section class="container-fluid cuentos" id="cuento-{{ page.myId }}">
     <div class="row p-0">
-        <div class="col-md-12 p-0  bg-danger">
+        <div class="col-md-12 p-0  fondo-portada-{{ page.myId }}">
             <div class="container">
                 <div class="row py-5">
                     <div class="col-md-4 d-flex justify-content-center align-items-center portada wow fadeIn">
@@ -18,7 +18,7 @@ layout: default
                                 </span>
                             </h1>
                         </div>
-                        <h3 class="wow fadeIn text-center text-md-left" data-wow-delay="0.4s">{{ page.texto }}</h3>
+                        <h3 class="wow fadeIn text-center text-md-left text-light" data-wow-delay="0.4s">{{ page.texto }}</h3>
                         <a class="wow fadeIn" href="{{ page.link }}" target="_blank" data-wow-delay="0.6s">
                             <button class="btn btn-info">
                                 comprar

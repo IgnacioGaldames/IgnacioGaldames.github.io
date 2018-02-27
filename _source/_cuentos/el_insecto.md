@@ -8,4 +8,5 @@ isbn: 9781386215899
 Editor: Editorial Antielectrón
 Autor: Ignacio Galdames
 Colección:
+myId: insecto
 ---
