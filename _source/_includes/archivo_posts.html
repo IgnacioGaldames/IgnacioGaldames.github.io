@@ -1,0 +1,18 @@
+<div class="p-4">
+        <div class="card-deck">
+                {% for post in site.posts %}
+                <div class="card">
+                    {% if post.imagen %}
+                  <img class="card-img-top" src="{{ "/assets/img/posts/{{post.imagen}}" | relative_url }}" alt="Card image cap">
+                  {%  endif %}
+                  <div class="card-body">
+                   <a href="{{ post.url }}" title="{{ post.title }}"><h5 class="card-title">{{ post.title }}</h5></a>
+                    <p class="card-text">{{ post.excerpt }}</p>
+                  </div>
+                  <div class="card-footer">
+                        <small class="text-muted">{{ post.date | date_to_string }}</small>
+                      </div>
+                </div>
+              </div>
+              {% endfor %}
+</div>

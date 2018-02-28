@@ -7,8 +7,8 @@ layout: default
         <div class="col-md-12 p-0  fondo-portada-{{ page.myId }}">
             <div class="container">
                 <div class="row py-5">
-                    <div class="col-md-4 d-flex justify-content-center align-items-center portada wow fadeIn">
-                        <img src="http://via.placeholder.com/250x400" alt="">
+                    <div class="col-md-4 d-flex justify-content-center align-items-center wow fadeIn">
+                        <img src="http://via.placeholder.com/500x800" alt="" class="card portada w-100">
                     </div>
                     <div class="col-md-8 d-flex justify-content-center align-items-center flex-column">
                         <div class="glitch-container wow fadeIn text-center" data-wow-delay="0.2s">
@@ -30,15 +30,4 @@ layout: default
         </div>
     </div>
 </section>
-<div class="container py-4">
-    <div class="row">
-        <aside class="col-md-3">
-            {% include aside.html%}
-        </aside>
-        <section class="col-md-9">
-            <div class="col-md-12 card p-4">
-            {{ content }}
-            </div>
-        </section>
-    </div>
-</div>
+{% include page.html %}

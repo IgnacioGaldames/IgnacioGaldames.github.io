@@ -1,5 +1,5 @@
 ---
-layout: cuentos
+layout: escritos
 title: Los corceles azules
 texto: null
 img: null

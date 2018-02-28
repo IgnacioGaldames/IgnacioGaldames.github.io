@@ -1,3 +1,8 @@
+.wow
+    visibility: hidden
+    z-index: 9
+    &:hover
+        z-index: 99
 .bg-dark, .dropdown-menu
     background-color:  rgba(52, 58, 64, 0.75) !important
     -webkit-backdrop-filter: blur(10px)
@@ -10,13 +15,20 @@
                 text-shadow: 0 0 10px $celeste
 .dropdown
     &:hover
+        .nav-link
+            text-shadow: 0 0 10px $celeste
         .dropdown-menu
             display: block
-            top: 80%
-.dropdown-item
-    color: rgba(255, 255, 255, .5)
-.dropdown-divider
-    border-top: 1px solid rgba($celeste, 0.3)
+            top: 90%
+    .dropdown-menu
+        left: auto !important
+        right: 1px
+    .dropdown-item
+        color: rgba(255, 255, 255, .5)
+        &:focus, &:hover
+            background-color: transparent
+    .dropdown-divider
+        border-top: 1px solid rgba($celeste, 0.3)
 .full-img
     width: 100%
     height: auto

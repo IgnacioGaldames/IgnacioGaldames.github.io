@@ -1,5 +1,5 @@
 ---
-layout: cuentos
+layout: escritos
 title: El insecto
 texto: Tras el terremoto debe acostumbrarse a vivir en las ruinas de su pueblo y sobrevivir de las sombras que lo persiguen por las noches.
 img: el_insecto.jpg

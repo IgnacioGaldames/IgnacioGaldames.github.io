@@ -3,6 +3,7 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: page
+title: Experiencia Laboral
 trabajos:
     - nombre_trabajo: Agencia How
       fecha_trabajo: Marzo 2017 | Julio 2017
@@ -20,8 +21,7 @@ trabajos:
       desc_trabajo: Desarrollo y mantención de sitios web en kohana php, mails en html y landings responsive. Desarrollo de Sitios con Bootstrap, JQuery UI, Jquery Mobile.
       clientes: Municipalidad de Las Condes, Municipalidad de Vitacura, Justice
 ---
-<div class="col-md-12 card p-4">
-<h2>Experiencia Laboral</h2>
+<div class="p-4">
  {% for trabajo in page.trabajos %}
     <article class="my-4 wow fadeInUp" data-wow-delay="0.{{ forloop.index }}s">
         <h4>{{ trabajo.nombre_trabajo }}</h4>

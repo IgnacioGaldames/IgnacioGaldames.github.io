@@ -1,3 +1,5 @@
+@import 'mixins'
+@import 'sombras'
 .cuentos
 	h1
 		font-family: 'Source Serif Pro', serif
@@ -14,17 +16,24 @@
 //		animation-name: animationFontSize
 //		animation-duration: 0.2s
 $todasIds: ("insecto","planeta-desierto")
+.fondo-portada
+	background-blend-mode: multiply
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center center
+	background-attachment: fixed
+	&:before
+		content: ''
+		@include background_gradient(green, blue)
+		mix-blend-mode: multiply
+		position: absolute
+		width: 100%
+		height: 100%
 @each $myId in $todasIds
 	.fondo-portada-#{$myId}
-		background-image: url('../img/fondo-#{$myId}.jpg')
-		background-blend-mode: multiply
-		background-size: cover
-		background-repeat: no-repeat
-		background-position: center center
-		&:before
-			content: ''
-			@include background_gradient(green, blue)
-			mix-blend-mode: multiply
-			position: absolute
-			width: 100%
-			height: 100%
+		background-image: url('../img/escritos/fondo-#{$myId}.jpg')
+		@extend .fondo-portada
+.portada
+	@include shadow-4dp()
+	&:hover
+		@include shadow-8dp()
