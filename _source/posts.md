@@ -5,4 +5,8 @@
 layout: page
 title: Blog
 ---
-{% include archivo_posts.html %}
+<div class="card-deck">
+    {% for post in site.posts%}
+        {% include archivo.html %}
+    {% endfor %}
+</div>

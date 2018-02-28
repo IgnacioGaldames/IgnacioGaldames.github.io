@@ -6,5 +6,8 @@ layout: page
 title: Mis Cuentos
 ---
 
-<div class="p-4">
+<div class="card-deck">
+    {% for post in site.cuentos %}
+        {% include archivo.html %}
+    {% endfor %}
 </div>
