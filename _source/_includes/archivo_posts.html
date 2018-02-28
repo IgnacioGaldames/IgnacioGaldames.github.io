@@ -1,18 +1,27 @@
-<div class="p-4">
-        <div class="card-deck">
-                {% for post in site.posts %}
-                <div class="card">
-                    {% if post.imagen %}
-                  <img class="card-img-top" src="{{ "/assets/img/posts/{{post.imagen}}" | relative_url }}" alt="Card image cap">
-                  {%  endif %}
-                  <div class="card-body">
-                   <a href="{{ post.url }}" title="{{ post.title }}"><h5 class="card-title">{{ post.title }}</h5></a>
-                    <p class="card-text">{{ post.excerpt }}</p>
-                  </div>
-                  <div class="card-footer">
-                        <small class="text-muted">{{ post.date | date_to_string }}</small>
-                      </div>
+<div class="card-deck">
+    {% for post in site.posts %}
+    <div class="card wow fadeIn"  data-wow-delay="0.{{forloop.index}}s">
+            {% if post.imagen %}
+                <a href="{{ post.url }}" title="{{ post.title }}">
+                    <img class="card-img-top" src="/assets/img/posts/{{ post.imagen | relative_url }}" alt="Card image cap" class="w-100">
+                </a>
+            {% endif %}
+            <div class="card-body">
+                <h5 class="card-title">{{ post.title }}</h5>
+                <p class="card-text">{{ post.excerpt }}</p>
+            </div>
+            <div class="card-footer d-flex">
+                <div class="mr-auto">
+                    <small class="text-muted">{{ post.date | date_to_string }}</small>
                 </div>
-              </div>
-              {% endfor %}
+                <div class="ml-auto">
+                        <a href="{{ post.url }}"  title="{{ post.title }}">
+                                <button class="btn btn-info">
+                                    leer más
+                                </button>
+                            </a>
+                </div>
+            </div>
+    </div>
+    {% endfor %}
 </div>
