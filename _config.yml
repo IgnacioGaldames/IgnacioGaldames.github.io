@@ -63,7 +63,8 @@ plugins:
  - jekyll-feed
  - jekyll-seo-tag
  - jekyll-github-metadata
- #- jekyll-sitemap
+ - jekyll-admin
+ - jekyll-sitemap
  
 permalink: pretty
 
@@ -73,6 +74,15 @@ collections:
  libros:
   output: true
 
+defaults:
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      categories: ""
+      tags: ""
 
 timezone: America/Santiago
 
