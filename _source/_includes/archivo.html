@@ -1,7 +1,7 @@
 <div class="card wow fadeIn"  data-wow-delay="0.{{forloop.index}}s">
-        {% if post.imagen %}
+        {% if post.img %}
             <a href="{{ post.url }}" title="{{ post.title }}">
-                <img class="card-img-top" src="/assets/img/posts/{{ post.imagen | relative_url }}" alt="Card image cap" class="w-100">
+                <img class="card-img-top" src="{{site.url}}/assets/img/escritos/{{ post.img }}" alt="portada {{ post.title }}" class="card-img-top portada w-100">
             </a>
         {% endif %}
         <div class="card-body">
@@ -9,15 +9,17 @@
             <p class="card-text">{{ post.excerpt }}</p>
         </div>
         <div class="card-footer d-flex">
-            <div class="mr-auto">
-                <small class="text-muted">{{ post.date | date_to_string }}</small>
-            </div>
+            {% if post.date %}
+                <div class="mr-auto">
+                    <small class="text-muted">{{ post.date | date_to_string }}</small>
+                </div>
+            {% endif %}
             <div class="ml-auto">
-                    <a href="{{ post.url }}"  title="{{ post.title }}">
-                            <button class="btn btn-info">
-                                leer más
-                            </button>
-                        </a>
+                <a href="{{ post.url }}"  title="{{ post.title }}">
+                    <button class="btn btn-info">
+                        leer más
+                    </button>
+                </a>
             </div>
         </div>
 </div>

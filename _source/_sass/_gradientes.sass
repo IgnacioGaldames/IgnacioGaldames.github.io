@@ -9,6 +9,15 @@
   -o-animation: AnimationName 30s ease infinite
   animation: AnimationName 30s ease infinite
 
+@mixin back_grad($grad)
+  background-position: initial initial
+  background-repeat: initial initial
+  background: linear-gradient(135deg, $grad)
+  background-size: 400% 400%
+  -webkit-animation: AnimationName 30s ease infinite
+  -moz-animation: AnimationName 30s ease infinite
+  -o-animation: AnimationName 30s ease infinite
+  animation: AnimationName 30s ease infinite
   @-webkit-keyframes AnimationName
     0%
       background-position: 10% 0%
