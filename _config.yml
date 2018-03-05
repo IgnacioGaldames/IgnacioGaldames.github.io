@@ -56,8 +56,6 @@ sass:
   sass_dir: _sass
   style: compressed
 
-source: _source
-destination: _site
 markdown: kramdown
 #theme: minima
 plugins:
