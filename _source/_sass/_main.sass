@@ -1,0 +1,45 @@
+.wow
+    visibility: hidden
+    z-index: 9
+    &:hover
+        z-index: 99
+p
+    font-family: 'Source Sans Pro', sans-serif
+.card-title
+    font-family: 'Source Serif Pro', serif
+.bg-dark, .dropdown-menu
+    background-color:  rgba(52, 58, 64, 0.75) !important
+    -webkit-backdrop-filter: blur(10px)
+    backdrop-filter: blur(10px)
+.navbar-dark
+    .navbar-nav 
+        .nav-link
+            &:focus, &:hover
+                color: rgba(255, 255, 255, 1)
+                text-shadow: 0 0 10px $celeste
+.dropdown
+    &:hover
+        .nav-link
+            text-shadow: 0 0 10px $celeste
+        .dropdown-menu
+            display: block
+            top: 90%
+    .dropdown-menu
+        left: auto !important
+        right: 1px
+    .dropdown-item
+        color: rgba(255, 255, 255, .5)
+        &:focus, &:hover
+            background-color: transparent
+    .dropdown-divider
+        border-top: 1px solid rgba($celeste, 0.3)
+.full-img
+    width: 100%
+    height: auto
+a
+    &:hover
+        text-shadow: 0 0 10px $celeste
+.gravatar
+    @include border-radius(200)
+
+//@include background_gradient(darken($rosado, 35%),darken($celeste, 35%))

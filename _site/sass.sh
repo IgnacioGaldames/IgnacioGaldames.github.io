@@ -1,1 +1,0 @@
-sass --watch --style compressed sass/ignaciogaldames.sass:css/ignaciogaldames.css

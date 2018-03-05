@@ -1,0 +1,32 @@
+--- 
+layout: default 
+---
+<section class="container-fluid escritos {{ page.collection }}" id="{{ page.collection }}-{{ page.myId }}">
+    <div class="row p-0">
+        <div class="col-md-12 p-0  fondo-portada fondo-portada-{{ page.myId }}">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-md-4 d-flex justify-content-center align-items-center wow fadeIn">
+                        <img src="{{site.url}}/assets/img/escritos/{{ page.img }}" alt="" class="card portada w-100">
+                    </div>
+                    <div class="col-md-8 d-flex justify-content-center align-items-center flex-column">
+                        <div class="glitch-container wow fadeIn text-center" data-wow-delay="0.2s">
+                            <h1 class="display-3 text-uppercase ">
+                                <span class="glitch" data-text="{{ page.title }}" id="{{ page.title }}">
+                                    {{ page.title }}
+                                </span>
+                            </h1>
+                        </div>
+                        <h3 class="wow fadeIn text-center text-md-left text-light" data-wow-delay="0.4s">{{ page.texto }}</h3>
+                        <a class="wow fadeIn" href="{{ page.link }}" target="_blank" data-wow-delay="0.6s">
+                            <button class="btn btn-info">
+                                comprar
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% include pagina.html %}

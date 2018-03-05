@@ -1,15 +1,100 @@
-name: Ignacio Galdames
+# jekyll build --incremental
+# jekyll serve --watch --incremental
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+encoding: UTF-8
+
+title: Ignacio Galdames
+email: caminantestelar@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Ignacio Galdames | Cyberpunk, escritor de ciencia ficción y desarrollador web.
+baseurl: "" # the subpath of your site, e.g. /blog
 url: http://ignaciogaldames.com
+
+# social links
+twitter_username: GaldamesIgnacio
+github_username:  ignaciogaldames
+rss: rss
+facebook_username: ignacio.galdames
+flickr_username: caminantestelar
+instagram_username: ignacio.galdames
+linkedin_username: ignaciogaldames
+pinterest_username: IgnacioGaldames
+googleplus_username: IgnacioGaldames
+youtube_username: ignaciogaldames
+behance_username: IgnacioGaldames
+goodreads_username: IgnacioGaldames
+amazon_username: ignaciogaldames
+
+show_excerpts: false # set to true to show excerpts on the homepage
+
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
+
+google_analytics:  UA-37371147-2
+
+
+# Build settings
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+source: _source
+destination: _site
 markdown: kramdown
-kramdown:
-  entity_output: :as_input
+#theme: minima
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+ - jekyll-github-metadata
+ - jekyll-admin
+ - jekyll-sitemap
+ 
 permalink: pretty
 
 collections:
-  cuentos:
-    output: true
-  libros:
-    output: true
+ cuentos:
+  output: true
+ libros:
+  output: true
 
-plugins:
-  - jekyll-sitemap
+defaults:
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      categories: ""
+      tags: ""
+
+timezone: America/Santiago
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

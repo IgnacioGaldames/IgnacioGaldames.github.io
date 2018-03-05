@@ -1,20 +1,3 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Ignacio Galdames - Blog</title>
-    <description>Mis últimas entradas</description>
-    <link>http://localhost:4000</link>
-    
-      
-        <item>
-          <title>Mi primer cuento</title>
-          <description>&lt;p&gt;&amp;#8220;El paraguas y el silencio&amp;#8221; es el primer cuento que está disponible para la venta. Admito que no es uno de mis mejores trabajos, ni tampoco uno de mis favoritos, pero es el primero que puede ser adquirido. En un futuro espero vender otroscuentos y ojal'{a} un libro que los recopile. Mientras tanto, &lt;a href=&quot;https://books2read.com/u/bpG2A9&quot;&gt;puedes comprarla ac'{a}.&lt;/a&gt;&lt;/p&gt;
-</description>
-          <pubDate>2017-03-07T00:00:00-03:00</pubDate>
-          <link>http://localhost:4000/2017/03/07/primer-cuento/</link>
-          <guid isPermaLink="true">http://localhost:4000/2017/03/07/primer-cuento/</guid>
-        </item>
-      
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-03-05T15:03:45-03:00</updated><id>http://localhost:4000/</id><title type="html">Ignacio Galdames</title><subtitle>Ignacio Galdames | Cyberpunk, escritor de ciencia ficción y desarrollador web.</subtitle><entry><title type="html">Nuevo Sitio Web!</title><link href="http://localhost:4000/2018/02/18/nuevo-sitio/" rel="alternate" type="text/html" title="Nuevo Sitio Web!" /><published>2018-02-18T09:50:00-03:00</published><updated>2018-02-18T09:50:00-03:00</updated><id>http://localhost:4000/2018/02/18/nuevo-sitio</id><content type="html" xml:base="http://localhost:4000/2018/02/18/nuevo-sitio/">Preprándome para el lanzamiento de &quot;Tiempos_alterados&quot; hice un cambio en mi sitio web. Creado con Jekyll,Bootstrap 4 y SASS, lo hice desde cero.
+
+Espero actualizar el blog más a menudo.</content><author><name></name></author><summary type="html">Tengo un nuevo sitio web!</summary></entry><entry><title type="html">Mi primer cuento</title><link href="http://localhost:4000/2017/03/07/primer-cuento/" rel="alternate" type="text/html" title="Mi primer cuento" /><published>2017-03-07T21:00:00-03:00</published><updated>2017-03-07T21:00:00-03:00</updated><id>http://localhost:4000/2017/03/07/primer-cuento</id><content type="html" xml:base="http://localhost:4000/2017/03/07/primer-cuento/">&quot;El paraguas y el silencio&quot; es el primer cuento que está disponible para la venta. Admito que no es uno de mis mejores trabajos, ni tampoco uno de mis favoritos, pero es el primero que puede ser adquirido. En un futuro espero vender otroscuentos y un libro que los recopile. Mientras tanto, [puedes comprarlo acá.](https://books2read.com/u/bpG2A9)</content><author><name></name></author><summary type="html">Mi primer cuento que está a la venta.</summary></entry></feed>

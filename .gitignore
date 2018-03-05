@@ -1,6 +1,10 @@
-*.codekit
 .jekyll-metadata
 .DS_Store
 build
 .sass-cache/
 .DS_Store
+/node_modules
+/_site/node_modules
+.DS_Store
+.sass-cache
+.jekyll-metadata
