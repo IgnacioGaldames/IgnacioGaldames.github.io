@@ -19,7 +19,7 @@ layout: default
                         </div>
                         <h3 class="wow fadeIn text-center text-md-left text-light" data-wow-delay="0.4s">{{ page.texto }}</h3>
                         {% for tienda in page.tiendas %}
-                        {% if tienda.urlTienda %}
+                        {% if tienda.urlEscrito %}
                         <a class="wow fadeIn" href="http://{{ tienda.urlTienda }}/{{ tienda.urlEscrito }}" target="_blank" data-wow-delay="0.{{forloop.index}}s">
                             <button class="btn btn-info">
                                 {% if tienda.iconoTienda %}

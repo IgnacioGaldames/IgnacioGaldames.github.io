@@ -11,7 +11,7 @@ tiendas:
     urlEscrito: 
     iconoTienda: fab fa-twitter
   - nombreTienda: Barnes&Noble
-    urlTienda: amazon.com
+    urlTienda: 
     urlEscrito: 
     iconoTienda: fab fa-twitter
   - nombreTienda: Kobo
