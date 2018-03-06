@@ -4,6 +4,32 @@ title: Tiempos Alterados
 myId: tiempos_alterados
 text: Cuentos sobre percepciones temporales
 img: portada_tiempos_alterados.jpg
+tiendas:
+  - nombreTienda: Amazon
+    urlTienda: http://amazon.com
+    iconoTienda: amazon
+  - nombreTienda: barnes-noble
+    urlTienda: http://amazon.com
+    iconoTienda: amazon
+  - nombreTienda: kobo
+    urlTienda:
+    iconoTienda: amazon
+  - nombreTienda: scribd
+    urlTienda:
+    iconoTienda: amazon
+  - nombreTienda: playter
+    urlTienda:
+    iconoTienda: amazon
+  - nombreTienda: tolino
+    urlTienda:
+    iconoTienda: amazon
+  - nombreTienda: overdrive
+    urlTienda:
+    iconoTienda: amazon
+  - nombreTienda: 24-symbols
+    urlTienda:
+    iconoTienda: amazon
+    
 ---
 
 Varios cuentos de ciencia ficción que exploran la humanidad, la soledad y el aislamiento, con elementos clásicos del cyberpunk.

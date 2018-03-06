@@ -18,11 +18,18 @@ layout: default
                             </h1>
                         </div>
                         <h3 class="wow fadeIn text-center text-md-left text-light" data-wow-delay="0.4s">{{ page.texto }}</h3>
-                        <a class="wow fadeIn" href="{{ page.link }}" target="_blank" data-wow-delay="0.6s">
+                        {% for tienda in page.tiendas %}
+                        {% if tienda.urlTienda %}
+                        <a class="wow fadeIn" href="{{ page.urlTienda }}" target="_blank" data-wow-delay="0.{{forloop.index}}s">
                             <button class="btn btn-info">
-                                comprar
+                                {% if tienda.iconoTienda %}
+                                    <i class="fab fa-{{ tienda.iconoTienda }}"></i>
+                                {% endif %}
+                                comprar en {{ tienda.nombreTienda }}
                             </button>
                         </a>
+                        {% endif %}
+                        {% endfor %}
                     </div>
                 </div>
             </div>

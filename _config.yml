@@ -40,6 +40,46 @@ behance_username: IgnacioGaldames
 goodreads_username: IgnacioGaldames
 amazon_username: ignaciogaldames
 
+redesSociales:
+  - redUrl: twitter.com
+    redUsername: IA_Galdames
+    redIcon: fab fa-twitter
+  - redUrl: facebook.com
+    redUsername: ignacio.galdames
+    redIcon: fab fa-facebook
+  - redUrl: github.com
+    redUsername: ignaciogaldames
+    redIcon: fab fa-github
+  - redUrl: flickr.com/photos
+    redUsername: caminantestelar
+    redIcon: fab fa-flickr
+  - redUrl: instagram.com
+    redUsername: ignacio.galdames
+    redIcon: fab fa-instagram
+  - redUrl: linkedin.com/in
+    redUsername: ignaciogaldames
+    redIcon: fab fa-linkedin
+  - redUrl: pinterest.com
+    redUsername: IgnacioGaldames
+    redIcon: fab fa-pinterest
+  - redUrl: googleplus
+    redUsername: IgnacioGaldames
+    redIcon: fab fa-
+  - redUrl: youtube.com
+    redUsername: ignaciogaldames
+    redIcon: fab fa-
+  - redUrl: behance.com
+    redUsername:
+    redIcon: fab fa-dribbble
+  - redUrl: goodreads.com
+    redUsername:
+    redIcon: fab fa-goodreads
+  - redUrl: amazon.com/author
+    redUsername: ignaciogaldames
+    redIcon: fab fa-amazon
+
+
+
 show_excerpts: false # set to true to show excerpts on the homepage
 
 # Minima date format
