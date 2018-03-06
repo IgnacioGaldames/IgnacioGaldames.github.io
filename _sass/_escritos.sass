@@ -31,7 +31,7 @@ $todasIds: ("insecto": ($verde, blue), "tiempos_alterados": ($celeste, $rosado))
 		height: 100%
 @each $myId, $bg-color in $todasIds
 	.fondo-portada-#{$myId}
-		background-image: url('../img/escritos/fondo-#{$myId}.jpg')
+		background-image: url('../img/escritos/fondo_#{$myId}.jpg')
 		&:before
 			@include back_grad($bg-color)
 		@extend .fondo-portada
