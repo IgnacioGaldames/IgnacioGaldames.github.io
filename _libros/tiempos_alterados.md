@@ -4,31 +4,40 @@ title: Tiempos Alterados
 myId: tiempos_alterados
 text: Cuentos sobre percepciones temporales
 img: portada_tiempos_alterados.jpg
+ISBN: 
 tiendas:
   - nombreTienda: Amazon
-    urlTienda: http://amazon.com
-    iconoTienda: amazon
-  - nombreTienda: barnes-noble
-    urlTienda: http://amazon.com
-    iconoTienda: amazon
-  - nombreTienda: kobo
+    urlTienda: amazon.com
+    urlEscrito: 
+    iconoTienda: fab fa-twitter
+  - nombreTienda: Barnes&Noble
+    urlTienda: amazon.com
+    urlEscrito: 
+    iconoTienda: fab fa-twitter
+  - nombreTienda: Kobo
     urlTienda:
-    iconoTienda: amazon
-  - nombreTienda: scribd
+    urlEscrito: 
+    iconoTienda: fab fa-twitter
+  - nombreTienda: Scribd
     urlTienda:
-    iconoTienda: amazon
-  - nombreTienda: playter
+    urlEscrito: 
+    iconoTienda: fab fa-twitter
+  - nombreTienda: Playster
     urlTienda:
-    iconoTienda: amazon
-  - nombreTienda: tolino
+    urlEscrito: 
+    iconoTienda: fab fa-twitter
+  - nombreTienda: Tolino
     urlTienda:
-    iconoTienda: amazon
-  - nombreTienda: overdrive
+    urlEscrito: 
+    iconoTienda: fab fa-twitter
+  - nombreTienda: Overdrive
     urlTienda:
-    iconoTienda: amazon
-  - nombreTienda: 24-symbols
+    urlEscrito: 
+    iconoTienda: fab fa-twitter
+  - nombreTienda: 24 Symbols
     urlTienda:
-    iconoTienda: amazon
+    urlEscrito: 
+    iconoTienda: fab fa-twitter
     
 ---
 
