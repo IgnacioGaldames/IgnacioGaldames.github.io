@@ -112,7 +112,7 @@ collections:
  cuentos:
   output: true
  libros:
-  output: true
+  output: false
 
 defaults:
   -
