@@ -1,30 +1,30 @@
 CACHE MANIFEST
 # Cache manifest version 1.0.5
 
-assets/css/ignacio.css
-assets/img/escritos/fondo_insecto.jpg
-assets/img/escritos/fondo_tiempos_alterados.jpg
-assets/img/escritos/portada_el_insecto.jpg
-assets/img/escritos/portada_tiempos_alterados.jpg
-assets/img/posts/fondo-insecto.jpg
-assets/js/app.js
-assets/js/particles.json
+# assets/css/ignacio.css
+# assets/img/escritos/fondo_insecto.jpg
+# assets/img/escritos/fondo_tiempos_alterados.jpg
+# assets/img/escritos/portada_el_insecto.jpg
+# assets/img/escritos/portada_tiempos_alterados.jpg
+# assets/img/posts/fondo-insecto.jpg
+# assets/js/app.js
+# assets/js/particles.json
 
  
 NETWORK:
 # All URLs that start with the following lines
 # are whitelisted.
-https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css
-https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css
-http://platform.twitter.com/widgets.js
-https://www.google-analytics.com/analytics.js
-https://code.jquery.com/jquery-3.2.1.slim.min.js
-https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js
-https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js
-https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js
-https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js
-https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js
-http://0.gravatar.com/avatar/e666a0139beba19eb778eaf6e4cdacc6?size=800
+# https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css
+# https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css
+# http://platform.twitter.com/widgets.js
+# https://www.google-analytics.com/analytics.js
+# https://code.jquery.com/jquery-3.2.1.slim.min.js
+# https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js
+# https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js
+# https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js
+# https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js
+# https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js
+# http://0.gravatar.com/avatar/e666a0139beba19eb778eaf6e4cdacc6?size=800
  
 CACHE:
 # Additional items to cache.
