@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Cache manifest version 1.0.3
+# Cache manifest version 1.0.4
 
 assets/css/ignacio.css
 assets/img/escritos/fondo_insecto.jpg
@@ -24,6 +24,7 @@ https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js
 https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js
 https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js
 https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js
+http://0.gravatar.com/avatar/e666a0139beba19eb778eaf6e4cdacc6?size=800
  
 CACHE:
 # Additional items to cache.
