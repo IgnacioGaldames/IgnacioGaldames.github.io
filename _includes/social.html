@@ -1,8 +1,9 @@
-<ul class="list-group my-3">
+<ul class="list-group my-3"  itemscope itemtype="http://schema.org/Organization">
+  <link itemprop="url" href="http://www.ignaciogaldames.com">
     {% for redSocial in site.redesSociales %}
     {% if redSocial.redUsername %}
     <li class="list-group-item">
-        <a href="https://{{ redSocial.redUrl }}/{{ redSocial.redUsername }}" target="_blank">
+        <a itemprop="sameAs" href="https://{{ redSocial.redUrl }}/{{ redSocial.redUsername }}" target="_blank">
           <i class="{{ redSocial.redIcon }}"></i>
           <span class="username">{{ redSocial.redUsername }}</span>
         </a>
