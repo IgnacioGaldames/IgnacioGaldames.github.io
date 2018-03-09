@@ -11,18 +11,3 @@ imagenes:
   - ruta_imagen: http://via.placeholder.com/1920x817/ccc/fff
     titulo_imagen: slide-2
 ---
-<div class="card-deck my-3">
-    {% for post in site.libros %}
-        {% include archivo.html %}
-    {% endfor %}
-</div>
-<div class="card-deck my-3">
-    {% for post in site.cuentos %}
-        {% include archivo.html %}
-    {% endfor %}
-</div>
-<div class="card-deck my-3">
-    {% for post in site.posts %}
-        {% include archivo.html %}
-    {% endfor %}
-</div>

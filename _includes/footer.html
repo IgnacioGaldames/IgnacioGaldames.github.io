@@ -1,1 +1,32 @@
 {% include scripts.html %}
+<footer class="container-fluid bg-dark py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="{{ site.url }}/subscribirse" class="btn btn-outline-info btn-sm">
+                Subscribirse</a>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <ul class="bd-footer-links">
+                {% for redSocial in site.redesSociales %}
+                {% if redSocial.redUsername %}
+                <li class="d-inline-block">
+                    <a itemprop="sameAs" href="https://{{ redSocial.redUrl }}/{{ redSocial.redUsername }}" target="_blank">
+                      <i class="{{ redSocial.redIcon }}"></i>
+                    </a>
+                  </li>
+                {% endif %}
+                {% endfor %}
+                {% if site.rss %}
+                <li class="d-inline-block">
+                  <a href="{{ 'feed.xml' | relative_url }}">
+                    <i class="fas fa-rss"></i>
+                  </a>
+                </li>
+                {% endif %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

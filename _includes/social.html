@@ -1,7 +1,7 @@
 <ul class="list-group my-3"  itemscope itemtype="http://schema.org/Person">
   <link itemprop="url" href="http://www.ignaciogaldames.com">
     {% for redSocial in site.redesSociales %}
-    {% if redSocial.redUsername %}
+    {% if redSocial.redUsername and redSocial.redSidebar == true %}
     <li class="list-group-item">
         <a itemprop="sameAs" href="https://{{ redSocial.redUrl }}/{{ redSocial.redUsername }}" target="_blank">
           <i class="{{ redSocial.redIcon }}"></i>

@@ -8,4 +8,41 @@ layout: default
         </section>
     </div>
 </div>
-{% include pagina.html %}
+<div class="container py-4">
+        <div class="row d-flex flex-column-reverse flex-md-row">
+            <aside class="col-md-4 my-2">
+                {% include aside.html%}
+            </aside>
+            <section class="col-md-8 my-3">
+                <div class="col-md-12 card p-4">
+                    <h1>{{ page.title }}</h1>
+                    <div class="card-deck my-3">
+                            {% for post in site.libros %}
+                                {% include archivo.html %}
+                            {% endfor %}
+                        </div>
+                        <hr>
+                        <div class="card-deck my-3">
+                            {% for post in site.cuentos %}
+                                {% include archivo.html %}
+                            {% endfor %}
+                        </div>
+
+                </div>
+            </section>
+            <section class="col-md-12 my-3">
+                    <div class="col-md-12 card p-4">
+                        <h1> Últimas Entradas</h1>
+
+                            <div class="card-deck my-3">
+                                {% for post in site.posts limit:5 %}
+                                    {% include archivo.html %}
+                                {% endfor %}
+                            </div>
+                            <div class="ml-auto">
+                                <a href="{{posts.url}}" class="btn btn-outline-info">ver todas las entradas</a>
+                            </div>
+                    </div>
+                </section>
+        </div>
+    </div>

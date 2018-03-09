@@ -43,39 +43,57 @@ amazon_username: ignaciogaldames
 
 redesSociales:
   - redUrl: twitter.com
+    redSidebar: true
     redUsername: IA_Galdames
-    redIcon: fab fa-twitter
+    redIcon: fab fa-twitter-square
+
   - redUrl: facebook.com
+    redSidebar: true
     redUsername: ignacio.galdames
-    redIcon: fab fa-facebook
+    redIcon: fab fa-facebook-square
+
   - redUrl: github.com
+    redSidebar: true
     redUsername: ignaciogaldames
-    redIcon: fab fa-github
+    redIcon: fab fa-github-square
+
   - redUrl: flickr.com/photos
+    redSidebar:
     redUsername: caminantestelar
     redIcon: fab fa-flickr
+
   - redUrl: instagram.com
+    redSidebar: true
     redUsername: ignacio.galdames
     redIcon: fab fa-instagram
+
   - redUrl: linkedin.com/in
+    redSidebar: true
     redUsername: ignaciogaldames
     redIcon: fab fa-linkedin
+
   - redUrl: pinterest.com
+    redSidebar:
     redUsername: IgnacioGaldames
     redIcon: fab fa-pinterest
-  - redUrl: googleplus
-    redUsername: IgnacioGaldames
-    redIcon: fab fa-
+
   - redUrl: youtube.com
+    redSidebar:
     redUsername: ignaciogaldames
-    redIcon: fab fa-
+    redIcon: fab fa-youtube
+
   - redUrl: behance.com
-    redUsername:
-    redIcon: fab fa-dribbble
+    redSidebar:
+    redUsername: IgnacioGaldames
+    redIcon: fab fa-behance-square
+
   - redUrl: goodreads.com
-    redUsername:
+    redSidebar: true
+    redUsername: IgnacioGaldames
     redIcon: fab fa-goodreads
+
   - redUrl: amazon.com/author
+    redSidebar: true
     redUsername: ignaciogaldames
     redIcon: fab fa-amazon
 
