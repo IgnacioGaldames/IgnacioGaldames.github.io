@@ -18,18 +18,31 @@ layout: default
                             </h2>
                         </div>
                         <h3 class="wow fadeIn text-center text-md-left text-light" data-wow-delay="0.4s">{{ page.texto }}</h3>
+                        <div class="grupoBotones text-center">
                         {% for tienda in page.tiendas %}
                         {% if tienda.urlEscrito %}
-                        <a class="wow fadeIn" href="http://{{ tienda.urlTienda }}/{{ tienda.urlEscrito }}" target="_blank" data-wow-delay="0.{{forloop.index}}s">
+                        <a class="wow fadeIn m-2" href="http://{{ tienda.urlTienda }}/{{ tienda.urlEscrito }}" target="_blank" data-wow-delay="0.{{forloop.index}}s">
                             <button class="btn btn-info">
                                 {% if tienda.iconoTienda %}
                                     <i class="{{ tienda.iconoTienda }}"></i>
                                 {% endif %}
-                                comprar en {{ tienda.nombreTienda }}
+                                {{ tienda.nombreTienda }}
                             </button>
                         </a>
                         {% endif %}
                         {% endfor %}
+                        <hr>
+                        {% if page.gratis == true %}
+                        <a class="wow fadeIn" href="#" target="_blank" data-wow-delay="0.{{forloop.index}}s">
+                            <button class="btn btn-danger">
+                                
+                                    <i class="{{ tienda.iconoTienda }}"></i>
+                                
+                                Recibir Gratis
+                            </button>
+                        </a>
+                        {% endif %}
+                    </div>
                     </div>
                 </div>
             </div>
