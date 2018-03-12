@@ -9,40 +9,39 @@ layout: default
     </div>
 </div>
 <div class="container py-4">
-        <div class="row d-flex flex-column-reverse flex-md-row">
-            <aside class="col-md-4 my-2">
-                {% include aside.html%}
-            </aside>
-            <section class="col-md-8 my-3">
-                <div class="col-md-12 card p-4">
-                    <h1>{{ page.title }}</h1>
-                    <div class="card-deck my-3 mt-md-0 mb-md-3">
-                            {% for post in site.libros %}
-                                {% include archivo.html %}
-                            {% endfor %}
-                        </div>
-                        <hr>
-                        <div class="card-deck my-3">
-                            {% for post in site.cuentos %}
-                                {% include archivo.html %}
-                            {% endfor %}
-                        </div>
-
+    <div class="row d-flex flex-column-reverse flex-md-row">
+        <aside class="col-md-4 my-2">
+            {% include aside.html%}
+        </aside>
+        <section class="col-md-8 my-3">
+            <div class="col-md-12 card p-4">
+                <h1>{{ page.title }}</h1>
+                <div class="card-deck my-3 mt-md-0 mb-md-3">
+                    {% for post in site.libros %} {% include archivo.html %} {% endfor %}
                 </div>
-            </section>
-            <section class="col-md-12 my-3">
-                    <div class="col-md-12 card p-4">
-                        <h1> Últimas Entradas</h1>
-
-                            <div class="card-deck my-3">
-                                {% for post in site.posts limit:5 %}
-                                    {% include archivo.html %}
-                                {% endfor %}
-                            </div>
-                            <div class="ml-auto">
-                                <a href="{{posts.url}}" class="btn btn-outline-info">ver todas las entradas</a>
-                            </div>
+                {% if site.libros %}
+                    <hr>
+                {% endif %}
+                <div class="card-deck my-3">
+                    {% for post in site.cuentos %} {% include archivo.html %} {% endfor %}
+                </div>
+            </div>
+        </section>
+        <section class="col-md-12 my-3">
+            <div class="col-md-12 card p-4">
+                <h1> Últimas Entradas</h1>
+                <div class="row">
+                    {% for post in site.posts limit:5 %}
+                    <div class="col-md-4 my-3 mx-auto">
+                        {% include archivo.html %}
                     </div>
-                </section>
-        </div>
+                    {% endfor %}
+                </div>
+                <hr>
+                <div class="ml-auto">
+                    <a href="{{posts.url}}" class="btn btn-outline-info">ver todas las entradas</a>
+                </div>
+            </div>
+        </section>
     </div>
+</div>

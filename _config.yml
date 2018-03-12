@@ -129,7 +129,7 @@ permalink: pretty
 collections:
  cuentos:
   output: true
- libros:
+ #libros:
   output: true
 
 defaults:
