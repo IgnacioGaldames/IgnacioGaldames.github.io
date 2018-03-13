@@ -20,26 +20,35 @@ layout: default
                     {% for post in site.libros %} {% include archivo.html %} {% endfor %}
                 </div>
                 {% if site.libros %}
-                    <hr>
-                {% endif %}
+                <hr> {% endif %}
                 <div class="card-deck my-3">
                     {% for post in site.cuentos %} {% include archivo.html %} {% endfor %}
                 </div>
             </div>
         </section>
-        <section class="col-md-12 my-3">
+        <section class="container my-3">
             <div class="col-md-12 card p-4">
-                <h1> Últimas Entradas</h1>
                 <div class="row">
-                    {% for post in site.posts limit:5 %}
+                    <div class="col-md-12">
+                        <h2>Últimas Entradas del Blog</h2>
+                    </div>
+                    {% for post in site.posts limit:6 %}
                     <div class="col-md-4 my-3 mx-auto">
                         {% include archivo.html %}
                     </div>
                     {% endfor %}
-                </div>
-                <hr>
-                <div class="ml-auto">
-                    <a href="{{posts.url}}" class="btn btn-outline-info">ver todas las entradas</a>
+                    <div class="col-md-12">
+                        <hr>
+                    </div>
+                    <div class="col-md-12 text-right">
+                        <div class="ml-auto">
+                            <a href="{{ site.url }}/posts">
+                                    <button class="btn btn-info">
+                                        <i class="fas fa-archive"></i> ver Blog
+                                    </button>
+                                </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

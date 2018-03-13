@@ -36,7 +36,7 @@
                                         <label class="form-check-label" for="mce-group[21481]-21481-2">Noticias del Blog</label>
                                     </div>
                             </div>
-                            <div id="mce-responses" class="clear">
+                            <div id="mce-responses" class="clear text-info">
                                 <div class="response" id="mce-error-response" style="display:none"></div>
                                 <div class="response" id="mce-success-response" style="display:none"></div>
                             </div>
@@ -83,14 +83,14 @@ window.fnames = new Array(); window.ftypes = new Array(); fnames[1] = 'FNAME'; f
                 <ul class="bd-footer-links">
                     {% for redSocial in site.redesSociales %} {% if redSocial.redUsername %}
                     <li class="d-inline-block">
-                        <a itemprop="sameAs" href="https://{{ redSocial.redUrl }}/{{ redSocial.redUsername }}" target="_blank">
-                            <i class="{{ redSocial.redIcon }}"></i>
+                        <a itemprop="sameAs" href="https://{{ redSocial.redUrl }}/{{ redSocial.redUsername }}" target="_blank" class="text-info">
+                            <i class="{{ redSocial.redIcon }} fa-lg"></i>
                         </a>
                     </li>
                     {% endif %} {% endfor %} {% if site.rss %}
                     <li class="d-inline-block">
-                        <a href="{{ 'feed.xml' | relative_url }}">
-                            <i class="fas fa-rss"></i>
+                        <a href="{{ 'feed.xml' | relative_url }}" class="text-info">
+                            <i class="fas fa-rss fa-lg"></i>
                         </a>
                     </li>
                     {% endif %}

@@ -3,7 +3,7 @@
     {% for redSocial in site.redesSociales %}
     {% if redSocial.redUsername and redSocial.redSidebar == true %}
     <li class="list-group-item">
-        <a itemprop="sameAs" href="https://{{ redSocial.redUrl }}/{{ redSocial.redUsername }}" target="_blank">
+        <a itemprop="sameAs" href="https://{{ redSocial.redUrl }}/{{ redSocial.redUsername }}" target="_blank" class="text-info">
           <i class="{{ redSocial.redIcon }}"></i>
           <span class="username">{{ redSocial.redUsername }}</span>
         </a>
@@ -12,7 +12,7 @@
     {% endfor %}
     {% if site.rss %}
     <li class="list-group-item">
-      <a href="{{ 'feed.xml' | relative_url }}">
+      <a href="{{ 'feed.xml' | relative_url }}" class="text-info">
         <i class="fas fa-rss"></i>
         <span>{{ site.rss | escape }}</span>
       </a>
