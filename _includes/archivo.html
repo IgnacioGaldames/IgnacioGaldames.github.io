@@ -1,4 +1,4 @@
-<div class="card wow fadeIn"  data-wow-delay="0.{{forloop.index}}s">
+<article class="card wow fadeIn"  data-wow-delay="0.{{forloop.index}}s">
         {% if post.img %}
             <a href="{{ post.url }}" title="{{ post.title }}">
                 <img class="card-img-top" src="{{site.url}}/assets/img/escritos/{{ post.img }}" alt="portada {{ post.title }}" class="card-img-top portada w-100">
@@ -22,4 +22,4 @@
                 </a>
             </div>
         </div>
-</div>
+    </article>
