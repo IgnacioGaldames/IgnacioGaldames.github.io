@@ -3,6 +3,8 @@ layout: post
 title: Mi primer cuento
 date: 2017-03-07 24:00:00
 excerpt: Mi primer cuento que está a la venta.
+categories:
+tags:
 #imagen: fondo-insecto.jpg
 ---
 

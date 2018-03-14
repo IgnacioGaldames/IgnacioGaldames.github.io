@@ -136,8 +136,16 @@ defaults:
   -
     scope:
       path: ""
+      type: "pages"
+    values:
+      author: I. A. Galdames
+      layout: "page"
+  -
+    scope:
+      path: ""
       type: posts
     values:
+      author: I. A. Galdames
       layout: post
       categories: ""
       tags: ""

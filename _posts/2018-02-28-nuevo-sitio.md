@@ -3,6 +3,8 @@ layout: post
 title: Nuevo Sitio Web!
 date: 2018-02-18 12:50:00
 excerpt: Tengo un nuevo sitio web!
+categories:
+tags:
 #imagen: fondo-insecto.jpg
 ---
 
