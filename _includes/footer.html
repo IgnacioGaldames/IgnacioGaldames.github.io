@@ -61,7 +61,7 @@
             </div>
             <div class="col-md-4"></div>
             <div class="col-md-4">
-                <ul class="bd-footer-links">
+                <ul class="bd-footer-links" itemscope itemtype="http://schema.org/Person">
                     {% for redSocial in site.redesSociales %} {% if redSocial.redUsername %}
                     <li class="d-inline-block">
                         <a itemprop="sameAs" href="https://{{ redSocial.redUrl }}/{{ redSocial.redUsername }}" target="_blank" class="text-info">

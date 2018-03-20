@@ -3,6 +3,7 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
+title: I. A. Galdames
 imagenes:
   - ruta_imagen: http://via.placeholder.com/1920x817/cccccc/000000
     titulo_imagen: slide-1

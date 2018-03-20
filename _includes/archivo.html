@@ -1,12 +1,12 @@
 <article class="card wow fadeIn"  data-wow-delay="0.{{forloop.index}}s">
         {% if post.img %}
             <a href="{{ post.url }}" title="{{ post.title }}">
-                <img class="card-img-top" src="{{site.url}}/assets/img/escritos/{{ post.img }}" alt="portada {{ post.title }}" class="card-img-top portada w-100">
+                <img class="card-img-top  portada w-100" src="{{site.url}}/assets/img/escritos/{{ post.img }}" alt="portada {{ post.title }}">
             </a>
         {% endif %}
         <div class="card-body">
             <h5 class="card-title">{{ post.title }}</h5>
-            <p class="card-text">{{ post.excerpt }}</p>
+            <div class="card-text">{{ post.excerpt }}</div>
         </div>
         <div class="card-footer d-flex">
             {% if post.date %}

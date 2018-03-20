@@ -7,14 +7,14 @@
 		<a class="navbar-brand" href="/">
 			<div class="glitch-container">
 				<h2 class="h2">
-					<span class="glitch" data-text="{{site.title}}" id="{{site.title}}">
+					<span class="glitch" data-text="{{site.title}}" id="glitchNav">
 						{{site.title}}
 					</span>
 				</h2>
 			</div>
 		</a>
 		<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-			<div class="navbar-nav text-lowercase">
+			<ul class="navbar-nav text-lowercase">
 				<li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
 					<a class="nav-item nav-link" href="/" id="nav_inicio">Inicio
 						<span class="sr-only">(current)</span>
@@ -28,16 +28,15 @@
 					{{ name }}
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							{% for page in site.[name] limit:5 %}
-							<a class="dropdown-item" href="{{ page.url }}">{{ page.title }}</a>
-							{% endfor %}
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="/{{ name }}"><i class="fas fa-archive"></i> ver {{ name }}</a>
-							
-						  </div>
+						{% for page in site.[name] limit:5 %}
+						<a class="dropdown-item" href="{{ page.url }}">{{ page.title }}</a>
+						{% endfor %}
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="/{{ name }}"><i class="fas fa-archive"></i> ver {{ name }}</a>
+					</div>
 				</li>
 				{% endfor %}
-			</div>
+			</ul>
 		</div>
 	</nav>
 </header>
