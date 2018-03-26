@@ -10,7 +10,7 @@
     wow.init();
 
     // PArticles
-    particlesJS.load('particles-js', '/assets/js/particles.json', function() {
+    particlesJS.load('particles-js', '/assets/js/particles.min.json', function() {
         console.log('callback - particles.js config loaded');
     });
 
