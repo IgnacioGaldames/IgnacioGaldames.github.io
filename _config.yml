@@ -110,6 +110,7 @@ google_analytics:  UA-37371147-2
 
 
 # Build settings
+env: production
 
 sass:
   sass_dir: _sass
