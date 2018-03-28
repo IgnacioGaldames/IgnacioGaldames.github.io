@@ -8,13 +8,13 @@
             <div class="col-md-4">
                 <ul class="bd-footer-links" itemscope itemtype="http://schema.org/Person">
                     {% for redSocial in site.redesSociales %} {% if redSocial.redUsername %}
-                    <li class="d-inline-block">
+                    <li class="d-inline-block m-1">
                         <a itemprop="sameAs" href="https://{{ redSocial.redUrl }}/{{ redSocial.redUsername }}" target="_blank" class="text-info">
                             <i class="{{ redSocial.redIcon }} fa-lg"></i>
                         </a>
                     </li>
                     {% endif %} {% endfor %} {% if site.rss %}
-                    <li class="d-inline-block">
+                    <li class="d-inline-block m-1">
                         <a href="{{ 'feed.xml' | relative_url }}" class="text-info">
                             <i class="fas fa-rss fa-lg"></i>
                         </a>
