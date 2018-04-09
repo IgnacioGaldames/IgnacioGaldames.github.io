@@ -7,10 +7,12 @@ layout: page
           {% if page.imagen %}
           <img class="card-img-top" src="/assets/img/posts/{{ page.imagen | relative_url }}" alt="Card image cap" class=""> 
           {% endif %}
-          <p class="meta">{{ page.date | date_to_string }}</p>
+          {% if page.date %}
+          <div class="mr-auto">
+              <small class="text-muted">{{ page.date | date_to_string }} | {{ page.author}}</small>
+          </div>
+          {% endif %}
           <p class=" text-justify">{{ content }}</p>
-          
-   
   </div>
   <div class="col-md-12">
     <hr>

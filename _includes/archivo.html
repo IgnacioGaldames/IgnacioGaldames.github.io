@@ -6,12 +6,12 @@
         {% endif %}
         <div class="card-body">
             <h5 class="card-title">{{ post.title }}</h5>
-            <div class="card-text">{{ post.excerpt }}</div>
+            <p class="text-justify">{{ post.excerpt }}</p>
         </div>
         <div class="card-footer d-flex">
             {% if post.date %}
                 <div class="mr-auto">
-                    <small class="text-muted">{{ post.date | date_to_string }}</small>
+                    <small class="text-muted">{{ post.date | date_to_string }} | {{ post.author}}</small>
                 </div>
             {% endif %}
             <div class="ml-auto">
