@@ -14,6 +14,11 @@
                     <small class="text-muted">{{ post.date | date_to_string }} | {{ post.author}}</small>
                 </div>
             {% endif %}
+            {% if page.date %}
+            <div class="mr-auto">
+                <small class="text-muted">{{ page.date | date_to_string }} | {{ page.author}}</small>
+            </div>
+            {% endif %}
             <div class="ml-auto">
                 <a href="{{ post.url }}"  title="{{ post.title }}" class="btn btn-info">
                         leer más

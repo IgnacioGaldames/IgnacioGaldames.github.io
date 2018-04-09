@@ -1,12 +1,11 @@
 ---
-layout: escritos
 title: El Insecto
+layout: escritos
 img: portada_el_insecto.jpg
 link: https://www.books2read.com/u/4EWON0
 isbn: 9781386215899
 Editor: Editorial Antielectrón
-Autor: Ignacio Galdames
-Colección:
+Colección: null
 myId: insecto
 ---
 
