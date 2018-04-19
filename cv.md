@@ -23,7 +23,7 @@ trabajos:
 ---
 <div class="p-4">
  {% for trabajo in page.trabajos %}
-    <article class="my-4 wow fadeInUp" data-wow-delay="0.{{ forloop.index }}s">
+    <article class="my-4">
         <h4>{{ trabajo.nombre_trabajo }}</h4>
         <h3><i>{{ trabajo.cargo_trabajo }}</i></h3>
         <p>{{ trabajo.fecha_trabajo }}</p>

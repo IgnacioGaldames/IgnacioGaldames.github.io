@@ -15,15 +15,15 @@
 		</a>
 		<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
 			<ul class="navbar-nav text-lowercase">
-				<li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+				<li class="">
 					<a class="nav-item nav-link" href="/" id="nav_inicio">Inicio
 						<span class="sr-only">(current)</span>
 					</a>
 				</li>
-				<li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s"><a class="nav-item nav-link" href="/cv">Cv</a></li>
+				<li class="" ><a class="nav-item nav-link" href="/cv">Cv</a></li>
 				{% for collection in site.collections %}
 					{% assign name = collection.label %}
-				<li class="nav-item dropdown wow fadeIn" data-wow-duration="1s" data-wow-delay="0.{{forloop.index}}s">
+				<li class="nav-item dropdown>
 					<a class="nav-link " href="/{{ name }}" >
 					{{ name }}
 					</a>

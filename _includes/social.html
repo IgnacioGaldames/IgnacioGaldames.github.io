@@ -2,7 +2,7 @@
     {% for redSocial in site.redesSociales %}
     {% if redSocial.redUsername and redSocial.redSidebar == true %}
     <li class="list-group-item">
-        <a itemprop="sameAs" href="https://{{ redSocial.redUrl }}/{{ redSocial.redUsername }}" target="_blank" class="text-info">
+        <a itemprop="sameAs" href="https://{{ redSocial.redUrl }}/{{ redSocial.redUsername }}" target="_blank" rel="noopener" class="text-info">
           <i class="{{ redSocial.redIcon }}"></i>
           <span class="username">{{ redSocial.redUsername }}</span>
         </a>
