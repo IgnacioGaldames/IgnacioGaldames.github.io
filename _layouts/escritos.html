@@ -6,22 +6,22 @@ layout: default
         <div class="col-md-12 p-0  fondo-portada fondo-portada-{{ page.myId }}">
             <div class="container">
                 <div class="row py-5">
-                    <div class="col-md-4 d-flex justify-content-center align-items-center wow fadeIn">
+                    <div class="col-md-4 d-flex justify-content-center align-items-center">
                         <img src="{{site.url}}/assets/img/escritos/{{ page.img }}" alt="" class="card portada w-100">
                     </div>
                     <div class="col-md-8 d-flex justify-content-center align-items-center flex-column">
-                        <div class="glitch-container wow fadeIn text-center" data-wow-delay="0.2s">
+                        <div class="glitch-container text-center">
                             <h2 class="display-3 text-uppercase ">
                                 <span class="glitch" data-text="{{ page.title }}" id="{{ page.title }}">
                                     {{ page.title }}
                                 </span>
                             </h2>
                         </div>
-                        <h3 class="wow fadeIn text-center text-md-left text-light" data-wow-delay="0.4s">{{ page.texto }}</h3>
+                        <h3 class="text-center text-md-left text-light">{{ page.texto }}</h3>
                         <div class="grupoBotones text-center">
                         {% for tienda in page.tiendas %}
                         {% if tienda.urlEscrito %}
-                        <a class="wow fadeIn m-2" href="http://{{ tienda.urlTienda }}/{{ tienda.urlEscrito }}" target="_blank" data-wow-delay="0.{{forloop.index}}s">
+                        <a class="m-2" href="http://{{ tienda.urlTienda }}/{{ tienda.urlEscrito }}" target="_blank" >
                             <button class="btn btn-info">
                                 {% if tienda.iconoTienda %}
                                     <i class="{{ tienda.iconoTienda }}"></i>
@@ -33,7 +33,7 @@ layout: default
                         {% endfor %}
                         <hr>
                         {% if page.gratis == true %}
-                        <a class="wow fadeIn" href="#" target="_blank" data-wow-delay="0.{{forloop.index}}s">
+                        <a class="" href="#" target="_blank">
                             <button class="btn btn-danger">
                                 
                                     <i class="{{ tienda.iconoTienda }}"></i>
