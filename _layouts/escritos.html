@@ -21,7 +21,7 @@ layout: default
                         <div class="grupoBotones text-center">
                         {% for tienda in page.tiendas %}
                         {% if tienda.urlEscrito %}
-                        <a class="m-2" href="http://{{ tienda.urlTienda }}/{{ tienda.urlEscrito }}" target="_blank" >
+                        <a class="m-2" href="http://{{ tienda.urlTienda }}/{{ tienda.urlEscrito }}" target="_blank" rel="noopener">
                             <button class="btn btn-info">
                                 {% if tienda.iconoTienda %}
                                     <i class="{{ tienda.iconoTienda }}"></i>
