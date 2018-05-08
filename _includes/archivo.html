@@ -1,28 +1,28 @@
 <article class="card">
-        {% if post.img %}
-            <a href="{{ post.url }}" title="{{ post.title }}">
-                <img class="card-img-top  portada w-100" src="{{site.url}}/assets/img/escritos/{{ post.img }}" alt="portada {{ post.title }}">
-            </a>
-        {% endif %}
-        <div class="card-body">
-            <h5 class="card-title">{{ post.title }}</h5>
-            <p class="text-justify">{{ post.excerpt }}</p>
-        </div>
-        <div class="card-footer d-flex">
-            {% if post.date %}
-                <div class="mr-auto">
-                    <small class="text-muted">{{ post.date | date_to_string }} | {{ post.author}}</small>
-                </div>
-            {% endif %}
-            {% if page.date %}
+    {% if post.img %}
+    <a href="{{ post.url }}" title="{{ post.title }}">
+        <img class="card-img-top  portada w-100" src="{{site.url}}/assets/img/escritos/{{ post.img }}" alt="portada {{ post.title }}">
+    </a>
+    {% endif %}
+    <div class="card-body">
+        <h3 class="card-title">{{ post.title }}</h3>
+        <p class="text-justify">{{ post.excerpt }}</p>
+    </div>
+    <div class="card-footer d-flex">
+        {% if post.date %}
+            <div class="mr-auto">
+                <small class="text-muted">{{ post.date | date_to_string }} | {{ post.author}}</small>
+            </div>
+        {% endif %} 
+        {% if page.date %}
             <div class="mr-auto">
                 <small class="text-muted">{{ page.date | date_to_string }} | {{ page.author}}</small>
             </div>
-            {% endif %}
-            <div class="ml-auto">
-                <a href="{{ post.url }}"  title="{{ post.title }}" class="btn btn-info">
-                        leer más
-                </a>
-            </div>
+        {% endif %}
+        <div class="ml-auto">
+            <a href="{{ post.url }}" title="{{ post.title }}" class="btn btn-info">
+                leer más
+            </a>
         </div>
-    </article>
+    </div>
+</article>

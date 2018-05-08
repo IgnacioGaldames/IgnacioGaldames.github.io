@@ -1,5 +1,5 @@
 ---
-title: El Insecto de neón
+title: El Insecto de Neón
 layout: escritos
 img: portada_el_insecto_de_neon.jpg
 link: https://www.books2read.com/u/4EWON0
