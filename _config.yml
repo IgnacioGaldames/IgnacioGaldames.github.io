@@ -22,7 +22,7 @@ title: I. A. Galdames
 name: I. A. Galdames
 email: caminantestelar@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Ignacio Galdames | Cyberpunk, caminante, escritor de ciencia ficción y desarrollador web.
+  Cyberpunk, caminante, escritor de ciencia ficción y desarrollador web.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: http://ignaciogaldames.com
 
