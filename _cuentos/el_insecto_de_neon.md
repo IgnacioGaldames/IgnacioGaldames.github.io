@@ -15,3 +15,12 @@ Caminas por una ciudad en ruinas que alguna vez fue una promesa tecnológica.La 
 
 Un relato de ciencia ficción post cyberpunk que habla de la soledad, contado a través de fragmentos de información y cambios en la linealidad temporal y el terror corporal.
 
+<hr>
+
+<div class="glitch-imagen">
+	<div class="glitch-imagen-img"></div>
+	<div class="glitch-imagen-img"></div>
+	<div class="glitch-imagen-img"></div>
+	<div class="glitch-imagen-img"></div>
+	<div class="glitch-imagen-img"></div>
+</div>
