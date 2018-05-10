@@ -1,7 +1,7 @@
 --- 
 layout: default 
 ---
-<section class="container-fluid escritos {{ page.collection }}" id="{{ page.collection }}-{{ page.myId }}">
+<section class="container-fluid {{ page.collection }}" id="{{ page.collection }}-{{ page.myId }}">
     <div class="row p-0">
         <div class="col-md-12 p-0  fondo-portada fondo-portada-{{ page.myId }}">
             <div class="container">
@@ -21,8 +21,8 @@ layout: default
                         <div class="grupoBotones text-center">
                         {% for tienda in page.tiendas %}
                         {% if tienda.urlEscrito %}
-                        <a class="m-2" href="http://{{ tienda.urlTienda }}/{{ tienda.urlEscrito }}" target="_blank" rel="noopener">
-                            <button class="btn btn-info">
+                        <a class="" href="http://{{ tienda.urlTienda }}/{{ tienda.urlEscrito }}" target="_blank" rel="noopener">
+                            <button class="btn btn-info m-3">
                                 {% if tienda.iconoTienda %}
                                     <i class="{{ tienda.iconoTienda }}"></i>
                                 {% endif %}
@@ -34,7 +34,7 @@ layout: default
                         <hr>
                         {% if page.gratis == true %}
                         <a class="" href="{{ page.gratisUrl }}" target="_blank">
-                            <button class="btn btn-danger">
+                            <button class="btn btn-danger m-3">
                                 <i class="{{ page.iconoGratis }}"></i>
                                 Recibir Gratis
                             </button>
