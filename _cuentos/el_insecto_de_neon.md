@@ -4,8 +4,11 @@ layout: escritos
 img: portada_el_insecto_de_neon.jpg
 link: https://www.books2read.com/u/4EWON0
 isbn: 9781386215899
+asin: B075KHTXR4
+edicion: 2da Edición
+lanzamiento: 2018-04-10 00:00:00
 Editor: Editorial Antielectrón
-Colección: null
+coleccion: null
 myId: insecto_neon
 ---
 
@@ -14,5 +17,3 @@ myId: insecto_neon
 Caminas por una ciudad en ruinas que alguna vez fue una promesa tecnológica.La ciudad fue construida sobre un lago y estaba totalmente automatizada. Tras un terremoto, el lago se secó y ahora las máquinas se oxidan.
 
 Un relato de ciencia ficción post cyberpunk que habla de la soledad, contado a través de fragmentos de información y cambios en la linealidad temporal y el terror corporal.
-
-<hr>

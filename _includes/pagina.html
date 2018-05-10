@@ -8,6 +8,15 @@
                 <h1><strong>{{ page.title }}</strong></h1>
                 <hr>
                 {{ content }}
+                {% if item in page.cuentos %}
+                <hr>
+                <p>isbn: {{ page.isbn }}</p>
+                <p>ASIN: {{ page.asin }}</p>
+                <p>Colección: {{ page.asin }}</p>
+                <p>Editor: {{ page.asin }}</p>
+                <p>Edición: {{ page.edicion }}</p>
+                <p>Fecha de Lanzamiento: <small class="text-muted">{{ page.date | date_to_string }} | {{ page.lanzamiento }}</small></p>
+                {% endif %}
             </div>
         </section>
     </div>

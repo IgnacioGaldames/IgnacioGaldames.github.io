@@ -4,8 +4,9 @@ layout: escritos
 img: portada_paraguas_silencio.jpg
 link: https://www.books2read.com/u/bpG2A9
 isbn: 9781540158734
+asin:
 Editor: Editorial Antielectrón
-Colección: null
+coleccion: null
 myId: paraguas_silencio
 gratis: true
 gratisUrl: https://mailchi.mp/3cc087f87de5/el-paraguas-y-el-silencio
