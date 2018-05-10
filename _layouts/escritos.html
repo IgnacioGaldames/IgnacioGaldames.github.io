@@ -22,7 +22,7 @@ layout: default
                         {% for tienda in page.tiendas %}
                         {% if tienda.urlEscrito %}
                         <a class="" href="http://{{ tienda.urlTienda }}/{{ tienda.urlEscrito }}" target="_blank" rel="noopener">
-                            <button class="btn btn-info m-3">
+                            <button class="btn btn-info m-2">
                                 {% if tienda.iconoTienda %}
                                     <i class="{{ tienda.iconoTienda }}"></i>
                                 {% endif %}
@@ -34,7 +34,7 @@ layout: default
                         <hr>
                         {% if page.gratis == true %}
                         <a class="" href="{{ page.gratisUrl }}" target="_blank">
-                            <button class="btn btn-danger m-3">
+                            <button class="btn btn-danger m-2">
                                 <i class="{{ page.iconoGratis }}"></i>
                                 Recibir Gratis
                             </button>
