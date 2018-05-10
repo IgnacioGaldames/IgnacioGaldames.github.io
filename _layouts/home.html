@@ -12,14 +12,20 @@ layout: default
         <section class="col-md-8 my-2">
             <div class="col-md-12 card p-4">
                 <h1>{{ page.title }}</h1>
+                <hr>
+                {% if site.libros %}
+                <h2>Mis Libros</h2>
                 <div class="card-deck my-3 mt-md-0 mb-md-3">
                     {% for post in site.libros %} {% include archivo.html %} {% endfor %}
                 </div>
-                {% if site.libros %}
-                <hr> {% endif %}
+                <hr> 
+                {% endif %}
+                {% if site.cuentos %}
+                <h2>Mis Cuentos</h2>
                 <div class="card-deck my-3">
                     {% for post in site.cuentos %} {% include archivo.html %} {% endfor %}
                 </div>
+                {% endif %}
             </div>
         </section>
         <section class="container my-3">
