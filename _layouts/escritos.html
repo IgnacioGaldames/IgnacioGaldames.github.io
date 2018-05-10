@@ -33,11 +33,9 @@ layout: default
                         {% endfor %}
                         <hr>
                         {% if page.gratis == true %}
-                        <a class="" href="#" target="_blank">
+                        <a class="" href="{{ tienda.gratisUrl }}" target="_blank">
                             <button class="btn btn-danger">
-                                
-                                    <i class="{{ tienda.iconoTienda }}"></i>
-                                
+                                <i class="{{ tienda.iconoGratis }}"></i>
                                 Recibir Gratis
                             </button>
                         </a>
