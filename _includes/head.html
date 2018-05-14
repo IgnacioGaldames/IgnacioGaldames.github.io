@@ -6,6 +6,9 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-TWXQ473');</script>
     <!-- End Google Tag Manager -->
+    {% if site.fb-pixel %}
+      {% include fb-pixel.html %}
+    {% endif %}
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
