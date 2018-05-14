@@ -9,11 +9,19 @@
                 <hr>
                 {{ content }}
                 <hr>
+                <h3>Detalles:</h3>
+                <p>Titulo: <strong>{{ page.title }}</strong></p>
                 <p>isbn: {{ page.isbn }}</p>
                 <p>ASIN: {{ page.asin }}</p>
-                <p>Colección: {{ page.asin }}</p>
-                <p>Editor: {{ page.asin }}</p>
+                <p>Colección: {{ page.coleccion }}</p>
+                <p>Editor: {{ page.editor }}</p>
                 <p>Edición: {{ page.edicion }}</p>
+                <p>Colección: <strong>{{ page.coleccion }}</strong></p>
+                <a class="" href="http://{{ page.link }}" target="_blank" rel="noopener">
+                    <button class="btn btn-danger m-2">
+                        Comprar
+                    </button>
+                </a>
             </div>
         </section>
     </div>
