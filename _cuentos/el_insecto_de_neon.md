@@ -7,7 +7,7 @@ isbn: 9781386215899
 asin: B075KHTXR4
 edicion: 2da Edición
 lanzamiento: 2018-04-10 00:00:00
-Editor: Editorial Antielectrón
+editor: Editorial Antielectrón
 coleccion: null
 myId: insecto_neon
 ---
