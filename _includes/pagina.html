@@ -14,10 +14,10 @@
                 {% if page.isbn %}<p>ISBN: <strong>{{ page.isbn }}</strong></p>{% endif %}
                 {% if page.asin %}<p>ASIN: <strong>{{ page.asin }}</strong></p>{% endif %}
                 {% if page.coleccion %}<p>Colección: <strong>{{ page.coleccion }}</strong></p>{% endif %}
-                {% if page.editor %}<p>Editor: <strong>{ page.editor }}</strong>{</p>{% endif %}
+                {% if page.editor %}<p>Editor: <strong>{{ page.editor }}</strong>{</p>{% endif %}
                 {% if page.edicion %}<p>Edición: <strong>{{ page.edicion }}</strong></p>{% endif %}
                 {% if page.link %}
-                <a class="" href="http://{{ page.link }}" target="_blank" rel="noopener">
+                <a class="text-right" href="http://{{ page.link }}" target="_blank" rel="noopener">
                     <button class="btn btn-danger">
                         Comprar
                     </button>
