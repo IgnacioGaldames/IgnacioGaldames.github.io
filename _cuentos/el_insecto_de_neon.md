@@ -2,7 +2,7 @@
 title: El Insecto de Neón
 layout: escritos
 img: portada_el_insecto_de_neon.jpg
-link: https://www.books2read.com/u/4EWON0
+link: www.books2read.com/u/4EWON0
 isbn: 9781386215899
 asin: B075KHTXR4
 edicion: 2da Edición
