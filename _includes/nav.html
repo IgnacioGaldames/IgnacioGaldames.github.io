@@ -24,15 +24,15 @@
 				{% for collection in site.collections %}
 					{% assign name = collection.label %}
 				<li class="nav-item dropdown">
-					<a class="nav-link " href="/{{ name }}" id="nav-{{ name }}">
+					<a class="nav-link" href="/{{ name }}" id="nav-{{ name }}{{ page.title }}">
 					{{ name }}
 					</a>
 					<div class="dropdown-menu">
 						{% for page in site.[name] limit:5 %}
-						<a class="dropdown-item nav-link" href="{{ page.url }}" id="dropnav-{{ name }}">{{ page.title }}</a>
+						<a class="dropdown-item nav-link" href="{{ page.url }}" id="dropnav-{{ name }}{{ page.title }}">{{ page.title }}</a>
 						{% endfor %}
 						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="/{{ name }}" id="nav-archive-{{ name }}"><i class="fas fa-archive"></i> ver {{ name }}</a>
+						<a class="dropdown-item nav-link" href="/{{ name }}" id="nav-archive-{{ name }}"><i class="fas fa-archive"></i> ver {{ name }}</a>
 					</div>
 				</li>
 				{% endfor %}
