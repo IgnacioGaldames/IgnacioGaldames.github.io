@@ -10,7 +10,6 @@ coleccion: null
 myId: paraguas_silencio
 gratis: true
 gratisUrl: https://mailchi.mp/3cc087f87de5/el-paraguas-y-el-silencio
-iconoGratis: fas fa-gift
 tiendas:
 - nombreTienda: Amazon
   urlTienda: amazon.com
