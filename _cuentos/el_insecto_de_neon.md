@@ -9,7 +9,7 @@ lanzamiento: 2018-04-10 00:00:00
 editor: Editorial Antielectrón
 coleccion: null
 myId: insecto_neon
-gratis: true
+gratis: false
 gratisUrl: https://mailchi.mp/e5b2d0b5900f/insecto-neon-gratis
 tiendas:
 - nombreTienda: Amazon.com
