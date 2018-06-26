@@ -16,7 +16,7 @@
                 {% if page.coleccion %}<p>Colección: <strong>{{ page.coleccion }}</strong></p>{% endif %}
                 {% if page.editor %}<p>Editor: <strong>{{ page.editor }}</strong></p>{% endif %}
                 {% if page.edicion %}<p>Edición: <strong>{{ page.edicion }}</strong></p>{% endif %}
-                {% if page.goodreads %}<p>Goodreads: <strong>{{ page.goodreads }}</strong></p>{% endif %}
+                {% if page.goodreads %}<p>Goodreads: <a href="{{ page.goodreads }}"> <strong>{{ page.title }}</strong></a></p>{% endif %}
                 {% include botones.html %}
             </div>
         </section>
