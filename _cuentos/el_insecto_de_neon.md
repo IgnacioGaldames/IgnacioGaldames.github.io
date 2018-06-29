@@ -9,7 +9,7 @@ lanzamiento: 2018-04-10 00:00:00
 editor: Editorial Antielectrón
 coleccion: null
 myId: insecto_neon
-gratis: true
+gratis: false
 gratisUrl: https://mailchi.mp/666e330d005c/insecto-neon-gratis
 goodreads: https://www.goodreads.com/book/show/39929110-el-insecto-de-ne-n
 tiendas:
