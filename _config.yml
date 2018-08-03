@@ -136,7 +136,7 @@ collections:
  cuentos:
   output: true
  microcuentos:
-  output: true
+  output: false
  #libros:
   output: true
 
