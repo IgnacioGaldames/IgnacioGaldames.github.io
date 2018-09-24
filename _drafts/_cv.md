@@ -8,7 +8,9 @@ trabajos:
     - nombre_trabajo: Agencia How
       fecha_trabajo: Marzo 2017 | Julio 2017
       cargo_trabajo: Desarrollador Web
-      desc_trabajo: Desarrollo y mantención de sitios web en Wordpress  y landings responsivas. Desarrollo de Sitios con Bootstrap y JQuery. Desarrollo de landings con PHP. Creación de sistema de template modular en php.
+      desc_trabajo: Encargado de todos los sitios de la Agencia, tanto en HTML, como en PHP y Wordpress. Desarrollé un sistema de diseño y prototipado, basado en Bootstrap, SASS y PHP para usar elementos reutilizables del código y crear sitios web en menor tiempo. También edité y creé temas en Wordpress.
+
+Tuve Clientes cómo Arquitectura de Chile, Universal Music Chile, Anfiteatro Bellas Artes y Suksa.
       clientes: 
     - nombre_trabajo: Lovit - Nauta
       fecha_trabajo: Julio 2016 | Marzo 2017
