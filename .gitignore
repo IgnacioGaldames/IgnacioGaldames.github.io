@@ -1,8 +1,5 @@
-.jekyll-metadata
-.DS_Store
-build
-.sass-cache/
-/node_modules
-.sass-cache
-.jekyll-metadata
 _site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
