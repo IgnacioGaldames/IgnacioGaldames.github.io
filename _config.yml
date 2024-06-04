@@ -44,11 +44,11 @@ amazon_username: ignaciogaldames
 redesSociales:
   - redUrl: twitter.com
     redSidebar: true
-    redUsername: IA_Galdames
+    redUsername: IAGaldames
     redIcon: fab fa-twitter-square
 
   - redUrl: facebook.com
-    redSidebar: true
+    redSidebar: false
     redUsername: ignacio.galdames
     redIcon: fab fa-facebook-square
 
@@ -58,13 +58,13 @@ redesSociales:
     redIcon: fab fa-github-square
 
   - redUrl: flickr.com/photos
-    redSidebar:
+    redSidebar: false
     redUsername: caminantestelar
     redIcon: fab fa-flickr
 
   - redUrl: instagram.com
     redSidebar: true
-    redUsername: ignacio.galdames
+    redUsername: iagaldames
     redIcon: fab fa-instagram
 
   - redUrl: linkedin.com/in
@@ -79,7 +79,7 @@ redesSociales:
 
   - redUrl: youtube.com
     redSidebar:
-    redUsername: ignaciogaldames
+    redUsername: IAGaldames
     redIcon: fab fa-youtube
 
   - redUrl: behance.com
