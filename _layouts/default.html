@@ -5,12 +5,11 @@
     <header>
       <!-- Navbar or header content -->
     </header>
-    <main>
+    <main class="container">
       {{ content }}
     </main>
-    <footer>
-      <!-- Footer content -->
-    </footer>
+    {% include footer.html %}
+
     <script src="{{ '/assets/js/bundle.js' | relative_url }}"></script>
   </body>
 </html>
