@@ -1,0 +1,61 @@
+# social links
+
+redesSociales:
+  - redUrl: amazon.com/author
+    redSidebar: true
+    redUsername: ignaciogaldames
+    redIcon: fab fa-amazon
+
+  - redUrl: goodreads.com
+    redSidebar: true
+    redUsername: iagaldames
+    redIcon: fab fa-goodreads
+
+  - redUrl: linkedin.com/in
+    redSidebar: true
+    redUsername: ignaciogaldames
+    redIcon: fab fa-linkedin
+
+  - redUrl: github.com
+    redSidebar: true
+    redUsername: ignaciogaldames
+    redIcon: fab fa-github-square
+
+  - redUrl: instagram.com
+    redSidebar: true
+    redUsername: iagaldames
+    redIcon: fab fa-instagram
+
+  - redUrl: facebook.com
+    redSidebar: false
+    redUsername: ignacio.galdames
+    redIcon: fab fa-facebook-square
+
+  - redUrl: behance.com
+    redSidebar:
+    redUsername: IgnacioGaldames
+    redIcon: fab fa-behance-square
+
+  - redUrl: twitter.com
+    redSidebar: true
+    redUsername: IAGaldames
+    redIcon: fab fa-twitter-square
+
+  - redUrl: flickr.com/photos
+    redSidebar: false
+    redUsername: caminantestelar
+    redIcon: fab fa-flickr
+
+  - redUrl: pinterest.com
+    redSidebar:
+    redUsername: IgnacioGaldames
+    redIcon: fab fa-pinterest
+
+  - redUrl: youtube.com
+    redSidebar:
+    redUsername: "@IAGaldames"
+    redIcon: fab fa-youtube
+
+
+
+

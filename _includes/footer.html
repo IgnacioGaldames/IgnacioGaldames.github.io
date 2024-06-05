@@ -1,22 +1,22 @@
-<footer class="bg-dark text-white py-4 fixed-bottom">
+
+<footer class="bg-gray-900 text-white py-4 border-top shadow ">
   <div class="container text-center">
-    <div class="mb-3">
-      {% if site.social.twitter %}
-        <a href="{{ site.social.twitter }}" class="text-white mx-2" target="_blank"><i class="fab fa-twitter"></i></a>
+    <ul class="bd-footer-links" itemscope itemtype="http://schema.org/Person">
+      {% for redSocial in site.data.redes_sociales.redesSociales %} {% if redSocial.redUsername %}
+      <li class="d-inline-block m-1">
+          <a itemprop="sameAs" href="https://{{ redSocial.redUrl }}/{{ redSocial.redUsername }}" target="_blank" rel="noopener" class="text-info">
+              <i class="{{ redSocial.redIcon }} fa-lg"></i>
+              <span class="d-none">{{ redSocial.redUsername }}</span>
+          </a>
+      </li>
+      {% endif %} {% endfor %} {% if site.rss %}
+      <li class="d-inline-block m-1">
+          <a href="{{ 'feed.xml' | relative_url }}" class="text-info">
+              <i class="fas fa-rss fa-lg"></i>
+          </a>
+      </li>
       {% endif %}
-      {% if site.social.instagram %}
-        <a href="{{ site.social.instagram }}" class="text-white mx-2" target="_blank"><i class="fab fa-instagram"></i></a>
-      {% endif %}
-      {% if site.social.linkedin %}
-        <a href="{{ site.social.linkedin }}" class="text-white mx-2" target="_blank"><i class="fab fa-linkedin"></i></a>
-      {% endif %}
-      {% if site.social.github %}
-        <a href="{{ site.social.github }}" class="text-white mx-2" target="_blank"><i class="fab fa-github"></i></a>
-      {% endif %}
-      {% if site.social.goodreads %}
-        <a href="{{ site.social.goodreads }}" class="text-white mx-2" target="_blank"><i class="fab fa-goodreads"></i></a>
-      {% endif %}
-    </div>
+  </ul>
     <p>&copy; {{ site.time | date: '%Y' }} {{site.title}}. Todos los derechos reservados.</p>
   </div>
 </footer>
