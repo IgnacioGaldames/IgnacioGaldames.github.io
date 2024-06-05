@@ -1,0 +1,29 @@
+<div class="container my-3" itemscope itemtype="http://schema.org/Person">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="card-title">No dudes en conectarte conmigo en:</h5>
+        </div>
+        
+          <ul class="list-group list-group-flush">
+            {% for redSocial in site.data.redes_sociales.redesSociales %} {% if redSocial.redUsername %}
+            <li class="list-group-item">
+              <a itemprop="sameAs" href="https://{{ redSocial.redUrl }}/{{ redSocial.redUsername }}" target="_blank" rel="noopener" class="text-info mb-2">
+                <i class="{{ redSocial.redIcon }} fa-lg me-2"></i><strong>{{ redSocial.redUrl }}</strong>/{{ redSocial.redUsername }}
+              </a>              
+            </li>
+
+            {% endif %} {% endfor %}
+            {% if site.rss %}
+            <li class="list-group-item m-1">
+              <a href="{{ 'feed.xml' | relative_url }}" class="text-info">
+                <i class="fas fa-rss fa-lg"></i>
+              </a>
+            </li>
+            {% endif %}
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>

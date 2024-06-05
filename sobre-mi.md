@@ -19,12 +19,4 @@ Puedes encontrar mis libros e historias en [Goodreads](https://www.goodreads.com
 
 ### Conéctate Conmigo
 
-No dudes en conectarte conmigo en:
-
-- [Twitter](https://twitter.com/IAGaldames)
-- [Instagram](https://www.instagram.com/iagaldames)
-- [LinkedIn](https://www.linkedin.com/in/ignaciogaldames/)
-- [GitHub](https://github.com/ignaciogaldames)
-- [Goodreads](https://www.goodreads.com/author/show/16542460.I_A_Galdames)
-
-Gracias por visitar mi sitio. Espero que disfrutes explorando mi trabajo tanto como yo disfruto creándolo.
+{% include redes.html %}

@@ -5,12 +5,19 @@
     <header class="container-fluid shadow">
       <!-- Navbar or header content -->
       <div class="container">
-        {% include header.html %}
+        <div class="row">
+          <div class="col-12">
+            {% include header.html %}
+          </div>
+        </div>
       </div>
-      
     </header>
     <main class="container my-5">
-      {{ content }}
+      <div class="row">
+        <div class="col-12">
+          {{ content }}
+        </div>
+      </div>
     </main>
     {% include footer.html %}
 
