@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
   {% include head.html %}
-  <body class="default">
+  <body class="home">
     {% include header.html %}
     <main class="container my-5">
       <div class="row">
         <div class="col-12">
-          {{ content }}
+          <ul>
+            {% for post in site.posts %}
+              <li>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
         </div>
       </div>
     </main>
