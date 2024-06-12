@@ -4,29 +4,28 @@
 
 <body class="home">
   {% include header.html %}
-  <main class="container-fluid my-3">
-    <article class="container mb-5 pb-5 border-bottom">
-      <div class="row mb-5">
-        <div class="col-12 text-center">
+  <main class="container-fluid">
+    <article class="container border-bottom">
+      <div class="row">
+        <div class="col-12 text-center my-3">
           <h1 class="display-1">{{ site.title}}</h1>
         </div>
-        
       </div>
       <div class="row d-flex align-items-center">
-        <div class="col-md-3 mx-auto">
+        <div class="col-md-3 mb-4 mx-auto">
           <img class="img-fluid shadow rounded" src="/assets/img/iagaldames_2024.jpg">
         </div>
-        <div class="col-md-6 mx-auto">
+        <div class="col-md-6 mb-4 mx-auto">
           <p>{{ site.description }}</p>
         </div>
       </div>
     </article>
     <article class="container">
       <div class="row">
-        <div class="col-md-12 mb-3">
+        <div class="col-md-12 my-3">
           <h2 class="h2">Posts</h2>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12 my-3">
           <ul>
             {% for post in site.posts %}
             <li>
