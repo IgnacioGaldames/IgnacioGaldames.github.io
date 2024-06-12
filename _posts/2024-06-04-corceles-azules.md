@@ -12,8 +12,10 @@ Estoy emocionado de anunciar el lanzamiento de mi nuevo libro, _Corceles Azules_
 ### Detalles del Evento
 
 - **Evento:** Feria del Libro de Lima
-- **Fecha:** [Fecha del evento]
-- **Lugar:** [Ubicación del evento]
+- **Fecha:** [Fecha del evento a definir]
+- **Lugar:** [Ubicación del evento a definir]
+- **A Definir:** [A definir]
+
 
 ### Editorial
 
