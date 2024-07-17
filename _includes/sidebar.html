@@ -18,9 +18,9 @@
       <h2 class="h4">Enlaces</h2>
     </div>
     <div class="col-md-12">
-      <ul class="list-group">
+      <ul class="list-group" itemscope itemtype="http://schema.org/Person">
         {% for link in site.data.mis_enlaces.enlaces %}
-        <li class="d-inline-block m-1">
+        <li class="d-inline-block m-1" itemprop="sameAs">
           <a itemprop="sameAs" href="{{ link.url }}" target="_blank" rel="noopener" class="text-info">
             <i class="fa-web fa-lg"></i>
             <span class="">{{ link.name }}</span>
