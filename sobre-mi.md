@@ -4,11 +4,13 @@ title: I. A. Galdames
 permalink: /iagaldames/
 ---
 
-¡Hola! Soy I.A. Galdames, un apasionado escritor de ciencia ficción con un profundo amor por explorar lo desconocido y empujar los límites de la imaginación. Mi viaje en el mundo de la ciencia ficción comenzó con una fascinación por las estrellas y una curiosidad sobre lo que hay más allá de nuestro propio planeta.
+I. A. Galdames, escritor chileno de ciencia ficción nacido en 1987. Es un desarrollador web autodidacta y una mermelada de ayer.
+
 
 ### Antecedentes
 
-Siempre he estado intrigado por las posibilidades que ofrece la ciencia ficción. A través de mi escritura, busco explorar temas de tecnología, exploración espacial y la condición humana. Mis historias a menudo profundizan en las complejidades de mundos futuristas, donde la línea entre la realidad y la ficción se difumina.
+Ha publicado cuentos en la antología Neon Dreams and Nightmares, en la revista Anapoyesis, la revista Espejo Humeante, la revista Penumbria, La revista Axioma, la revista Iguales, en Teoría Omicrón y El ojo de Uk.
+Sus escritos son mayormente de ciencia ficción y exploran la soledad, el aislamiento, la percepción temporal y el existencialismo, con inspiraciones expresionistas, cyberpunk y neo-noir..
 
 ### Mi Trabajo
 
