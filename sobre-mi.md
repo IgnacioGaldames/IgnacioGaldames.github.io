@@ -18,4 +18,8 @@ Puedes encontrar mis libros e historias en [Goodreads](https://www.goodreads.com
 
 ### Conéctate Conmigo
 
-{% include redes.html %}
+<div class="row">
+  <div class="col-md-6">
+    {% include redes.html %}
+    </div>
+</div>
