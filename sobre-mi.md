@@ -1,6 +1,6 @@
 ---
 layout: page
-title: I. A. Galdames
+title: 
 permalink: /iagaldames/
 ---
 

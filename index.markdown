@@ -3,5 +3,6 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: Escritor de ciencia ficción
+title: I. A. Galdames
+subtitle: Escritor chileno de ciencia ficción
 ---
