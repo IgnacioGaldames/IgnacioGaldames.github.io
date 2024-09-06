@@ -3,5 +3,5 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: books
-title: Libros de I. A. Galdames
+title: Mis Libros
 ---
