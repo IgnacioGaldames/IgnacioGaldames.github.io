@@ -4,6 +4,11 @@
   <body class="default">
     {% include header.html %}
     <main class="container my-5">
+      <div class="row" id="title">
+        <div class="col-12 text-center my-3">
+          <h1 class="display-1">{{ page.title}}</h1>
+        </div>
+      </div>
       <div class="row">
         <div class="col-12">
           {{ content }}
