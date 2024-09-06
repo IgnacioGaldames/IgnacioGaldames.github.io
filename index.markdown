@@ -4,4 +4,5 @@
 
 layout: home
 title: I. A. Galdames
+subtitle: Escritor chileno de ciencia ficción
 ---
