@@ -2,17 +2,16 @@
 layout: default
 ---
 
-<main class="container-fluid">
-  <article class="container border-bottom">
-
-    <div class="row d-flex align-items-center" id="description">
-      <div class="col-md-3 mb-4 mx-auto">
-        <img class="img-fluid shadow rounded" src="/assets/img/iagaldames_2024.jpg">
-      </div>
-      <div class="col-md-6 mb-4 mx-auto">
-        <p>{{ site.description }}</p>
-      </div>
-    </div>
-  </article>
-  {% include sidebar.html %}
+<main class="container-fluid" id="home">
+	<article class="container border-bottom">
+		<div class="row d-flex align-items-center" id="description">
+			<div class="col-md-3 mb-4 mx-auto">
+				<img class="img-fluid shadow rounded" src="/assets/img/iagaldames_2024.jpg">
+			</div>
+			<div class="col-md-6 mb-4 mx-auto">
+				<p id="site-description">{{ site.description }}</p>
+			</div>
+		</div>
+	</article>
+	{% include sidebar.html %}
 </main>

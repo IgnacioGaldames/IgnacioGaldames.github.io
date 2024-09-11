@@ -2,13 +2,13 @@
 layout: default
 ---
 
-<main class="container mt-4" id="page">
+<main class="container mt-4" id="page-sidebar-left">
   <section class="row">
-    <article class="col-12" id="article">
+    <aside class="col-md-3" id="aside">
+      {% include sidebar.html %}
+    </aside>
+    <article class="col-md-9" id="article">
       <div class="row">
-        <div class="col-12">
-          <h1 id="page-title">{{ page.title }}</h1>
-        </div>
         <div class="col-12 content">
          {{ content }} 
         </div>

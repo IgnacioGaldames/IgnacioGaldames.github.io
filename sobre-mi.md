@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-sidebar-right
 title: 
 permalink: /iagaldames/
 ---
