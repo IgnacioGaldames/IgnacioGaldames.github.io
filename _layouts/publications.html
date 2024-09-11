@@ -10,9 +10,9 @@ layout: default
       </header>
       <section>
         {{ content }}
-        <ul>
+        <ul  class="list-group list-group-flush">
           {% for miPublicacion in site.data.mis_publicaciones.publicaciones %}
-          <li>{{ miPublicacion.nombrePublicacion }}</li>
+          <li class="list-group-item "><span class="text-capitalize">{{ miPublicacion.nombrePublicacion }}</span> | <span class="text-uppercase fw-bold">{{ miPublicacion.tituloRevista }}</span> | {{ miPublicacion.fechaPublicacion }}</li>
           {% endfor %}
         </ul>
 
