@@ -4,5 +4,6 @@
 
 layout: books
 title: Mis Libros
+subtitle: Libros y Antologías
 permalink: /libros/
 ---
