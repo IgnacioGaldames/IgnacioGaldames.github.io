@@ -4,5 +4,6 @@
 
 layout: publications
 title: Mis publicaciones
+subtitle: Antologías y Fanzines
 permalink: /publicaciones/
 ---
