@@ -4,4 +4,5 @@
 
 layout: books
 title: Mis Libros
+permalink: /libros/
 ---

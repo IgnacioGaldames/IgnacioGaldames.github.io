@@ -4,4 +4,5 @@
 
 layout: publications
 title: Mis publicaciones
+permalink: /publicaciones/
 ---
