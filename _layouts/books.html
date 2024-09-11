@@ -4,10 +4,19 @@ layout: page-sidebar-right
 
 <section>
   {{ content }}
-  <ul>
+  <div class="row">
     {% for miLibro in site.data.mis_libros.libros %}
-    <li>{{ miLibro.nombreLibro }}</li>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="card-title">{{ miLibro.nombreLibro }}</h5>
+        </div>
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">{{ miLibro.descripcionLibro }}</p>
+        </div>
+      </div>
+    </div>
     {% endfor %}
-  </ul>
-
+  </div>
 </section>
