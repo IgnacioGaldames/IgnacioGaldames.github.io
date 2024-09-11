@@ -1,0 +1,12 @@
+---
+layout: page-sidebar-right
+---
+
+<section>
+  {{ content }}
+  <ul class="list-group list-group-flush">
+    {% for miCurso in site.data.mis_cursos.cursos %}
+    <li class="list-group-item">{{ miCurso.fechaCurso }} | <span  class="text-capitalize">{{ miCurso.nombreCurso }}</span> | <span  class="text-uppercase fw-bold">{{ miCurso.institucionCurso }}</span></li>
+    {% endfor %}
+  </ul>
+</section>
