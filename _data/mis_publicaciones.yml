@@ -4,88 +4,88 @@ publicaciones:
     fechaPublicacion: 19/9/2019
     tituloRevista: Neon Dreams and Nightmares
     urlPublicacion: https://www.amazon.com/Neon-Dreams-Nightmares-Dystopian-Futures/dp/B07Y4KC5FQ
-    pagada: true
+    enlace: true
 
   - nombrePublicacion: Iris
     fechaPublicacion:  19/9/2019
     tituloRevista: Neon Dreams and Nightmares
     urlPublicacion: https://www.amazon.com/Neon-Dreams-Nightmares-Dystopian-Futures/dp/B07Y4KC5FQ
-    pagada: true
+    enlace: true
 
   - nombrePublicacion: El Chinchinero
     fechaPublicacion: 28/12/2021
     tituloRevista: Espejo Humeante
     urlPublicacion: https://espejohumeanterevista.wordpress.com/2021/12/28/el-chinchinero/
-    pagada: false
+    enlace: false
 
   - nombrePublicacion: La reserva de animales
     fechaPublicacion: 2/11/2022
     tituloRevista: Revista Axioma
     urlPublicacion: https://elaxiomablog.wordpress.com/2022/11/02/la-reserva-de-animales-i-a-galdames/
-    pagada: false
+    enlace: false
 
   - nombrePublicacion: Alrededor de la decadencia
     fechaPublicacion: 27/8/2022
     tituloRevista: Espejo Humeante
     urlPublicacion: https://espejohumeanterevista.wordpress.com/2023/01/01/todos-tus-malditos-caballos-subiendo-al-cielo/
-    pagada: false
+    enlace: false
 
   - nombrePublicacion: Todos tus malditos caballos subiendo al cielo
     fechaPublicacion: 1/1/2023
     tituloRevista: Espejo Humeante
     urlPublicacion: https://espejohumeanterevista.wordpress.com/2023/01/01/todos-tus-malditos-caballos-subiendo-al-cielo/
-    pagada: false
+    enlace: false
 
   - nombrePublicacion: lloverá en un día soleado
     fechaPublicacion: 1/1/2023
     tituloRevista: Anapoyesis
     urlPublicacion: https://issuu.com/anapoyesis/docs/guerra
-    pagada: false
+    enlace: false
 
   - nombrePublicacion: El último Nivel
     fechaPublicacion: 28/4/2023
     tituloRevista: Teoría Omicron
     urlPublicacion: https://teoriaomicron.com/cronistas-omicron-el-ultimo-nivel/
-    pagada: false
+    enlace: false
 
   - nombrePublicacion: Entre el bosque y la butaca
     fechaPublicacion: 28/4/2023
     tituloRevista: Penumbria
     urlPublicacion: https://www.penumbria.mx/penumbria-cinefila/
-    pagada: false
+    enlace: false
 
   - nombrePublicacion: Una idea viajera
     fechaPublicacion: 2/8/2023
     tituloRevista: Espejo Humeante
     urlPublicacion: https://espejohumeanterevista.wordpress.com/2023/08/02/una-idea-viajera/
-    pagada: false
+    enlace: false
 
   - nombrePublicacion: En marcha, seguramente hacia alguna parte
     fechaPublicacion: 28/8/2023
     tituloRevista: Revista Iguales
     urlPublicacion: https://drive.google.com/file/d/1TI2VzAfDXEd8YEu7hOBWxlP7pqYHwiQ4/view
-    pagada: false
+    enlace: false
 
   - nombrePublicacion: la playa lunar
     fechaPublicacion: 30/11/2023
     tituloRevista: El ojo de Uk
     urlPublicacion: https://elojodeuk.com/2023/11/30/la-playa-lunar/
-    pagada: false
+    enlace: false
 
   - nombrePublicacion: El Cosmos hecho carne
     fechaPublicacion: 31/03/2024
     tituloRevista: Espejo Humeante
     urlPublicacion: https://espejohumeanterevista.wordpress.com/2024/03/31/el-cosmos-hecho-carne/
-    pagada: false
+    enlace: false
 
   - nombrePublicacion: mi sueño de una serpiente mítica
     fechaPublicacion: 05/03/2024
     tituloRevista: El Axioma Revista
     urlPublicacion: https://lektu.com/l/el-axioma/el-axioma-no-hispanocyberpunk/22856
-    pagada: false
+    enlace: false
 
   - nombrePublicacion: los amaré en todos los tiempos
     fechaPublicacion: 01/06/2024
     tituloRevista: Revista Axxon
     urlPublicacion: https://axxon.com.ar/rev/2024/06/amare-en-todos-tiempos-ignacio-galdames/
-    pagada: false
+    enlace: false

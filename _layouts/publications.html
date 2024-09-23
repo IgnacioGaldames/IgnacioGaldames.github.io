@@ -7,14 +7,14 @@ layout: page-sidebar-right
     {% for miPublicacion in site.data.mis_publicaciones.publicaciones %}
     <li class="list-group-item">
       <span class="text-capitalize">{{ miPublicacion.nombrePublicacion }}</span> |
-      {% if miPublicacion.pagada == true %}
+      {% if miPublicacion.enlace == true %}
         <a href="{{ miPublicacion.urlPublicacion }}" target="_blank">
       {% endif %}
-          <span class="text-uppercase fw-bold">{{ miPublicacion.tituloRevista }}</span> | 
-      {% if miPublicacion.pagada == true %}
+          <span class="text-uppercase fw-bold">{{ miPublicacion.tituloRevista }}</span>
+      {% if miPublicacion.enlace == true %}
         </a>
       {% endif %}
-      {{ miPublicacion.fechaPublicacion }}
+       | {{ miPublicacion.fechaPublicacion }}
     </li>
     {% endfor %}
   </ul>
