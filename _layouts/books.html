@@ -2,12 +2,54 @@
 layout: page-sidebar-right
 ---
 
-<section>
-  {{ content }}
-  <ul>
-    {% for miLibro in site.data.mis_libros.libros %}
-    <li>{{ miLibro.nombreLibro }}</li>
-    {% endfor %}
-  </ul>
-
+<section class="">
+	{{ content }}
+	<div class="row">
+		{% for miLibro in site.data.mis_libros.libros %}
+		<div class="col-md-6">
+			<div class="card shadow border border-light-subtle">
+				<div class="card-header">
+					<h5 class="card-title">{{ miLibro.nombreLibro }}</h5>
+				</div>
+				<img src="{{ miLibro.portadaLibro }}" class="card-img-top " alt="{{ miLibro.nombreLibro }}">
+				<div class="card-body">
+					<p class="card-text fw-lighter">{{ miLibro.descripcionLibro }}</p>
+				</div>
+				<div class="card-body border-top border-light-subtle">
+					{% if miLibro.nombreEditorial %}
+					<p class="mb-1">Editorial: <span class=""">{{ miLibro.nombreEditorial }}</span></p>
+				{% endif %}
+					{% if miLibro.fechaPublicacion %}
+						<p class="mb-1">Fecha Publicación: <span class="">{{ miLibro.fechaPublicacion }}</span></p>
+					{% endif %}
+					{% if miLibro.ISBN %}
+						<p class="mb-1">ISBN: <span class="">{{ miLibro.ISBN }}</span></p>
+					{% endif %}
+					{% if miLibro.ISBN10 %}
+						<p class="mb-1">ISBN10: <span class="">{{ miLibro.ISBN10 }}</span></p>
+					{% endif %}
+					{% if miLibro.ASIN %}
+						<p class="mb-1">ASIN: <span class="">{{ miLibro.ASIN }}</span></p>
+					{% endif %}
+				</div>
+				<div class="card-footer">
+					<a href="{{miLibro.urlGoodreads}}" class="btn btn-sm btn-secondary mb-2" target="_blank" type="button"><i class="fa-brands fa-goodreads me-2"></i>goodreads</a>
+					{% if miLibro.urlAmazon | miLibro.urlBuscalibre | miLibro.urlMercadolibre %}
+						<div class="btn-group w-100" role="group" aria-label="Enlaces Libros">			
+							{% if miLibro.urlAmazon %}
+								<a href="{{miLibro.urlAmazon}}" class="btn btn-sm btn-primary" target="_blank" type="button"><i class="fa-brands fa-amazon me-2"></i>Amazon</a>
+							{% endif %}
+							{% if miLibro.urlBuscalibre %}
+								<a href="{{miLibro.urlBuscalibre}}" class="btn btn-sm btn-primary" target="_blank" type="button"><i class="fa-solid fa-paper-plane me-2"></i>Buscalibre</a>
+							{% endif %}
+							{% if miLibro.urlMercadolibre %}
+							<a href="{{miLibro.urlMercadolibre}}" class="btn btn-sm btn-primary" target="_blank" type="button"><i class="fa-regular fa-handshake me-2"></i>Mercadolibre</a>
+						{% endif %}
+						</div>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
 </section>
