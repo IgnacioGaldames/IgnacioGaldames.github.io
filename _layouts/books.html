@@ -3,23 +3,34 @@ layout: page-sidebar-right
 ---
 
 <section>
-  {{ content }}
-  <div class="row">
-    {% for miLibro in site.data.mis_libros.libros %}
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-header">
-          <h5 class="card-title">{{ miLibro.nombreLibro }}</h5>
-        </div>
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">{{ miLibro.descripcionLibro }}</p>
-        </div>
-        <div class="card-footer">
-          <a href="{{miLibro.urlGoodreads}}" class="btn btn-sm btn-primary" target="_blank"><i class="fa-brands fa-goodreads me-2"></i>goodreads</a>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
+	{{ content }}
+	<div class="row">
+		{% for miLibro in site.data.mis_libros.libros %}
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-header">
+					<h5 class="card-title">{{ miLibro.nombreLibro }}</h5>
+				</div>
+				<img src="..." class="card-img-top" alt="">
+				<div class="card-body">
+					<p class="card-text">{{ miLibro.descripcionLibro }}</p>
+				</div>
+				<div class="card-footer">
+					<a href="{{miLibro.urlGoodreads}}" class="btn btn-sm btn-secondary mb-2" target="_blank" type="button"><i class="fa-brands fa-goodreads me-2"></i>goodreads</a>
+					<div class="btn-group w-100" role="group" aria-label="Enlaces Libros">			
+						{% if miLibro.urlAmazon %}
+							<a href="{{miLibro.urlAmazon}}" class="btn btn-sm btn-primary" target="_blank" type="button"><i class="fa-brands fa-amazon me-2"></i>Amazon</a>
+						{% endif %}
+						{% if miLibro.urlBuscalibre %}
+							<a href="{{miLibro.urlBuscalibre}}" class="btn btn-sm btn-primary" target="_blank" type="button"><i class="fa-solid fa-paper-plane me-2"></i>Buscalibre</a>
+						{% endif %}
+						{% if miLibro.urlMercadolibre %}
+						<a href="{{miLibro.urlMercadolibre}}" class="btn btn-sm btn-primary" target="_blank" type="button"><i class="fa-regular fa-handshake me-2"></i>Mercadolibre</a>
+					{% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
 </section>
