@@ -1,7 +1,10 @@
 ---
 layout: page-sidebar-right
 ---
-
+{% for miPublicacion in site.data.mis_publicaciones.publicaciones %}
+  {% assign site.data.mis_publicaciones.publicaciones = site.data.mis_publicaciones.publicaciones | push: miPublicacion[1] %}
+{% endfor %}
+{% assign site.data.mis_publicaciones.publicaciones = site.data.mis_publicaciones.publicaciones | sort: "fechaPublicacion" %}
 <section class="content">
   <ul class="list-group list-group-flush">
     {% for miPublicacion in site.data.mis_publicaciones.publicaciones %}
