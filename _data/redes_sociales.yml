@@ -28,7 +28,7 @@ redesSociales:
 
   - redUrl: facebook.com
     redSidebar: false
-    redUsername: 
+    redUsername:
     redIcon: fab fa-facebook-square
 
   - redUrl: behance.com
