@@ -15,6 +15,9 @@ layout: page-sidebar-right
         <div class="card-body">
           <p class="card-text">{{ miLibro.descripcionLibro }}</p>
         </div>
+        <div class="card-footer">
+          <a href="{{miLibro.urlGoodreads}}" class="btn btn-sm btn-primary" target="_blank"><i class="fa-brands fa-goodreads me-2"></i>goodreads</a>
+        </div>
       </div>
     </div>
     {% endfor %}
