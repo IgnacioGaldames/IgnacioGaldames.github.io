@@ -7,11 +7,11 @@ layout: page-sidebar-right
 	<div class="row">
 		{% for miLibro in site.data.mis_libros.libros %}
 		<div class="col-md-6">
-			<div class="card">
+			<div class="card shadow border border-light-subtle">
 				<div class="card-header">
 					<h5 class="card-title">{{ miLibro.nombreLibro }}</h5>
 				</div>
-				<img src="{{ miLibro.portadaLibro }}" class="card-img-top" alt="{{ miLibro.nombreLibro }}">
+				<img src="{{ miLibro.portadaLibro }}" class="card-img-top " alt="{{ miLibro.nombreLibro }}">
 				<div class="card-body">
 					<p class="card-text">{{ miLibro.descripcionLibro }}</p>
 				</div>
