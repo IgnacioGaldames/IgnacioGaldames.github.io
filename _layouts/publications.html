@@ -5,7 +5,17 @@ layout: page-sidebar-right
 <section class="content">
   <ul class="list-group list-group-flush">
     {% for miPublicacion in site.data.mis_publicaciones.publicaciones %}
-    <li class="list-group-item"><span class="text-capitalize">{{ miPublicacion.nombrePublicacion }}</span> | <span class="text-uppercase fw-bold">{{ miPublicacion.tituloRevista }}</span> | {{ miPublicacion.fechaPublicacion }}</li>
+    <li class="list-group-item">
+      <span class="text-capitalize">{{ miPublicacion.nombrePublicacion }}</span> |
+      {% if miPublicacion.pagada == true %}
+        <a href="{{ miPublicacion.urlPublicacion }}" target="_blank">
+      {% endif %}
+          <span class="text-uppercase fw-bold">{{ miPublicacion.tituloRevista }}</span> | 
+      {% if miPublicacion.pagada == true %}
+        </a>
+      {% endif %}
+      {{ miPublicacion.fechaPublicacion }}
+    </li>
     {% endfor %}
   </ul>
 </section>
