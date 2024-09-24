@@ -1,4 +1,6 @@
 // Import Bootstrap's source SCSS files
+@import "custom";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
-@import "../sass/eb-garamond.sass"
+@import "../sass/_eb-garamond.sass";
+@import "../sass/_fonts.sass"
 // Custom styles go here
