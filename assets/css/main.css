@@ -13069,12 +13069,64 @@ textarea.form-control-lg {
   font-style: normal;
 }
 
-.eb-garamond {
+.eb-garamond, p {
   font-family: "EB Garamond", serif;
 }
 
+.futura-300 {
+  font-family: "Futura PT", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.futura-400 {
+  font-family: "Futura PT", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.futura-450 {
+  font-family: "Futura PT", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
+}
+
+.futura-500 {
+  font-family: "Futura PT", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.futura-600 {
+  font-family: "Futura PT", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.futura-700 {
+  font-family: "Futura PT", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.futura-800 {
+  font-family: "Futura PT", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.futura, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, .h6 {
+  font-family: "Futura PT", sans-serif;
+}
+
 p {
-  font-family: "EB Garamond", serif;
   font-size: 1.2rem;
 }
 
