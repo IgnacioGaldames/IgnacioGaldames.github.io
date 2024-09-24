@@ -6,7 +6,7 @@ layout: page-sidebar-right
   {{ content }}
   <ul class="list-group list-group-flush">
     {% for miCurso in site.data.mis_cursos.cursos %}
-    <li class="list-group-item">{{ miCurso.fechaCurso }} | <span  class="text-capitalize">{{ miCurso.nombreCurso }}</span> | <span  class="text-uppercase fw-bold">{{ miCurso.institucionCurso }}</span></li>
+    <li class="list-group-item"><span class="text-capitalize eb-garamond fs-5">{{ miCurso.nombreCurso }}</span> | <span  class="text-uppercase fw-bold">{{ miCurso.institucionCurso }}</span> | {{ miCurso.fechaCurso }}</li>
     {% endfor %}
   </ul>
 </section>
