@@ -6,7 +6,14 @@ layout: page-sidebar-right
   {{ content }}
   <ul class="list-group list-group-flush">
     {% for miCurso in site.data.mis_cursos.cursos %}
-    <li class="list-group-item"><span class="text-capitalize eb-garamond fs-5">{{ miCurso.nombreCurso }}</span> | <span  class="text-uppercase fw-bold">{{ miCurso.institucionCurso }}</span> | {{ miCurso.fechaCurso }}</li>
+    <li class="list-group-item">
+      {%if miCurso.tipoCurso %}
+      <span class="text-capitalize futura fs-6 fw-lighter text-light">{{ miCurso.tipoCurso }}</span><br>
+      {% endif %}
+      <span class="text-capitalize eb-garamond fs-5">{{ miCurso.nombreCurso }}</span> | 
+      <span  class="text-uppercase fw-bolder">{{ miCurso.institucionCurso }}</span> | 
+     <span class="futura">{{ miCurso.fechaCurso }}</span>
+    </li>
     {% endfor %}
   </ul>
 </section>

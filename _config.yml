@@ -22,9 +22,10 @@ title: I. A. Galdames
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   I. A. Galdames, escritor chileno de ciencia ficción nacido en 1987. Es un desarrollador web autodidacta y una mermelada de ayer.
-  Ha publicado cuentos en la antología Neon Dreams and Nightmares, en la revista Anapoyesis, la revista Espejo Humeante, la revista Penumbria, La revista Axioma, la revista Iguales, en Teoría Omicrón y El ojo de Uk.
+  Ha publicado cuentos en la antología Neon Dreams and Nightmares, la revista Espejo Humeante, La revista Axioma, en la revista Anapoyesis, en Teoría Omicrón, , la revista Penumbria, la revista Iguales y El ojo de Uk.
   También ha publicado en la reconocida revista de ciencia ficción y literatura fantástica en español Axxón.
   Sus escritos son mayormente de ciencia ficción y exploran la soledad, el aislamiento, la percepción temporal y el existencialismo, con inspiraciones expresionistas, cyberpunk y neo-noir.
+  Tiene un diplomado en Storytelling, ha tomado cursos sobre escribir ciencia ficción en la escuela de Ecritores de España y ha tenido clasess sobre escritura creativa con Brandon Sanderson, Mary Robinette Kowal y Dan Wells.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ignaciogaldames.com" # the base hostname & protocol for your site, e.g. http://example.com
 
