@@ -594,13 +594,13 @@ progress {
 }
 
 .display-1 {
-  font-size: calc(1.625rem + 4.5vw);
+  font-size: calc(1.615rem + 4.38vw);
   font-weight: 300;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
   .display-1 {
-    font-size: 5rem;
+    font-size: 4.9rem;
   }
 }
 
@@ -13034,100 +13034,124 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.eb-garamond-400 {
+.eb-garamond, p, .eb-garamond-800, .eb-garamond-700, .eb-garamond-600, .eb-garamond-500, .eb-garamond-400 {
   font-family: "EB Garamond", serif;
+}
+
+.eb-garamond-400 {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
 .eb-garamond-500 {
-  font-family: "EB Garamond", serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
 }
 
 .eb-garamond-600 {
-  font-family: "EB Garamond", serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
 }
 
 .eb-garamond-700 {
-  font-family: "EB Garamond", serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
 }
 
 .eb-garamond-800 {
-  font-family: "EB Garamond", serif;
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
 }
 
-.eb-garamond, p {
-  font-family: "EB Garamond", serif;
+.futura, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, .h6, .futura-800-italic, .futura-700-italic, .futura-600-italic, .futura-500-italic, .futura-450-italic, .futura-400-italic, .futura-300-italic, .futura-800, .futura-700, .futura-600, .futura-500, .futura-450, .futura-400, .futura-300 {
+  font-family: "Futura Std", sans-serif;
 }
 
 .futura-300 {
-  font-family: "Futura PT", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
 }
 
 .futura-400 {
-  font-family: "Futura PT", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
 .futura-450 {
-  font-family: "Futura PT", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 450;
   font-style: normal;
 }
 
 .futura-500 {
-  font-family: "Futura PT", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
 }
 
 .futura-600 {
-  font-family: "Futura PT", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
 }
 
 .futura-700 {
-  font-family: "Futura PT", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
 }
 
 .futura-800 {
-  font-family: "Futura PT", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
 }
 
-.futura, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, .h6 {
-  font-family: "Futura PT", sans-serif;
+.futura-300-italic {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.futura-400-italic {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.futura-450-italic {
+  font-weight: 450;
+  font-style: italic;
+}
+
+.futura-500-italic {
+  font-weight: 500;
+  font-style: italic;
+}
+
+.futura-600-italic {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.futura-700-italic {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.futura-800-italic {
+  font-weight: 800;
+  font-style: italic;
 }
 
 p {
   font-size: 1.2rem;
+}
+
+h2, .h2 {
+  font-size: 2.2rem;
+}
+
+.display-1 {
+  font-size: 4.9rem;
 }
 
 /*# sourceMappingURL=main.css.map */

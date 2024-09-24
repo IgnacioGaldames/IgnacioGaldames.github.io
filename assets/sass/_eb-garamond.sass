@@ -1,11 +1,11 @@
+.eb-garamond
+	font-family: "EB Garamond", serif
+
 $weights: 400,500,600,700,800
 
 @each $weight in $weights
 	.eb-garamond-#{$weight}
-		font-family: "EB Garamond", serif
+		@extend .eb-garamond
 		font-optical-sizing: auto
 		font-weight: #{$weight}
 		font-style: normal
-
-.eb-garamond
-	font-family: "EB Garamond", serif
