@@ -9,7 +9,7 @@ layout: page-sidebar-right
   <ul class="list-group list-group-flush">
     {% for miPublicacion in site.data.mis_publicaciones.publicaciones %}
     <li class="list-group-item">
-      <span class="text-capitalize">{{ miPublicacion.nombrePublicacion }}</span> |
+      <span class="text-capitalize eb-garamond fs-5" ">{{ miPublicacion.nombrePublicacion }}</span> |
       {% if miPublicacion.enlace == true %}
         <a href="{{ miPublicacion.urlPublicacion }}" target="_blank">
       {% endif %}

@@ -13069,9 +13069,13 @@ textarea.form-control-lg {
   font-style: normal;
 }
 
+.eb-garamond {
+  font-family: "EB Garamond", serif;
+}
+
 p {
   font-family: "EB Garamond", serif;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 /*# sourceMappingURL=main.css.map */
