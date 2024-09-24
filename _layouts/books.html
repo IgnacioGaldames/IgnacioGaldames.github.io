@@ -17,19 +17,22 @@ layout: page-sidebar-right
 				</div>
 				<div class="card-body border-top border-light-subtle">
 					{% if miLibro.nombreEditorial %}
-					<p class="mb-1">Editorial: <span class=""">{{ miLibro.nombreEditorial }}</span></p>
-				{% endif %}
+						<h6 class="mb-1">Editorial: <span class=""">{{ miLibro.nombreEditorial }}</span></h6>
+					{% endif %}
+					{% if miLibro.nombreSello %}
+						<h6 class="mb-1">Sello: <span class=""">{{ miLibro.nombreSello }}</span></h6>
+					{% endif %}
 					{% if miLibro.fechaPublicacion %}
-						<p class="mb-1">Fecha Publicación: <span class="">{{ miLibro.fechaPublicacion }}</span></p>
+						<h6 class="mb-1">Fecha Publicación: <span class="">{{ miLibro.fechaPublicacion }}</span></h6>
 					{% endif %}
 					{% if miLibro.ISBN %}
-						<p class="mb-1">ISBN: <span class="">{{ miLibro.ISBN }}</span></p>
+						<h6 class="mb-1">ISBN: <span class="">{{ miLibro.ISBN }}</span></h6>
 					{% endif %}
 					{% if miLibro.ISBN10 %}
-						<p class="mb-1">ISBN10: <span class="">{{ miLibro.ISBN10 }}</span></p>
+						<h6 class="mb-1">ISBN10: <span class="">{{ miLibro.ISBN10 }}</span></h6>
 					{% endif %}
 					{% if miLibro.ASIN %}
-						<p class="mb-1">ASIN: <span class="">{{ miLibro.ASIN }}</span></p>
+						<h6 class="mb-1">ASIN: <span class="">{{ miLibro.ASIN }}</span></h6>
 					{% endif %}
 				</div>
 				<div class="card-footer">
