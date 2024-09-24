@@ -12,6 +12,7 @@ libros:
 
  - nombreLibro: Corceles Azules
    nombreEditorial: Speedwagon
+   nombreSello: Kaneda
    portadaLibro: /assets/img/portada_corceles_azules_sm.jpg
    urlAmazon:  
    urlBuscalibre:  

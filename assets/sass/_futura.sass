@@ -1,0 +1,16 @@
+.futura
+	font-family: 'Futura Std', sans-serif
+
+$weights: 300,400,450,500,600,700,800
+
+@each $weight in $weights
+	.futura-#{$weight}
+		@extend .futura
+		font-weight: #{$weight}
+		font-style: normal
+
+@each $weight in $weights
+	.futura-#{$weight}-italic
+		@extend .futura
+		font-weight: #{$weight}
+		font-style: italic
