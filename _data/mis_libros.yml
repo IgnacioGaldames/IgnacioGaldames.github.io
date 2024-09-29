@@ -13,6 +13,7 @@ libros:
  - nombreLibro: Corceles Azules
    nombreEditorial: Speedwagon
    nombreSello: Kaneda
+   nombreColeccion: Kaneda 001 
    portadaLibro: /assets/img/portada_corceles_azules_sm.jpg
    urlAmazon:  
    urlBuscalibre:  
@@ -27,7 +28,7 @@ libros:
  - nombreLibro: "CyberTerror: AUSTRAL"
    nombreEditorial: SPEEDWAGON Media Works
    nombreSello: Kaneda
-   denominacionLibro: SPEEDWAGON Media Works
+   nombreColeccion: ZAWARUDO 010 
    portadaLibro: /assets/img/cyberterror_austral_23546_wugXI0ch.jpg
    urlAmazon:  
    urlBuscalibre:  
