@@ -46,7 +46,9 @@ layout: page-sidebar-right
 				{% endif %}
 				</div>
 				<div class="card-footer">
-					<a href="{{miLibro.urlGoodreads}}" class="btn btn-sm btn-secondary mb-2" target="_blank" type="button"><i class="fa-brands fa-goodreads me-2"></i>goodreads</a>
+					{% if miLibro.urlGoodreads %}
+						<a href="{{miLibro.urlGoodreads}}" class="btn btn-sm btn-secondary mb-2" target="_blank" type="button"><i class="fa-brands fa-goodreads me-2"></i>goodreads</a>
+					{% endif %}
 					{% if miLibro.urlAmazon or miLibro.urlBuscalibre or miLibro.urlMercadolibre or miLibro.urlLektu %}
 						<div class="btn-group w-100" role="group" aria-label="Enlaces libros">			
 							{% if miLibro.urlAmazon %}
