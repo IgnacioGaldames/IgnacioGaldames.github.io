@@ -1,11 +1,15 @@
 ---
 layout: page-sidebar-right
 ---
+{% for miLibro in site.data.mis_libros.libros %}
+  {% assign site.data.mis_libros.libros = site.data.mis_libros.libros | push: miLibro[1] %}
+{% endfor %}
+{% assign site.data.mis_libros.libros = site.data.mis_libros.libros | sort: "fechaPublicacion" %}
 
 <section class="">
 	{{ content }}
 	<div class="row">
-		{% for miLibro in site.data.mis_libros.libros %}
+		{% for miLibro in site.data.mis_libros.libros reversed %}
 		<div class="col-md-6 col-lg-4 mb-4">
 			<div class="card shadow border border-light-subtle">
 				<div class="card-header">
@@ -41,7 +45,7 @@ layout: page-sidebar-right
 				<div class="card-footer">
 					<a href="{{miLibro.urlGoodreads}}" class="btn btn-sm btn-secondary mb-2" target="_blank" type="button"><i class="fa-brands fa-goodreads me-2"></i>goodreads</a>
 					{% if miLibro.urlAmazon | miLibro.urlBuscalibre | miLibro.urlMercadolibre %}
-						<div class="btn-group w-100" role="group" aria-label="Enlaces Libros">			
+						<div class="btn-group w-100" role="group" aria-label="Enlaces libros">			
 							{% if miLibro.urlAmazon %}
 								<a href="{{miLibro.urlAmazon}}" class="btn btn-sm btn-primary" target="_blank" type="button"><i class="fa-brands fa-amazon me-2"></i>Amazon</a>
 							{% endif %}
