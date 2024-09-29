@@ -15,27 +15,28 @@ libros:
    nombreSello: Kaneda
    nombreColeccion: Kaneda 001 
    portadaLibro: /assets/img/portada_corceles_azules_sm.jpg
-   urlAmazon:  
-   urlBuscalibre:  
-   urlMercadolibre:  
    urlGoodreads: https://www.goodreads.com/book/show/216956775-corceles-azules
-   urlterceraFundacion: 
+   urlterceraFundacion:
+   urlAmazon:
+   urlBuscalibre: https://www.buscalibre.cl/libro-corceles-azules/9786124969409/p/62891003
+   urlMercadolibre:
    descripcionLibro: La ciudad distópica de Santiago de Neo Extremadura sirve de fondo para doce historias, publicadas a lo largo de cinco años en diversas revistas, tanto en inglés como en español, que poco a poco mapean una realidad tecnológica y obscura. Personajes periféricos no abandonan la esperanza en una urbe decadente, pero terminan explorando la soledad, la alienación y la muerte en un mundo cruel y de fracasos frecuentes. Un veterano de guerra que percibe el tiempo de forma alterada, una pintora que enfrenta la tragedia junto a su ginoide, un anciano chinchinero atacado por el sistema, una química que se ve obligada a trabajar con la mafia y muchas otras personas ordinarias protagonizan un homenaje ciberpunk a las historias Pulp y Noir, en una narrativa no lineal tejida con cuidado por años.
    fechaPublicacion:  14/6/2024
    ISBN: 978-612-49694-0-9 
    ISBN10: 6124969408
+   Palabras: 29652
 
  - nombreLibro: "CyberTerror: AUSTRAL"
    nombreEditorial: SPEEDWAGON Media Works
    nombreSello: Kaneda
    nombreColeccion: ZAWARUDO 010 
    portadaLibro: /assets/img/cyberterror_austral_23546_wugXI0ch.jpg
-   urlAmazon:  
+   urlGoodreads:
+   urlterceraFundacion:
+   urlAmazon:
    urlBuscalibre:  
    urlMercadolibre:
-   urlLektu: SPEEDWAGON Media Works
-   urlGoodreads: https://www.goodreads.com/book/show/216956775-corceles-azules
-   urlterceraFundacion: 
+   urlLektu: https://lektu.com/l/speedwagon-media-works/cyberterror-austral/23546
    descripcionLibro: "CyberTerror: Austral nos transporta desde la desolación de futuros distópicos hasta el frío del espacio solitario y mecanizado.
 
     A través de siete relatos interconectados, exploramos colonias mineras en otros planetas, ancianos desmemoriados desechados en asilos robotizados, edificios tecnológicos que parecen tener vida, una mujer luchando por su familia en un mundo postapocalíptico, científicos explorando los límites del Tesla punk, niños tratando de encajar en una sociedad cada vez más exigente y astronautas explorando naves deshabitadas.

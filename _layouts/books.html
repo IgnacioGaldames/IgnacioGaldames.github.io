@@ -41,10 +41,13 @@ layout: page-sidebar-right
 					{% if miLibro.ASIN %}
 						<h6 class="mb-1">ASIN: <span class="fw-bold">{{ miLibro.ASIN }}</span></h6>
 					{% endif %}
+					{% if miLibro.Palabras %}
+					<h6 class="mb-1">Palabras: <span class="fw-bold">{{ miLibro.Palabras }}</span></h6>
+				{% endif %}
 				</div>
 				<div class="card-footer">
 					<a href="{{miLibro.urlGoodreads}}" class="btn btn-sm btn-secondary mb-2" target="_blank" type="button"><i class="fa-brands fa-goodreads me-2"></i>goodreads</a>
-					{% if miLibro.urlAmazon | miLibro.urlBuscalibre | miLibro.urlMercadolibre %}
+					{% if miLibro.urlAmazon or miLibro.urlBuscalibre or miLibro.urlMercadolibre or miLibro.urlLektu %}
 						<div class="btn-group w-100" role="group" aria-label="Enlaces libros">			
 							{% if miLibro.urlAmazon %}
 								<a href="{{miLibro.urlAmazon}}" class="btn btn-sm btn-primary" target="_blank" type="button"><i class="fa-brands fa-amazon me-2"></i>Amazon</a>
@@ -53,8 +56,11 @@ layout: page-sidebar-right
 								<a href="{{miLibro.urlBuscalibre}}" class="btn btn-sm btn-primary" target="_blank" type="button"><i class="fa-solid fa-paper-plane me-2"></i>Buscalibre</a>
 							{% endif %}
 							{% if miLibro.urlMercadolibre %}
-							<a href="{{miLibro.urlMercadolibre}}" class="btn btn-sm btn-primary" target="_blank" type="button"><i class="fa-regular fa-handshake me-2"></i>Mercadolibre</a>
-						{% endif %}
+								<a href="{{miLibro.urlMercadolibre}}" class="btn btn-sm btn-primary" target="_blank" type="button"><i class="fa-regular fa-handshake me-2"></i>Mercadolibre</a>
+							{% endif %}
+							{% if miLibro.urlLektu %}
+								<a href="{{miLibro.urlLektu}}" class="btn btn-sm btn-primary" target="_blank" type="button"><i class="fa-solid fa-bars  me-2"></i></i>Lektu</a>
+							{% endif %}
 						</div>
 					{% endif %}
 				</div>
