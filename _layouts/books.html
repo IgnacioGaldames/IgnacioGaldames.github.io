@@ -1,12 +1,16 @@
 ---
 layout: page-sidebar-right
 ---
+{% for miLibro in site.data.mis_libros.libros %}
+  {% assign site.data.mis_libros.libros = site.data.mis_libros.libros | push: miLibro[1] %}
+{% endfor %}
+{% assign site.data.mis_libros.libros = site.data.mis_libros.libros | sort: "fechaPublicacion" %}
 
 <section class="">
 	{{ content }}
 	<div class="row">
-		{% for miLibro in site.data.mis_libros.libros %}
-		<div class="col-md-6">
+		{% for miLibro in site.data.mis_libros.libros reversed %}
+		<div class="col-md-6 col-lg-4 mb-4">
 			<div class="card shadow border border-light-subtle">
 				<div class="card-header">
 					<h5 class="card-title">{{ miLibro.nombreLibro }}</h5>
@@ -17,28 +21,36 @@ layout: page-sidebar-right
 				</div>
 				<div class="card-body border-top border-light-subtle">
 					{% if miLibro.nombreEditorial %}
-						<h6 class="mb-1">Editorial: <span class=""">{{ miLibro.nombreEditorial }}</span></h6>
+						<h6 class="mb-1">Editorial: <span class="fw-bold">{{ miLibro.nombreEditorial }}</span></h6>
 					{% endif %}
-					{% if miLibro.nombreSello %}
-						<h6 class="mb-1">Sello: <span class=""">{{ miLibro.nombreSello }}</span></h6>
+					{% if miLibro.nombreColeccion %}
+						<h6 class="mb-1">Sello: <span class="fw-bold">{{ miLibro.nombreSello }}</span></h6>
 					{% endif %}
+					{% if miLibro.nombreColeccion %}
+					<h6 class="mb-1">Colección: <span class="fw-bold">{{ miLibro.nombreColeccion }}</span></h6>
+				{% endif %}
 					{% if miLibro.fechaPublicacion %}
-						<h6 class="mb-1">Fecha Publicación: <span class="">{{ miLibro.fechaPublicacion }}</span></h6>
+						<h6 class="mb-1">Fecha Publicación: <span class="fw-bold">{{ miLibro.fechaPublicacion }}</span></h6>
 					{% endif %}
 					{% if miLibro.ISBN %}
-						<h6 class="mb-1">ISBN: <span class="">{{ miLibro.ISBN }}</span></h6>
+						<h6 class="mb-1">ISBN: <span class="fw-bold">{{ miLibro.ISBN }}</span></h6>
 					{% endif %}
 					{% if miLibro.ISBN10 %}
-						<h6 class="mb-1">ISBN10: <span class="">{{ miLibro.ISBN10 }}</span></h6>
+						<h6 class="mb-1">ISBN10: <span class="fw-bold">{{ miLibro.ISBN10 }}</span></h6>
 					{% endif %}
 					{% if miLibro.ASIN %}
-						<h6 class="mb-1">ASIN: <span class="">{{ miLibro.ASIN }}</span></h6>
+						<h6 class="mb-1">ASIN: <span class="fw-bold">{{ miLibro.ASIN }}</span></h6>
 					{% endif %}
+					{% if miLibro.Palabras %}
+					<h6 class="mb-1">Palabras: <span class="fw-bold">{{ miLibro.Palabras }}</span></h6>
+				{% endif %}
 				</div>
 				<div class="card-footer">
-					<a href="{{miLibro.urlGoodreads}}" class="btn btn-sm btn-secondary mb-2" target="_blank" type="button"><i class="fa-brands fa-goodreads me-2"></i>goodreads</a>
-					{% if miLibro.urlAmazon | miLibro.urlBuscalibre | miLibro.urlMercadolibre %}
-						<div class="btn-group w-100" role="group" aria-label="Enlaces Libros">			
+					{% if miLibro.urlGoodreads %}
+						<a href="{{miLibro.urlGoodreads}}" class="btn btn-sm btn-secondary mb-2" target="_blank" type="button"><i class="fa-brands fa-goodreads me-2"></i>goodreads</a>
+					{% endif %}
+					{% if miLibro.urlAmazon or miLibro.urlBuscalibre or miLibro.urlMercadolibre or miLibro.urlLektu %}
+						<div class="btn-group w-100" role="group" aria-label="Enlaces libros">			
 							{% if miLibro.urlAmazon %}
 								<a href="{{miLibro.urlAmazon}}" class="btn btn-sm btn-primary" target="_blank" type="button"><i class="fa-brands fa-amazon me-2"></i>Amazon</a>
 							{% endif %}
@@ -46,8 +58,11 @@ layout: page-sidebar-right
 								<a href="{{miLibro.urlBuscalibre}}" class="btn btn-sm btn-primary" target="_blank" type="button"><i class="fa-solid fa-paper-plane me-2"></i>Buscalibre</a>
 							{% endif %}
 							{% if miLibro.urlMercadolibre %}
-							<a href="{{miLibro.urlMercadolibre}}" class="btn btn-sm btn-primary" target="_blank" type="button"><i class="fa-regular fa-handshake me-2"></i>Mercadolibre</a>
-						{% endif %}
+								<a href="{{miLibro.urlMercadolibre}}" class="btn btn-sm btn-primary" target="_blank" type="button"><i class="fa-regular fa-handshake me-2"></i>Mercadolibre</a>
+							{% endif %}
+							{% if miLibro.urlLektu %}
+								<a href="{{miLibro.urlLektu}}" class="btn btn-sm btn-primary" target="_blank" type="button"><i class="fa-solid fa-bars  me-2"></i></i>Lektu</a>
+							{% endif %}
 						</div>
 					{% endif %}
 				</div>
