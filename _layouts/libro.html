@@ -1,10 +1,73 @@
 ---
-layout: default
+layout: page-sidebar-right
 ---
-
-<h1>{{ page.title }}</h1>
-<p><strong>Autor:</strong> {{ page.author }}</p>
-<p><strong>Año:</strong> {{ page.year }}</p>
-<div>
-  {{ content }}
+<div class="row">
+	<div class="col-md-6 col-lg-4 mb-4">
+		<div class="card shadow border border-light-subtle">
+			<div class="card-header">
+				<h5 class="card-title">{{ page.nombreLibro }}</h5>
+			</div>
+			<img src="{{ page.portadaLibro }}" class="card-img-top " alt="{{ page.nombreLibro }}">
+			<div class="card-footer">
+				{% if page.urlAmazon or page.urlBuscalibre or page.urlMercadolibre or page.urlLektu %}
+				<div class="btn-group w-100" role="group" aria-label="Enlaces libros">
+					{% if page.urlAmazon %}
+					<a href="{{page.urlAmazon}}" class="btn btn-primary" target="_blank" type="button"><i
+							class="fa-brands fa-amazon me-2"></i>Amazon</a>
+					{% endif %}
+					{% if page.urlBuscalibre %}
+					<a href="{{page.urlBuscalibre}}" class="btn btn-primary" target="_blank" type="button"><i
+							class="fa-solid fa-paper-plane me-2"></i>Buscalibre</a>
+					{% endif %}
+					{% if page.urlMercadolibre %}
+					<a href="{{page.urlMercadolibre}}" class="btn btn-primary" target="_blank" type="button"><i
+							class="fa-regular fa-handshake me-2"></i>Mercadolibre</a>
+					{% endif %}
+					{% if page.urlLektu %}
+					<a href="{{page.urlLektu}}" class="btn btn-primary" target="_blank" type="button"><i
+							class="fa-solid fa-bars  me-2"></i></i>Lektu</a>
+					{% endif %}
+				</div>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6">
+    {% if page.descripcionLibro %}
+      <div class="card-body">
+        <p class="card-text fw-lighter">{{ page.descripcionLibro }}</p>
+      </div>
+    {% endif %}
+    <div class="card-body border-top border-light-subtle">
+      {% if page.nombreEditorial %}
+      <h6 class="mb-1">Editorial: <span class="fw-bold">{{ page.nombreEditorial }}</span></h6>
+      {% endif %}
+      {% if page.nombreColeccion %}
+      <h6 class="mb-1">Sello: <span class="fw-bold">{{ page.nombreSello }}</span></h6>
+      {% endif %}
+      {% if page.nombreColeccion %}
+      <h6 class="mb-1">Colección: <span class="fw-bold">{{ page.nombreColeccion }}</span></h6>
+      {% endif %}
+      {% if page.fechaPublicacion %}
+      <h6 class="mb-1">Fecha Publicación: <span class="fw-bold">{{ page.fechaPublicacion }}</span></h6>
+      {% endif %}
+      {% if page.ISBN %}
+      <h6 class="mb-1">ISBN: <span class="fw-bold">{{ page.ISBN }}</span></h6>
+      {% endif %}
+      {% if page.ISBN10 %}
+      <h6 class="mb-1">ISBN10: <span class="fw-bold">{{ page.ISBN10 }}</span></h6>
+      {% endif %}
+      {% if page.ASIN %}
+      <h6 class="mb-1">ASIN: <span class="fw-bold">{{ page.ASIN }}</span></h6>
+      {% endif %}
+      {% if page.Palabras %}
+      <h6 class="mb-1">Palabras: <span class="fw-bold">{{ page.Palabras }}</span></h6>
+      {% endif %}
+      {% if page.urlGoodreads %}
+        <a href="{{page.urlGoodreads}}" class="btn btn-sm btn-secondary my-2" target="_blank" type="button"><i class="fa-brands fa-goodreads me-2"></i>goodreads</a>
+      {% endif %}
+    </div>
+	</div>
 </div>
+
+{{ content }}

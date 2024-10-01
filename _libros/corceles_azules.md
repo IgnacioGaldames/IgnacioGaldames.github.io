@@ -1,6 +1,6 @@
 ---
 layout: libro
-
+title: Corceles Azules
 nombreLibro: Corceles Azules
 nombreEditorial: Speedwagon
 nombreSello: Kaneda
@@ -17,4 +17,4 @@ ISBN: 978-612-49694-0-9
 ISBN10: 6124969408
 Palabras: 29652
 ---
-Descripción detallada del libro.
+
