@@ -6,7 +6,7 @@ nombreEditorial: SPEEDWAGON Media Works
 nombreSello: Kaneda
 nombreColeccion: ZAWARUDO 010 
 portadaLibro: /assets/img/cyberterror_austral_23546_wugXI0ch.jpg
-urlGoodreads:
+urlGoodreads: https://www.goodreads.com/book/show/219801495-cyberterror
 urlterceraFundacion:
 urlAmazon:
 urlBuscalibre:  
