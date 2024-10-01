@@ -58,3 +58,7 @@ exclude:
 include:
   - assets/js/bundle.js
   - assets/css/main.css
+
+collections:
+  libros:
+    output: true
