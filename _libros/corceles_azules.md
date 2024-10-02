@@ -18,3 +18,12 @@ ISBN10: 6124969408
 Palabras: 29652
 ---
 
+# Explora la portada en Realidad Aumentada
+<div class="row my-3">
+<div class="col-md-3">
+  <a href="https://adobeaero.app.link/5lYh5UF8hNb">
+    <img src="/assets/img/ar_corceles_azules.png" alt="Enlace Adobe Aero: https://adobeaero.app.link/5lYh5UF8hNb" class="rounded shadow border w-100">
+  </a>
+  <p><a href="https://adobeaero.app.link/5lYh5UF8hNb" target="_blank">Visita aquí el enlace</a>   </p>
+</div>
+</div>

@@ -1,7 +1,7 @@
 ---
 layout: libro
 
-nombreLibro: "Neon Dreams and Nightmares: Mixed Punk Works of Dystopian Futures" 
+title: "Neon Dreams and Nightmares: Mixed Punk Works of Dystopian Futures" 
 nombreEditorial: 
 portadaLibro: /assets/img/neon_dreams_and_nightmares.jpg
 urlAmazon: https://www.amazon.com/gp/product/B07Y2JCDS3/ref=x_gr_bb_amazon?ie=UTF8&tag=x_gr_bb_amazon-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=B07Y2JCDS3&SubscriptionId=1MGPYB6YW3HWK55XCGG2
