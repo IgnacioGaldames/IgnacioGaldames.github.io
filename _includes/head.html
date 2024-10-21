@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>{% if site.title and site.title != page.title %} {{ site.title}} | {% endif %}{%if page.title %} {{ page.title }}{% endif %}{%if page.subtitle %} | {{ page.subtitle }}{% endif %}</title>
+	<title>{% if site.title and site.title != page.title %} {{ site.title}} | {% endif %}{%if page.title %} {{ page.title
+		}}{% endif %}{%if page.subtitle %} | {{ page.subtitle }}{% endif %}</title>
 	<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
-	<link href="https://fonts.cdnfonts.com/css/futura-std-4?styles=52567,52568,52574,52581,52575,52582,52570,52583,52576,52584,52579,52580,52565,52571,52566,52572,52573,52577,52569,52578" rel="stylesheet">
-                
+	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+		rel="stylesheet">
+	<link
+		href="https://fonts.cdnfonts.com/css/futura-std-4?styles=52567,52568,52574,52581,52575,52582,52570,52583,52576,52584,52579,52580,52565,52571,52566,52572,52573,52577,52569,52578"
+		rel="stylesheet">
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-8P2YMJKN76"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-8P2YMJKN76');
+	</script>
+
 </head>
+
 <body>
