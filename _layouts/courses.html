@@ -8,11 +8,18 @@ layout: page-sidebar-right
     {% for miCurso in site.data.mis_cursos.cursos %}
     <li class="list-group-item">
       {%if miCurso.tipoCurso %}
-      <span class="text-capitalize futura fs-6 fw-lighter text-light">{{ miCurso.tipoCurso }}</span><br>
+      <div class="text-capitalize futura fs-6 fw-lighter text-light">{{ miCurso.tipoCurso }}</div>
       {% endif %}
-      <span class="text-capitalize eb-garamond fs-5">{{ miCurso.nombreCurso }}</span> | 
-      <span  class="text-uppercase fw-bolder">{{ miCurso.institucionCurso }}</span> | 
-     <span class="futura">{{ miCurso.fechaCurso }}</span>
+      <div class="d-block">
+        <span class="text-capitalize eb-garamond fs-5">{{ miCurso.nombreCurso }}</span>
+        <span class="mx-3"> | </span>
+        <span class="text-uppercase fw-bolder">{{ miCurso.institucionCurso }}</span>
+        <span class="mx-3"> | </span>
+        <span class="futura">{{ miCurso.fechaCurso }}</span>
+      </div>
+      {% if miCurso.url %}
+      <div class="text-capitalize futura fs-6 fw-lighter text-light mt-2"><a href="{{ miCurso.url }}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">ver cetificado</a></div>
+      {% endif %}
     </li>
     {% endfor %}
   </ul>
