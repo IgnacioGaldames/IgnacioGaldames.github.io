@@ -19,6 +19,7 @@ cursos:
     institucionCurso: Fundación telefónica Movistar
     fechaCurso:  05/08/2022
     tipoCurso: Diplomado
+    url: https://drive.google.com/file/d/1RXfdnPP_fSswsAt8MTNvZrnlY6vp7mrw/view
 
   - nombreCurso: Worldbuilding. Discover the Fantasy Narrative
     institucionCurso: Domestika
@@ -26,6 +27,13 @@ cursos:
     tipoCurso:
 
   - nombreCurso: Curso de escritura creativa con Brandon Sanderson
-    institucionCurso: Escuela Cursiva de Penguin Random House Grupo Editorial
+    institucionCurso: Escuela Cursiva de Penguin Random House
     fechaCurso:  01/07/2023
     tipoCurso: Certificación
+    url: https://www.credential.net/43afbe6d-666b-433b-b04a-14927df69563#gs.38dcwn
+
+  - nombreCurso:  'VGWR101: Video Game Writing Essentials '
+    institucionCurso: UBCx - The University of British Columbia
+    fechaCurso:  21/10/2024
+    tipoCurso: Certificación
+    url: https://courses.edx.org/certificates/cb1cb14077714f2b81d78cca4b9e67b8
