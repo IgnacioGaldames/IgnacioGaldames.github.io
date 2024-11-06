@@ -9,26 +9,8 @@ layout: page-sidebar-bottom
 		<div class="col-md-6 col-lg-4 d-flex align-content-center flex-wrap">
 			<img src="{{ page.portadaLibro }}" class="card-img-top " alt="{{ page.nombreLibro }}">
 			<div class="card-footer w-100">
-				{% if page.urlAmazon or page.urlBuscalibre or page.urlMercadolibre or page.urlLektu %}
-				<div class="btn-group w-100" role="group" aria-label="Enlaces libros">
-					{% if page.urlAmazon %}
-					<a href="{{page.urlAmazon}}" class="btn btn-primary" target="_blank" type="button"><i
-							class="fa-brands fa-amazon me-2"></i>Amazon</a>
-					{% endif %}
-					{% if page.urlBuscalibre %}
-					<a href="{{page.urlBuscalibre}}" class="btn btn-primary" target="_blank" type="button"><i
-							class="fa-solid fa-paper-plane me-2"></i>Buscalibre</a>
-					{% endif %}
-					{% if page.urlMercadolibre %}
-					<a href="{{page.urlMercadolibre}}" class="btn btn-primary" target="_blank" type="button"><i
-							class="fa-regular fa-handshake me-2"></i>Mercadolibre</a>
-					{% endif %}
-					{% if page.urlLektu %}
-					<a href="{{page.urlLektu}}" class="btn btn-primary" target="_blank" type="button"><i
-							class="fa-solid fa-bars  me-2"></i></i>Lektu</a>
-					{% endif %}
-				</div>
-				{% endif %}
+				{% assign book = page %}
+				{% include enlacesLibro.html %}
 			</div>
 		</div>
 		<div class="col-md-6 col-lg-8  d-flex align-content-center flex-wrap">

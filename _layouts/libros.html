@@ -2,7 +2,6 @@
 layout: page-sidebar-right
 title: "Libros"
 ---
-
 <section id="libros">
 	{{ content }}
 	<div class="row">
@@ -21,22 +20,8 @@ title: "Libros"
 					{% assign book = miLibro %}
 					{% include detallesLibro.html %}
 					<div class="card-footer">
-						{% if miLibro.urlAmazon or miLibro.urlBuscalibre or miLibro.urlMercadolibre or miLibro.urlLektu %}
-						<div class="btn-group w-100" role="group" aria-label="Enlaces libros">
-							{% if miLibro.urlAmazon %}
-							<a href="{{ miLibro.urlAmazon }}" class="btn btn-primary" target="_blank"><i class="fa-brands fa-amazon me-2"></i>Amazon</a>
-							{% endif %}
-							{% if miLibro.urlBuscalibre %}
-							<a href="{{ miLibro.urlBuscalibre }}" class="btn btn-primary" target="_blank"><i class="fa-solid fa-paper-plane me-2"></i>Buscalibre</a>
-							{% endif %}
-							{% if miLibro.urlMercadolibre %}
-							<a href="{{ miLibro.urlMercadolibre }}" class="btn btn-primary" target="_blank"><i class="fa-regular fa-handshake me-2"></i>Mercadolibre</a>
-							{% endif %}
-							{% if miLibro.urlLektu %}
-							<a href="{{ miLibro.urlLektu }}" class="btn btn-primary" target="_blank"><i class="fa-solid fa-bars me-2"></i>Lektu</a>
-							{% endif %}
-						</div>
-						{% endif %}
+						{% assign book = miLibro %}
+						{% include enlacesLibro.html %}
 						<a href="{{ miLibro.url }}" class="btn btn-sm btn-outline-secondary my-2 w-100">Ver más</a>
 					</div>
 				</div>

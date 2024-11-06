@@ -1,0 +1,20 @@
+{% if book.urlAmazon or book.urlBuscalibre or book.urlMercadolibre or book.urlLektu %}
+<div class="btn-group w-100" role="group" aria-label="Enlaces libros">
+  {% if book.urlAmazon %}
+  <a href="{{book.urlAmazon}}" class="btn btn-primary" target="_blank" type="button"><i
+      class="fa-brands fa-amazon me-2"></i>Amazon</a>
+  {% endif %}
+  {% if book.urlBuscalibre %}
+  <a href="{{book.urlBuscalibre}}" class="btn btn-primary" target="_blank" type="button"><i
+      class="fa-solid fa-paper-plane me-2"></i>Buscalibre</a>
+  {% endif %}
+  {% if book.urlMercadolibre %}
+  <a href="{{book.urlMercadolibre}}" class="btn btn-primary" target="_blank" type="button"><i
+      class="fa-regular fa-handshake me-2"></i>Mercadolibre</a>
+  {% endif %}
+  {% if book.urlLektu %}
+  <a href="{{book.urlLektu}}" class="btn btn-primary" target="_blank" type="button"><i
+      class="fa-solid fa-bars  me-2"></i></i>Lektu</a>
+  {% endif %}
+</div>
+{% endif %}
