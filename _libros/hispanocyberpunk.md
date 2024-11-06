@@ -1,7 +1,6 @@
 ---
 layout: libro
-title: HISPANOCYBERPUNK
-nombreLibro: 'EL AXIOMA HISPANOCYBERPUNK: EL AXIOMA REVISTA NO.8'
+nombreLibro: HISPANOCYBERPUNK
 nombreEditorial: EL AXIOMA REVISTA
 nombreSello:
 nombreColeccion: Axioma 008 
