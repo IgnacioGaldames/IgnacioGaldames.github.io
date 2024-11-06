@@ -1,13 +1,12 @@
 ---
 layout: page-sidebar-bottom
 ---
-<div class="card shadow border border-light-subtle">
+<div class="card shadow border border-light-subtle" id="cardLibro">
 	<div class="card-header">
-		<h5 class="card-title">{{ page.nombreLibro }}</h5>
+		<h5 class="card-title" id="libro-nombreLibro">{{ page.nombreLibro }}</h5>
 	</div>
 	<div class="row">
 		<div class="col-md-6 col-lg-4 d-flex align-content-center flex-wrap">
-
 			<img src="{{ page.portadaLibro }}" class="card-img-top " alt="{{ page.nombreLibro }}">
 			<div class="card-footer w-100">
 				{% if page.urlAmazon or page.urlBuscalibre or page.urlMercadolibre or page.urlLektu %}
