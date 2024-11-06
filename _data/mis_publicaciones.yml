@@ -3,13 +3,13 @@ publicaciones:
   - nombrePublicacion: The scream decelerated
     fechaPublicacion: 19/9/2019
     tituloRevista: Neon Dreams and Nightmares
-    urlPublicacion: https://www.amazon.com/Neon-Dreams-Nightmares-Dystopian-Futures/dp/B07Y4KC5FQ
+    urlPublicacion: https://amzn.to/3YG2sz9
     enlace: true
 
   - nombrePublicacion: Iris
     fechaPublicacion:  19/9/2019
     tituloRevista: Neon Dreams and Nightmares
-    urlPublicacion: https://www.amazon.com/Neon-Dreams-Nightmares-Dystopian-Futures/dp/B07Y4KC5FQ
+    urlPublicacion: https://amzn.to/3YG2sz9
     enlace: true
 
   - nombrePublicacion: El Chinchinero
@@ -34,7 +34,7 @@ publicaciones:
     fechaPublicacion: 1/1/2023
     tituloRevista: Espejo Humeante
     urlPublicacion: https://espejohumeanterevista.wordpress.com/2023/01/01/todos-tus-malditos-caballos-subiendo-al-cielo/
-    enlace: false
+    enlace: true
 
   - nombrePublicacion: lloverá en un día soleado
     fechaPublicacion: 1/1/2023
@@ -76,13 +76,13 @@ publicaciones:
     fechaPublicacion: 31/03/2024
     tituloRevista: Espejo Humeante
     urlPublicacion: https://espejohumeanterevista.wordpress.com/2024/03/31/el-cosmos-hecho-carne/
-    enlace: false
+    enlace: true
 
   - nombrePublicacion: mi sueño de una serpiente mítica
     fechaPublicacion: 05/03/2024
     tituloRevista: El Axioma Revista
     urlPublicacion: https://lektu.com/l/el-axioma/el-axioma-no-hispanocyberpunk/22856
-    enlace: false
+    enlace: true
 
   - nombrePublicacion: los amaré en todos los tiempos
     fechaPublicacion: 01/06/2024

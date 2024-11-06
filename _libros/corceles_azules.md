@@ -1,5 +1,6 @@
 ---
 layout: libro
+title: Corceles Azules
 nombreLibro: Corceles Azules
 nombreEditorial: Speedwagon
 nombreSello: Kaneda

@@ -1,5 +1,6 @@
 ---
 layout: libro
+title: HISPANOCYBERPUNK
 nombreLibro: HISPANOCYBERPUNK
 nombreEditorial: El Axioma Revista
 nombreSello: 
