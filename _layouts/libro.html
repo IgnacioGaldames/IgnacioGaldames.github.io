@@ -9,26 +9,8 @@ layout: page-sidebar-bottom
 		<div class="col-md-6 col-lg-4 d-flex align-content-center flex-wrap">
 			<img src="{{ page.portadaLibro }}" class="card-img-top " alt="{{ page.nombreLibro }}">
 			<div class="card-footer w-100">
-				{% if page.urlAmazon or page.urlBuscalibre or page.urlMercadolibre or page.urlLektu %}
-				<div class="btn-group w-100" role="group" aria-label="Enlaces libros">
-					{% if page.urlAmazon %}
-					<a href="{{page.urlAmazon}}" class="btn btn-primary" target="_blank" type="button"><i
-							class="fa-brands fa-amazon me-2"></i>Amazon</a>
-					{% endif %}
-					{% if page.urlBuscalibre %}
-					<a href="{{page.urlBuscalibre}}" class="btn btn-primary" target="_blank" type="button"><i
-							class="fa-solid fa-paper-plane me-2"></i>Buscalibre</a>
-					{% endif %}
-					{% if page.urlMercadolibre %}
-					<a href="{{page.urlMercadolibre}}" class="btn btn-primary" target="_blank" type="button"><i
-							class="fa-regular fa-handshake me-2"></i>Mercadolibre</a>
-					{% endif %}
-					{% if page.urlLektu %}
-					<a href="{{page.urlLektu}}" class="btn btn-primary" target="_blank" type="button"><i
-							class="fa-solid fa-bars  me-2"></i></i>Lektu</a>
-					{% endif %}
-				</div>
-				{% endif %}
+				{% assign book = page %}
+				{% include enlacesLibro.html %}
 			</div>
 		</div>
 		<div class="col-md-6 col-lg-8  d-flex align-content-center flex-wrap">
@@ -37,36 +19,8 @@ layout: page-sidebar-bottom
 				<p class="card-text fw-lighter">{{ page.descripcionLibro }}</p>
 			</div>
 			{% endif %}
-			<div class="card-body border-top border-light-subtle">
-				{% if page.nombreEditorial %}
-				<h6 class="mb-1">Editorial: <span class="fw-bold">{{ page.nombreEditorial }}</span></h6>
-				{% endif %}
-				{% if page.nombreColeccion %}
-				<h6 class="mb-1">Sello: <span class="fw-bold">{{ page.nombreSello }}</span></h6>
-				{% endif %}
-				{% if page.nombreColeccion %}
-				<h6 class="mb-1">Colección: <span class="fw-bold">{{ page.nombreColeccion }}</span></h6>
-				{% endif %}
-				{% if page.fechaPublicacion %}
-				<h6 class="mb-1">Fecha Publicación: <span class="fw-bold">{{ page.fechaPublicacion }}</span></h6>
-				{% endif %}
-				{% if page.ISBN %}
-				<h6 class="mb-1">ISBN: <span class="fw-bold">{{ page.ISBN }}</span></h6>
-				{% endif %}
-				{% if page.ISBN10 %}
-				<h6 class="mb-1">ISBN10: <span class="fw-bold">{{ page.ISBN10 }}</span></h6>
-				{% endif %}
-				{% if page.ASIN %}
-				<h6 class="mb-1">ASIN: <span class="fw-bold">{{ page.ASIN }}</span></h6>
-				{% endif %}
-				{% if page.Palabras %}
-				<h6 class="mb-1">Palabras: <span class="fw-bold">{{ page.Palabras }}</span></h6>
-				{% endif %}
-				{% if page.urlGoodreads %}
-				<a href="{{page.urlGoodreads}}" class="btn btn-sm btn-secondary my-2" target="_blank" type="button"><i
-						class="fa-brands fa-goodreads me-2"></i>goodreads</a>
-				{% endif %}
-			</div>
+			{% assign book = page %}
+			{% include detallesLibro.html %}
 		</div>
 	</div>
 </div>
@@ -74,41 +28,11 @@ layout: page-sidebar-bottom
 	<div class="col-12">
 		{{ content }}
 	</div>
-	{% if page.adobeAero %}
-		<div class="col-md-12">
-			<div class="row my-3">
-				<div class="col-12">
-					<h2>Explora la portada en Realidad Aumentada</h2>
-				</div>
-				<div class="col-md-3">
-					<a href="{{ page.adobeAero }}">
-						<img src="/assets/img/ar_corceles_azules.png" alt="Enlace Adobe Aero: {{ page.adobeAero }}" class="rounded shadow border w-100">
-					</a>
-					<a href="{{ page.adobeAero }}" target="_blank" class="btn btn-primary btn-sm my-3">Visita aquí el enlace</a>
-				</div>
-			</div>
-		</div>
-	{% endif %}
-	{% if page.playlistSpotify or page.playlistSAmazonMusicSRC %}
-		<div class="col-md-12">
-			<div class="row my-3">
-				<div class="col-12"><h2>Escucha una playlist inspirada en el libro</h2></div>
-				{% if page.playlistSAmazonMusicSRC %}
-					<div class="col" id="playlistAmazon">
-						<iframe id='{{ page.playlistSAmazonMusicID }}' src='{{ page.playlistSAmazonMusicSRC }}' width='100%' height='352px' frameBorder='0' style='border-radius:20px;max-width:'></iframe>
-					</div>
-				{% endif %}
-				{% if page.playlistSpotify %}
-					<div class="col" id="playListSpotify">
-						<iframe style="border-radius:12px" src="{{ page.playlistSpotify }}" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-					</div>
-				{% endif %}
-			</div>
-		</div>
-	{% endif %}
+	{% include adobeAero.html %}
+	{% include playlists.html %}
 </div>
-<div class="row border-top my-3">
-	<div class="col-md-6 mx-auto">
+<div class="row border-top my-3" id="include-coleccionLibros">
+	<div class="col-12 mx-auto">
 		{% include coleccionLibros.html %}
 	</div>
 </div>

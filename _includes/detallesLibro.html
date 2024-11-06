@@ -1,0 +1,37 @@
+<div class="card-body border-top border-light-subtle" id="detallesLibro">
+  {% if book.nombreEditorial %}
+  <h6 class="mb-1">Editorial: <span class="fw-bold">{{ book.nombreEditorial }}</span></h6>
+  {% endif %}
+  {% if book.nombreSello %}
+  <h6 class="mb-1">Sello: <span class="fw-bold">{{ book.nombreSello }}</span></h6>
+  {% endif %}
+  {% if book.nombreColeccion %}
+  <h6 class="mb-1">Colección: <span class="fw-bold">{{ book.nombreColeccion }}</span></h6>
+  {% endif %}
+  {% if book.fechaPublicacion %}
+  <h6 class="mb-1">Fecha Publicación: <span class="fw-bold">{{ book.fechaPublicacion }}</span></h6>
+  {% endif %}
+  {% if book.ISBN %}
+  <h6 class="mb-1">ISBN: <span class="fw-bold">{{ book.ISBN }}</span></h6>
+  {% endif %}
+  {% if book.ISBN10 %}
+  <h6 class="mb-1">ISBN10: <span class="fw-bold">{{ book.ISBN10 }}</span></h6>
+  {% endif %}
+  {% if book.ISBN13 %}
+  <h6 class="mb-1">ISBN13: <span class="fw-bold">{{ book.ISBN13 }}</span></h6>
+  {% endif %}
+  {% if book.ASIN %}
+  <h6 class="mb-1">ASIN: <span class="fw-bold">{{ book.ASIN }}</span></h6>
+  {% endif %}
+  {% if book.Palabras %}
+  <h6 class="mb-1">Palabras: <span class="fw-bold">{{ book.Palabras }}</span></h6>
+  {% endif %}
+  {% if book.Paginas %}
+  <h6 class="mb-1">Paginas: <span class="fw-bold">{{ book.Paginas }}</span></h6>
+  {% endif %}
+  {% if book.urlGoodreads %}
+  <a href="{{ book.urlGoodreads }}" class="btn btn-sm btn-secondary my-2" target="_blank">
+    <i class="fa-brands fa-goodreads me-2"></i>Goodreads
+  </a>
+  {% endif %}
+</div>

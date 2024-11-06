@@ -2,22 +2,21 @@
 layout: page-sidebar-right
 ---
 {% for miPublicacion in site.data.mis_publicaciones.publicaciones %}
-  {% assign site.data.mis_publicaciones.publicaciones = site.data.mis_publicaciones.publicaciones | push: miPublicacion[1] %}
+{% assign site.data.mis_publicaciones.publicaciones = site.data.mis_publicaciones.publicaciones | push: miPublicacion[1]
+%}
 {% endfor %}
-{% assign site.data.mis_publicaciones.publicaciones = site.data.mis_publicaciones.publicaciones | sort: "fechaPublicacion" %}
+{% assign site.data.mis_publicaciones.publicaciones = site.data.mis_publicaciones.publicaciones | sort:
+"fechaPublicacion" %}
 <section class="content">
   <ul class="list-group list-group-flush">
     {% for miPublicacion in site.data.mis_publicaciones.publicaciones %}
     <li class="list-group-item">
-      <span class="text-capitalize eb-garamond fs-5">{{ miPublicacion.nombrePublicacion }}</span> |
-      {% if miPublicacion.enlace == true %}
-        <a href="{{ miPublicacion.urlPublicacion }}" target="_blank">
-      {% endif %}
-          <span class="text-uppercase fw-bold">{{ miPublicacion.tituloRevista }}</span>
-      {% if miPublicacion.enlace == true %}
-        </a>
-      {% endif %}
-       | {{ miPublicacion.fechaPublicacion }}
+      {% if miPublicacion.enlace == true %}<a href="{{ miPublicacion.urlPublicacion }}" target="_blank">{% endif %}
+        <span class="text-capitalize eb-garamond fs-5">{{ miPublicacion.nombrePublicacion }}</span>
+        {% if miPublicacion.enlace == true %}</a>{% endif %}
+      |
+      <span class="text-uppercase fw-bold">{{ miPublicacion.tituloRevista }}</span>
+      | {{ miPublicacion.fechaPublicacion }}
     </li>
     {% endfor %}
   </ul>

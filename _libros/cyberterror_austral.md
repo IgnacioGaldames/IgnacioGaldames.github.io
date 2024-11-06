@@ -1,5 +1,6 @@
 ---
 layout: libro
+title: 'CyberTerror: AUSTRAL'
 nombreLibro: 'CyberTerror: AUSTRAL'
 nombreEditorial: SPEEDWAGON Media Works
 nombreSello: Kaneda
@@ -16,7 +17,7 @@ descripcionLibro: "CyberTerror: Austral nos transporta desde la desolación de f
  A través de siete relatos interconectados, exploramos colonias mineras en otros planetas, ancianos desmemoriados desechados en asilos robotizados, edificios tecnológicos que parecen tener vida, una mujer luchando por su familia en un mundo postapocalíptico, científicos explorando los límites del Tesla punk, niños tratando de encajar en una sociedad cada vez más exigente y astronautas explorando naves deshabitadas.
 
  Cada historia refleja los miedos proféticos de los creadores chilenos, tejiendo un tapiz narrativo que nos lleva desde las incandescentes arenas hasta el gélido espacio. CyberTerror: Austral es un reflejo de lo que significa vivir en esta austral franja de tierra, encerrados entre la cordillera y el mar."
-fechaPublicacion:  28/9/2024
+fechaPublicacion:  "2024/09/28"
 ISBN:  
 ISBN10: 
 Palabras: 30603
