@@ -2,7 +2,8 @@
 	<div class="col-md-12 my-3">
 		<h3>Mis Libros</h3>
 	</div>
-	{% for miLibro in site.libros | sort: "fechaPublicacion" | reverse %}
+	{% assign librosOrdenados = site.libros | sort: "fechaPublicacion" | reverse %}
+	{% for miLibro in librosOrdenados %}
 	<div class="col mb-4 d-flex  d-flex align-items-stretch" >
 		<div class="card shadow border border-light-subtle ">
 			{% if miLibro.nombreLibro %}

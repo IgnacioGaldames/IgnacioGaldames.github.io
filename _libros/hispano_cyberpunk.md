@@ -6,7 +6,7 @@ nombreEditorial: El Axioma Revista
 nombreSello: 
 nombreColeccion: Axioma 008 
 portadaLibro: /assets/img/71ffVhPO1qL_SL1499_.jpg
-urlGoodreads:
+urlGoodreads: https://www.goodreads.com/book/show/220504697-el-axioma-hispanocyberpunk
 urlterceraFundacion:
 urlLektu: https://lektu.com/l/el-axioma/el-axioma-no8-hispanocyberpunk/22856
 urlAmazon: https://amzn.to/4fBWFRS
@@ -18,12 +18,12 @@ del futuro, nuestra crítica sobre los peligros inminentes de la virtualidad y l
 de la realidad. En este número contamos con cuentos de autores de diversas latitudes, así como entrevista al ilustrador MANCHÓN, mangaka mexicano, al escritor chileno Jesús Todemun, una reseña del libro "In Nomine Patris"
 del escritor mexicano J. R . Spinoza y artículos de divulgación, sobre una posible teoría del origen de la
 humanidad y uno enfocado a la IA y al camino estético del cyberpunk en hispanoamérica.'
-fechaPublicacion:  14/10/2024
+fechaPublicacion:  "2024/10/24"
 ASIN: B0DK7KHJJR
 ISBN13: 979-8343191103
 ISBN10: 
 Palabras: 
-páginas: 222
+Paginas: 222
 playlistSpotify: 
 playlistSAmazonMusicSRC: 
 playlistSAmazonMusicID: 
