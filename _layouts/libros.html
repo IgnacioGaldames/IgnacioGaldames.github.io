@@ -5,17 +5,20 @@ layout: page-sidebar-right
 {% assign site.data.mis_libros.libros = site.data.mis_libros.libros | push: miLibro[1] %}
 {% endfor %}
 {% assign site.data.mis_libros.libros = site.data.mis_libros.libros | sort: "fechaPublicacion" %}
-<section class="">
+<section class="" id="libros">
 	{{ content }}
 	<div class="row">
 	{% for miLibro in site.libros | sort: "fechaPublicacion" | reverse %}
-	<div class="col-md-6 col-lg-4 mb-4 d-flex align-items-stretch">
-		
+		<div class="col-md-6 col-lg-4 mb-4 d-flex align-items-stretch">	
 			<div class="card shadow border border-light-subtle">
-				<div class="card-header">
-					<h5 class="card-title">{{ miLibro.nombreLibro }}</h5>
-				</div>
-				<img src="{{ miLibro.portadaLibro }}" class="card-img-top " alt="{{ miLibro.nombreLibro }}">
+				{% if miLibro.nombreLibro %}
+					<div class="card-header">
+						<h5 class="card-title" id="libros-nombreLibro">{{ miLibro.nombreLibro }}</h5>
+					</div>
+				{% endif %}
+				<a href="{{ miLibro.url }}" class="">
+					<img src="{{ miLibro.portadaLibro }}" class="card-img-top " alt="{{ miLibro.nombreLibro }}">
+				</a>
 				<!--
 				{% if miLibro.descripcionLibro %}
 					<div class="card-body">
