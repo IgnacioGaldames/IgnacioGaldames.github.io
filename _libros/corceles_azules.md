@@ -18,14 +18,5 @@ Palabras: 29652
 playlistSpotify: https://open.spotify.com/embed/playlist/7pth7afV50DWyZFXNTFbjQ?utm_source=generator
 playlistSAmazonMusicSRC: https://music.amazon.com/embed/68bdd5265623469b91302a01865b824fc2l0/?id=CsJNafSlUH&marketplaceId=ART4WZ8MWBX2Y&musicTerritory=CL
 playlistSAmazonMusicID: AmazonMusicEmbed68bdd5265623469b91302a01865b824fc2l0
+adobeAero: https://adobeaero.app.link/5lYh5UF8hNb
 ---
-
-# Explora la portada en Realidad Aumentada
-<div class="row my-3">
-	<div class="col-md-3">
-		<a href="https://adobeaero.app.link/5lYh5UF8hNb">
-			<img src="/assets/img/ar_corceles_azules.png" alt="Enlace Adobe Aero: https://adobeaero.app.link/5lYh5UF8hNb" class="rounded shadow border w-100">
-		</a>
-		<p><a href="https://adobeaero.app.link/5lYh5UF8hNb" target="_blank">Visita aquí el enlace</a>   </p>
-	</div>
-</div>
