@@ -1,6 +1,5 @@
 ---
 layout: libro
-title: Corceles Azules
 nombreLibro: Corceles Azules
 nombreEditorial: Speedwagon
 nombreSello: Kaneda
@@ -16,6 +15,9 @@ fechaPublicacion:  14/6/2024
 ISBN: 978-612-49694-0-9 
 ISBN10: 6124969408
 Palabras: 29652
+playlistSpotify: https://open.spotify.com/embed/playlist/7pth7afV50DWyZFXNTFbjQ?utm_source=generator
+playlistSAmazonMusicSRC: https://music.amazon.com/embed/68bdd5265623469b91302a01865b824fc2l0/?id=CsJNafSlUH&marketplaceId=ART4WZ8MWBX2Y&musicTerritory=CL
+playlistSAmazonMusicID: AmazonMusicEmbed68bdd5265623469b91302a01865b824fc2l0
 ---
 
 # Explora la portada en Realidad Aumentada
@@ -25,15 +27,5 @@ Palabras: 29652
 			<img src="/assets/img/ar_corceles_azules.png" alt="Enlace Adobe Aero: https://adobeaero.app.link/5lYh5UF8hNb" class="rounded shadow border w-100">
 		</a>
 		<p><a href="https://adobeaero.app.link/5lYh5UF8hNb" target="_blank">Visita aquí el enlace</a>   </p>
-	</div>
-</div>
-
-# Escucha una playlist inspirada en el libro
-<div class="row my-3">
-	<div class="col-md-6">
-		<iframe id='AmazonMusicEmbed68bdd5265623469b91302a01865b824fc2l0' src='https://music.amazon.com/embed/68bdd5265623469b91302a01865b824fc2l0/?id=CsJNafSlUH&marketplaceId=ART4WZ8MWBX2Y&musicTerritory=CL' width='100%' height='352px' frameBorder='0' style='border-radius:20px;max-width:'></iframe>
-	</div>
-		<div class="col-md-6">
-		<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7pth7afV50DWyZFXNTFbjQ?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 	</div>
 </div>
