@@ -22,19 +22,19 @@ publicaciones:
     fechaPublicacion: 2/11/2022
     tituloRevista: Revista Axioma
     urlPublicacion: https://elaxiomablog.wordpress.com/2022/11/02/la-reserva-de-animales-i-a-galdames/
-    enlace: false
+    enlace: true
 
   - nombrePublicacion: Alrededor de la decadencia
     fechaPublicacion: 27/8/2022
     tituloRevista: Espejo Humeante
     urlPublicacion: https://espejohumeanterevista.wordpress.com/2023/01/01/todos-tus-malditos-caballos-subiendo-al-cielo/
-    enlace: false
+    enlace: true
 
   - nombrePublicacion: Todos tus malditos caballos subiendo al cielo
     fechaPublicacion: 1/1/2023
     tituloRevista: Espejo Humeante
     urlPublicacion: https://espejohumeanterevista.wordpress.com/2023/01/01/todos-tus-malditos-caballos-subiendo-al-cielo/
-    enlace: true
+    enlace: false
 
   - nombrePublicacion: lloverá en un día soleado
     fechaPublicacion: 1/1/2023
@@ -52,8 +52,7 @@ publicaciones:
     fechaPublicacion: 28/4/2023
     tituloRevista: Penumbria
     urlPublicacion: https://www.penumbria.mx/penumbria-cinefila/
-    enlace: false
-
+    enlace: true
   - nombrePublicacion: Una idea viajera
     fechaPublicacion: 2/8/2023
     tituloRevista: Espejo Humeante
