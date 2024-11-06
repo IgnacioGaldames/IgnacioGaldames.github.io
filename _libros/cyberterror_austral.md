@@ -1,6 +1,6 @@
 ---
 layout: libro
-title: 'CyberTerror: AUSTRAL'
+nombreLibro: 'CyberTerror: AUSTRAL'
 nombreEditorial: SPEEDWAGON Media Works
 nombreSello: Kaneda
 nombreColeccion: ZAWARUDO 010 
