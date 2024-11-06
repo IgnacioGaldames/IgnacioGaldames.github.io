@@ -10,7 +10,10 @@
 				<h5 class="card-title" id="coleccionLibros-nombreLibro">{{ miLibro.nombreLibro }}</h5>
 			</div>
 			{% endif %}
-			<img src="{{ miLibro.portadaLibro }}" class="card-img-top" alt="{{ miLibro.nombreLibro }}">
+			<a href="{{ miLibro.url }}" class="">
+				<img src="{{ miLibro.portadaLibro }}" class="card-img-top" alt="{{ miLibro.nombreLibro }}">
+			</a>
+			
 			<!--
 				{% if miLibro.descripcionLibro %}
 					<div class="card-body">
