@@ -1,4 +1,5 @@
 // Import Bootstrap's source SCSS files
+@import "../sass/_animations.sass";
 
 @import "bootstrap";
 @import "custom";
@@ -7,3 +8,6 @@
 @import "../sass/_futura.sass";
 @import "../sass/_fonts.sass";
 @import "../sass/_fondo.sass";
+@import "../sass/_gradientes.sass";
+@import "../sass/_sombras.sass";
+@import "../sass/_botones.sass";

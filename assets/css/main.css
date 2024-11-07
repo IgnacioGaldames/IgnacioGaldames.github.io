@@ -1,4 +1,9 @@
 @charset "UTF-8";
+* {
+  animation-timing-function: ease-in-out;
+  transition: 0.5s;
+}
+
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -11967,6 +11972,39 @@ h2, .h2 {
 body {
   background-image: url("../img/noise.gif");
   background-repeat: repeat;
+  background-size: auto;
+}
+
+.gradiente-1 {
+  background: rgb(33, 37, 41);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.025) 0%, rgba(255, 255, 255, 0) 50%, rgba(33, 37, 41, 0) 100%);
+}
+
+.gradiente-magenta-dark, .btn-cp {
+  background: rgb(255, 0, 255);
+  background: radial-gradient(circle at 0% 100%, rgb(255, 0, 125) 0%, rgb(125, 0, 62) 10%, rgb(33, 37, 41) 25%);
+}
+.gradiente-magenta-dark:hover, .btn-cp:hover {
+  background: radial-gradient(circle at 5% 100%, rgb(255, 0, 125) 0%, rgb(125, 0, 62) 12.5%, rgb(33, 37, 41) 50%);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.glow-magenta-izquierdo, .btn-cp {
+  -webkit-box-shadow: -5px 0px 10px -2px rgb(255, 0, 125);
+  -moz-box-shadow: -5px 0px 10px -2px rgb(255, 0, 125);
+  box-shadow: -5px 0px 10px -2px rgb(255, 0, 125);
+}
+.glow-magenta-izquierdo:hover, .btn-cp:hover {
+  -webkit-box-shadow: -1px 0px 10px -2px rgb(255, 0, 125);
+  -moz-box-shadow: -1px 0px 10px -2px rgb(255, 0, 125);
+  box-shadow: -1px 0px 10px -2px rgb(255, 0, 125);
+}
+
+.btn-cp {
+  border-color: rgba(255, 0, 125, 0.25);
+}
+.btn-cp:hover {
+  border-color: rgba(255, 0, 125, 0.75);
 }
 
 /*# sourceMappingURL=main.css.map */
