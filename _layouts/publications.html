@@ -7,30 +7,44 @@ layout: page-sidebar-right
 {% endfor %}
 {% assign site.data.mis_publicaciones.publicaciones = site.data.mis_publicaciones.publicaciones | sort:
 "fechaPublicacion" %}
+
+{% assign totalPalabras = 0 %}
+{% for miPublicacion in site.data.mis_publicaciones.publicaciones %}
+{% assign totalPalabras = totalPalabras | plus: miPublicacion.cantidadPalabras %}
+{% endfor %}
+
 <section class="content">
-  <ul class="list-group list-group-flush">
-    {% for miPublicacion in site.data.mis_publicaciones.publicaciones %}
-    <li class="list-group-item py-3">
-      {%if miPublicacion.cantidadPalabras %}
-        <div class="text-capitalize futura fs-7 fw-lighter text-light text-muted">
-          {% if miPublicacion.cantidadPalabras < 1000 %}
-            <strong>ficción flash</strong>
-          {% elsif miPublicacion.cantidadPalabras < 7500 %}
-            <strong>ficción corta</strong>
+  <div class="row">
+    <div class="col-12">
+      <div class="futura text-muted fs-7">{{ totalPalabras }} palabras</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <ul class="list-group list-group-flush">
+        {% for miPublicacion in site.data.mis_publicaciones.publicaciones %}
+        <li class="list-group-item py-3">
+          {%if miPublicacion.cantidadPalabras %}
+          <div class="text-capitalize futura fs-7 fw-lighter text-light text-muted">
+            {% if miPublicacion.cantidadPalabras < 1000 %} <strong>ficción flash</strong>
+              {% elsif miPublicacion.cantidadPalabras < 7500 %} <strong>ficción corta</strong>
+                {% endif %}
+                {{ miPublicacion.cantidadPalabras }} palabras
+          </div>
           {% endif %}
-          {{ miPublicacion.cantidadPalabras }} palabras
-        </div>
-      {% endif %}
-      <div class="d-flex align-items-center">
-        <span class="flex-grow-1">
-          {% if miPublicacion.enlace == true %}<a href="{{ miPublicacion.urlPublicacion }}" target="_blank">{% endif %}
-            <span class="text-capitalize eb-garamond fs-5">{{ miPublicacion.nombrePublicacion }}</span> 
-            {% if miPublicacion.enlace == true %}</a>{% endif %}      |
-          <span class="text-uppercase fw-bold">{{ miPublicacion.tituloRevista }}</span>
-        </span>
-        <span>{{ miPublicacion.fechaPublicacion }}</span> 
-      </div>
-    </li>
-    {% endfor %}
-  </ul>
+          <div class="d-flex align-items-center">
+            <span class="flex-grow-1">
+              {% if miPublicacion.enlace == true %}<a href="{{ miPublicacion.urlPublicacion }}" target="_blank">{% endif
+                %}
+                <span class="text-capitalize eb-garamond fs-5">{{ miPublicacion.nombrePublicacion }}</span>
+                {% if miPublicacion.enlace == true %}</a>{% endif %} |
+              <span class="text-uppercase fw-bold">{{ miPublicacion.tituloRevista }}</span>
+            </span>
+            <span>{{ miPublicacion.fechaPublicacion }}</span>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 </section>
