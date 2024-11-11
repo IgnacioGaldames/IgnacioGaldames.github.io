@@ -16,7 +16,7 @@ layout: page-sidebar-right
 <section class="content">
   <div class="row">
     <div class="col-12 text-end">
-      <div class="source-code text-muted fs-7 fw-light">{{ totalPalabras }} palabras</div>
+      <div class="source-code text-muted fs-7 fw-light">{{ totalPalabras }} palabras <span>| ... </span></div>
     </div>
   </div>
   <div class="row">
@@ -40,7 +40,7 @@ layout: page-sidebar-right
                 {% if miPublicacion.enlace == true %}</a>{% endif %} |
               <span class="text-uppercase fw-bold">{{ miPublicacion.tituloRevista }}</span>
             </span>
-            <span>{{ miPublicacion.fechaPublicacion  | date: "%Y"}}</span>/<span class="fw-light">{{ miPublicacion.fechaPublicacion  | date: "%m"}}/{{ miPublicacion.fechaPublicacion  | date: "%d"}}</span>
+            <span class="futura">{{ miPublicacion.fechaPublicacion  | date: "%Y"}}</span><span class="fw-light futura">/{{ miPublicacion.fechaPublicacion  | date: "%m"}}/{{ miPublicacion.fechaPublicacion  | date: "%d"}}</span>
           </div>
         </li>
         {% endfor %}

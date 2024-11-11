@@ -1,39 +1,39 @@
 cursos:
 
-  - nombreCurso: Escribir Ciencia Ficción
-    institucionCurso: Escuela de Escritores
-    fechaCurso:  08/11/2022
-    tipoCurso: Curso
+  - nombreCurso: Introduction to Writing Science Fiction and Fantasy
+    institucionCurso: Domestika
+    fechaCurso: 2021-09-01
+    tipoCurso: 
 
   - nombreCurso: Introduction to Narrative Writing
     institucionCurso: Domestika
-    fechaCurso:  01/10/2021
-    tipoCurso:
-
-  - nombreCurso: Introduction to Writing Science Fiction and Fantasy
-    institucionCurso: Domestika
-    fechaCurso:  01/09/2021
-    tipoCurso:
+    fechaCurso: 2021-10-01
+    tipoCurso: 
 
   - nombreCurso: Storytelling
-    institucionCurso: Fundación telefónica Movistar
-    fechaCurso:  05/08/2022
+    institucionCurso: Fundación Telefónica Movistar
+    fechaCurso: 2022-08-05
     tipoCurso: Diplomado
     url: https://drive.google.com/file/d/1RXfdnPP_fSswsAt8MTNvZrnlY6vp7mrw/view
 
   - nombreCurso: Worldbuilding. Discover the Fantasy Narrative
     institucionCurso: Domestika
-    fechaCurso:  01/09/2022
-    tipoCurso:
+    fechaCurso: 2022-09-01
+    tipoCurso: 
+
+  - nombreCurso: Escribir Ciencia Ficción
+    institucionCurso: Escuela de Escritores
+    fechaCurso: 2022-11-08
+    tipoCurso: Curso
 
   - nombreCurso: Curso de escritura creativa con Brandon Sanderson
     institucionCurso: Escuela Cursiva <br>de Penguin Random House
-    fechaCurso:  01/07/2023
+    fechaCurso: 2023-07-01
     tipoCurso: Certificación
     url: https://www.credential.net/43afbe6d-666b-433b-b04a-14927df69563#gs.38dcwn
 
-  - nombreCurso:  'VGWR101: Video Game Writing Essentials '
+  - nombreCurso: 'VGWR101: Video Game Writing Essentials'
     institucionCurso: UBCx - The University of British Columbia
-    fechaCurso:  21/10/2024
+    fechaCurso: 2024-10-21
     tipoCurso: Certificación
     url: https://courses.edx.org/certificates/cb1cb14077714f2b81d78cca4b9e67b8

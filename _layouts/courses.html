@@ -15,7 +15,7 @@ layout: page-sidebar-right
         <span class="mx-3"> | </span>
         <span class="text-uppercase fw-bolder">{{ miCurso.institucionCurso }}</span>
         <span class="mx-3"> | </span>
-        <span class="futura">{{ miCurso.fechaCurso }}</span>
+        <span class="futura">{{ miCurso.fechaCurso  | date: "%Y"}}</span><span class="fw-light futura">/{{ miCurso.fechaCurso  | date: "%m"}}/{{ miCurso.fechaCurso  | date: "%d"}}</span>
       </div>
       {% if miCurso.url %}
       <div class="text-capitalize futura fs-6 fw-lighter text-light mt-2 align-self-end">
