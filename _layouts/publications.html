@@ -15,8 +15,8 @@ layout: page-sidebar-right
 
 <section class="content">
   <div class="row">
-    <div class="col-12">
-      <div class="futura text-muted fs-7">{{ totalPalabras }} palabras</div>
+    <div class="col-12 text-end">
+      <div class="source-code text-muted fs-7 fw-light">{{ totalPalabras }} palabras</div>
     </div>
   </div>
   <div class="row">
@@ -29,7 +29,7 @@ layout: page-sidebar-right
             {% if miPublicacion.cantidadPalabras < 1000 %} <strong>ficción flash</strong>
               {% elsif miPublicacion.cantidadPalabras < 7500 %} <strong>ficción corta</strong>
                 {% endif %}
-                {{ miPublicacion.cantidadPalabras }} palabras
+                <span class="source-code ">{{ miPublicacion.cantidadPalabras }} palabras</span>
           </div>
           {% endif %}
           <div class="d-flex align-items-center">
@@ -40,7 +40,7 @@ layout: page-sidebar-right
                 {% if miPublicacion.enlace == true %}</a>{% endif %} |
               <span class="text-uppercase fw-bold">{{ miPublicacion.tituloRevista }}</span>
             </span>
-            <span>{{ miPublicacion.fechaPublicacion }}</span>
+            <span>{{ miPublicacion.fechaPublicacion  | date: "%Y"}}</span>/<span class="fw-light">{{ miPublicacion.fechaPublicacion  | date: "%m"}}/{{ miPublicacion.fechaPublicacion  | date: "%d"}}</span>
           </div>
         </li>
         {% endfor %}
