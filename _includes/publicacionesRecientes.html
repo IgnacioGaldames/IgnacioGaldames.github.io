@@ -1,0 +1,24 @@
+<div class="row my-3" id="publicacionesRecientes">
+  <div class="col-12">
+    <h4>Publicaciones Recientes</h4>
+  </div>
+  <div class="col-12">
+    <ul class="list-group">
+      {% assign ultimoLibro = site.libros | sort: "fechaPublicacion" | reverse | first %}
+      {% if ultimoLibro %}
+      <li class="list-group-item">Libros: <a href="{{ ultimoLibro.url }}" class="">{{ ultimoLibro.nombreLibro }}</a></li>
+      {% else %}
+      <li class="list-group-item">No hay libros disponibles.</li>
+      {% endif %}
+      {% assign publicacionesOrdenadas = site.data.mis_publicaciones.publicaciones | sort: "fechaPublicacion" | reverse
+      %}
+      {% assign ultimaPublicacion = publicacionesOrdenadas | first %}
+      {% if ultimaPublicacion %}
+      <li class="list-group-item">Cuentos: <a href="{{ ultimaPublicacion.urlPublicacion }}" class="">{{ ultimaPublicacion.nombrePublicacion
+          }}</a></li>
+      {% else %}
+      <li class="list-group-item">No hay publicaciones disponibles.</li>
+      {% endif %}
+    </ul>
+  </div>
+</div>
