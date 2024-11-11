@@ -24,15 +24,18 @@ layout: page-sidebar-bottom
 		</div>
 	</div>
 </div>
-<div class="row my-5" id="Contenido">
+{% assign content = post.content | strip_newlines %}
+{% if content != "" or page.adobeAero or page.playlistSpotify or page.playlistSAmazonMusicSRC %}
+<article class="row my-5" id="Contenido">
 	<div class="col-12">
 		{{ content }}
 	</div>
 	{% include adobeAero.html %}
 	{% include playlists.html %}
-</div>
-<div class="row border-top my-3" id="include-coleccionLibros">
+</article>
+{% endif %}
+<article class="row border-top my-3" id="include-coleccionLibros">
 	<div class="col-12 mx-auto">
 		{% include coleccionLibros.html %}
 	</div>
-</div>
+</article>

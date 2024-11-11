@@ -1,0 +1,10 @@
+.source-code
+	font-family: "Source Code Pro", monospace
+
+$weights: 200,300,400,500,600,700,800,900
+@each $weight in $weights
+	.source-code-#{$weight}
+		@extend .source-code
+		font-optical-sizing: auto
+		font-weight: #{$weight}
+		font-style: normal

@@ -1,7 +1,7 @@
 <article class="container">
   <div class="row mb-3 py-3" id="posts">
     <div class="col-md-12">
-      <h2 class="h2 mb-3">Posts</h2>
+      <h4 class="h4 mb-3">Posts</h4>
     </div>
     <div class="col-md-12">
       <ul class="list-group">
@@ -13,15 +13,16 @@
       </ul>
     </div>
   </div>
+  {% include publicacionesRecientes.html %}
   <div class="row" id="links">
     <div class="col-md-12">
-      <h2 class="h4">Enlaces</h2>
+      <h4 class="h4">Enlaces</h4>
     </div>
     <div class="col-md-12">
       <ul class="list-group" itemscope itemtype="http://schema.org/Person">
         {% for link in site.data.mis_enlaces.enlaces %}
         <li class="d-inline-block m-1" itemprop="sameAs">
-          <a itemprop="sameAs" href="{{ link.url }}" target="_blank" rel="noopener" class="text-info">
+          <a itemprop="sameAs" href="{{ link.url }}" target="_blank" rel="noopener" class="">
             <i class="fa-web fa-lg"></i>
             <span class="">{{ link.name }}</span>
           </a>
