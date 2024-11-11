@@ -11,12 +11,15 @@ layout: page-sidebar-right
   <ul class="list-group list-group-flush">
     {% for miPublicacion in site.data.mis_publicaciones.publicaciones %}
     <li class="list-group-item">
-      {% if miPublicacion.enlace == true %}<a href="{{ miPublicacion.urlPublicacion }}" target="_blank">{% endif %}
-        <span class="text-capitalize eb-garamond fs-5">{{ miPublicacion.nombrePublicacion }}</span>
-        {% if miPublicacion.enlace == true %}</a>{% endif %}
-      |
-      <span class="text-uppercase fw-bold">{{ miPublicacion.tituloRevista }}</span>
-      | {{ miPublicacion.fechaPublicacion }}
+      <div class="d-flex align-items-center">
+        <span class="flex-grow-1">
+          {% if miPublicacion.enlace == true %}<a href="{{ miPublicacion.urlPublicacion }}" target="_blank">{% endif %}
+            <span class="text-capitalize eb-garamond fs-5">{{ miPublicacion.nombrePublicacion }}</span> 
+            {% if miPublicacion.enlace == true %}</a>{% endif %}      |
+          <span class="text-uppercase fw-bold">{{ miPublicacion.tituloRevista }}</span>
+        </span>
+        <span>{{ miPublicacion.fechaPublicacion }}</span> 
+      </div>
     </li>
     {% endfor %}
   </ul>
