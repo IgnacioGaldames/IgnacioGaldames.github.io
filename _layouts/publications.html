@@ -10,7 +10,7 @@ layout: page-sidebar-right
 <section class="content">
   <ul class="list-group list-group-flush">
     {% for miPublicacion in site.data.mis_publicaciones.publicaciones %}
-    <li class="list-group-item">
+    <li class="list-group-item py-3">
       <div class="d-flex align-items-center">
         <span class="flex-grow-1">
           {% if miPublicacion.enlace == true %}<a href="{{ miPublicacion.urlPublicacion }}" target="_blank">{% endif %}
