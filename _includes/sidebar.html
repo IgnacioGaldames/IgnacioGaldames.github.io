@@ -22,7 +22,7 @@
       <ul class="list-group" itemscope itemtype="http://schema.org/Person">
         {% for link in site.data.mis_enlaces.enlaces %}
         <li class="d-inline-block m-1" itemprop="sameAs">
-          <a itemprop="sameAs" href="{{ link.url }}" target="_blank" rel="noopener" class="text-info">
+          <a itemprop="sameAs" href="{{ link.url }}" target="_blank" rel="noopener" class="">
             <i class="fa-web fa-lg"></i>
             <span class="">{{ link.name }}</span>
           </a>
