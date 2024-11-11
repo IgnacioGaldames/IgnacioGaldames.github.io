@@ -11,6 +11,16 @@ layout: page-sidebar-right
   <ul class="list-group list-group-flush">
     {% for miPublicacion in site.data.mis_publicaciones.publicaciones %}
     <li class="list-group-item py-3">
+      {%if miPublicacion.cantidadPalabras %}
+        <div class="text-capitalize futura fs-7 fw-lighter text-light text-muted">
+          {% if miPublicacion.cantidadPalabras < 1000 %}
+            <strong>ficción flash</strong>
+          {% elsif miPublicacion.cantidadPalabras < 7500 %}
+            <strong>ficción corta</strong>
+          {% endif %}
+          {{ miPublicacion.cantidadPalabras }} palabras
+        </div>
+      {% endif %}
       <div class="d-flex align-items-center">
         <span class="flex-grow-1">
           {% if miPublicacion.enlace == true %}<a href="{{ miPublicacion.urlPublicacion }}" target="_blank">{% endif %}
