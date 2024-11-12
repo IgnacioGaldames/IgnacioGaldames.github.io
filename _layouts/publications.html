@@ -25,11 +25,11 @@ layout: page-sidebar-right
         {% for miPublicacion in site.data.mis_publicaciones.publicaciones %}
         <li class="list-group-item py-3">
           {%if miPublicacion.cantidadPalabras %}
-          <div class="text-capitalize futura fs-7 fw-lighter text-light text-muted">
-            {% if miPublicacion.cantidadPalabras < 1000 %} <strong>ficción flash</strong>
+          <div class="source-code text-capitalize fs-9 fw-lighter text-light text-muted">
+            ->{% if miPublicacion.cantidadPalabras < 1000 %} <strong>ficción flash</strong>
               {% elsif miPublicacion.cantidadPalabras < 7500 %} <strong>ficción corta</strong>
                 {% endif %}
-                <span class="source-code text-capitalize fs-7 fw-lighter text-light text-muted">{{ miPublicacion.cantidadPalabras }} palabras</span>
+                <span class="">{{ miPublicacion.cantidadPalabras }} palabras |</span>
           </div>
           {% endif %}
           <div class="d-flex align-items-center">
@@ -40,7 +40,9 @@ layout: page-sidebar-right
                 {% if miPublicacion.enlace == true %}</a>{% endif %} |
               <span class="text-uppercase fw-bold">{{ miPublicacion.tituloRevista }}</span>
             </span>
-            <span class="futura">{{ miPublicacion.fechaPublicacion  | date: "%Y"}}</span><span class="fw-light futura">/{{ miPublicacion.fechaPublicacion  | date: "%m"}}/{{ miPublicacion.fechaPublicacion  | date: "%d"}}</span>
+            <span class="futura">{{ miPublicacion.fechaPublicacion | date: "%Y"}}</span><span
+              class="fw-light futura">/{{ miPublicacion.fechaPublicacion | date: "%m"}}/{{
+              miPublicacion.fechaPublicacion | date: "%d"}}</span>
           </div>
         </li>
         {% endfor %}
