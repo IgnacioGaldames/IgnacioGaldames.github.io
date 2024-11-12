@@ -15,6 +15,7 @@ cursos:
     fechaCurso: 2022-08-05
     tipoCurso: Diplomado
     url: https://drive.google.com/file/d/1RXfdnPP_fSswsAt8MTNvZrnlY6vp7mrw/view
+    idCurso: 85c6797b-3fad-45d5-a5e9-36997ed1ff44
 
   - nombreCurso: Worldbuilding. Discover the Fantasy Narrative
     institucionCurso: Domestika
@@ -31,9 +32,18 @@ cursos:
     fechaCurso: 2023-07-01
     tipoCurso: Certificación
     url: https://www.credential.net/43afbe6d-666b-433b-b04a-14927df69563#gs.38dcwn
+    idCurso: 77144652
 
   - nombreCurso: 'VGWR101: Video Game Writing Essentials'
     institucionCurso: UBCx - The University of British Columbia
     fechaCurso: 2024-10-21
     tipoCurso: Certificación
     url: https://courses.edx.org/certificates/cb1cb14077714f2b81d78cca4b9e67b8
+    idCurso: cb1cb14077714f2b81d78cca4b9e67b8
+
+  - nombreCurso: ' VGWR102: Writing Video Game Characters'
+    institucionCurso: UBCx - The University of British Columbia
+    fechaCurso: 2024-11-12
+    tipoCurso: Certificación
+    url: https://courses.edx.org/certificates/5220a7acc3e3445297fef0451a50c1b8
+    idCurso: 5220a7acc3e3445297fef0451a50c1b8
