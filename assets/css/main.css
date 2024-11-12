@@ -11865,6 +11865,18 @@ h2, .h2 {
   font-size: 0.75rem;
 }
 
+.fs-8 {
+  font-size: 0.66rem;
+}
+
+.fs-9 {
+  font-size: 0.5rem;
+}
+
+.fs-10 {
+  font-size: 0.33rem;
+}
+
 .eb-garamond, .eb-garamond-800, .eb-garamond-700, .eb-garamond-600, .eb-garamond-500, .eb-garamond-400, p {
   font-family: "EB Garamond", serif;
 }

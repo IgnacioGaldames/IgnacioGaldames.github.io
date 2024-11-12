@@ -16,7 +16,7 @@ layout: page-sidebar-right
 <section class="content">
   <div class="row">
     <div class="col-12 text-end">
-      <div class="source-code text-muted fs-7 fw-light">{{ totalPalabras }} palabras <span>| ... </span></div>
+      <div class="source-code text-muted fs-7 fw-light">{{ totalPalabras }} palabras <span>|</span></div>
     </div>
   </div>
   <div class="row">
@@ -29,7 +29,7 @@ layout: page-sidebar-right
             {% if miPublicacion.cantidadPalabras < 1000 %} <strong>ficción flash</strong>
               {% elsif miPublicacion.cantidadPalabras < 7500 %} <strong>ficción corta</strong>
                 {% endif %}
-                <span class="source-code ">{{ miPublicacion.cantidadPalabras }} palabras</span>
+                <span class="source-code text-capitalize fs-7 fw-lighter text-light text-muted">{{ miPublicacion.cantidadPalabras }} palabras</span>
           </div>
           {% endif %}
           <div class="d-flex align-items-center">

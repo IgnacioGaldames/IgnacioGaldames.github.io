@@ -8,8 +8,14 @@ layout: page-sidebar-right
     {% for miCurso in site.data.mis_cursos.cursos %}
     <li class="list-group-item d-flex flex-column py-3">
       {%if miCurso.tipoCurso %}
-        <div class="text-capitalize futura fs-6 fw-lighter text-light text-muted">{{ miCurso.tipoCurso }}</div>
+        <div class="text-capitalize futura fs-6 fw-lighter text-light text-muted">
+          {{ miCurso.tipoCurso }}
+        </div>
       {% endif %}
+      {%if miCurso.idCurso %}
+        <span class="source-code text-capitalize fs-8 fw-lighter text-light text-muted">{{ miCurso.idCurso }}</span>
+      {% endif %}
+
       <div class="d-flex align-items-center">
         <span class="text-capitalize eb-garamond fs-4 flex-grow-1">{{ miCurso.nombreCurso }}</span>
         <span class="mx-3"> | </span>
