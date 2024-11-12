@@ -1,15 +1,11 @@
 ---
 layout: page-sidebar-right
 ---
-{% for miPublicacion in site.data.mis_publicaciones.publicaciones %}
-{% assign site.data.mis_publicaciones.publicaciones = site.data.mis_publicaciones.publicaciones | push: miPublicacion[1]
-%}
-{% endfor %}
-{% assign site.data.mis_publicaciones.publicaciones = site.data.mis_publicaciones.publicaciones | sort:
-"fechaPublicacion" %}
+
+{% assign publicaciones_ordenadas = site.data.mis_publicaciones.publicaciones | sort: "fechaPublicacion" %}
 
 {% assign totalPalabras = 0 %}
-{% for miPublicacion in site.data.mis_publicaciones.publicaciones %}
+{% for miPublicacion in publicaciones_ordenadas %}
 {% assign totalPalabras = totalPalabras | plus: miPublicacion.cantidadPalabras %}
 {% endfor %}
 
@@ -22,27 +18,33 @@ layout: page-sidebar-right
   <div class="row">
     <div class="col-12">
       <ul class="list-group list-group-flush">
-        {% for miPublicacion in site.data.mis_publicaciones.publicaciones %}
+        {% for miPublicacion in publicaciones_ordenadas %}
         <li class="list-group-item py-3">
-          {%if miPublicacion.cantidadPalabras %}
+          {% if miPublicacion.cantidadPalabras %}
           <div class="source-code text-capitalize fs-9 fw-lighter text-light text-muted">
             ->{% if miPublicacion.cantidadPalabras < 1000 %} <strong>ficción flash</strong>
               {% elsif miPublicacion.cantidadPalabras < 7500 %} <strong>ficción corta</strong>
-                {% endif %}
-                <span class="">{{ miPublicacion.cantidadPalabras }} palabras |</span>
+            {% endif %}
+            <span class="">{{ miPublicacion.cantidadPalabras }} palabras |</span>
           </div>
           {% endif %}
           <div class="d-flex align-items-center">
             <span class="flex-grow-1">
-              {% if miPublicacion.enlace == true %}<a href="{{ miPublicacion.urlPublicacion }}" target="_blank">{% endif
-                %}
-                <span class="text-capitalize eb-garamond fs-5">{{ miPublicacion.nombrePublicacion }}</span>
-                {% if miPublicacion.enlace == true %}</a>{% endif %} |
+              {% if miPublicacion.enlace == true %}<a href="{{ miPublicacion.urlPublicacion }}" target="_blank">{% endif %}
+              <span class="text-capitalize eb-garamond fs-5">{{ miPublicacion.nombrePublicacion }}</span>
+              {% if miPublicacion.enlace == true %}</a>{% endif %} |
               <span class="text-uppercase fw-bold">{{ miPublicacion.tituloRevista }}</span>
             </span>
-            <span class="futura">{{ miPublicacion.fechaPublicacion | date: "%Y"}}</span><span
-              class="fw-light futura">/{{ miPublicacion.fechaPublicacion | date: "%m"}}/{{
-              miPublicacion.fechaPublicacion | date: "%d"}}</span>
+            <div class="flex flex-column">
+              <div class="futura">
+                {{ miPublicacion.fechaPublicacion | date: "%Y" }}/{{ miPublicacion.fechaPublicacion | date: "%m" }}/{{ miPublicacion.fechaPublicacion | date: "%d" }}
+              </div>
+              <!-- Unique ID and data-date attribute for each date -->
+              <div id="date{{ forloop.index }}" 
+                   class="source-code text-capitalize fs-9 fw-lighter text-end text-light text-muted date"
+                   data-date="{{ miPublicacion.fechaPublicacion | date: "%Y-%m-%d" }}">
+              </div>
+            </div>
           </div>
         </li>
         {% endfor %}
@@ -50,3 +52,24 @@ layout: page-sidebar-right
     </div>
   </div>
 </section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Select all elements with the class "date"
+    const dateElements = document.querySelectorAll(".date");
+    
+    dateElements.forEach(element => {
+      // Get the date from the data-date attribute
+      const dateStr = element.getAttribute("data-date");
+      
+      if (dateStr) {
+        // Convert the date string to a Date object and then to a timestamp
+        const dateObj = new Date(dateStr);
+        const timestamp = dateObj.getTime();
+
+        // Display the timestamp inside the respective element
+        element.innerHTML = timestamp;
+      }
+    });
+  });
+</script>
