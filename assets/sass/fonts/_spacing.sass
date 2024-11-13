@@ -1,0 +1,5 @@
+$spacing: 1, 175, 2, 3
+$value: '0.'
+@each $space in $spacing
+  .ls-#{$space}
+    letter-spacing: #{$value}#{$space}rem

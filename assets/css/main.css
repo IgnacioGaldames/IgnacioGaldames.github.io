@@ -12037,6 +12037,22 @@ h2, .h2 {
   font-style: normal;
 }
 
+.ls-1 {
+  letter-spacing: 0.1rem;
+}
+
+.ls-175 {
+  letter-spacing: 0.175rem;
+}
+
+.ls-2 {
+  letter-spacing: 0.2rem;
+}
+
+.ls-3 {
+  letter-spacing: 0.3rem;
+}
+
 body {
   background-image: url("../img/noise.gif");
   background-repeat: repeat;
