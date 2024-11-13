@@ -12,7 +12,7 @@ layout: page-sidebar-right
 <section class="content">
   <div class="row">
     <div class="col-12 text-end">
-      <div class="source-code text-muted fs-7 fw-light">{{ totalPalabras }} palabras <span>|</span></div>
+      <div class="source-code text-muted fs-9 fw-light">-> {{ totalPalabras }} palabras <span>|</span></div>
     </div>
   </div>
   <div class="row">
@@ -24,25 +24,26 @@ layout: page-sidebar-right
           <div class="source-code text-capitalize fs-9 fw-lighter text-light text-muted">
             ->{% if miPublicacion.cantidadPalabras < 1000 %} <strong>ficción flash</strong>
               {% elsif miPublicacion.cantidadPalabras < 7500 %} <strong>ficción corta</strong>
-            {% endif %}
-            <span class="">{{ miPublicacion.cantidadPalabras }} palabras |</span>
+                {% endif %}
+                <span class="">{{ miPublicacion.cantidadPalabras }} palabras |</span>
           </div>
           {% endif %}
           <div class="d-flex align-items-center">
             <span class="flex-grow-1">
-              {% if miPublicacion.enlace == true %}<a href="{{ miPublicacion.urlPublicacion }}" target="_blank">{% endif %}
-              <span class="text-capitalize eb-garamond fs-5">{{ miPublicacion.nombrePublicacion }}</span>
-              {% if miPublicacion.enlace == true %}</a>{% endif %} |
+              {% if miPublicacion.enlace == true %}<a href="{{ miPublicacion.urlPublicacion }}" target="_blank">{% endif
+                %}
+                <span class="text-capitalize eb-garamond fs-5">{{ miPublicacion.nombrePublicacion }}</span>
+                {% if miPublicacion.enlace == true %}</a>{% endif %} |
               <span class="text-uppercase fw-bold">{{ miPublicacion.tituloRevista }}</span>
             </span>
-            <div class="flex flex-column">
+            <div class="flex flex-column fecha">
               <div class="futura">
-                {{ miPublicacion.fechaPublicacion | date: "%Y" }}/{{ miPublicacion.fechaPublicacion | date: "%m" }}/{{ miPublicacion.fechaPublicacion | date: "%d" }}
+                <span>{{ miPublicacion.fechaPublicacion | date: "%Y" }}</span><span class="fw-light">/{{ miPublicacion.fechaPublicacion | date: "%m" }}/{{ miPublicacion.fechaPublicacion | date: "%d" }}</span>
               </div>
               <!-- Unique ID and data-date attribute for each date -->
-              <div id="date{{ forloop.index }}" 
-                   class="source-code text-capitalize fs-9 fw-lighter text-end text-light text-muted date ls-175"
-                   data-date="{{ miPublicacion.fechaPublicacion | date: "%Y-%m-%d" }}">
+              <div id="date{{ forloop.index }}"
+                class="source-code text-capitalize fs-9 fw-lighter text-end text-light text-muted date ls-175 mt-n1"
+                data-date="{{ miPublicacion.fechaPublicacion | date: " %Y-%m-%d" }}">
               </div>
             </div>
           </div>
@@ -54,14 +55,14 @@ layout: page-sidebar-right
 </section>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", function () {
     // Select all elements with the class "date"
     const dateElements = document.querySelectorAll(".date");
-    
+
     dateElements.forEach(element => {
       // Get the date from the data-date attribute
       const dateStr = element.getAttribute("data-date");
-      
+
       if (dateStr) {
         // Convert the date string to a Date object and then to a timestamp
         const dateObj = new Date(dateStr);

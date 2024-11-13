@@ -4,11 +4,13 @@ cursos:
     institucionCurso: Domestika
     fechaCurso: 2021-09-01
     tipoCurso: 
+    idCurso: 2762
 
   - nombreCurso: Introduction to Narrative Writing
     institucionCurso: Domestika
     fechaCurso: 2021-10-01
     tipoCurso: 
+    idCurso: 1020
 
   - nombreCurso: Storytelling
     institucionCurso: Fundación Telefónica Movistar
@@ -21,11 +23,13 @@ cursos:
     institucionCurso: Domestika
     fechaCurso: 2022-09-01
     tipoCurso: 
+    idCurso: 2311
 
   - nombreCurso: Escribir Ciencia Ficción
     institucionCurso: Escuela de Escritores
     fechaCurso: 2022-11-08
     tipoCurso: Curso
+    idCurso: 2762
 
   - nombreCurso: Curso de escritura creativa con Brandon Sanderson
     institucionCurso: Escuela Cursiva <br>de Penguin Random House
