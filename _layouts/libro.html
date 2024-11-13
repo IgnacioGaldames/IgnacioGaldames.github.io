@@ -4,6 +4,8 @@ layout: page-sidebar-bottom
 <div class="card shadow border border-light-subtle" id="cardLibro">
 	<div class="card-header">
 		<h5 class="card-title" id="libro-nombreLibro">{{ page.nombreLibro }}</h5>
+		{% assign book = page %}
+		{% include dataLibro.html %}
 	</div>
 	<div class="row">
 		<div class="col-md-6 col-lg-4 d-flex align-content-center flex-wrap">

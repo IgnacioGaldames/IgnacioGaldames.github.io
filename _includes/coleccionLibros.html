@@ -9,6 +9,8 @@
 			{% if miLibro.nombreLibro %}
 				<div class="card-header">
 					<h5 class="card-title" id="coleccionLibros-nombreLibro">{{ miLibro.nombreLibro }}</h5>
+					{% assign book = miLibro %}
+					{% include dataLibro.html %}
 				</div>
 			{% endif %}
 			<a href="{{ miLibro.url }}" class="">
