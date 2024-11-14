@@ -13264,14 +13264,21 @@ body {
 }
 
 .glow-magenta-izquierdo, .btn-cp {
-  -webkit-box-shadow: -5px 0px 10px -2px rgb(255, 0, 125);
-  -moz-box-shadow: -5px 0px 10px -2px rgb(255, 0, 125);
-  box-shadow: -5px 0px 10px -2px rgb(255, 0, 125);
+  -webkit-box-shadow: -5px 3px 10px -2px rgb(255, 0, 125);
+  -moz-box-shadow: -5px 3px 10px -2px rgb(255, 0, 125);
+  box-shadow: -5px 3px 10px -2px rgb(255, 0, 125);
 }
 .glow-magenta-izquierdo:hover, .btn-cp:hover {
   -webkit-box-shadow: -1px 0px 10px -2px rgb(255, 0, 125);
   -moz-box-shadow: -1px 0px 10px -2px rgb(255, 0, 125);
   box-shadow: -1px 0px 10px -2px rgb(255, 0, 125);
+}
+
+.glow-data {
+  text-shadow: 4px 0px 2px rgba(0, 255, 255, 0.075), 2px 0px 1px rgba(0, 255, 255, 0.1), -2px 0px 1px rgba(0, 255, 255, 0.1), -4px 0px 2px rgba(0, 255, 255, 0.075);
+}
+.glow-data:hover {
+  text-shadow: 2px 0px 1px rgba(0, 255, 255, 0.075), 1px 0px 1px rgba(0, 255, 255, 0.1), -1px 0px 1px rgba(0, 255, 255, 0.1), -4px 0px 1px rgba(0, 255, 255, 0.075);
 }
 
 .btn-cp {

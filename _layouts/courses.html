@@ -13,20 +13,18 @@ layout: page-sidebar-right
         </div>
       {% endif %}
       {%if miCurso.idCurso %}
-        <span class="source-code text-capitalize fs-9 fw-lighter text-light text-muted">-> {{ miCurso.idCurso }} |</span>
+        <span class="source-code text-capitalize fs-9 fw-lighter text-light text-muted glow-data ">-> {{ miCurso.idCurso }} |</span>
       {% endif %}
-      <div class="d-flex align-items-center">
+      <div class="d-flex align-items-start align-items-md-center flex-column flex-md-row">
         <span class="text-capitalize eb-garamond fs-4 flex-grow-1">{{ miCurso.nombreCurso }}</span>
-        <span class="mx-3"> | </span>
-        <span class="text-uppercase fw-bolder">{{ miCurso.institucionCurso }}</span>
-        <span class="mx-3"> | </span>
+        <span class="text-uppercase fw-bolder"> | {{ miCurso.institucionCurso }}</span>
         <div class="flex flex-column">
           <div class="futura">
-            <span class="">{{ miCurso.fechaCurso  | date: "%Y" }}</span><span  class="fw-light">/{{ miCurso.fechaCurso  | date: "%m" }}/{{miCurso.fechaCurso  | date: "%d" }}</span>
+            <span class=""> | {{ miCurso.fechaCurso  | date: "%Y" }}</span><span  class="fw-light">/{{ miCurso.fechaCurso  | date: "%m" }}/{{miCurso.fechaCurso  | date: "%d" }}</span>
           </div>
           <!-- Unique ID and data-date attribute for each date -->
           <div id="date{{ forloop.index }}"
-            class="source-code text-capitalize fs-9 fw-lighter text-end text-light text-muted date ls-175 mt-n1"
+            class="source-code text-capitalize fs-9 fw-lighter text-end text-light text-muted date ls-175 mt-n1 glow-data"
             data-date="{{ miCurso.fechaCurso  | date: " %Y-%m-%d" }}">
           </div>
         </div>
@@ -42,7 +40,7 @@ layout: page-sidebar-right
       </div>
       {% if miCurso.url %}
       <div class="text-capitalize futura fs-6 fw-lighter text-light mt-2 align-self-end">
-        <a href="{{ miCurso.url }}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm btn-cp">ver cetificado</a>
+        <a href="{{ miCurso.url }}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm btn-cp glow-data">ver cetificado</a>
       </div>
       {% endif %}
     </li>
