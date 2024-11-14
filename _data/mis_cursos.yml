@@ -19,6 +19,13 @@ cursos:
     url: https://drive.google.com/file/d/1RXfdnPP_fSswsAt8MTNvZrnlY6vp7mrw/view
     idCurso: 85c6797b-3fad-45d5-a5e9-36997ed1ff44
 
+  - nombreCurso: Explorando los mundos posibles de la ciencia ficción
+    institucionCurso: Anapoyesis
+    fechaCurso: 2022-08-11
+    tipoCurso: Taller
+    url: 
+    idCurso: 
+
   - nombreCurso: Worldbuilding. Discover the Fantasy Narrative
     institucionCurso: Domestika
     fechaCurso: 2022-09-01
