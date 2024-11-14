@@ -13,16 +13,14 @@ layout: page-sidebar-right
         </div>
       {% endif %}
       {%if miCurso.idCurso %}
-        <span class="source-code text-capitalize fs-9 fw-lighter text-light text-muted">-> {{ miCurso.idCurso }} |</span>
+        <span class="source-code text-capitalize fs-9 fw-lighter text-light text-muted glow-cyan-suave">-> {{ miCurso.idCurso }} |</span>
       {% endif %}
-      <div class="d-flex align-items-center">
+      <div class="d-flex align-items-start align-items-md-center flex-column flex-md-row">
         <span class="text-capitalize eb-garamond fs-4 flex-grow-1">{{ miCurso.nombreCurso }}</span>
-        <span class="mx-3"> | </span>
-        <span class="text-uppercase fw-bolder">{{ miCurso.institucionCurso }}</span>
-        <span class="mx-3"> | </span>
+        <span class="text-uppercase fw-bolder"> | {{ miCurso.institucionCurso }}</span>
         <div class="flex flex-column">
           <div class="futura">
-            <span class="">{{ miCurso.fechaCurso  | date: "%Y" }}</span><span  class="fw-light">/{{ miCurso.fechaCurso  | date: "%m" }}/{{miCurso.fechaCurso  | date: "%d" }}</span>
+            <span class=""> | {{ miCurso.fechaCurso  | date: "%Y" }}</span><span  class="fw-light">/{{ miCurso.fechaCurso  | date: "%m" }}/{{miCurso.fechaCurso  | date: "%d" }}</span>
           </div>
           <!-- Unique ID and data-date attribute for each date -->
           <div id="date{{ forloop.index }}"
