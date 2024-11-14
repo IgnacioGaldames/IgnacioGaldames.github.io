@@ -13,7 +13,7 @@ layout: page-sidebar-right
         </div>
       {% endif %}
       {%if miCurso.idCurso %}
-        <span class="source-code text-capitalize fs-9 fw-lighter text-light text-muted glow-cyan-suave">-> {{ miCurso.idCurso }} |</span>
+        <span class="source-code text-capitalize fs-9 fw-lighter text-light text-muted glow-data ">-> {{ miCurso.idCurso }} |</span>
       {% endif %}
       <div class="d-flex align-items-start align-items-md-center flex-column flex-md-row">
         <span class="text-capitalize eb-garamond fs-4 flex-grow-1">{{ miCurso.nombreCurso }}</span>
@@ -24,7 +24,7 @@ layout: page-sidebar-right
           </div>
           <!-- Unique ID and data-date attribute for each date -->
           <div id="date{{ forloop.index }}"
-            class="source-code text-capitalize fs-9 fw-lighter text-end text-light text-muted date ls-175 mt-n1"
+            class="source-code text-capitalize fs-9 fw-lighter text-end text-light text-muted date ls-175 mt-n1 glow-data"
             data-date="{{ miCurso.fechaCurso  | date: " %Y-%m-%d" }}">
           </div>
         </div>

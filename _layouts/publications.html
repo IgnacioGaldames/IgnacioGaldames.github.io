@@ -21,7 +21,7 @@ layout: page-sidebar-right
         {% for miPublicacion in publicaciones_ordenadas %}
         <li class="list-group-item py-3">
           {% if miPublicacion.cantidadPalabras %}
-          <div class="source-code text-capitalize fs-9 fw-lighter text-light text-muted">
+          <div class="source-code text-capitalize fs-9 fw-lighter text-light text-muted glow-data ">
             ->{% if miPublicacion.cantidadPalabras < 1000 %} <strong>ficción flash</strong>
               {% elsif miPublicacion.cantidadPalabras < 7500 %} <strong>ficción corta</strong>
                 {% endif %}
