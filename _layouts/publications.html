@@ -36,13 +36,13 @@ layout: page-sidebar-right
                 {% if miPublicacion.enlace == true %}</a>{% endif %}
               <div class="text-uppercase fw-bold"> | {{ miPublicacion.tituloRevista }}</div>
               </div>
-            <div class="flex flex-column fecha">
+            <div class="flex flex-column fecha ">
               <div class="futura">
                 <span>{{ miPublicacion.fechaPublicacion | date: "%Y" }}</span><span class="fw-light">/{{ miPublicacion.fechaPublicacion | date: "%m" }}/{{ miPublicacion.fechaPublicacion | date: "%d" }}</span>
               </div>
               <!-- Unique ID and data-date attribute for each date -->
               <div id="date{{ forloop.index }}"
-                class="source-code text-capitalize fs-9 fw-lighter text-end text-light text-muted date ls-175 mt-n1"
+                class="source-code text-capitalize fs-9 fw-lighter text-end text-light text-muted date ls-175 mt-n1 glow-data "
                 data-date="{{ miPublicacion.fechaPublicacion | date: " %Y-%m-%d" }}">
               </div>
             </div>
