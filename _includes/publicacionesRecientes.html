@@ -19,8 +19,8 @@
       {% if ultimaPublicacion %}
       <li class="list-group-item">
         <div class="">
-          Cuento: <a href="{{ ultimaPublicacion.urlPublicacion }}" class="text-capitalize eb-garamond fs-5" target="_blank">{{
-            ultimaPublicacion.nombrePublicacion
+          {{ ultimaPublicacion.tipoItem }}: <a href="{{ ultimaPublicacion.urlItem }}" class="text-capitalize eb-garamond fs-5" target="_blank">{{
+            ultimaPublicacion.nombreItem
             }}</a>
         </div>
         <a class="btn btn-sm btn-primary py-0 my-2" href="{{ site.baseurl }}/publicaciones/">ver más publicaciones</a>

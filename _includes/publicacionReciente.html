@@ -6,9 +6,9 @@
       {% assign ultimaPublicacion = publicacionesOrdenadas | first %}
       {% if ultimaPublicacion %}
       <div>
-        <span class="fs-7">Último cuento: </span>
-        <a href="{{ ultimaPublicacion.urlPublicacion }}" class="text-capitalize eb-garamond fs-6" target="_blank">{{
-          ultimaPublicacion.nombrePublicacion}} - {{ultimaPublicacion.tituloRevista}}</a> <span class="source-code text-capitalize fs-9 fw-lighter text-end text-light text-muted date ls-175 mt-n1 glow-data ">{{ultimaPublicacion.cantidadPalabras}} palabras</span>
+        <span class="fs-7">{{ ultimaPublicacion.tipoItem }}</span>
+        <a href="{{ ultimaPublicacion.urlItem }}" class="text-capitalize eb-garamond fs-6" target="_blank">{{
+          ultimaPublicacion.nombreItem}} - {{ultimaPublicacion.institucionItem}}</a> <span class="source-code text-capitalize fs-9 fw-lighter text-end text-light text-muted date ls-175 mt-n1 glow-data ">{{ultimaPublicacion.datosItem}}</span>
       </div>
       {% else %}
       No hay publicaciones disponibles.
