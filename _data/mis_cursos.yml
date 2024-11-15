@@ -4,57 +4,57 @@ cursos:
     institucionItem: Domestika
     fechaItem: 2021-09-01
     tipoItem: 
-    idItem: 2762
+    datosItem: 2762
 
   - nombreItem: Introduction to Narrative Writing
     institucionItem: Domestika
     fechaItem: 2021-10-01
     tipoItem: 
-    idItem: 1020
+    datosItem: 1020
 
   - nombreItem: Storytelling
     institucionItem: Fundación Telefónica Movistar
     fechaItem: 2022-08-05
     tipoItem: Diplomado
-    url: https://drive.google.com/file/d/1RXfdnPP_fSswsAt8MTNvZrnlY6vp7mrw/view
-    idItem: 85c6797b-3fad-45d5-a5e9-36997ed1ff44
+    urlItem: https://drive.google.com/file/d/1RXfdnPP_fSswsAt8MTNvZrnlY6vp7mrw/view
+    datosItem: 85c6797b-3fad-45d5-a5e9-36997ed1ff44
 
   - nombreItem: Explorando los mundos posibles de la ciencia ficción
     institucionItem: Anapoyesis
     fechaItem: 2022-08-11
     tipoItem: Taller
-    url: 
-    idItem: 
+    urlItem: 
+    datosItem: 
 
   - nombreItem: Worldbuilding. Discover the Fantasy Narrative
     institucionItem: Domestika
     fechaItem: 2022-09-01
     tipoItem: 
-    idItem: 2311
+    datosItem: 2311
 
   - nombreItem: Escribir Ciencia Ficción
     institucionItem: Escuela de Escritores
     fechaItem: 2022-11-08
-    tipoItem: Item
-    idItem: 2762
+    tipoItem: Curso
+    datosItem: 2762
 
   - nombreItem: Item de escritura creativa con Brandon Sanderson
     institucionItem: Escuela Cursiva <br>de Penguin Random House
     fechaItem: 2023-07-01
     tipoItem: Certificación
-    url: https://www.credential.net/43afbe6d-666b-433b-b04a-14927df69563#gs.38dcwn
-    idItem: 77144652
+    urlItem: https://www.credential.net/43afbe6d-666b-433b-b04a-14927df69563#gs.38dcwn
+    datosItem: 77144652
 
   - nombreItem: 'VGWR101: Video Game Writing Essentials'
     institucionItem: UBCx - The University of British Columbia
     fechaItem: 2024-10-21
     tipoItem: Certificación
-    url: https://courses.edx.org/certificates/cb1cb14077714f2b81d78cca4b9e67b8
-    idItem: cb1cb14077714f2b81d78cca4b9e67b8
+    urlItem: https://courses.edx.org/certificates/cb1cb14077714f2b81d78cca4b9e67b8
+    datosItem: cb1cb14077714f2b81d78cca4b9e67b8
 
   - nombreItem: ' VGWR102: Writing Video Game Characters'
     institucionItem: UBCx - The University of British Columbia
     fechaItem: 2024-11-12
     tipoItem: Certificación
-    url: https://courses.edx.org/certificates/5220a7acc3e3445297fef0451a50c1b8
-    idItem: 5220a7acc3e3445297fef0451a50c1b8
+    urlItem: https://courses.edx.org/certificates/5220a7acc3e3445297fef0451a50c1b8
+    datosItem: 5220a7acc3e3445297fef0451a50c1b8
