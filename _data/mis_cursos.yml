@@ -1,60 +1,60 @@
 cursos:
 
-  - nombreCurso: Introduction to Writing Science Fiction and Fantasy
-    institucionCurso: Domestika
-    fechaCurso: 2021-09-01
-    tipoCurso: 
-    idCurso: 2762
+  - nombreItem: Introduction to Writing Science Fiction and Fantasy
+    institucionItem: Domestika
+    fechaItem: 2021-09-01
+    tipoItem: 
+    datosItem: 2762
 
-  - nombreCurso: Introduction to Narrative Writing
-    institucionCurso: Domestika
-    fechaCurso: 2021-10-01
-    tipoCurso: 
-    idCurso: 1020
+  - nombreItem: Introduction to Narrative Writing
+    institucionItem: Domestika
+    fechaItem: 2021-10-01
+    tipoItem: 
+    datosItem: 1020
 
-  - nombreCurso: Storytelling
-    institucionCurso: Fundación Telefónica Movistar
-    fechaCurso: 2022-08-05
-    tipoCurso: Diplomado
-    url: https://drive.google.com/file/d/1RXfdnPP_fSswsAt8MTNvZrnlY6vp7mrw/view
-    idCurso: 85c6797b-3fad-45d5-a5e9-36997ed1ff44
+  - nombreItem: Storytelling
+    institucionItem: Fundación Telefónica Movistar
+    fechaItem: 2022-08-05
+    tipoItem: Diplomado
+    urlItem: https://drive.google.com/file/d/1RXfdnPP_fSswsAt8MTNvZrnlY6vp7mrw/view
+    datosItem: 85c6797b-3fad-45d5-a5e9-36997ed1ff44
 
-  - nombreCurso: Explorando los mundos posibles de la ciencia ficción
-    institucionCurso: Anapoyesis
-    fechaCurso: 2022-08-11
-    tipoCurso: Taller
-    url: 
-    idCurso: 
+  - nombreItem: Explorando los mundos posibles de la ciencia ficción
+    institucionItem: Anapoyesis
+    fechaItem: 2022-08-11
+    tipoItem: Taller
+    urlItem: 
+    datosItem: 
 
-  - nombreCurso: Worldbuilding. Discover the Fantasy Narrative
-    institucionCurso: Domestika
-    fechaCurso: 2022-09-01
-    tipoCurso: 
-    idCurso: 2311
+  - nombreItem: Worldbuilding. Discover the Fantasy Narrative
+    institucionItem: Domestika
+    fechaItem: 2022-09-01
+    tipoItem: 
+    datosItem: 2311
 
-  - nombreCurso: Escribir Ciencia Ficción
-    institucionCurso: Escuela de Escritores
-    fechaCurso: 2022-11-08
-    tipoCurso: Curso
-    idCurso: 2762
+  - nombreItem: Escribir Ciencia Ficción
+    institucionItem: Escuela de Escritores
+    fechaItem: 2022-11-08
+    tipoItem: Curso
+    datosItem: 2762
 
-  - nombreCurso: Curso de escritura creativa con Brandon Sanderson
-    institucionCurso: Escuela Cursiva <br>de Penguin Random House
-    fechaCurso: 2023-07-01
-    tipoCurso: Certificación
-    url: https://www.credential.net/43afbe6d-666b-433b-b04a-14927df69563#gs.38dcwn
-    idCurso: 77144652
+  - nombreItem: Item de escritura creativa con Brandon Sanderson
+    institucionItem: Escuela Cursiva <br>de Penguin Random House
+    fechaItem: 2023-07-01
+    tipoItem: Certificación
+    urlItem: https://www.credential.net/43afbe6d-666b-433b-b04a-14927df69563#gs.38dcwn
+    datosItem: 77144652
 
-  - nombreCurso: 'VGWR101: Video Game Writing Essentials'
-    institucionCurso: UBCx - The University of British Columbia
-    fechaCurso: 2024-10-21
-    tipoCurso: Certificación
-    url: https://courses.edx.org/certificates/cb1cb14077714f2b81d78cca4b9e67b8
-    idCurso: cb1cb14077714f2b81d78cca4b9e67b8
+  - nombreItem: 'VGWR101: Video Game Writing Essentials'
+    institucionItem: UBCx - The University of British Columbia
+    fechaItem: 2024-10-21
+    tipoItem: Certificación
+    urlItem: https://courses.edx.org/certificates/cb1cb14077714f2b81d78cca4b9e67b8
+    datosItem: cb1cb14077714f2b81d78cca4b9e67b8
 
-  - nombreCurso: ' VGWR102: Writing Video Game Characters'
-    institucionCurso: UBCx - The University of British Columbia
-    fechaCurso: 2024-11-12
-    tipoCurso: Certificación
-    url: https://courses.edx.org/certificates/5220a7acc3e3445297fef0451a50c1b8
-    idCurso: 5220a7acc3e3445297fef0451a50c1b8
+  - nombreItem: ' VGWR102: Writing Video Game Characters'
+    institucionItem: UBCx - The University of British Columbia
+    fechaItem: 2024-11-12
+    tipoItem: Certificación
+    urlItem: https://courses.edx.org/certificates/5220a7acc3e3445297fef0451a50c1b8
+    datosItem: 5220a7acc3e3445297fef0451a50c1b8

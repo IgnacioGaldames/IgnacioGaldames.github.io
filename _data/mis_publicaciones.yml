@@ -1,106 +1,113 @@
 publicaciones:
     
-  - nombrePublicacion: The scream decelerated
-    fechaPublicacion: 2019/09/19
-    tituloRevista: Neon Dreams and Nightmares
-    urlPublicacion: https://amzn.to/3YG2sz9
-    enlace: true
-    cantidadPalabras:
+  - nombreItem: The scream decelerated
+    fechaItem: 2019/09/19
+    institucionItem: Neon Dreams and Nightmares
+    urlItem: https://amzn.to/3YG2sz9
+    tipoItem: Ficción Corta
+    datosItem:
     
-  - nombrePublicacion: Iris
-    fechaPublicacion: 2019/09/19
-    tituloRevista: Neon Dreams and Nightmares
-    urlPublicacion: https://amzn.to/3YG2sz9
-    enlace: true
-    cantidadPalabras:
+  - nombreItem: Iris
+    fechaItem: 2019/09/19
+    institucionItem: Neon Dreams and Nightmares
+    urlItem: https://amzn.to/3YG2sz9
+    tipoItem: Ficción Corta
+    datosItem:
     
-  - nombrePublicacion: El Chinchinero (versión espejo)
-    fechaPublicacion: 2021/12/28
-    tituloRevista: Espejo Humeante
-    urlPublicacion: https://espejohumeanterevista.wordpress.com/2021/12/28/el-chinchinero/
+  - nombreItem: El Chinchinero (versión espejo)
+    fechaItem: 2021/12/28
+    institucionItem: Espejo Humeante
+    #urlItem: https://espejohumeanterevista.wordpress.com/2021/12/28/el-chinchinero/
     enlace: false
-    cantidadPalabras: 1559
+    tipoItem: Ficción Corta
+    datosItem: 1559 palabras
     
-  - nombrePublicacion: Alrededor de la decadencia
-    fechaPublicacion: 2022/08/27
-    tituloRevista: Espejo Humeante
-    urlPublicacion: https://espejohumeanterevista.wordpress.com/2023/01/01/todos-tus-malditos-caballos-subiendo-al-cielo/
-    enlace: true
-    cantidadPalabras: 1999
+  - nombreItem: Alrededor de la decadencia
+    fechaItem: 2022/08/27
+    institucionItem: Espejo Humeante
+    urlItem: https://espejohumeanterevista.wordpress.com/2023/01/01/todos-tus-malditos-caballos-subiendo-al-cielo/
+    tipoItem: Ficción Corta
+    datosItem: 1999 palabras
     
-  - nombrePublicacion: La reserva de animales
-    fechaPublicacion: 2022/11/02
-    tituloRevista: Revista Axioma
-    urlPublicacion: https://elaxiomablog.wordpress.com/2022/11/02/la-reserva-de-animales-i-a-galdames/
-    enlace: true
-    cantidadPalabras: 666
+  - nombreItem: La reserva de animales
+    fechaItem: 2022/11/02
+    institucionItem: Revista Axioma
+    urlItem: https://elaxiomablog.wordpress.com/2022/11/02/la-reserva-de-animales-i-a-galdames/
+    tipoItem: Ficción Corta
+    datosItem: 666 palabras
     
-  - nombrePublicacion: Todos tus malditos caballos subiendo al cielo (versión espejo)
-    fechaPublicacion: 2023/01/01
-    tituloRevista: Espejo Humeante
-    urlPublicacion: https://espejohumeanterevista.wordpress.com/2023/01/01/todos-tus-malditos-caballos-subiendo-al-cielo/
+  - nombreItem: Todos tus malditos caballos subiendo al cielo (versión espejo)
+    fechaItem: 2023/01/01
+    institucionItem: Espejo Humeante
+    #urlItem: https://espejohumeanterevista.wordpress.com/2023/01/01/todos-tus-malditos-caballos-subiendo-al-cielo/
     enlace: false
-    cantidadPalabras: 1199
+    tipoItem: Ficción Corta
+    datosItem: 1199 palabras
     
-  - nombrePublicacion: lloverá en un día soleado (versión anapoyesis)
-    fechaPublicacion: 2023/01/01
-    tituloRevista: Anapoyesis
-    urlPublicacion: https://issuu.com/anapoyesis/docs/guerra
+  - nombreItem: lloverá en un día soleado (versión anapoyesis)
+    fechaItem: 2023/01/01
+    institucionItem: Anapoyesis
+    #urlItem: https://issuu.com/anapoyesis/docs/guerra
     enlace: false
-    cantidadPalabras: 1141
+    tipoItem: Ficción Corta
+    datosItem: 1141 palabras
     
-  - nombrePublicacion: El último Nivel (versión Omicrón)
-    fechaPublicacion: 2023/04/28
-    tituloRevista: Teoría Omicron
-    urlPublicacion: https://teoriaomicron.com/cronistas-omicron-el-ultimo-nivel/
+  - nombreItem: El último Nivel (versión Omicrón)
+    fechaItem: 2023/04/28
+    institucionItem: Teoría Omicron
+    #urlItem: https://teoriaomicron.com/cronistas-omicron-el-ultimo-nivel/
     enlace: false
-    cantidadPalabras: 2260
+    tipoItem: Ficción Corta
+    datosItem: 2260 palabras
     
-  - nombrePublicacion: Entre el bosque y la butaca
-    fechaPublicacion: 2023/04/28
-    tituloRevista: Penumbria
-    urlPublicacion: https://www.penumbria.mx/penumbria-cinefila/
-    enlace: true
-    cantidadPalabras: 993
+  - nombreItem: Entre el bosque y la butaca
+    fechaItem: 2023/04/28
+    institucionItem: Penumbria
+    urlItem: https://www.penumbria.mx/penumbria-cinefila/
+    tipoItem: Ficción Flash
+    datosItem: 993 palabras
     
-  - nombrePublicacion: Una idea viajera (versión Espejo)
-    fechaPublicacion: 2023/08/02
-    tituloRevista: Espejo Humeante
-    urlPublicacion: https://espejohumeanterevista.wordpress.com/2023/08/02/una-idea-viajera/
+  - nombreItem: Una idea viajera (versión Espejo)
+    fechaItem: 2023/08/02
+    institucionItem: Espejo Humeante
+    #urlItem: https://espejohumeanterevista.wordpress.com/2023/08/02/una-idea-viajera/
     enlace: false
-    cantidadPalabras: 1545
+    tipoItem: Ficción Corta
+    datosItem: 1545 palabras
     
-  - nombrePublicacion: En marcha, seguramente hacia alguna parte (versión Iguales)
-    fechaPublicacion: 2023/08/28
-    tituloRevista: Revista Iguales
-    urlPublicacion: https://drive.google.com/file/d/1TI2VzAfDXEd8YEu7hOBWxlP7pqYHwiQ4/view
+  - nombreItem: En marcha, seguramente hacia alguna parte (versión Iguales)
+    fechaItem: 2023/08/28
+    institucionItem: Revista Iguales
+    #urlItem: https://drive.google.com/file/d/1TI2VzAfDXEd8YEu7hOBWxlP7pqYHwiQ4/view
     enlace: false
-    cantidadPalabras: 2217
+    tipoItem: Ficción Corta
+    datosItem: 2217 palabras
     
-  - nombrePublicacion: la playa lunar (versión ojo)
-    fechaPublicacion: 2023/11/30
-    tituloRevista: El ojo de Uk
-    urlPublicacion: https://elojodeuk.com/2023/11/30/la-playa-lunar/
+  - nombreItem: la playa lunar (versión ojo)
+    fechaItem: 2023/11/30
+    institucionItem: El ojo de Uk
+    #urlItem: https://elojodeuk.com/2023/11/30/la-playa-lunar/
     enlace: false
-    cantidadPalabras: 1673
+    tipoItem: Ficción Corta
+    datosItem: 1673 palabras
     
-  - nombrePublicacion: mi sueño de una serpiente mítica (versión Axxioma)
-    fechaPublicacion: 2024/03/05
-    tituloRevista: El Axioma Revista
-    urlPublicacion: https://lektu.com/l/el-axioma/el-axioma-no-hispanocyberpunk/22856
-    enlace: true
-    cantidadPalabras: 1992
+  - nombreItem: mi sueño de una serpiente mítica (versión Axxioma)
+    fechaItem: 2024/03/05
+    institucionItem: El Axioma Revista
+    #urlItem: https://lektu.com/l/el-axioma/el-axioma-no-hispanocyberpunk/22856
+    tipoItem: Ficción Corta
+    datosItem: 1992 palabras
     
-  - nombrePublicacion: El Cosmos hecho carne
-    fechaPublicacion: 2024/03/31
-    tituloRevista: Espejo Humeante
-    urlPublicacion: https://espejohumeanterevista.wordpress.com/2024/03/31/el-cosmos-hecho-carne/
-    enlace: true
-    cantidadPalabras: 2045
+  - nombreItem: El Cosmos hecho carne
+    fechaItem: 2024/03/31
+    institucionItem: Espejo Humeante
+    urlItem: https://espejohumeanterevista.wordpress.com/2024/03/31/el-cosmos-hecho-carne/
+    tipoItem: Ficción Corta
+    datosItem: 2045 palabras
     
-  - nombrePublicacion: los amaré en todos los tiempos
-    fechaPublicacion: 2024/06/01
-    tituloRevista: Revista Axxon
-    urlPublicacion: https://axxon.com.ar/rev/2024/06/amare-en-todos-tiempos-ignacio-galdames/
-    enlace: true
-    cantidadPalabras: 6026
+  - nombreItem: los amaré en todos los tiempos
+    fechaItem: 2024/06/01
+    institucionItem: Revista Axxon
+    urlItem: https://axxon.com.ar/rev/2024/06/amare-en-todos-tiempos-ignacio-galdames/
+    tipoItem: Ficción Corta
+    datosItem: 6026 palabras
