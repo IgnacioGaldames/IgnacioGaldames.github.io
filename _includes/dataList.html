@@ -1,6 +1,10 @@
 <ul class="list-group list-group-flush bg-gray">
   {% for miItem in sortedItems %}
-  <li class="list-group-item d-flex flex-column py-3">
+    {% if miItem.datosItem == "Libro" %}
+    <li class="list-group-item d-flex flex-column">
+    {% else %}
+    <li class="list-group-item d-flex flex-column py-3">
+    {% endif %}
     {%if miItem.tipoItem %}
     <div class="text-capitalize futura fs-6 fw-lighter text-light text-muted">
       {{ miItem.tipoItem }}
@@ -11,8 +15,15 @@
       |</span>
     {% endif %}
     <div class="d-flex align-items-start align-items-md-center flex-column flex-md-row">
+      
+      {% if miItem.datosItem == "Libro" %}
+      <span class="eb-garamond flex-grow-1">{{ miItem.nombreItem }}</span>
+      <span class="eb-garamond border-start border-end px-3 mx-3 text-center">{{ miItem.institucionItem }}
+      {% else %}
       <span class="text-capitalize eb-garamond fs-4 flex-grow-1">{{ miItem.nombreItem }}</span>
-      <span class="text-uppercase fw-bolder border-start border-end px-3 mx-3 text-center">{{ miItem.institucionItem }}</span>
+      <span class="text-uppercase fw-bolder border-start border-end px-3 mx-3 text-center">{{ miItem.institucionItem }}
+      {% endif %}
+      </span>
       <div class="flex flex-column">
         <div class="futura">
           <span class="">{{ miItem.fechaItem | date: "%Y" }}</span><span class="fw-light">/{{ miItem.fechaItem |
@@ -32,5 +43,8 @@
     </div>
     {% endif %}
   </li>
+  <script>
+    console.log( {{ miItem.nombreItem | jsonify  }} );
+  </script>
   {% endfor %}
 </ul>
