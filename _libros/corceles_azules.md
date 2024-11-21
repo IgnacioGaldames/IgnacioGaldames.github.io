@@ -2,7 +2,7 @@
 layout: libro
 title: Corceles Azules
 nombreLibro: Corceles Azules
-nombreEditorial: Speedwagon
+nombreEditorial: Speedwagon Media Works
 nombreSello: Kaneda
 nombreColeccion: Kaneda 001 
 portadaLibro: /assets/img/portada_corceles_azules_sm.jpg
