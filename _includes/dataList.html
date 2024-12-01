@@ -1,6 +1,11 @@
 <ul class="list-group list-group-flush bg-gray">
   {% for miItem in sortedItems %}
+  {% if miItem.nombreItem %}
+  {% if miItem.datosItem == "Libro" %}
+  <li class="list-group-item d-flex flex-column">
+    {% else %}
   <li class="list-group-item d-flex flex-column py-3">
+    {% endif %}
     {%if miItem.tipoItem %}
     <div class="text-capitalize futura fs-6 fw-lighter text-light text-muted">
       {{ miItem.tipoItem }}
@@ -11,19 +16,32 @@
       |</span>
     {% endif %}
     <div class="d-flex align-items-start align-items-md-center flex-column flex-md-row">
-      <span class="text-capitalize eb-garamond fs-4 flex-grow-1">{{ miItem.nombreItem }}</span>
-      <span class="text-uppercase fw-bolder border-start border-end px-3 mx-3 text-center">{{ miItem.institucionItem }}</span>
-      <div class="flex flex-column">
-        <div class="futura">
-          <span class="">{{ miItem.fechaItem | date: "%Y" }}</span><span class="fw-light">/{{ miItem.fechaItem |
-            date: "%m" }}/{{miItem.fechaItem | date: "%d" }}</span>
+      {% if miItem.datosItem == "Libro" %}
+      <span class="eb-garamond flex-grow-1">{{ miItem.nombreItem }}</span>
+      <span class="eb-garamond border-start border-end px-3 mx-3 text-center">{{ miItem.institucionItem }}
+        {% else %}
+        <span class="text-capitalize eb-garamond fs-4 flex-grow-1">{{ miItem.nombreItem }}</span>
+        <span class="text-uppercase fw-bolder border-start border-end px-3 mx-3 text-center">{{ miItem.institucionItem
+          }}
+          {% endif %}
+        </span>
+        <div class="flex flex-column">
+          {% if miItem.datosItem == "Libro" %}
+          <div id="date{{ forloop.index }}"
+            class="source-code text-capitalize fs-9 fw-lighter text-end text-light text-muted date ls-175 mt-n1 glow-data">
+            {{ miItem.fechaItem }}</div>
+          {% else %}
+          <div class="futura">
+            <span class="">{{ miItem.fechaItem | date: "%Y" }}</span><span class="fw-light">/{{ miItem.fechaItem |
+              date: "%m" }}/{{miItem.fechaItem | date: "%d" }}</span>
+          </div>
+          <!-- Unique ID and data-date attribute for each date -->
+          <div id="date{{ forloop.index }}"
+            class="source-code text-capitalize fs-9 fw-lighter text-end text-light text-muted date ls-175 mt-n1 glow-data"
+            data-date="{{ miItem.fechaItem  | date: " %Y-%m-%d" }}">
+          </div>
+          {% endif %}
         </div>
-        <!-- Unique ID and data-date attribute for each date -->
-        <div id="date{{ forloop.index }}"
-          class="source-code text-capitalize fs-9 fw-lighter text-end text-light text-muted date ls-175 mt-n1 glow-data"
-          data-date="{{ miItem.fechaItem  | date: " %Y-%m-%d" }}">
-        </div>
-      </div>
     </div>
     {% if miItem.urlItem: %}
     <div class="text-capitalize futura fs-6 fw-lighter text-light mt-2 align-self-end">
@@ -32,5 +50,9 @@
     </div>
     {% endif %}
   </li>
+  <script>
+    console.log({{ miItem.tipoItem | jsonify }} + " / " + {{ miItem.nombreItem | jsonify }} + " / " + {{ miItem.institucionItem | jsonify }});
+  </script>
+  {% endif %}
   {% endfor %}
 </ul>

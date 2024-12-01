@@ -1,0 +1,31 @@
+---
+layout: page-sidebar-right
+---
+
+<section class="">
+  {{ content }}
+  <div class="card shadow">
+    {% assign sortedItems = site.data.libros_leidos.leidos | sort: "fechaItem" %}
+    {% include  dataList.html %}
+  </div>
+</section>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Select all elements with the class "date"
+    const dateElements = document.querySelectorAll(".date");
+
+    dateElements.forEach(element => {
+      // Get the date from the data-date attribute
+      const dateStr = element.getAttribute("data-date");
+
+      if (dateStr) {
+        // Convert the date string to a Date object and then to a timestamp
+        const dateObj = new Date(dateStr);
+        const timestamp = dateObj.getTime();
+
+        // Display the timestamp inside the respective element
+        element.innerHTML = timestamp;
+      }
+    });
+  });
+</script>
