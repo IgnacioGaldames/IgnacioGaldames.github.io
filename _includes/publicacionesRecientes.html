@@ -4,7 +4,7 @@
   </div>
   <div class="col-12">
     <ul class="list-group">
-      {% assign ultimoLibro = site.libros | sort: "fechaPublicacion" | reverse | first %}
+      {% assign ultimoLibro = site.libros | sort: "fechaItem" | reverse | first %}
       {% if ultimoLibro %}
       <li class="list-group-item">
         <div class=""> Libro: <a href="{{ ultimoLibro.url }}" class="text-capitalize eb-garamond fs-5">{{ ultimoLibro.nombreLibro }}</a></div>
@@ -13,7 +13,7 @@
       {% else %}
       <li class="list-group-item">No hay libros disponibles.</li>
       {% endif %}
-      {% assign publicacionesOrdenadas = site.data.mis_publicaciones.publicaciones | sort: "fechaPublicacion" | reverse
+      {% assign publicacionesOrdenadas = site.data.mis_publicaciones.publicaciones | sort: "fechaItem" | reverse
       %}
       {% assign ultimaPublicacion = publicacionesOrdenadas | first %}
       {% if ultimaPublicacion %}

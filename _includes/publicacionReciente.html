@@ -1,7 +1,7 @@
 <div class="row my-1" id="publicacionesRecientes">
   <div class="col-12">
 
-      {% assign publicacionesOrdenadas = site.data.mis_publicaciones.publicaciones | sort: "fechaPublicacion" | reverse
+      {% assign publicacionesOrdenadas = site.data.mis_publicaciones.publicaciones | sort: "fechaItem" | reverse
       %}
       {% assign ultimaPublicacion = publicacionesOrdenadas | first %}
       {% if ultimaPublicacion %}
