@@ -7,8 +7,14 @@ title: "Libros"
 	<div class="row">
 		{% assign librosOrdenados = site.libros | sort: "fechaPublicacion" | reverse %}
 		{% for miLibro in librosOrdenados %}
-			<div class="col-md-6 col-lg-4 mb-4 d-flex align-items-stretch">	
-				<div class="card shadow border border-light-subtle">
+			{% if miLibro.libroDestacado == true %}
+				<div class="col-md-4 col-lg-6 mb-4 order-0">	
+					<div class="card shadow-lg border border-light-subtle">
+			{% else %}
+			<div class="col-md-3 col-lg-3 mb-4 order-1 d-flex align-items-stretch">	
+				<div class="card shadow-sm border border-light-subtle">
+			{% endif %}
+				
 					{% if miLibro.nombreLibro%}
 						<div class="card-header">
 							<h5 class="card-title" id="libros-nombreLibro">{{ miLibro.nombreLibro}}</h5>
