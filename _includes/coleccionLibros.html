@@ -1,28 +1,36 @@
-<div class="row" id="coleccionLibros">
-	<div class="col-md-12 my-3">
+<div class="row my-3" id="coleccionLibros">
+	<div class="col-md-12 d-flex align-content-start">
 		<h3>Mis Libros</h3>
 	</div>
+</div>
+<div class="row my-3" >
 	{% assign librosOrdenados = site.libros | sort: "fechaPublicacion" | reverse %}
-	{% for miLibro in librosOrdenados %}
-	<div class="col mb-4 d-flex  d-flex align-items-stretch" >
-		<div class="card shadow border border-light-subtle ">
-			{% if miLibro.nombreLibro %}
-				<div class="card-header">
-					<h5 class="card-title" id="coleccionLibros-nombreLibro">{{ miLibro.nombreLibro }}</h5>
-					{% assign book = miLibro %}
-					{% include dataLibro.html %}
-				</div>
-			{% endif %}
-			<a href="{{ miLibro.url }}" class="">
-				<img src="{{ miLibro.portadaLibro }}" class="card-img-top" alt="{{ miLibro.nombreLibro }}">
-			</a>
-			<div class="card-footer h-100 d-flex align-content-end flex-wrap ">
-				{% assign book = miLibro %}
-				{% include enlacesLibro.html %}
-				<a href="{{ miLibro.url }}" class="btn btn-sm btn-outline-secondary my-2 w-100">ver más</a>
-			</div>
-		</div>
 
-	</div>
-	{% endfor %}
+		{% for miLibro in librosOrdenados %}
+			{% if miLibro.libroDestacado == true %}
+				<div class="col-4 order-0">
+					<div class="card shadow-lg border border-light-subtle">
+			{% else %}
+				<div class="col order-1">		
+					<div class="card shadow-sm border border-light-subtle ">
+				{% endif %}
+					{% if miLibro.nombreLibro %}
+					<div class="card-header">
+						<h5 class="card-title" id="coleccionLibros-nombreLibro">{{ miLibro.nombreLibro }}</h5>
+						{% assign book = miLibro %}
+						{% include dataLibro.html %}
+					</div>
+					{% endif %}
+					<a href="{{ miLibro.url }}" class="">
+						<img src="{{ miLibro.portadaLibro }}" class="card-img-top" alt="{{ miLibro.nombreLibro }}">
+					</a>
+					<div class="card-footer h-100 d-flex align-content-end flex-wrap ">
+						{% assign book = miLibro %}
+						{% include enlacesLibro.html %}
+						<a href="{{ miLibro.url }}" class="btn btn-sm btn-outline-secondary my-2 w-100">ver más</a>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+
 </div>

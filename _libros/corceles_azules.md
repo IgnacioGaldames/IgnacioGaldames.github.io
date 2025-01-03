@@ -22,4 +22,5 @@ playlistSpotify: https://open.spotify.com/embed/playlist/7pth7afV50DWyZFXNTFbjQ?
 playlistSAmazonMusicSRC: https://music.amazon.com/embed/68bdd5265623469b91302a01865b824fc2l0/?id=CsJNafSlUH&marketplaceId=ART4WZ8MWBX2Y&musicTerritory=CL
 playlistSAmazonMusicID: AmazonMusicEmbed68bdd5265623469b91302a01865b824fc2l0
 adobeAero: https://adobeaero.app.link/5lYh5UF8hNb
+libroDestacado: true
 ---
