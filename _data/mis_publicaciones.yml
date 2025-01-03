@@ -140,21 +140,21 @@ publicaciones:
     tipoItem: Antología propia
     datosItem: 978-612-49694-0-9
 
-  - nombreItem: 'CyberTerror: AUSTRAL'
+  #- nombreItem: 'CyberTerror: AUSTRAL'
     fechaItem: 2024/09/28
     institucionItem: Speedwagon Media Works
     urlItem: 
     tipoItem: Antología
     datosItem: 
 
-  - nombreItem: HISPANOCYBERPUNK
+  #- nombreItem: HISPANOCYBERPUNK
     fechaItem: 2024/10/24
     institucionItem: El Axioma Revista
     urlItem: 
     tipoItem: Antología
     datosItem: 
     
-  - nombreItem: 'Neon Dreams and Nightmares: Mixed Punk Works of Dystopian Futures'
+  #-nombreItem: 'Neon Dreams and Nightmares: Mixed Punk Works of Dystopian Futures'
     fechaItem: 2019/09/19
     institucionItem: Night Sky Book Services 
     urlItem: 
