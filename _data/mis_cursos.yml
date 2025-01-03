@@ -38,7 +38,7 @@ cursos:
     tipoItem: Curso
     datosItem: 2762
 
-  - nombreItem: Item de escritura creativa con Brandon Sanderson
+  - nombreItem: Escritura creativa con Brandon Sanderson
     institucionItem: Escuela Cursiva <br>de Penguin Random House
     fechaItem: 2023-07-01
     tipoItem: Certificación
@@ -65,3 +65,31 @@ cursos:
     tipoItem: Certificación
     urlItem: https://courses.edx.org/certificates/2de6139fc7a641b49eea3912c2758e34
     datosItem: 2de6139fc7a641b49eea3912c2758e34
+
+  - nombreItem: ' VGWR104: Worldbuilding for Video Games '
+    institucionItem: UBCx - The University of British Columbia
+    fechaItem: 2024-12-04
+    tipoItem: Certificación
+    urlItem: https://courses.edx.org/certificates/4f2edef8809948848f4f0660edab120c
+    datosItem: 4f2edef8809948848f4f0660edab120c
+
+  - nombreItem: 'VGWR105: Interactive Narrative'
+    institucionItem: UBCx - The University of British Columbia
+    fechaItem: 2024-12-15
+    tipoItem: Certificación
+    urlItem: https://courses.edx.org/certificates/ec4ab9ed1ebf445c903488f108950696
+    datosItem: ec4ab9ed1ebf445c903488f108950696
+
+  - nombreItem: ' VGWR106: Working as a Game Writer '
+    institucionItem: UBCx - The University of British Columbia
+    fechaItem: 2024-12-20
+    tipoItem: Certificación
+    urlItem: https://courses.edx.org/certificates/82f6291ecaa14ed1bb79c9d7dd7da23b
+    datosItem: 82f6291ecaa14ed1bb79c9d7dd7da23b
+
+  - nombreItem: 'Writing for Video Games '
+    institucionItem: UBCx - The University of British Columbia
+    fechaItem: 2024-12-21
+    tipoItem: Certificación Profesional
+    urlItem: https://credentials.edx.org/credentials/778afea4046e41129f3e9ff722788168/
+    datosItem: 778afea4046e41129f3e9ff722788168

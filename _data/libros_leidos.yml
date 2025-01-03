@@ -3,14 +3,14 @@ leidos:
     institucionItem: Stephen King
     fechaItem: 2022-06-27
     tipoItem: 
-    urlItem: 
+    urlItem: https://www.buscalibre.cl/libro-mientras-escribo-stephen-king-libro-fisico/9788497597326/p/4023831?afiliado=5f3005ee34e5858176c9
     datosItem: Libro
 
   - nombreItem: Zen en el arte de escribir
     institucionItem: Ray Bradbury
     fechaItem: 2024-04-25
     tipoItem: 
-    urlItem: 
+    urlItem: https://www.buscalibre.cl/libro-zen-en-el-arte-de-escribir/9788445007471/p/52969946?afiliado=5f3005ee34e5858176c9
     datosItem: Libro
 
   - nombreItem: Cómo Empezar a Escribir Historias
@@ -24,21 +24,21 @@ leidos:
     institucionItem: Aristóteles
     fechaItem: 2022-08-20
     tipoItem: 
-    urlItem: 
+    urlItem: https://www.buscalibre.cl/libro-poetica/9788420678801/p/36600165?afiliado=5f3005ee34e5858176c9
     datosItem: Libro
 
   - nombreItem: La narración gráfica. Principios y técnicas del legendario dibujante Will Eisner 
     institucionItem: Will Eisner 
     fechaItem: 2023-03-15
     tipoItem: 
-    urlItem: 
+    urlItem: https://www.buscalibre.cl/libro-la-narracion-grafica-nueva-edicion-actualizada/9788467969894/p/56152263?afiliado=5f3005ee34e5858176c9
     datosItem: Libro
 
   - nombreItem: Curso de escritura creativa 
     institucionItem: Brandon Sanderson
     fechaItem: 2023-07-01
     tipoItem: 
-    urlItem: 
+    urlItem: https://www.buscalibre.cl/libro-curso-de-escritura-creativa/9789585121751/p/54326295?afiliado=5f3005ee34e5858176c9
     datosItem: Libro
 
   - nombreItem: Elementos del Estilo
@@ -52,5 +52,12 @@ leidos:
     institucionItem: Ursula K. Le Guin
     fechaItem: 2024-09-02
     tipoItem: 
-    urlItem: 
+    urlItem: https://www.buscalibre.cl/libro-steering-the-craft-a-twenty-first-century-guide-to-sailing-the-sea-of-story/9780544611610/p/48396923?afiliado=5f3005ee34e5858176c9
+    datosItem: Libro
+
+  - nombreItem: '¡Salva el gato!'
+    institucionItem: Blake Snyder
+    fechaItem: 2025-12-20
+    tipoItem: 
+    urlItem: https://www.buscalibre.cl/libro-salva-al-gato-el-libro-definitivo-para-la-creacion-de-un-guion-rustica/9788484285823/p/4912970?afiliado=5f3005ee34e5858176c9
     datosItem: Libro
