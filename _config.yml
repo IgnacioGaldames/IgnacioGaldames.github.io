@@ -21,13 +21,15 @@
 title: I. A. Galdames
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I. A. Galdames, escritor chileno de ciencia ficción nacido en 1987. Es un desarrollador web autodidacta y una mermelada de ayer.
-  
-  Ha publicado cuentos en la antología Neon Dreams and Nightmares, la revista Espejo Humeante, La revista Axioma, en la revista Anapoyesis, en Teoría Omicrón, , la revista Penumbria, la revista Iguales y El ojo de Uk.
-  También ha publicado en la reconocida revista de ciencia ficción y literatura fantástica en español Axxón.
-  Sus escritos son mayormente de ciencia ficción y exploran la soledad, el aislamiento, la percepción temporal y el existencialismo, con inspiraciones expresionistas, cyberpunk y neo-noir.
+  <p>I. A. Galdames, escritor chileno de ciencia ficción nacido en 1987. Es un desarrollador web autodidacta y una mermelada de ayer.</p>
 
-  Tiene un diplomado en Storytelling, ha tomado cursos sobre escribir ciencia ficción en la escuela de Ecritores de España y ha tenido clasess sobre escritura creativa con Brandon Sanderson, Mary Robinette Kowal y Dan Wells.
+  <p>Ha publicado cuentos en la antología Neon Dreams and Nightmares, la revista Espejo Humeante, en la revista Anapoyesis, la revista Axioma, en Teoría Omicrón, la revista Penumbria,  la revista Iguales, El ojo de Uk, Weird Review y la reconocida revista Axxón.</p>
+
+  <p>Certificado en escritura creativa como alumno de Brandon Sanderson, además tiene un Diplomado en Storytelling y un certificado profesional en Escritura Creativa de Videojuegos por University of British Columbia.</p>
+
+  <p>Sus escritos son mayormente de ciencia ficción y exploran la soledad, el aislamiento, la percepción temporal y el existencialismo, con inspiraciones expresionistas, cyberpunk y neo-noir.</p>
+
+  <p>Su primer libro, Corceles Azules, es una antología fix-up cyberpunk. También participó en la antología CyberTerror: Austral.</p>
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ignaciogaldames.com" # the base hostname & protocol for your site, e.g. http://example.com
 
