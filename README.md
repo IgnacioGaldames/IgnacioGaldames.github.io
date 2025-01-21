@@ -21,15 +21,21 @@ Este es el sitio web oficial de I.A. Galdames, un escritor de ciencia ficción. 
 Para ejecutar este sitio localmente, necesitas tener Ruby y Jekyll instalados.
 
 ### Requisitos Previos
-
-- [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
+- [Node](https://nodejs.org/es)
+- [Ruby](https://rubyinstaller.org/downloads/)
+- [RVM](https://rvm.io/)
 - [Jekyll](https://jekyllrb.com/docs/installation/)
+
+Cómo ADMIN instalar node, ruby y jekyll.
 
 ### Clonar el Repositorio
 
 ```bash
 git clone https://github.com/IgnacioGaldames/IgnacioGaldames.github.io.git
 cd IgnacioGaldames.github.io
+node -v
+choco install ruby
+ruby -v
 gem install bundler
 bundle install
 bundle exec jekyll serve
