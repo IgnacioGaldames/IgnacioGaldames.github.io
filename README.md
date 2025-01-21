@@ -25,6 +25,7 @@ Para ejecutar este sitio localmente, necesitas tener Ruby y Jekyll instalados.
 - [Ruby](https://rubyinstaller.org/downloads/)
 - [RVM](https://rvm.io/)
 - [Jekyll](https://jekyllrb.com/docs/installation/)
+- [Bash](https://aka.ms/wslstore)
 
 Cómo ADMIN instalar node, ruby y jekyll.
 
