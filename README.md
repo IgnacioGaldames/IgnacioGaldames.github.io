@@ -30,16 +30,12 @@ Para ejecutar este sitio localmente, necesitas tener Ruby y Jekyll instalados.
 ```bash
 git clone https://github.com/IgnacioGaldames/IgnacioGaldames.github.io.git
 cd IgnacioGaldames.github.io
-Instalar Dependencias
-bash
-Copiar código
+gem install bundler
 bundle install
-Servir el Sitio Localmente
-bash
-Copiar código
 bundle exec jekyll serve
-Abre tu navegador y navega a http://localhost:4000 para ver el sitio.
 ```
+Abre tu navegador y navega a http://localhost:4000 para ver el sitio.
+
 ## Uso
 Creación de Nuevas Publicaciones
 Navega al directorio _posts.
