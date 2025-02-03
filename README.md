@@ -37,6 +37,9 @@ cd IgnacioGaldames.github.io
 node -v
 choco install ruby
 ruby -v
+rvm install ruby-3.3.4
+rvm use ruby-3.3.4
+ruby -v
 gem install bundler
 bundle install
 bundle exec jekyll serve
@@ -108,6 +111,13 @@ Copiar código
 ### Estilos Personalizados
 El CSS personalizado se puede añadir a assets/css/main.css. Por ejemplo, para asegurar que el footer se mantenga en la parte inferior:
 
+### Tema base
+el tema mínima
+
+```
+bundle show minima
+```
+
 ### css
 Copiar código
 
@@ -145,4 +155,10 @@ sass --style=expanded --color --watch assets/scss/main.scss assets/css/main.css
 
 sass --style=compressed --watch assets/scss/main.scss assets/css/main-compressed.css  --no-source-map
 
+``
+
+### Actualizar sass
+``
+npm install -g sass-migrator
+sass-migrator module --migrate-deps assets/scss/main.scss
 ``
