@@ -8,11 +8,11 @@
 
 		{% for miLibro in librosOrdenados %}
 			{% if miLibro.libroDestacado == true %}
-				<div class="col-4 order-0">
+				<div class="col-xs-12 col-md-4 order-0 mb-3 h-100">
 					<div class="card shadow-lg border border-light-subtle">
 			{% else %}
-				<div class="col order-1">		
-					<div class="card shadow-sm border border-light-subtle ">
+				<div class="col-6 col-md order-1 mb-3 ">		
+					<div class="card shadow-sm border border-light-subtle d-flex align-items-stretch h-100">
 				{% endif %}
 					{% if miLibro.nombreLibro %}
 					<div class="card-header">
