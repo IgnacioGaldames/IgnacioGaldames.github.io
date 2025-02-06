@@ -26,6 +26,14 @@ layout: page-sidebar-bottom
 		</div>
 	</div>
 </div>
+<article class="row my-5" id="Contenido">
+	<div class="row">
+		<div class="col-12">
+			{{ content }}
+		</div>
+	</div>
+</article>
+
 {% assign content = post.content | strip_newlines %}
 {% if content != "" or page.adobeAero or page.playlistSpotify or page.playlistSAmazonMusicSRC %}
 <article class="row my-5" id="Contenido">

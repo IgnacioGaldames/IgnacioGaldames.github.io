@@ -24,3 +24,13 @@ playlistSAmazonMusicID: AmazonMusicEmbed68bdd5265623469b91302a01865b824fc2l0
 adobeAero: https://adobeaero.app.link/5lYh5UF8hNb
 libroDestacado: true
 ---
+
+## Noticias y enlaces sobre Corceles Azules
+
+<a href="https://cienciaficcion.cl/narrativa/cuentos/2982/corceles-azules/?_gl=1*zzy8ji*_up*MQ..*_ga*MTY3MDIzOTM0OS4xNzM4ODc5NTMz*_ga_CIENCIAFICCION-CL*MTczODg3OTUzMi4xLjAuMTczODg3OTUzMi4wLjAuMjY5MzM4ODA2" target="_blank" class="btn btn-primary">Ciencia Ficción chilena</a>
+
+<a href="https://tercerafundacion.net/biblioteca/ver/ficha/39792" target="_blank" class="btn btn-primary">Tercera Fundación</a>
+
+<a href="https://amazingstories.com/2024/07/novedades-de-julio-1-y-2-2/" target="_blank" class="btn btn-primary">Amazing Stories</a>
+
+<a href="https://amazingstories.com/2024/08/novedades-de-julio-3-3/" target="_blank" class="btn btn-primary">Amazing Stories</a>
