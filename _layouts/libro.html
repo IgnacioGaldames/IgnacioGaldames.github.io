@@ -1,51 +1,52 @@
 ---
 layout: page-sidebar-bottom
 ---
-<div class="card shadow border border-light-subtle" id="cardLibro">
-	<div class="card-header">
-		<h5 class="card-title" id="libro-nombreLibro">{{ page.nombreLibro }}</h5>
-		{% assign book = page %}
-		{% include dataLibro.html %}
-	</div>
-	<div class="row">
-		<div class="col-md-6 col-lg-4 d-flex align-content-center flex-wrap">
-			<img src="{{ page.portadaLibro }}" class="card-img-top " alt="{{ page.nombreLibro }}">
-			<div class="card-footer w-100">
-				{% assign book = page %}
-				{% include enlacesLibro.html %}
-			</div>
-		</div>
-		<div class="col-md-6 col-lg-8  d-flex align-content-center flex-wrap">
-			{% if page.descripcionLibro %}
-			<div class="card-body">
-				<p class="card-text fw-lighter">{{ page.descripcionLibro }}</p>
-			</div>
-			{% endif %}
+<div class="container">
+	<div class="card shadow border border-light-subtle" id="cardLibro">
+		<div class="card-header">
+			<h5 class="card-title" id="libro-nombreLibro">{{ page.nombreLibro }}</h5>
 			{% assign book = page %}
-			{% include detallesLibro.html %}
+			{% include dataLibro.html %}
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-lg-4 d-flex align-content-center flex-wrap">
+				<img src="{{ page.portadaLibro }}" class="card-img-top " alt="{{ page.nombreLibro }}">
+				<div class="card-footer w-100">
+					{% assign book = page %}
+					{% include enlacesLibro.html %}
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-8  d-flex align-content-center flex-wrap">
+				{% if page.descripcionLibro %}
+				<div class="card-body">
+					<p class="card-text fw-lighter">{{ page.descripcionLibro }}</p>
+				</div>
+				{% endif %}
+				{% assign book = page %}
+				{% include detallesLibro.html %}
+			</div>
 		</div>
 	</div>
 </div>
 <article class="row my-5" id="Contenido">
-	<div class="row">
-		<div class="col-12">
-			{{ content }}
-		</div>
-	</div>
-</article>
-
-{% assign content = post.content | strip_newlines %}
-{% if content != "" or page.adobeAero or page.playlistSpotify or page.playlistSAmazonMusicSRC %}
-<article class="row my-5" id="Contenido">
 	<div class="col-12">
 		{{ content }}
 	</div>
-	{% include adobeAero.html %}
-	{% include playlists.html %}
 </article>
-{% endif %}
-<article class="row border-top my-3" id="include-coleccionLibros">
-	<div class="col-12 mx-auto">
-		{% include coleccionLibros.html %}
-	</div>
-</article>
+<div class="container">
+	{% assign content = post.content | strip_newlines %}
+	{% if content != "" or page.adobeAero or page.playlistSpotify or page.playlistSAmazonMusicSRC %}
+	<article class="row my-5" id="Contenido">
+		<div class="col-12">
+			{{ content }}
+		</div>
+		{% include adobeAero.html %}
+		{% include playlists.html %}
+	</article>
+	{% endif %}
+	<article class="row border-top my-3" id="include-coleccionLibros">
+		<div class="col-12 mx-auto">
+			{% include coleccionLibros.html %}
+		</div>
+	</article>
+</div>
