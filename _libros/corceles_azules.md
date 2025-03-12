@@ -39,3 +39,11 @@ peso:
 <a href="https://amazingstories.com/2024/08/novedades-de-julio-3-3/" target="_blank" class="btn btn-primary">Amazing Stories</a>
 
 ## Fan Art
+
+<div class="row">
+  <div class="col-md-4">
+  <img src="/assets\img\fanart\corceles_azules\462550271_1569664530636558_3422626735866888264_n.jpg" class="img-fluid rounded shadow">
+  <p>Edvardo, protagonista de "El grito desacelerado"</p>
+  </div>
+</div>
+
