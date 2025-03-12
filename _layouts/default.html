@@ -1,29 +1,37 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="es" data-bs-theme="dark">
 {% include head.html %}
 
 <body class="default d-flex flex-column min-vh-100">
 	{% include header.html %}
 	<main class=" my-5">
-		<div class="container">
-			<div class="row my-3">
-				<div class="col-12 text-center glow-data" id="title">
-					{% if page.title %}
+		{% if page.image %}
+		<div class="container-fluid d-flex align-items-center text-white text-shadow"
+			style="background-image: url(/assets/img/{{ page.image}}); background-position: center center; background-repeat:no-repeat; background-size:cover; no-repeat; min-height: 200px">
+			{% endif %}
+			<div class="container">
+				<div class="row my-3">
+					<div class="col-12 text-center glow-data" id="title">
+						{% if page.title %}
 						<h1 class="display-1 text-capitalize" id="page-title">{{ page.title}}</h1>
-					{% else %}
+						{% else %}
 						<h1 class="display-1 text-capitalize" id="site-title">{{ site.title}}</h1>
-					{% endif %}
-				</div>
-				{% if page.subtitle %}
+						{% endif %}
+					</div>
+					{% if page.subtitle %}
 					<div class="col-12 text-center mb-3" id="subtitle">
 						<h2 class="h2" id="page-subtitle">{{ page.subtitle}}</h2>
 					</div>
-				{% endif %}
+					{% endif %}
+				</div>
 			</div>
+			{% if page.image %}
 		</div>
+		{% endif %}
 		{{ content }}
 	</main>
 	{% include footer.html %}
 	<script src="{{ '/assets/js/bundle.js' | relative_url }}"></script>
 </body>
+
 </html>

@@ -23,6 +23,9 @@ playlistSAmazonMusicSRC: https://music.amazon.com/embed/68bdd5265623469b91302a01
 playlistSAmazonMusicID: AmazonMusicEmbed68bdd5265623469b91302a01865b824fc2l0
 adobeAero: https://adobeaero.app.link/5lYh5UF8hNb
 libroDestacado: true
+alto:
+ancho:
+peso:
 ---
 
 ## Noticias y enlaces sobre Corceles Azules
@@ -34,3 +37,5 @@ libroDestacado: true
 <a href="https://amazingstories.com/2024/07/novedades-de-julio-1-y-2-2/" target="_blank" class="btn btn-primary">Amazing Stories</a>
 
 <a href="https://amazingstories.com/2024/08/novedades-de-julio-3-3/" target="_blank" class="btn btn-primary">Amazing Stories</a>
+
+## Fan Art
