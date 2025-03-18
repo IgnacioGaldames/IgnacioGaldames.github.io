@@ -1,4 +1,5 @@
 <footer class="py-4 border-top shadow mt-auto bg-dark gradiente-1">
+ 
   <div class="container text-center">
     <ul class="bd-footer-links" itemscope itemtype="http://schema.org/Person">
       {% for redSocial in site.data.redes_sociales.redesSociales %} {% if redSocial.redUsername %}
@@ -45,3 +46,66 @@
        
   </div>
 </footer>
+<script>
+  // Función para convertir texto a binario
+  function textToBinary(text) {
+    return text
+      .split('')
+      .map(char => char.charCodeAt(0).toString(2).padStart(8, '0'))
+      .join(' ');
+  }
+
+  // Obtener el texto del elemento con id "content"
+  document.addEventListener('DOMContentLoaded', () => {
+    const contentElement = document.getElementById('content');
+    const binaryOutputElement = document.getElementById('binary-output');
+
+    if (contentElement && binaryOutputElement) {
+      const contentText = contentElement.innerText || contentElement.textContent;
+      const binaryText = textToBinary(contentText);
+
+      // Mostrar el texto en binario en el div con id "binary-output"
+      binaryOutputElement.textContent = binaryText;
+    }
+  });
+</script>
+<script>
+  // Función para convertir texto a binario
+  function textToBinary(text) {
+    return text
+      .split('')
+      .map(char => char.charCodeAt(0).toString(2).padStart(8, '0'))
+      .join(' ');
+  }
+
+  // Obtener el texto del elemento con id "content"
+  document.addEventListener('DOMContentLoaded', () => {
+    const contentElement = document.getElementById('content');
+
+    if (contentElement) {
+      const contentText = contentElement.innerText || contentElement.textContent;
+      const binaryText = textToBinary(contentText);
+
+      // Establecer el texto binario como contenido de body::before
+      const styleElement = document.createElement('style');
+      styleElement.textContent = `
+        body::before {
+          content: "${binaryText.replace(/"/g, '\\"')}";
+          white-space: pre-wrap;
+          font-family: monospace;
+          font-size: 0.75rem;
+          color: rgba(0,0,0,0.1);
+          filter: blur(1px);
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+          z-index: -1;
+        }
+      `;
+      document.head.appendChild(styleElement);
+    }
+  });
+</script>
