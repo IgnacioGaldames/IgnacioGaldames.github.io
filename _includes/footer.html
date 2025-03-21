@@ -21,28 +21,35 @@
     <p class="m-0 lh-1">&copy; {{ site.time | date: '%Y' }} {{site.title}}. Todos los derechos reservados.</p>
     <p class="m-0 lh-1"><small class="source-code fw-lighter fs-9 text-muted glow-data">-> http://127.0.0.1:4000/ <span id="date-display"></span> |</small></p>
 
+
     <script>
       const DateTime = luxon.DateTime;
       const dateDiv = document.getElementById('date-display');
     
       function updateDateTime() {
-        const now = DateTime.now();
-        
-        // Extraer la parte de la fecha y hora sin la zona horaria
-        let dateTimeString = now.toLocaleString(DateTime.DATETIME_HUGE_WITH_SECONDS);
-        
-        // Extraer la zona horaria separando por "(" y tomamos la última parte
-        let timezone = dateTimeString.includes("(") ? dateTimeString.split("(").pop() : "";
-        
-        // Construimos el nuevo formato correctamente ordenado
-        dateDiv.textContent = dateTimeString.split(" (")[0] + 
-                              `.${now.toFormat('SSS')} ms` + 
-                              (timezone ? ` (${timezone}` : "");
+        const now = DateTime.now().setLocale('es'); // Establece el idioma en español
+    
+        // Formateamos cada parte manualmente en el orden correcto
+        const weekday = now.toFormat('cccc');  // Día de la semana completo en español
+        const day = now.toFormat('d');         // Día del mes
+        const month = now.toFormat('LLLL');    // Nombre del mes completo en español
+        const year = now.toFormat('yyyy');     // Año con 4 dígitos
+        const time = now.toFormat('HH:mm:ss'); // Hora con segundos
+        const milliseconds = now.toFormat('SSS'); // Milisegundos
+        const zone = now.toFormat('ZZZZ');   // Nombre completo de la zona horaria (incluye horario de verano si aplica)
+    
+        // Construimos la fecha en el orden correcto
+        const formattedDate = `${weekday}, ${day} de ${month} de ${year}, ${time}.${milliseconds} ${zone}`;
+    
+        // Actualizamos el contenido del elemento
+        dateDiv.textContent = formattedDate;
       }
     
-      setInterval(updateDateTime, 1); // Actualiza en tiempo real
+      setInterval(updateDateTime, 1); // Actualiza cada milisegundo
       updateDateTime();
     </script>
+    
+
        
   </div>
 </footer>
