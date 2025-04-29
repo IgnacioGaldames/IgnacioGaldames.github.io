@@ -8,8 +8,6 @@ subtitle: por Christian As. Kirtchev / traducido por I.A. Galdames
 permalink: manifiesto_cyberpunk
 ---
 
-# Manifiesto Cyberpunk
-
 **Somos las mentes electrónicas. Un grupo de rebeldes libre-pensadores. Cyberpunks.**  
 Vivimos en el ciberespacio, estamos en todas partes, no conocemos límites.  
 Este es nuestro manifiesto: **el Manifiesto de los Cyberpunks.**
