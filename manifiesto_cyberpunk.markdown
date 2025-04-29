@@ -5,7 +5,8 @@
 layout: page
 title: Manifiesto Cyberpunk
 subtitle: por Christian As. Kirtchev / traducido por I.A. Galdames
-permalink: manifiesto_cyberpunk
+permalink: /manifiesto_cyberpunk/
+
 ---
 
 **Somos las mentes electrónicas. Un grupo de rebeldes libre-pensadores. Cyberpunks.**  
