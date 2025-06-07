@@ -9,7 +9,6 @@ Este texto no es un cuento realmente. Fue menos que un post malo de facebook, si
 
 Eso me hizo aprender que no se pueden elimnar libros de goodreads y que no valía la pena vender libros en formato digital ne ese momento. Así que lo dejé ahí, como un ejemplo de lo que no se debe hacer.
 Si quieres leerlo, lo puedes encontrar en:
-[El paraguas y el silencio en Goodreads](https://www.goodreads.com/book/show/1212975668-el-paraguas-y-el-silencio)
 
 [El paraguas y el silencio en Apple Books](https://books.apple.com/ar/book/el-paraguas-y-el-silencio/id1212975668)
 

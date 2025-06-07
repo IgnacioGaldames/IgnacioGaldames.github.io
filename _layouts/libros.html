@@ -17,10 +17,13 @@ title: "Libros"
 				</div>
 				<div class="row">
 					<div class="col-md-6 col-lg-4 d-flex align-content-center flex-wrap">
-						<img src="{{ miLibro.portadaLibro }}" class="card-img-top" alt="{{ miLibro.nombreLibro}}">
+						<a href="{{ miLibro.url }}" class="">
+							<img src="{{ miLibro.portadaLibro }}" class="card-img-top" alt="{{ miLibro.nombreLibro}}">
+						</a>
 						<div class="card-footer w-100">
 							{% assign book = miLibro %}
 							{% include enlacesLibro.html %}
+							<a href="{{ miLibro.url }}" class="btn btn-sm btn-outline-secondary my-2 w-100">Ver más</a>
 						</div>
 					</div>
 					<div class="col-md-6 col-lg-8  d-flex align-content-center flex-wrap">
@@ -28,6 +31,7 @@ title: "Libros"
 						{% endif %}
 						{% assign book = miLibro %}
 						{% include detallesLibro.html %}
+
 					</div>
 				</div>
 			</div>

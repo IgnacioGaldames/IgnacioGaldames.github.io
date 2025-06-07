@@ -18,7 +18,7 @@ Algunas de ellos son:
   <ul>
     {% for miItem in sortedItems %}
       {% if miItem.nombreItem %}
-        <li>{% if miItem.tipoItem %}<b>{{ miItem.tipoItem }}:</b>{% endif %} {{ miItem.nombreItem }} en {{ miItem.institucionItem }}, <small>{{ miItem.fechaItem }}</small></li>
+        <li>{% if miItem.tipoItem %}<b>{{ miItem.tipoItem }}:</b>{% endif %} {{ miItem.nombreItem }} en {{ miItem.institucionItem }}, <small><span class="fw-lighter">{{ miItem.fechaItem }}</span></small></li>
       {% endif %}
     {% endfor %}
   </ul>
@@ -32,7 +32,7 @@ He publicado diferentes cuentos y libros.
   <ul>
     {% for miItem in sortedItems %}
       {% if miItem.nombreItem %}
-        <li>{% if miItem.tipoItem %}<b>{{ miItem.tipoItem }}:</b>{% endif %} {{ miItem.nombreItem }} en {{ miItem.institucionItem }}, <small>{{ miItem.fechaItem }}</small></li>
+        <li>{% if miItem.tipoItem %}<b>{{ miItem.tipoItem }}:</b>{% endif %} {{ miItem.nombreItem }} en {{ miItem.institucionItem }}, <small><span class="fw-lighter">{{ miItem.fechaItem }}</span></small></li>
       {% endif %}
     {% endfor %}
   </ul>
@@ -46,7 +46,7 @@ Los libros y antologías en los que aparezco son:
   {% for miLibro in librosOrdenados %}
   <ul>
     {% if miLibro.nombreLibro %}
-      <li><b>{{ miLibro.nombreLibro }}</b> , <small>{{ miLibro.fechaPublicacion }}</small></li>
+      <li><b>{{ miLibro.nombreLibro }}</b> , <small><span class="fw-lighter">{{ miLibro.fechaPublicacion }}</span></small></li>
     {% endif %}
   </ul>
   {% endfor %}
