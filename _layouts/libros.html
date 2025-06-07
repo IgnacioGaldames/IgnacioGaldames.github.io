@@ -7,33 +7,57 @@ title: "Libros"
 	<div class="row">
 		{% assign librosOrdenados = site.libros | sort: "fechaPublicacion" | reverse %}
 		{% for miLibro in librosOrdenados %}
-			{% if miLibro.libroDestacado == true %}
-				<div class="col-md-4 col-lg-6 mb-4 order-0">	
-					<div class="card shadow-lg border border-light-subtle">
-			{% else %}
-			<div class="col-md-3 col-lg-3 mb-4 order-1 d-flex align-items-stretch">	
-				<div class="card shadow-sm border border-light-subtle">
-			{% endif %}
-				
-					{% if miLibro.nombreLibro%}
-						<div class="card-header">
-							<h5 class="card-title" id="libros-nombreLibro">{{ miLibro.nombreLibro}}</h5>
-							{% assign book = miLibro %}
-							{% include dataLibro.html %}
-						</div>
-					{% endif %}
-					<a href="{{ miLibro.url }}" class="">
-						<img src="{{ miLibro.portadaLibro }}" class="card-img-top" alt="{{ miLibro.nombreLibro}}">
-					</a>
+		{% if miLibro.libroDestacado == true %}
+		<div class="col-12 mb-3">
+			<div class="card shadow border border-light-subtle" id="cardLibro">
+				<div class="card-header">
+					<h5 class="card-title" id="libro-nombreLibro">{{ page.nombreLibro }}</h5>
 					{% assign book = miLibro %}
-					{% include detallesLibro.html %}
-					<div class="card-footer">
+					{% include dataLibro.html %}
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-lg-4 d-flex align-content-center flex-wrap">
+						<img src="{{ miLibro.portadaLibro }}" class="card-img-top" alt="{{ miLibro.nombreLibro}}">
+						<div class="card-footer w-100">
+							{% assign book = miLibro %}
+							{% include enlacesLibro.html %}
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-8  d-flex align-content-center flex-wrap">
+						{% if miLibro.descripcionLibro %}
+						{% endif %}
 						{% assign book = miLibro %}
-						{% include enlacesLibro.html %}
-						<a href="{{ miLibro.url }}" class="btn btn-sm btn-outline-secondary my-2 w-100">Ver más</a>
+						{% include detallesLibro.html %}
 					</div>
 				</div>
 			</div>
+		</div>
+
+		{% else %}
+		<div class="col-md-3 col-lg-3 mb-4 order-1 d-flex align-items-stretch">
+			<div class="card shadow-sm border border-light-subtle">
+
+
+				{% if miLibro.nombreLibro%}
+				<div class="card-header">
+					<h5 class="card-title" id="libros-nombreLibro">{{ miLibro.nombreLibro}}</h5>
+					{% assign book = miLibro %}
+					{% include dataLibro.html %}
+				</div>
+				{% endif %}
+				<a href="{{ miLibro.url }}" class="">
+					<img src="{{ miLibro.portadaLibro }}" class="card-img-top" alt="{{ miLibro.nombreLibro}}">
+				</a>
+				{% assign book = miLibro %}
+				{% include detallesLibro.html %}
+				<div class="card-footer">
+					{% assign book = miLibro %}
+					{% include enlacesLibro.html %}
+					<a href="{{ miLibro.url }}" class="btn btn-sm btn-outline-secondary my-2 w-100">Ver más</a>
+				</div>
+			</div>
+		</div>
+		{% endif %}
 		{% endfor %}
 	</div>
 </section>

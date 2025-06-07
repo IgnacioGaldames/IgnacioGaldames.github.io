@@ -24,7 +24,7 @@ publicaciones:
   - nombreItem: El Chinchinero (versión espejo)
     fechaItem: 2021/12/28
     institucionItem: Espejo Humeante
-    #urlItem: https://espejohumeanterevista.wordpress.com/2021/12/28/el-chinchinero/
+    urlItem: https://espejohumeanterevista.wordpress.com/2021/12/28/el-chinchinero/
     enlace: false
     tipoItem: Ficción Corta
     datosItem: 1559 palabras
@@ -46,7 +46,7 @@ publicaciones:
   - nombreItem: Todos tus malditos caballos subiendo al cielo (versión espejo)
     fechaItem: 2023/01/01
     institucionItem: Espejo Humeante
-    #urlItem: https://espejohumeanterevista.wordpress.com/2023/01/01/todos-tus-malditos-caballos-subiendo-al-cielo/
+    urlItem: https://espejohumeanterevista.wordpress.com/2023/01/01/todos-tus-malditos-caballos-subiendo-al-cielo/
     enlace: false
     tipoItem: Ficción Corta
     datosItem: 1199 palabras
@@ -54,7 +54,7 @@ publicaciones:
   - nombreItem: lloverá en un día soleado (versión anapoyesis)
     fechaItem: 2023/01/01
     institucionItem: Anapoyesis
-    #urlItem: https://issuu.com/anapoyesis/docs/guerra
+    urlItem: https://issuu.com/anapoyesis/docs/guerra
     enlace: false
     tipoItem: Ficción Corta
     datosItem: 1141 palabras
@@ -62,7 +62,7 @@ publicaciones:
   - nombreItem: El último Nivel (versión Omicrón)
     fechaItem: 2023/04/28
     institucionItem: Teoría Omicron
-    #urlItem: https://teoriaomicron.com/cronistas-omicron-el-ultimo-nivel/
+    urlItem: https://teoriaomicron.com/cronistas-omicron-el-ultimo-nivel/
     enlace: false
     tipoItem: Ficción Corta
     datosItem: 2260 palabras
@@ -77,7 +77,7 @@ publicaciones:
   - nombreItem: Una idea viajera (versión Espejo)
     fechaItem: 2023/08/02
     institucionItem: Espejo Humeante
-    #urlItem: https://espejohumeanterevista.wordpress.com/2023/08/02/una-idea-viajera/
+    urlItem: https://espejohumeanterevista.wordpress.com/2023/08/02/una-idea-viajera/
     enlace: false
     tipoItem: Ficción Corta
     datosItem: 1545 palabras
@@ -85,7 +85,7 @@ publicaciones:
   - nombreItem: En marcha, seguramente hacia alguna parte (versión Iguales)
     fechaItem: 2023/08/28
     institucionItem: Revista Iguales
-    #urlItem: https://drive.google.com/file/d/1TI2VzAfDXEd8YEu7hOBWxlP7pqYHwiQ4/view
+    urlItem: https://drive.google.com/file/d/1TI2VzAfDXEd8YEu7hOBWxlP7pqYHwiQ4/view
     enlace: false
     tipoItem: Ficción Corta
     datosItem: 2217 palabras
@@ -93,7 +93,7 @@ publicaciones:
   - nombreItem: la playa lunar (versión ojo)
     fechaItem: 2023/11/30
     institucionItem: El ojo de Uk
-    #urlItem: https://elojodeuk.com/2023/11/30/la-playa-lunar/
+    urlItem: https://elojodeuk.com/2023/11/30/la-playa-lunar/
     enlace: false
     tipoItem: Ficción Corta
     datosItem: 1673 palabras
@@ -101,7 +101,7 @@ publicaciones:
   - nombreItem: mi sueño de una serpiente mítica (versión Axxioma)
     fechaItem: 2024/03/05
     institucionItem: El Axioma Revista
-    #urlItem: https://lektu.com/l/el-axioma/el-axioma-no-hispanocyberpunk/22856
+    urlItem: https://lektu.com/l/el-axioma/el-axioma-no-hispanocyberpunk/22856
     tipoItem: Ficción Corta
     datosItem: 1992 palabras
     
@@ -133,30 +133,9 @@ publicaciones:
     tipoItem: Ficción Flash - Fanzine
     datosItem: 251 palabras
 
-  - nombreItem: Corceles Azules
-    fechaItem: 2024/06/14
-    institucionItem: Speedwagon Media Works
-    urlItem: 
-    tipoItem: Antología propia
-    datosItem: 978-612-49694-0-9
-
-  #- nombreItem: 'CyberTerror: AUSTRAL'
-    fechaItem: 2024/09/28
-    institucionItem: Speedwagon Media Works
-    urlItem: 
-    tipoItem: Antología
-    datosItem: 
-
-  #- nombreItem: HISPANOCYBERPUNK
-    fechaItem: 2024/10/24
-    institucionItem: El Axioma Revista
-    urlItem: 
-    tipoItem: Antología
-    datosItem: 
-    
-  #-nombreItem: 'Neon Dreams and Nightmares: Mixed Punk Works of Dystopian Futures'
-    fechaItem: 2019/09/19
-    institucionItem: Night Sky Book Services 
-    urlItem: 
-    tipoItem: Antología
-    datosItem: 
+  - nombreItem: Sintonizando el mañana
+    fechaItem: 2025/05/01
+    institucionItem: Anapoyesis
+    urlItem: https://online.fliphtml5.com/qlffj/awer/#p=125
+    tipoItem: Ficción Corta - Antología
+    datosItem: 2547 palabras
