@@ -54,7 +54,7 @@ exclude:
   - webpack.config.js
   - package.json
   - package-lock.json
-  - assets/js
+  # - assets/js
   - assets/scss
 
 include:
