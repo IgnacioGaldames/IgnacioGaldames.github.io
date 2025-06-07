@@ -27,5 +27,5 @@ Paginas: 222
 playlistSpotify: 
 playlistSAmazonMusicSRC: 
 playlistSAmazonMusicID: 
-adobeAero:
+adobeAero: https://adobeaero.app.link/HaoEBWhF0Tb
 ---

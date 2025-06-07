@@ -6,8 +6,8 @@ permalink: /iagaldames/
 
 # I.A. Galdames
 
+<img class="img-fluid shadow rounded" src="{{site.author_image_path}}" alt="{{ site.author_name }}">
 {{ site.description | safeHTML}}
-
 ## Mis Cursos
 
 He tomado diferentes cursos, talleres y certificaciones.
@@ -15,11 +15,13 @@ He tomado diferentes cursos, talleres y certificaciones.
 Algunas de ellos son:
 <p>
   {% assign sortedItems = site.data.mis_cursos.cursos | sort: "fechaItem" %}
-  {% for miItem in sortedItems %}
-    {% if miItem.nombreItem %}
-      {{ miItem.nombreItem }} en {{ miItem.institucionItem }}, 
-    {% endif %}
-  {% endfor %}
+  <ul>
+    {% for miItem in sortedItems %}
+      {% if miItem.nombreItem %}
+        <li>{% if miItem.tipoItem %}<b>{{ miItem.tipoItem }}:</b>{% endif %} {{ miItem.nombreItem }} en {{ miItem.institucionItem }}, <small>{{ miItem.fechaItem }}</small></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 </p>
 
 ## Mis Publicaciones
@@ -27,23 +29,28 @@ Algunas de ellos son:
 He publicado diferentes cuentos y libros.
 <p>
   {% assign sortedItems = site.data.mis_publicaciones.publicaciones | sort: "fechaItem" %}
-  {% for miItem in sortedItems %}
-    {% if miItem.nombreItem %}
-      {{ miItem.nombreItem }} en {{ miItem.institucionItem }}, 
-    {% endif %}
-  {% endfor %}
+  <ul>
+    {% for miItem in sortedItems %}
+      {% if miItem.nombreItem %}
+        <li>{% if miItem.tipoItem %}<b>{{ miItem.tipoItem }}:</b>{% endif %} {{ miItem.nombreItem }} en {{ miItem.institucionItem }}, <small>{{ miItem.fechaItem }}</small></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 </p>
 
 ## Mis libros
 
-Los libros y antologías qen los que aparezco son:
+Los libros y antologías en los que aparezco son:
 <p>
   {% assign librosOrdenados = site.libros | sort: "fechaPublicacion" | reverse %}
-  {% for miLibro in librosOrdenados  %}
+  {% for miLibro in librosOrdenados %}
+  <ul>
     {% if miLibro.nombreLibro %}
-      {{ miLibro.nombreLibro }}, 
+      <li><b>{{ miLibro.nombreLibro }}</b> , <small>{{ miLibro.fechaPublicacion }}</small></li>
     {% endif %}
+  </ul>
   {% endfor %}
+
 </p>
 
 ### Mi Trabajo

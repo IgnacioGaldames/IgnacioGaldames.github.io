@@ -63,7 +63,7 @@ include:
   - assets/css/main.min.css
 
 css_path: "/assets/css/main.min.css" # CSS para producción
-
+author_image_path: "/assets/img/iagaldames_2024.jpg"
 
 collections:
   libros:
