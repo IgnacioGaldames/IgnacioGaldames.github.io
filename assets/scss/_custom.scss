@@ -29,7 +29,7 @@ $theme-colors: (
   "900": $gray-900,
 ) !default;
 
-blockquote, blockquote p {
+blockquote {
   border-left: 0.25rem solid $primary;
   padding-left: 1rem;
   margin: 0;
