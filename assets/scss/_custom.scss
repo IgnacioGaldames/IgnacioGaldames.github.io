@@ -28,3 +28,14 @@ $theme-colors: (
   "800": $gray-800,
   "900": $gray-900,
 ) !default;
+
+blockquote, blockquote p {
+  border-left: 0.25rem solid $primary;
+  padding-left: 1rem;
+  margin: 0;
+  font-size: 1.2rem;
+  color:  $gray-100;
+  background-color: $gray-800;
+  border-radius: 0.25rem;
+  line-height: 1.5;
+}

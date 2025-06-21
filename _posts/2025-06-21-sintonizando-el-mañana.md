@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Sintonizando el mañana"
+date: 2025-06-1 00:00:00 -0400
+categories: [Noticias, Lanzamientos]
+---
+
+Un nuevo cuento de ciencia ficción ha sido publicado en la antología **En el umbral de realidades alternas** de la revista **Anapoyesis**. Este relato, titulado **"Sintonizando el mañana"**, es una exploración de la relación entre un padre y su hija en una realidad paralela.
+
+Puedes leer el cuento completo en el siguiente enlace: [Sintonizando el mañana](https://online.fliphtml5.com/qlffj/awer/#p=125){:target="_blank"}.
+
+
+> "Mario abrió el ventanal y caminó hacia la mañana brillante, compuesta solamente por una luz blanca antes de que sus ojos se adaptaran y pudiera ver su hermoso y enorme jardín automatizado. Un pequeño robot de bronce regó las flores y abonó la huerta. Un chercán cantó alegremente tras atrapar una abeja sobre unos pensamientos. El olor a rosas frescas y violetas lo envolvió."
