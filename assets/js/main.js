@@ -34,8 +34,9 @@ function textToBinary(text) {
 document.addEventListener('DOMContentLoaded', () => {
   const contentElement = document.getElementById('content');
   const binaryOutputElement = document.getElementById('binary-output');
+  
 
-  if (contentElement && binaryOutputElement) {
+  if (contentElement && binaryOutputElement && binaryStatus === true) {
     const contentText = contentElement.innerText || contentElement.textContent;
     const binaryText = textToBinary(contentText);
 
@@ -76,6 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
           height: 100%;
           overflow: auto;
           z-index: -1;
+          overflow-y:hidden;
         }
       `;
     document.head.appendChild(styleElement);
@@ -111,3 +113,5 @@ document.addEventListener('DOMContentLoaded', () => {
 // GSAP Animation
 gsap.registerPlugin(ScrambleTextPlugin);
 updateDateTime();
+
+console.log(binaryStatus + " main.js");

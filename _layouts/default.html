@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
 {% include head.html %}
+<script>
+	var binaryStatus = true;
+	console.log(binaryStatus + " default");
+</script>
 
 <body class="default d-flex flex-column min-vh-100">
 	{% include header.html %}
@@ -9,7 +13,10 @@
 			<div class="row">
 				<div class="col-12 col-md-2 col-xxl-1 order-1 order-md-0 d-none d-md-block">
 					<aside>
-						<small><div class="source-code fw-lighter text-muted glow-data text-center" id="binary-output" style="font-size: 0.23rem;"></div></small>
+						<small>
+							<div class="source-code fw-lighter text-muted glow-data text-center" id="binary-output"
+								style="font-size: 0.23rem;"></div>
+						</small>
 					</aside>
 				</div>
 				<div class="col-12 col-md-10 col-xxl-11 order-0 order-md-1">
@@ -46,6 +53,7 @@
 	</main>
 
 	{% include footer.html %}
+
 	<script src="{{ '/assets/js/bundle.js' | relative_url }}"></script>
 </body>
 
