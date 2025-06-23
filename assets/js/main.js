@@ -113,5 +113,3 @@ document.addEventListener('DOMContentLoaded', () => {
 // GSAP Animation
 gsap.registerPlugin(ScrambleTextPlugin);
 updateDateTime();
-
-console.log(binaryStatus + " main.js");

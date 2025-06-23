@@ -7,6 +7,8 @@ categories: [Noticias, Lanzamientos]
 
 Un nuevo cuento de ciencia ficción ha sido publicado en la antología **En el umbral de realidades alternas** de la revista **Anapoyesis**. Este relato, titulado **"Sintonizando el mañana"**, es una exploración de la relación entre un padre y su hija en una realidad paralela.
 
+![My helpful screenshot](/assets/img/en-el-umbral-de-realidades-alternas.jpg){: .w-50 .mx-auto .d-block .rounded .shadow}
+
 Puedes leer el cuento completo en el siguiente enlace: [Sintonizando el mañana](https://online.fliphtml5.com/qlffj/awer/#p=125){:target="_blank"}.
 
 Esta antología es resultado de una de la primeras ediciones del taller "Explorando los mundos posibles de la ciencia ficción" impartido en el 2022 por la escritora y editora **Daniela Lomartti**. El taller se centró en la creación de relatos de ciencia ficción que exploran realidades alternas y futuros posibles, y este cuento es un ejemplo de cómo los participantes pudieron desarrollar sus ideas en un formato narrativo.

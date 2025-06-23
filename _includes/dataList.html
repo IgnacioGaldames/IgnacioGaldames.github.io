@@ -43,16 +43,29 @@
           {% endif %}
         </div>
     </div>
-    {% if miItem.urlItem: %}
+    {% if miItem.postAsociado or miItem.urlItem %}
     <div class="text-capitalize futura fs-6 fw-lighter text-light mt-2 align-self-end">
-      <a href="{{ miItem.urlItem: }}" target="_blank" rel="noopener noreferrer"
-        class="btn btn-secondary btn-sm btn-cp glow-data">
-        {% if miItem.datosItem == "Libro" %}
-        comprar
-        {% else %}
-        ver más
+      {% if miItem.postAsociado and miItem.urlItem %}
+      <div class="btn-group">
         {% endif %}
-      </a>
+        {% if miItem.postAsociado %}
+        <a href="{{ site.baseurl }}/{{ miItem.postAsociado }}" class="btn btn-secondary btn-sm btn-cp glow-data">
+          ver post
+        </a>
+        {% endif %}
+        {% if miItem.urlItem: %}
+        <a href="{{ miItem.urlItem }}" target="_blank" rel="noopener noreferrer"
+          class="btn btn-secondary btn-sm btn-cp glow-data">
+          {% if miItem.datosItem == "Libro" %}
+          comprar
+          {% else %}
+          ver más
+          {% endif %}
+        </a>
+        {% endif %}
+        {% if miItem.postAsociado and miItem.urlItem %}
+      </div>
+      {% endif %}
     </div>
     {% endif %}
   </li>

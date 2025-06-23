@@ -1,6 +1,14 @@
-.btn-cp
-  @extend .gradiente-magenta-dark 
+.btn-cp:first-child
+  @extend .gradiente-magenta-dark
   @extend .glow-magenta-izquierdo
   border-color: rgba(255,0,125,0.25)
   &:hover
     border-color: rgba(255,0,125,0.75)
+.btn-cp:not(:first-child)
+  background: none
+  @extend .glow-magenta-izquierdo
+  border-color: rgba(255,0,125,0.25)
+  &:hover
+    border-color: rgba(255,0,125,0.75)
+    background: radial-gradient(circle at 50% 100%, rgb(255, 0, 125) 0%, rgb(125, 0, 62) 12.5%, rgb(33, 37, 41)50%)
+    transition: background-color .3s ease-in-out
