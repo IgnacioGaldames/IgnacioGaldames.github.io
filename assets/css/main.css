@@ -13050,6 +13050,23 @@ blockquote {
   line-height: 1.5;
 }
 
+.io, .io-highlight {
+  color: #fff;
+  text-shadow: 0px -1px 3px rgba(255, 255, 255, 0.5), 0px 1px 3px rgba(255, 255, 255, 0.5);
+}
+
+.io-highlight {
+  animation: io-glow 1.2s infinite alternate;
+}
+
+@keyframes io-glow {
+  0% {
+    text-shadow: 0px -1px 6px rgba(255, 255, 255, 0.5), 0px 1px 6px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    text-shadow: -1px -1px 12px rgba(255, 255, 255, 0.5), 1px 1px 12px rgba(255, 255, 255, 0.5);
+  }
+}
 p {
   font-size: 1.2rem;
 }

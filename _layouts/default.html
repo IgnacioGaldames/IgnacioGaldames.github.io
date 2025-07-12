@@ -54,6 +54,54 @@
 	{% include footer.html %}
 
 	<script src="{{ '/assets/js/bundle.js' | relative_url }}"></script>
+	<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const walker = document.createTreeWalker(
+    document.body,
+    NodeFilter.SHOW_TEXT,
+    {
+      acceptNode: function(node) {
+        if (!node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+        let parent = node.parentNode;
+        while (parent) {
+          const tag = parent.nodeName.toLowerCase();
+          if (["script", "style", "noscript", "code", "pre"].includes(tag)) {
+            return NodeFilter.FILTER_REJECT;
+          }
+          parent = parent.parentNode;
+        }
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    }
+  );
+
+  const nodes = [];
+  while (walker.nextNode()) {
+    nodes.push(walker.currentNode);
+  }
+
+  nodes.forEach(node => {
+    const text = node.nodeValue;
+    if (!/[io]/i.test(text)) return;
+
+    // Reemplazo seguro: una sola pasada, sin solapamientos
+    const replacedHTML = text.replace(/io|oi|i|o/gi, match => {
+      if (/io|oi/i.test(match)) {
+        return `<span class="io io-highlight">${match}</span>`;
+      } else {
+        return `<span class="io">${match}</span>`;
+      }
+    });
+
+    if (replacedHTML !== text) {
+      const wrapper = document.createElement("span");
+      wrapper.innerHTML = replacedHTML;
+      node.parentNode.replaceChild(wrapper, node);
+    }
+  });
+});
+</script>
+
 </body>
 
 </html>

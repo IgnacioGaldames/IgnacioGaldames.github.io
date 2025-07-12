@@ -1,5 +1,5 @@
 //Inicializar componentes inactivos
-
+ $white-50percent: rgba($white, 0.5) !default;
 $display-font-sizes: (
   1: 4.9rem,
   2: 4.5rem,
@@ -38,4 +38,20 @@ blockquote {
   background-color: $gray-800;
   border-radius: 0.25rem;
   line-height: 1.5;
+}
+.io, .io-highlight {
+  color:  $white;
+  text-shadow: 0px -1px 3px  $white-50percent, 0px 1px 3px  $white-50percent;
+}
+.io-highlight {
+  animation: io-glow 1.2s infinite alternate;
+}
+
+@keyframes io-glow {
+  0% {
+    text-shadow: 0px -1px 6px  $white-50percent, 0px 1px 6px  $white-50percent;
+  }
+  100% {
+    text-shadow: -1px -1px 12px  $white-50percent, 1px 1px 12px  $white-50percent;
+  }
 }
