@@ -81,24 +81,27 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   nodes.forEach(node => {
-    const text = node.nodeValue;
-    if (!/[io]/i.test(text)) return;
+  const text = node.nodeValue;
+  if (!/[io01]/i.test(text)) return;
 
-    // Reemplazo seguro: una sola pasada, sin solapamientos
-    const replacedHTML = text.replace(/io|oi|i|o/gi, match => {
-      if (/io|oi/i.test(match)) {
-        return `<span class="io io-highlight">${match}</span>`;
-      } else {
-        return `<span class="io">${match}</span>`;
-      }
-    });
-
-    if (replacedHTML !== text) {
-      const wrapper = document.createElement("span");
-      wrapper.innerHTML = replacedHTML;
-      node.parentNode.replaceChild(wrapper, node);
+  // Reemplazo seguro: una sola pasada, sin solapamientos
+  const replacedHTML = text.replace(/io|oi|10|01|i|o|1|0/gi, match => {
+    if (/^(io|oi|10|01)$/i.test(match)) {
+      return `<span class="io io-highlight">${match}</span>`;
+    } else if (/^(i|1)$/i.test(match)) {
+      return `<span class="io">${match}</span>`;
+    } else if (/^(o|0)$/i.test(match)) {
+      return `<span class="io">${match}</span>`;
     }
+    return match;
   });
+
+  if (replacedHTML !== text) {
+    const wrapper = document.createElement("span");
+    wrapper.innerHTML = replacedHTML;
+    node.parentNode.replaceChild(wrapper, node);
+  }
+});
 });
 </script>
 
