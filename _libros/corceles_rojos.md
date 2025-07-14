@@ -5,8 +5,8 @@ nombreLibro: Corceles Rojos
 nombreEditorial: Speedwagon Media Works
 nombreSello: Kaneda
 nombreColeccion: 
-portadaLibro: /assets/img/portada_corceles_rojos_sm.png
-urlGoodreads:
+portadaLibro: /assets/img/portada_corceles_rojos_sm.jpg
+urlGoodreads: https://www.goodreads.com/book/show/238749099-corceles-rojos
 urlterceraFundacion:
 urlAmazon:
 urlBuscalibre: 
