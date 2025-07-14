@@ -33,13 +33,13 @@ peso:
     
   <h2> Noticias y enlaces sobre Corceles Azules</h2>
 
-    <a href="https://cienciaficcion.cl/narrativa/cuentos/2982/corceles-azules/?_gl=1*zzy8ji*_up*MQ..*_ga*MTY3MDIzOTM0OS4xNzM4ODc5NTMz*_ga_CIENCIAFICCION-CL*MTczODg3OTUzMi4xLjAuMTczODg3OTUzMi4wLjAuMjY5MzM4ODA2" target="_blank" class="btn btn-primary">Ciencia Ficción chilena</a>
+    <a href="https://cienciaficcion.cl/narrativa/cuentos/2982/corceles-azules/?_gl=1*zzy8ji*_up*MQ..*_ga*MTY3MDIzOTM0OS4xNzM4ODc5NTMz*_ga_CIENCIAFICCION-CL*MTczODg3OTUzMi4xLjAuMTczODg3OTUzMi4wLjAuMjY5MzM4ODA2" target="_blank" class="btn btn-primary mb-3">Ciencia Ficción chilena</a>
 
-    <a href="https://tercerafundacion.net/biblioteca/ver/ficha/39792" target="_blank" class="btn btn-primary">Tercera Fundación</a>
+    <a href="https://tercerafundacion.net/biblioteca/ver/ficha/39792" target="_blank" class="btn btn-primary mb-3">Tercera Fundación</a>
 
-    <a href="https://amazingstories.com/2024/07/novedades-de-julio-1-y-2-2/" target="_blank" class="btn btn-primary">Amazing Stories</a>
+    <a href="https://amazingstories.com/2024/07/novedades-de-julio-1-y-2-2/" target="_blank" class="btn btn-primary mb-3">Amazing Stories</a>
 
-    <a href="https://amazingstories.com/2024/08/novedades-de-julio-3-3/" target="_blank" class="btn btn-primary">Amazing Stories</a>
+    <a href="https://amazingstories.com/2024/08/novedades-de-julio-3-3/" target="_blank" class="btn btn-primary mb-3">Amazing Stories</a>
     </div>
   </div>
 </div>
