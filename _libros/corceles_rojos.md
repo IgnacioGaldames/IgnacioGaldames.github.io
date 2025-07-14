@@ -19,8 +19,8 @@ ISBN10:
 Palabras: 
 Paginas:
 playlistSpotify: 
-playlistSAmazonMusicSRC: 
-playlistSAmazonMusicID:
+playlistSAmazonMusicSRC: https://music.amazon.com/embed/8311b8c2281044c788a90f1106714153c2l0/?id=CsJNafSlUH&marketplaceId=ART4WZ8MWBX2Y&musicTerritory=CL
+playlistSAmazonMusicID: AmazonMusicEmbed8311b8c2281044c788a90f1106714153c2l0
 adobeAero: 
 libroDestacado: true
 alto:
