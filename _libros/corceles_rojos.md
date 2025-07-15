@@ -36,7 +36,28 @@ peso:
   </div>
 </div>
 
-
+<div class="container-fluid bg-dark-subtle py-3 my-3  ">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Cuentos incluidos</h2>
+       </div>
+      <div class="col-md-4">
+        <p>Deseos junto a la piscina</p>
+        <p>Hacia el Norte</p>
+        <p>Señor Cetáceo</p>
+        <p>Tritón</p>
+        <p>El precio de cada despedida</p>
+        <p>Los recuerdos</p>
+        <p>Danzando sobre el bosque de mi piel</p>
+        <p>Catecolamina</p>
+        <p>La reserva de animales</p>
+        <p>Te encontraré en el siguiente otoño</p>
+        <p>Caballos salvajes, la carretera y yo</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <div class="container-fluid bg-dark-subtle py-3 my-3  ">
