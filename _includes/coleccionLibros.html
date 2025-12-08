@@ -12,7 +12,7 @@
 					<div class="card shadow-lg border border-light-subtle">
 			{% else %}
 				<div class="col-6 col-md order-1 mb-3 ">		
-					<div class="card shadow-sm border border-light-subtle d-flex align-items-stretch h-100">
+					<div class="card shadow-sm border border-light-subtle d-flex align-Libros-stretch h-100">
 				{% endif %}
 					{% if miLibro.nombreLibro %}
 					<div class="card-header">
@@ -32,5 +32,7 @@
 				</div>
 			</div>
 		{% endfor %}
-
+  <script>
+    console.log({{ miLibro.tipoLibro | jsonify }} + " / " + {{ miLibro.nombreLibro | jsonify }} + " / " + {{ miLibro.nombreEditorial | jsonify }});
+  </script>
 </div>
