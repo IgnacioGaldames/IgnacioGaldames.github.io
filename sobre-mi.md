@@ -24,31 +24,16 @@ Algunas de ellos son:
 	</ul>
 </p>
 
-## Mis Publicaciones
-
-He publicado diferentes cuentos y libros.
-<p>
-	{% assign sortedItems = site.data.mis_publicaciones.publicaciones | sort: "fechaItem" %}
-	<ul>
-		{% for miItem in sortedItems %}
-			{% if miItem.nombreItem %}
-				<li>{% if miItem.tipoItem %}<b>{{ miItem.tipoItem }}:</b>{% endif %} {{ miItem.nombreItem }} en {{ miItem.institucionItem }}, <small><span class="fw-lighter">{{ miItem.fechaItem }}</span></small></li>
-			{% endif %}
-		{% endfor %}
-	</ul>
-</p>
-
-## MIs Cuentos Publicados
+## Mis Cuentos Publicados
 He publicado los siguientes cuentos en diversas revistas y antologías:
 
 <p>
 	{% assign cuentosOrdenados = site.cuentos | sort: "fechaPublicacion" | reverse %}
- 
-	<ul>
-	 {% for miCuento in cuentosOrdenados %}
-		{% if miCuento.nombreItem %}
-			<a href="{{ miCuento.url }}" class=""><li><b>{{ miCuento.nombreItem }}</b> , <small><span class="fw-lighter">{{ miCuento.fechaPublicacion }}</span></small></li></a>
-		{% endif %}
+		<ul>
+		{% for miItem in cuentosOrdenados %}
+			{% if miItem.nombreItem %}
+				<a href="{{ miItem.url }}"><li>{% if miItem.tipoItem %}<b>{{ miItem.tipoItem }}:</b>{% endif %} {{ miItem.nombreItem }} en {{ miItem.institucionItem }}, <small><span class="fw-lighter">{{ miItem.fechaItem }}</span></small></li></a>
+			{% endif %}
 		{% endfor %}
 	</ul>
 </p>
