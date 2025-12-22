@@ -2,7 +2,7 @@
 published: false
 layout: libro
 title: 'CyberTerror: AUSTRAL'
-nombreLibro: 'CyberTerror: AUSTRAL'
+nombreItem: 'CyberTerror: AUSTRAL'
 nombreEditorial: SPEEDWAGON Media Works
 nombreSello: Kaneda
 nombreColeccion: ZAWARUDO 010 

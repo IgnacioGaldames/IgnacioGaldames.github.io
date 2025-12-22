@@ -2,17 +2,15 @@
 layout: default
 ---
 
-<section class="container-fluid mt-4" id="page-sidebar-right">
-	<div class="row">
-		<article class="col-md-12" id="article">
-			<div class="row">
-				<div class="col-12 content">
-					{{ content }}
-				</div>
+<div class="row" id="page-sidebar-right">
+	<article class="col-md-12" id="article">
+		<div class="row">
+			<div class="col-12 content">
+				{{ content }}
 			</div>
-		</article>
-		<aside class="col-md-12" id="aside">
-			{% include sidebar.html %}
-		</aside>
-	</div>
-</section>
+		</div>
+	</article>
+	<aside class="col-md-12" id="aside">
+		{% include sidebar.html %}
+	</aside>
+</div>

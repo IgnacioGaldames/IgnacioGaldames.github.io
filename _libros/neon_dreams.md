@@ -1,7 +1,7 @@
 ---
 layout: libro
 title: 'Neon Dreams and Nightmares: Mixed Punk Works of Dystopian Futures'
-nombreLibro: 'Neon Dreams and Nightmares'
+nombreItem: 'Neon Dreams and Nightmares'
 nombreEditorial: Night Sky Book Services 
 portadaLibro: /assets/img/neon_dreams_and_nightmares.jpg
 urlAmazon: https://amzn.to/3YG2sz9

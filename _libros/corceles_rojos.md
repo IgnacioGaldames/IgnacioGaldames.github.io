@@ -1,7 +1,7 @@
 ---
 layout: libro
 title: Corceles Rojos
-nombreLibro: Corceles Rojos
+nombreItem: Corceles Rojos
 nombreEditorial: Speedwagon Media Works
 nombreSello: Kaneda
 nombreColeccion: 

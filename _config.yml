@@ -68,6 +68,8 @@ author_image_path: "/assets/img/iagaldames_2024.jpg"
 collections:
   libros:
     output: true
+  cuentos:
+    output: true
     
 kramdown:
   syntax_highlighter_opts:

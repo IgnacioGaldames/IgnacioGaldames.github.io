@@ -38,6 +38,21 @@ He publicado diferentes cuentos y libros.
 	</ul>
 </p>
 
+## MIs Cuentos Publicados
+He publicado los siguientes cuentos en diversas revistas y antologías:
+
+<p>
+	{% assign cuentosOrdenados = site.cuentos | sort: "fechaPublicacion" | reverse %}
+ 
+	<ul>
+	 {% for miCuento in cuentosOrdenados %}
+		{% if miCuento.nombreItem %}
+			<a href="{{ miCuento.url }}" class=""><li><b>{{ miCuento.nombreItem }}</b> , <small><span class="fw-lighter">{{ miCuento.fechaPublicacion }}</span></small></li></a>
+		{% endif %}
+		{% endfor %}
+	</ul>
+</p>
+
 ## Mis libros
 
 Los libros y antologías en los que aparezco son:
@@ -46,8 +61,8 @@ Los libros y antologías en los que aparezco son:
  
 	<ul>
 	 {% for miLibro in librosOrdenados %}
-		{% if miLibro.nombreLibro %}
-			<li><b>{{ miLibro.nombreLibro }}</b> , <small><span class="fw-lighter">{{ miLibro.fechaPublicacion }}</span></small></li>
+		{% if miLibro.nombreItem %}
+			<a href="{{ miLibro.url }}" class=""><li><b>{{ miLibro.nombreItem }}</b> , <small><span class="fw-lighter">{{ miLibro.fechaPublicacion }}</span></small></li></a>
 		{% endif %}
 		{% endfor %}
 	</ul>

@@ -8,7 +8,7 @@
     {% endif %}
     {%if miItem.tipoItem %}
     <div class="text-capitalize futura fs-6 fw-lighter text-light text-muted">
-      {{ miItem.tipoItem }}
+     {{ miItem.tipoItem }}
     </div>
     {% endif %}
     {%if miItem.datosItem %}
@@ -16,14 +16,8 @@
       |</span>
     {% endif %}
     <div class="d-flex align-items-start align-items-md-center flex-column flex-md-row">
-      {% if miItem.datosItem == "Libro" %}
-      <span class="eb-garamond flex-grow-1">{{ miItem.nombreItem }}</span>
-      <span class="eb-garamond border-start border-end px-3 mx-3 text-center">{{ miItem.institucionItem }}
-        {% else %}
-        <span class="text-capitalize eb-garamond fs-4 flex-grow-1">{{ miItem.nombreItem }}</span>
-        <span class="text-uppercase fw-bolder border-start border-end px-3 mx-3 text-center">{{ miItem.institucionItem
-          }}
-          {% endif %}
+      <a href="{{ miItem.url }}"> <span class="text-capitalize eb-garamond fs-4 flex-grow-1">{{ miItem.nombreItem }}</span></a>
+      <span class="text-uppercase fw-bolder border-start border-end px-3 mx-3 text-center">{{ miItem.institucionItem }}
         </span>
         <div class="flex flex-column">
           {% if miItem.datosItem == "Libro" %}

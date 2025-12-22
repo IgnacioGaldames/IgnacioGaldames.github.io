@@ -12,14 +12,14 @@ title: "Libros"
 				<div class="col-12 mb-3">
 					<div class="card shadow border border-light-subtle" id="cardLibro">
 						<div class="card-header">
-							<h5 class="card-title" id="libro-nombreLibro">{{ page.nombreLibro }}</h5>
+							<h5 class="card-title" id="libro-nombreItem">{{ page.nombreItem }}</h5>
 							{% assign book = miLibro %}
 							{% include dataLibro.html %}
 						</div>
 						<div class="row">
 							<div class="col-md-6 col-lg-4 d-flex align-content-center flex-wrap">
 								<a href="{{ miLibro.url }}" class="">
-									<img src="{{ miLibro.portadaLibro }}" class="card-img-top" alt="{{ miLibro.nombreLibro}}">
+									<img src="{{ miLibro.portadaLibro }}" class="card-img-top" alt="{{ miLibro.nombreItem}}">
 								</a>
 								<div class="card-footer w-100">
 									{% assign book = miLibro %}
@@ -42,15 +42,15 @@ title: "Libros"
 				<div class="col-md-3 col-lg-4 mb-4 order-1 d-flex align-items-stretch mx-auto">
 					<div class="card shadow-sm border border-light-subtle">
 
-						{% if miLibro.nombreLibro%}
+						{% if miLibro.nombreItem%}
 						<div class="card-header">
-							<h5 class="card-title" id="libros-nombreLibro">{{ miLibro.nombreLibro}}</h5>
+							<h5 class="card-title" id="libros-nombreItem">{{ miLibro.nombreItem}}</h5>
 							{% assign book = miLibro %}
 							{% include dataLibro.html %}
 						</div>
 						{% endif %}
 						<a href="{{ miLibro.url }}" class="">
-							<img src="{{ miLibro.portadaLibro }}" class="card-img-top" alt="{{ miLibro.nombreLibro}}">
+							<img src="{{ miLibro.portadaLibro }}" class="card-img-top" alt="{{ miLibro.nombreItem}}">
 						</a>
 						{% assign book = miLibro %}
 						{% include detallesLibro.html %}

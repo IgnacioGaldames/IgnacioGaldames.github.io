@@ -7,7 +7,7 @@
       {% assign ultimoLibro = site.libros | sort: "fechaItem" | reverse | first %}
       {% if ultimoLibro %}
       <li class="list-group-item">
-        <div class=""> Libro: <a href="{{ ultimoLibro.url }}" class="text-capitalize eb-garamond fs-5">{{ ultimoLibro.nombreLibro }}</a></div>
+        <div class=""> Libro: <a href="{{ ultimoLibro.url }}" class="text-capitalize eb-garamond fs-5">{{ ultimoLibro.nombreItem }}</a></div>
         <a class="btn btn-sm btn-primary py-0 my-2" href="{{ site.baseurl }}/libros/">ver más libros</a>
       </li>
       {% else %}

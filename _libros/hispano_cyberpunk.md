@@ -1,7 +1,7 @@
 ---
 layout: libro
 title: Hispanocyberpunk
-nombreLibro: Hispanocyberpunk
+nombreItem: Hispanocyberpunk
 nombreEditorial: El Axioma Revista
 nombreSello: 
 nombreColeccion: Axioma 008 
