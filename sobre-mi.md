@@ -14,43 +14,43 @@ He tomado diferentes cursos, talleres y certificaciones.
 
 Algunas de ellos son:
 <p>
-  {% assign sortedItems = site.data.mis_cursos.cursos | sort: "fechaItem" %}
-  <ul>
-    {% for miItem in sortedItems %}
-      {% if miItem.nombreItem %}
-        <li>{% if miItem.tipoItem %}<b>{{ miItem.tipoItem }}:</b>{% endif %} {{ miItem.nombreItem }} en {{ miItem.institucionItem }}, <small><span class="fw-lighter">{{ miItem.fechaItem }}</span></small></li>
-      {% endif %}
-    {% endfor %}
-  </ul>
+	{% assign sortedItems = site.data.mis_cursos.cursos | sort: "fechaItem" %}
+	<ul>
+		{% for miItem in sortedItems %}
+			{% if miItem.nombreItem %}
+				<li>{% if miItem.tipoItem %}<b>{{ miItem.tipoItem }}:</b>{% endif %} {{ miItem.nombreItem }} en {{ miItem.institucionItem }}, <small><span class="fw-lighter">{{ miItem.fechaItem }}</span></small></li>
+			{% endif %}
+		{% endfor %}
+	</ul>
 </p>
 
 ## Mis Publicaciones
 
 He publicado diferentes cuentos y libros.
 <p>
-  {% assign sortedItems = site.data.mis_publicaciones.publicaciones | sort: "fechaItem" %}
-  <ul>
-    {% for miItem in sortedItems %}
-      {% if miItem.nombreItem %}
-        <li>{% if miItem.tipoItem %}<b>{{ miItem.tipoItem }}:</b>{% endif %} {{ miItem.nombreItem }} en {{ miItem.institucionItem }}, <small><span class="fw-lighter">{{ miItem.fechaItem }}</span></small></li>
-      {% endif %}
-    {% endfor %}
-  </ul>
+	{% assign sortedItems = site.data.mis_publicaciones.publicaciones | sort: "fechaItem" %}
+	<ul>
+		{% for miItem in sortedItems %}
+			{% if miItem.nombreItem %}
+				<li>{% if miItem.tipoItem %}<b>{{ miItem.tipoItem }}:</b>{% endif %} {{ miItem.nombreItem }} en {{ miItem.institucionItem }}, <small><span class="fw-lighter">{{ miItem.fechaItem }}</span></small></li>
+			{% endif %}
+		{% endfor %}
+	</ul>
 </p>
 
 ## Mis libros
 
 Los libros y antologías en los que aparezco son:
 <p>
-  {% assign librosOrdenados = site.libros | sort: "fechaPublicacion" | reverse %}
-  {% for miLibro in librosOrdenados %}
-  <ul>
-    {% if miLibro.nombreLibro %}
-      <li><b>{{ miLibro.nombreLibro }}</b> , <small><span class="fw-lighter">{{ miLibro.fechaPublicacion }}</span></small></li>
-    {% endif %}
-  </ul>
-  {% endfor %}
-
+	{% assign librosOrdenados = site.libros | sort: "fechaPublicacion" | reverse %}
+ 
+	<ul>
+	 {% for miLibro in librosOrdenados %}
+		{% if miLibro.nombreLibro %}
+			<li><b>{{ miLibro.nombreLibro }}</b> , <small><span class="fw-lighter">{{ miLibro.fechaPublicacion }}</span></small></li>
+		{% endif %}
+		{% endfor %}
+	</ul>
 </p>
 
 ### Mi Trabajo
@@ -60,7 +60,7 @@ Puedes encontrar mis libros e historias en [Goodreads](https://www.goodreads.com
 ### Conéctate Conmigo
 
 <div class="row">
-  <div class="col-md-6">
-    {% include redes.html %}
-    </div>
+	<div class="col-md-6">
+		{% include redes.html %}
+		</div>
 </div>
