@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Maestra: Estructura Unificada</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fafaf9; /* stone-50 */
+            color: #1c1917; /* stone-900 */
+        }
+        h1, h2, h3, .serif {
+            font-family: 'Merriweather', serif;
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #f5f5f4; }
+        ::-webkit-scrollbar-thumb { background: #d6d3d1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #a8a29e; }
+
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 300px;
+        }
+        @media (min-width: 768px) {
+            .chart-container { height: 350px; max-height: 350px; }
+        }
+
+        .card-item { transition: all 0.2s ease-in-out; }
+        .card-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        
+        /* Hide numbers in number inputs */
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+
+        /* Estilos Motor Interno */
+        .internal-engine-input {
+            width: 100%;
+            background-color: #fff;
+            border: 1px solid #e7e5e4;
+            border-radius: 0.5rem;
+            padding: 0.75rem;
+            font-size: 0.875rem;
+            color: #44403c;
+            transition: all 0.2s;
+        }
+        .internal-engine-input:focus {
+            outline: none;
+            border-color: #f59e0b;
+            box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.1);
+        }
+        
+        /* Badges de Conceptos */
+        .concept-badge {
+            display: inline-block;
+            padding: 0.125rem 0.375rem;
+            border-radius: 0.25rem;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.25rem;
+            margin-right: 0.25rem;
+        }
+        .concept-lie { background-color: #fee2e2; color: #991b1b; }   /* Rojo */
+        .concept-wound { background-color: #fce7f3; color: #9d174d; } /* Rosa */
+        .concept-truth { background-color: #dcfce7; color: #166534; } /* Verde */
+        .concept-want { background-color: #e0f2fe; color: #075985; }  /* Azul */
+        .concept-mirror { background-color: #f3e8ff; color: #6b21a8; } /* Púrpura */
+        .concept-clock { background-color: #ffedd5; color: #c2410c; }  /* Naranja */
+        .concept-stakes { background-color: #f1f5f9; color: #475569; } /* Gris */
+        .concept-weakness { background-color: #ffe4e6; color: #be123c; } /* Rosa oscuro */
+
+        /* Estilos para Lentes Estructurales */
+        .lens-card {
+            border-left-width: 4px;
+            transition: all 0.2s;
+        }
+        .lens-card:hover {
+            background-color: #fff;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+        .progress-segment {
+            transition: all 0.3s ease;
+        }
+
+        /* Tabla de Convergencia */
+        .matrix-table th, .matrix-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+            font-size: 0.85rem;
+        }
+        .matrix-table th {
+            background-color: #f3f4f6;
+            font-weight: 600;
+            color: #374151;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 0.75rem;
+        }
+        .matrix-row:hover {
+            background-color: #f9fafb;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+
+    <!-- Header & Calculator -->
+    <header class="bg-white border-b border-stone-200 sticky top-0 z-30 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div>
+                    <h1 class="text-2xl font-bold text-stone-800">Guía Estructural Unificada</h1>
+                    <p class="text-sm text-stone-500">Snyder + Motor Interno + Campbell + Vogler + Estructuras Orientales</p>
+                </div>
+                
+                <div class="flex items-center gap-4 bg-stone-50 p-2 rounded-lg border border-stone-200">
+                    <div class="flex flex-col">
+                        <label for="totalWords" class="text-xs font-semibold text-stone-500 uppercase tracking-wide">Total Palabras</label>
+                        <input type="number" id="totalWords" value="100000" class="bg-transparent font-mono text-lg font-bold text-amber-700 focus:outline-none w-32 border-b border-dashed border-stone-300 focus:border-amber-500 transition-colors">
+                        <!-- ID Reinsertado para evitar error JS -->
+                        <span id="overview-total-words" class="hidden">100000</span>
+                    </div>
+                    <div class="h-8 w-px bg-stone-300"></div>
+                    <div class="flex flex-col">
+                        <label for="totalMinutes" class="text-xs font-semibold text-stone-500 uppercase tracking-wide">Minutos</label>
+                        <input type="number" id="totalMinutes" value="120" class="bg-transparent font-mono text-lg font-bold text-stone-700 focus:outline-none w-24 border-b border-dashed border-stone-300 focus:border-stone-500 transition-colors">
+                    </div>
+                    <button id="recalcBtn" class="bg-stone-800 hover:bg-stone-700 text-white p-2 rounded-md transition-colors" title="Recalcular">
+                        <span class="text-sm font-bold">↻</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-1 lg:grid-cols-12 gap-6">
+        
+        <!-- Sidebar Navigation -->
+        <nav class="lg:col-span-2 flex flex-row lg:flex-col gap-2 overflow-x-auto pb-2 lg:pb-0 sticky top-24 h-fit z-20">
+            <button onclick="switchTab('overview')" id="tab-overview" class="nav-btn bg-stone-800 text-white px-4 py-3 rounded-lg text-left shadow-md flex items-center gap-2 whitespace-nowrap">
+                <span>📊</span> Resumen
+            </button>
+            <button onclick="switchTab('internal')" id="tab-internal" class="nav-btn bg-white hover:bg-rose-50 text-stone-600 hover:text-rose-800 px-4 py-3 rounded-lg text-left border border-stone-200 transition-colors flex items-center gap-2 whitespace-nowrap">
+                <span>❤️</span> Motor Interno
+            </button>
+            <button onclick="switchTab('matrix')" id="tab-matrix" class="nav-btn bg-white hover:bg-purple-50 text-stone-600 hover:text-purple-800 px-4 py-3 rounded-lg text-left border border-stone-200 transition-colors flex items-center gap-2 whitespace-nowrap">
+                <span>🕸️</span> Ecos Estructurales
+            </button>
+            <div class="h-px bg-stone-200 my-2 hidden lg:block"></div>
+            <button onclick="switchTab('act1')" id="tab-act1" class="nav-btn bg-white hover:bg-amber-50 text-stone-600 hover:text-amber-800 px-4 py-3 rounded-lg text-left border border-stone-200 transition-colors flex items-center gap-2 whitespace-nowrap">
+                <span class="font-bold text-xs bg-stone-200 text-stone-600 px-1.5 py-0.5 rounded">I</span> Acto 1
+            </button>
+            <button onclick="switchTab('act2a')" id="tab-act2a" class="nav-btn bg-white hover:bg-sky-50 text-stone-600 hover:text-sky-800 px-4 py-3 rounded-lg text-left border border-stone-200 transition-colors flex items-center gap-2 whitespace-nowrap">
+                <span class="font-bold text-xs bg-stone-200 text-stone-600 px-1.5 py-0.5 rounded">II-A</span> Acto 2A
+            </button>
+            <button onclick="switchTab('act2b')" id="tab-act2b" class="nav-btn bg-white hover:bg-indigo-50 text-stone-600 hover:text-indigo-800 px-4 py-3 rounded-lg text-left border border-stone-200 transition-colors flex items-center gap-2 whitespace-nowrap">
+                <span class="font-bold text-xs bg-stone-200 text-stone-600 px-1.5 py-0.5 rounded">II-B</span> Acto 2B
+            </button>
+            <button onclick="switchTab('act3')" id="tab-act3" class="nav-btn bg-white hover:bg-emerald-50 text-stone-600 hover:text-emerald-800 px-4 py-3 rounded-lg text-left border border-stone-200 transition-colors flex items-center gap-2 whitespace-nowrap">
+                <span class="font-bold text-xs bg-stone-200 text-stone-600 px-1.5 py-0.5 rounded">III</span> Acto 3
+            </button>
+        </nav>
+
+        <!-- Content Area -->
+        <div class="lg:col-span-10 min-h-[500px]">
+            
+            <!-- 1. MOTOR INTERNO VIEW -->
+            <div id="view-internal" class="hidden space-y-6 animate-fade-in">
+                <div class="bg-white p-8 rounded-xl border border-stone-200 shadow-sm">
+                    <div class="flex items-center gap-3 mb-6 border-b border-stone-100 pb-4">
+                        <div class="bg-rose-100 p-2 rounded-full text-rose-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold text-stone-900 serif">Motor Interno del Héroe</h2>
+                            <p class="text-sm text-stone-500">Define la psicología profunda antes de trazar la trama.</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-2">
+                            <label class="block text-sm font-bold text-stone-700 uppercase tracking-wide">
+                                <span class="bg-rose-100 text-rose-800 px-2 py-0.5 rounded text-xs mr-2">Origen</span>
+                                La Herida (The Wound)
+                            </label>
+                            <textarea class="internal-engine-input h-24" placeholder="¿Qué evento traumático del pasado rompió al héroe?"></textarea>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="block text-sm font-bold text-stone-700 uppercase tracking-wide">
+                                <span class="bg-red-100 text-red-800 px-2 py-0.5 rounded text-xs mr-2">Obstáculo</span>
+                                La Mentira (The Lie)
+                            </label>
+                            <textarea class="internal-engine-input h-24" placeholder="La creencia errónea nacida de la herida. 'Solo valgo si gano'."></textarea>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="block text-sm font-bold text-stone-700 uppercase tracking-wide">
+                                <span class="bg-sky-100 text-sky-800 px-2 py-0.5 rounded text-xs mr-2">Objetivo</span>
+                                El Deseo (The Want)
+                            </label>
+                            <textarea class="internal-engine-input h-24" placeholder="Lo que persigue externamente para validar su Mentira."></textarea>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="block text-sm font-bold text-stone-700 uppercase tracking-wide">
+                                <span class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded text-xs mr-2">Cura</span>
+                                La Necesidad (The Need)
+                            </label>
+                            <textarea class="internal-engine-input h-24" placeholder="La verdad interna que debe aprender para sanar."></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. MATRIX VIEW (NUEVO) -->
+            <div id="view-matrix" class="hidden space-y-6 animate-fade-in">
+                <div class="bg-white p-6 rounded-xl border border-stone-200 shadow-sm overflow-hidden">
+                    <h2 class="text-xl font-bold text-stone-800 mb-4 serif flex items-center gap-2">
+                        <span class="text-purple-600">🕸️</span> Matriz de Convergencia Narrativa
+                    </h2>
+                    <p class="text-stone-600 mb-6 text-sm">Visualiza cómo las 40 tarjetas de <strong>Snyder</strong> se alinean y superponen con las grandes estructuras universales. Observa los patrones repetitivos: todos cuentan la misma historia humana.</p>
+                    
+                    <div class="overflow-x-auto">
+                        <table class="w-full matrix-table min-w-[800px]">
+                            <thead>
+                                <tr>
+                                    <th class="w-16">Card</th>
+                                    <th class="w-1/5">Snyder (Beats)</th>
+                                    <th class="w-1/6">Dan Harmon</th>
+                                    <th class="w-1/6">Campbell (Héroe)</th>
+                                    <th class="w-1/6">Vogler (Escritor)</th>
+                                    <th>Orientales</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-stone-700">
+                                <!-- Acto 1 -->
+                                <tr class="bg-amber-50/50 border-t-2 border-amber-200"><td colspan="6" class="font-bold text-xs text-amber-800 uppercase tracking-widest py-2">Acto 1: Tesis</td></tr>
+                                <tr class="matrix-row"><td>1-5</td><td class="font-semibold text-amber-700">Planteamiento</td><td>1. TÚ (Confort)</td><td>Mundo Ordinario</td><td>Mundo Ordinario</td><td><span class="font-mono font-bold">JO</span> / KI</td></tr>
+                                <tr class="matrix-row"><td>6</td><td class="font-semibold text-amber-700">Catalizador</td><td>2. NECESIDAD</td><td>La Llamada</td><td>La Llamada</td><td>JO / KI</td></tr>
+                                <tr class="matrix-row"><td>7-9</td><td class="font-semibold text-amber-700">Debate</td><td>2. NECESIDAD</td><td>Rechazo / Ayuda</td><td>Rechazo / Mentor</td><td>JO / SHO</td></tr>
+                                <tr class="matrix-row"><td>10</td><td class="font-semibold text-amber-700">Transición al 2</td><td>3. IR (Umbral)</td><td>Cruce 1er Umbral</td><td>Cruce Umbral</td><td><span class="font-mono font-bold">HA</span> / SHO</td></tr>
+                                
+                                <!-- Acto 2A -->
+                                <tr class="bg-sky-50/50 border-t-2 border-sky-200"><td colspan="6" class="font-bold text-xs text-sky-800 uppercase tracking-widest py-2">Acto 2A: Antítesis (Exploración)</td></tr>
+                                <tr class="matrix-row"><td>11</td><td class="font-semibold text-sky-700">Historia B</td><td>3. IR</td><td>Vientre Ballena</td><td>Pruebas/Aliados</td><td>HA / SHO</td></tr>
+                                <tr class="matrix-row"><td>12-19</td><td class="font-semibold text-sky-700">Juegos y Diversión</td><td>4. BUSCAR</td><td>Camino Pruebas</td><td>Pruebas / Aproxim.</td><td>HA / SHO</td></tr>
+                                <tr class="matrix-row"><td>20</td><td class="font-semibold text-sky-700">Punto Medio</td><td>5. ENCONTRAR</td><td>Expiación / Padre</td><td>Ordalía (Central)</td><td>HA / <span class="font-mono font-bold">TEN</span></td></tr>
+
+                                <!-- Acto 2B -->
+                                <tr class="bg-indigo-50/50 border-t-2 border-indigo-200"><td colspan="6" class="font-bold text-xs text-indigo-800 uppercase tracking-widest py-2">Acto 2B: Antítesis (Caída)</td></tr>
+                                <tr class="matrix-row"><td>21-27</td><td class="font-semibold text-indigo-700">Malos Estrechan</td><td>6. TOMAR (Precio)</td><td>Apoteosis / Huida</td><td>Recompensa / Retorno</td><td>HA / TEN</td></tr>
+                                <tr class="matrix-row"><td>28</td><td class="font-semibold text-indigo-700">Todo está Perdido</td><td>6. TOMAR (Muerte)</td><td>Muerte Simbólica</td><td>Gran Caída</td><td>HA / TEN</td></tr>
+                                <tr class="matrix-row"><td>29</td><td class="font-semibold text-indigo-700">Noche Oscura</td><td>6. TOMAR (Duelo)</td><td>Reflexión</td><td>Preparación Resurrec.</td><td>HA / TEN</td></tr>
+                                <tr class="matrix-row"><td>30</td><td class="font-semibold text-indigo-700">Transición al 3</td><td>7. VOLVER</td><td>Posesión 2 Mundos</td><td>Inicio Resurrección</td><td><span class="font-mono font-bold">KYU</span> / KETSU</td></tr>
+
+                                <!-- Acto 3 -->
+                                <tr class="bg-emerald-50/50 border-t-2 border-emerald-200"><td colspan="6" class="font-bold text-xs text-emerald-800 uppercase tracking-widest py-2">Acto 3: Síntesis</td></tr>
+                                <tr class="matrix-row"><td>31-36</td><td class="font-semibold text-emerald-700">Finale (Ejecución)</td><td>7. VOLVER</td><td>Cruce Retorno</td><td>Resurrección (Acción)</td><td>KYU / KETSU</td></tr>
+                                <tr class="matrix-row"><td>37</td><td class="font-semibold text-emerald-700">Clímax Final</td><td>7. VOLVER</td><td>Victoria Final</td><td>Clímax Resurrección</td><td>KYU / KETSU</td></tr>
+                                <tr class="matrix-row"><td>38-40</td><td class="font-semibold text-emerald-700">Resolución</td><td>8. CAMBIO</td><td>Libertad para Vivir</td><td>Elixir</td><td>KYU / KETSU</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. OVERVIEW VIEW -->
+            <div id="view-overview" class="space-y-6 animate-fade-in">
+                <div class="bg-white p-6 rounded-xl border border-stone-200 shadow-sm">
+                    <h2 class="text-xl font-bold text-stone-800 mb-4 serif">Análisis Estructural</h2>
+                    <p class="text-stone-600 mb-6">Herramienta de precisión narrativa. Combina el ritmo de <strong>Snyder</strong>, la profundidad del <strong>Arco Interno</strong>, el ciclo de <strong>Harmon</strong>, el viaje de <strong>Campbell/Vogler</strong> y estructuras orientales.</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="flex flex-col items-center">
+                            <h3 class="text-sm font-bold text-stone-500 uppercase mb-2">Equilibrio de Actos</h3>
+                            <div class="chart-container">
+                                <canvas id="structureChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h3 class="text-sm font-bold text-stone-500 uppercase mb-2">Peso por Sección</h3>
+                            <div class="chart-container">
+                                <canvas id="pacingChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="bg-amber-50 p-4 rounded-lg border border-amber-100 text-center">
+                        <div class="text-amber-800 text-xs font-bold uppercase">Por Card</div>
+                        <div class="text-2xl font-bold text-amber-900 mt-1" id="stat-words-card">2,500</div>
+                        <div class="text-amber-700 text-xs">Palabras</div>
+                    </div>
+                    <div class="bg-stone-100 p-4 rounded-lg border border-stone-200 text-center">
+                        <div class="text-stone-600 text-xs font-bold uppercase">Por Card</div>
+                        <div class="text-2xl font-bold text-stone-800 mt-1" id="stat-time-card">3.0</div>
+                        <div class="text-stone-600 text-xs">Minutos</div>
+                    </div>
+                    <div class="bg-stone-100 p-4 rounded-lg border border-stone-200 text-center">
+                        <div class="text-stone-600 text-xs font-bold uppercase">% Historia</div>
+                        <div class="text-2xl font-bold text-stone-800 mt-1">2.5%</div>
+                        <div class="text-stone-600 text-xs">Por Card</div>
+                    </div>
+                    <div class="bg-stone-100 p-4 rounded-lg border border-stone-200 text-center">
+                        <div class="text-stone-600 text-xs font-bold uppercase">Total Cards</div>
+                        <div class="text-2xl font-bold text-stone-800 mt-1">40</div>
+                        <div class="text-stone-600 text-xs">Escenas Clave</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. ACT VIEWS (Dynamic) -->
+            <div id="view-act" class="hidden">
+                <div class="bg-white rounded-xl border border-stone-200 shadow-sm overflow-hidden">
+                    <div id="act-header" class="px-6 py-8 bg-amber-50 border-b border-amber-100">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span id="act-label" class="text-xs font-bold tracking-widest text-amber-800 uppercase bg-amber-200 px-2 py-1 rounded">Acto 1</span>
+                                <h2 id="act-title" class="text-3xl font-bold text-stone-900 mt-2 serif">Tesis: El Mundo Ordinario</h2>
+                            </div>
+                            <div class="text-right hidden sm:block">
+                                <div id="act-range-words" class="text-2xl font-mono font-bold text-stone-400">0 - 25,000</div>
+                                <div class="text-xs text-stone-400 uppercase">Rango de Palabras</div>
+                            </div>
+                        </div>
+                        <p id="act-desc" class="mt-4 text-stone-700 max-w-3xl leading-relaxed"></p>
+                    </div>
+                    <div id="act-board" class="p-6 space-y-8 bg-stone-50/50">
+                        <!-- Cards injected by JS -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- INSPECTOR PANEL (Details Sidebar) - Increased Width to 2XL -->
+        <div id="inspector-panel" class="hidden fixed inset-0 z-50 bg-black/20 backdrop-blur-sm flex justify-end transition-opacity duration-300">
+            <div class="bg-white w-full max-w-2xl h-full shadow-2xl p-0 flex flex-col transform transition-transform duration-300 translate-x-full" id="inspector-content">
+                
+                <!-- Inspector Header -->
+                <div class="p-6 border-b border-stone-100 flex justify-between items-start bg-stone-50">
+                    <div>
+                        <div class="flex items-center gap-2 mb-1">
+                            <span id="inspector-number" class="text-xs font-black text-white bg-stone-900 w-6 h-6 inline-flex items-center justify-center rounded-full">1</span>
+                            <span id="inspector-beat" class="text-xs font-bold uppercase tracking-wide text-stone-500">Planteamiento</span>
+                        </div>
+                        <h3 id="inspector-title" class="text-xl font-bold text-stone-800 mt-1 serif">Imagen de Apertura</h3>
+                    </div>
+                    <button onclick="closeInspector()" class="text-stone-400 hover:text-stone-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    </button>
+                </div>
+                
+                <div class="p-6 flex-grow overflow-y-auto">
+                    
+                    <!-- Narrative Mission -->
+                    <div class="mb-6">
+                        <h4 class="text-sm font-bold text-stone-900 mb-2 border-b border-stone-200 pb-1">Misión Narrativa (Snyder)</h4>
+                        <p id="inspector-desc" class="text-stone-600 leading-relaxed text-sm mb-4"></p>
+                        
+                        <!-- Internal Engine Concept Box -->
+                        <div id="inspector-enriched" class="bg-rose-50 border border-rose-100 rounded-lg p-3 hidden mb-4">
+                            <h5 class="text-xs font-bold text-rose-800 uppercase mb-1 flex items-center gap-1">
+                                <span>🧠</span> Arco Interno
+                            </h5>
+                            <p id="inspector-enriched-text" class="text-sm text-stone-700 italic"></p>
+                        </div>
+                    </div>
+
+                    <!-- Metrics -->
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="bg-stone-50 p-3 rounded border border-stone-200">
+                            <div class="text-xs text-stone-400 uppercase">Meta Palabras</div>
+                            <div id="inspector-words" class="text-lg font-mono font-bold text-amber-700">2,500</div>
+                            <div id="inspector-words-range" class="text-xs text-stone-400">0 - 2,500</div>
+                        </div>
+                        <div class="bg-stone-50 p-3 rounded border border-stone-200">
+                            <div class="text-xs text-stone-400 uppercase">Tiempo (Min)</div>
+                            <div id="inspector-time" class="text-lg font-mono font-bold text-stone-700">3.0</div>
+                            <div id="inspector-time-range" class="text-xs text-stone-400">0 - 3</div>
+                        </div>
+                    </div>
+
+                    <!-- Tips -->
+                    <div class="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-r mb-8">
+                        <h4 class="text-sm font-bold text-blue-800 mb-1">Consejo Estructural</h4>
+                        <p id="inspector-tip" class="text-sm text-blue-700"></p>
+                    </div>
+
+                    <!-- LENTES ESTRUCTURALES -->
+                    <div>
+                        <h4 class="text-sm font-bold text-stone-900 mb-4 border-b border-stone-200 pb-1 flex items-center gap-2">
+                            <span>🔍</span> Lentes Narrativas
+                        </h4>
+
+                        <!-- 1. Campbell Hero's Journey (17 Steps) -->
+                        <div id="lens-campbell" class="mb-4 bg-amber-50 rounded-lg border border-amber-100 p-3 lens-card border-l-amber-500">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-[10px] font-bold uppercase text-amber-800/60 tracking-wider">J. Campbell (El Héroe - 17)</span>
+                                <span id="campbell-step-name" class="text-xs font-bold text-amber-700">Partida</span>
+                            </div>
+                            <div class="flex gap-0.5 h-1 mb-2" id="campbell-progress"></div>
+                            <p id="campbell-desc" class="text-xs text-stone-600 leading-snug">Descripción del paso del monomito.</p>
+                        </div>
+
+                        <!-- 2. Vogler Writer's Journey (12 Steps) -->
+                        <div id="lens-vogler" class="mb-4 bg-emerald-50 rounded-lg border border-emerald-100 p-3 lens-card border-l-emerald-500">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-[10px] font-bold uppercase text-emerald-800/60 tracking-wider">C. Vogler (El Escritor - 12)</span>
+                                <span id="vogler-step-name" class="text-xs font-bold text-emerald-700">Mundo Ordinario</span>
+                            </div>
+                            <div class="flex gap-0.5 h-1 mb-2" id="vogler-progress"></div>
+                            <p id="vogler-desc" class="text-xs text-stone-600 leading-snug">Descripción del viaje del escritor.</p>
+                        </div>
+
+                        <!-- 3. Harmon Circle (8 Steps) - Moved Here -->
+                        <div id="lens-harmon" class="mb-4 bg-slate-50 rounded-lg border border-slate-200 p-3 lens-card border-l-indigo-500">
+                            <div class="flex justify-between items-end mb-1">
+                                <span class="text-[10px] font-bold uppercase text-slate-400 tracking-wider">Dan Harmon (Story Circle - 8)</span>
+                                <span id="harmon-step-name" class="text-xs font-bold text-indigo-600">Paso 1: TÚ</span>
+                            </div>
+                            <div class="flex gap-1 h-1.5 mb-2" id="harmon-progress-bar"></div>
+                            <p id="harmon-desc" class="text-xs text-slate-600 leading-snug italic"></p>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3">
+                            <!-- 4. Jo-Ha-Kyu (3 Steps) -->
+                            <div class="bg-gray-50 rounded-lg border border-gray-200 p-3 lens-card border-l-gray-600">
+                                <span class="text-[10px] font-bold uppercase text-gray-400 tracking-wider block mb-1">Jo-Ha-Kyu (3 Pasos)</span>
+                                <div class="flex justify-between items-baseline mb-1">
+                                    <span id="johakyu-step-name" class="text-lg font-black text-gray-800">JO</span>
+                                </div>
+                                <div class="flex gap-0.5 h-1 mb-2" id="johakyu-progress"></div>
+                                <p id="johakyu-desc" class="text-[10px] text-gray-500 leading-tight mt-1">Comienzo lento</p>
+                            </div>
+
+                            <!-- 5. Kishotenketsu (4 Steps) -->
+                            <div class="bg-purple-50 rounded-lg border border-purple-100 p-3 lens-card border-l-purple-500">
+                                <span class="text-[10px] font-bold uppercase text-purple-400 tracking-wider block mb-1">Kishōtenketsu (4 Pasos)</span>
+                                <div class="flex justify-between items-baseline mb-1">
+                                    <span id="kisho-step-name" class="text-lg font-black text-purple-800">KI</span>
+                                </div>
+                                <div class="flex gap-0.5 h-1 mb-2" id="kisho-progress"></div>
+                                <p id="kisho-desc" class="text-[10px] text-purple-500 leading-tight mt-1">Introducción</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Footer Nav -->
+                <div class="p-4 border-t border-stone-100 bg-stone-50 flex justify-between">
+                    <button onclick="prevCard()" class="text-sm font-semibold text-stone-600 hover:text-stone-900 transition-colors">← Anterior</button>
+                    <button onclick="nextCard()" class="text-sm font-semibold text-stone-600 hover:text-stone-900 transition-colors">Siguiente →</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- JS Logic -->
+    <script>
+        // --- CONSTANTS ---
+        const campbellSteps = {
+            1: "La Llamada", 2: "Rechazo", 3: "Ayuda Sobrenatural", 4: "Cruce 1er Umbral", 5: "Vientre de la Ballena",
+            6: "Camino de Pruebas", 7: "Encuentro Diosa", 8: "Mujer Tentación", 9: "Expiación Padre", 10: "Apoteosis", 
+            11: "El Don Final", 12: "Negativa Retorno", 13: "Vuelo Mágico", 14: "Rescate Exterior", 15: "Cruce Retorno", 
+            16: "Maestro 2 Mundos", 17: "Libertad para Vivir"
+        };
+        const voglerSteps = {
+            1: "Mundo Ordinario", 2: "La Llamada", 3: "Rechazo", 4: "Mentor", 5: "Cruce Umbral", 6: "Pruebas/Aliados",
+            7: "Aproximación", 8: "Ordalía (Central)", 9: "Recompensa", 10: "Camino de Regreso", 11: "Resurrección", 12: "Elixir"
+        };
+        const harmonSteps = {
+            1: { name: "1. TÚ (You)", color: "bg-slate-400" },
+            2: { name: "2. NECESIDAD (Need)", color: "bg-yellow-400" },
+            3: { name: "3. IR (Go)", color: "bg-orange-400" },
+            4: { name: "4. BUSCAR (Search)", color: "bg-red-400" },
+            5: { name: "5. ENCONTRAR (Find)", color: "bg-purple-500" },
+            6: { name: "6. TOMAR (Take)", color: "bg-indigo-600" },
+            7: { name: "7. VOLVER (Return)", color: "bg-blue-500" },
+            8: { name: "8. CAMBIO (Change)", color: "bg-emerald-500" }
+        };
+        const johakyuSteps = { 1: "JO (Inicio)", 2: "HA (Ruptura)", 3: "KYU (Rápido)" };
+        const kishoSteps = { 1: "KI (Intro)", 2: "SHO (Desarrollo)", 3: "TEN (Giro)", 4: "KETSU (Conclusión)" };
+
+        // --- DATA ---
+        const structureData = {
+            "act1": {
+                id: "act1", label: "Acto 1", title: "Tesis: Planteamiento", color: "amber",
+                desc: "Establece el 'Mundo Ordinario' y La Mentira. Debemos ver la vida incompleta del héroe.",
+                cards: [
+                    { id: 1, beat: "Planteamiento", subBeat: "Imagen de Apertura", 
+                      harmon: 1, harmonText: "Zona de confort. Estado actual.",
+                      campbellStep: 1, campbellDesc: "El héroe vive en su normalidad.",
+                      voglerStep: 1, voglerDesc: "Muestra al héroe en su entorno.",
+                      johakyuStep: 1, johakyuDesc: "Comienzo lento.", kishoStep: 1, kishoDesc: "Presentación.",
+                      desc: "El 'Antes'. Establece el tono y el defecto visual.", 
+                      tip: "Incluye detalles sensoriales (tono, género). Debe ser un opuesto visual de la carta 40.", 
+                      concept: "<span class='concept-badge concept-lie'>Lugar Metafórico</span> El entorno físico refleja el estado interno fallido (claustrofóbico, gris)." },
+                    { id: 2, beat: "Planteamiento", subBeat: "Declaración del Tema", 
+                      harmon: 1, harmonText: "El status quo es desafiado.",
+                      campbellStep: 1, campbellDesc: "La llamada latente.",
+                      voglerStep: 1, voglerDesc: "Semilla del cambio.",
+                      johakyuStep: 1, johakyuDesc: "Construcción.", kishoStep: 1, kishoDesc: "Contexto.",
+                      desc: "La Pregunta Moral. Alguien plantea la lección a aprender.", 
+                      tip: "Es lo que el protagonista debe aprender para sanar, aunque aún no lo entienda." },
+                    { id: 3, beat: "Planteamiento", subBeat: "Set-Up (Vida Hogareña)", 
+                      harmon: 1, harmonText: "Personaje 'TÚ' en su elemento.",
+                      campbellStep: 1, campbellDesc: "La vida diaria.",
+                      voglerStep: 1, voglerDesc: "Estableciendo empatía.",
+                      johakyuStep: 1, johakyuDesc: "Construcción.", kishoStep: 1, kishoDesc: "Contexto.",
+                      desc: "Statu Quo. El héroe en su entorno normal.", 
+                      tip: "Muestra la rutina diaria. 'Todos los días hace algo...'", 
+                      concept: "<span class='concept-badge concept-lie'>La Mentira</span> <span class='concept-badge concept-weakness'>Debilidad</span> Su mayor temor y visión fallida nacen de la Herida." },
+                    { id: 4, beat: "Planteamiento", subBeat: "Set-Up (El Antagonista)", 
+                      harmon: 1, harmonText: "Presiones del mundo 'TÚ'.",
+                      campbellStep: 1, campbellDesc: "La sombra amenaza.",
+                      voglerStep: 1, voglerDesc: "Fuerzas antagonistas.",
+                      johakyuStep: 1, johakyuDesc: "Construcción.", kishoStep: 1, kishoDesc: "Contexto.",
+                      desc: "La Amenaza. Presentación de fuerzas opuestas.", 
+                      tip: "Alguien con una moral opuesta o decisiones opuestas se le opone." },
+                    { id: 5, beat: "Planteamiento", subBeat: "Set-Up (Salva al Gato)", 
+                      harmon: 1, harmonText: "Último momento de 'TÚ'.",
+                      campbellStep: 1, campbellDesc: "Identificación.",
+                      voglerStep: 1, voglerDesc: "Conexión emocional.",
+                      johakyuStep: 1, johakyuDesc: "Clímax del Inicio.", kishoStep: 1, kishoDesc: "Fin Intro.",
+                      desc: "Empatía + Defecto. Momento heroico o humano.", 
+                      tip: "Haz que nos importe. Alguien con quien identificarse, bueno en algo, pero con defectos.", 
+                      concept: "<span class='concept-badge concept-wound'>La Herida</span> Evento trágico del pasado que lo convirtió en quien es ahora." },
+                    { id: 6, beat: "Catalizador", subBeat: "El Incidente Incitador", 
+                      harmon: 2, harmonText: "Surge la NECESIDAD.",
+                      campbellStep: 1, campbellDesc: "El destino llama.",
+                      voglerStep: 2, voglerDesc: "El problema se presenta.",
+                      johakyuStep: 1, johakyuDesc: "Transición a Ruptura.", kishoStep: 2, kishoDesc: "Incidente.",
+                      desc: "¡Boom! El evento que rompe el mundo ordinario.", 
+                      tip: "Un imprevisto interrumpe su rutina y normalidad." },
+                    { id: 7, beat: "Debate", subBeat: "Reacción / Negación", 
+                      harmon: 2, harmonText: "Siente NECESIDAD pero teme.",
+                      campbellStep: 2, campbellDesc: "Miedo a lo desconocido.",
+                      voglerStep: 3, voglerDesc: "Dudas y miedos.",
+                      johakyuStep: 1, johakyuDesc: "Pausa.", kishoStep: 2, kishoDesc: "Desarrollo inicial.",
+                      desc: "Duda. El héroe se resiste a la llamada.", 
+                      tip: "Rechaza el cambio por miedo a no ser fuerte.", 
+                      concept: "<span class='concept-badge concept-lie'>Miedo a la Verdad</span> Se resiste porque implica cuestionar su Mentira." },
+                    { id: 8, beat: "Debate", subBeat: "Exploración", 
+                      harmon: 2, harmonText: "Intenta satisfacer sin cambiar.",
+                      campbellStep: 3, campbellDesc: "Aparece la ayuda.",
+                      voglerStep: 4, voglerDesc: "Preparación/Consejo.",
+                      johakyuStep: 1, johakyuDesc: "Preparación.", kishoStep: 2, kishoDesc: "Desarrollo.",
+                      desc: "Búsqueda. Intenta mantener su vieja vida.", 
+                      tip: "Busca algo específico (Meta) fisiológico, seguridad o social." },
+                    { id: 9, beat: "Debate", subBeat: "El Empujón Final", 
+                      harmon: 2, harmonText: "NECESIDAD insostenible.",
+                      campbellStep: 3, campbellDesc: "Acepta los amuletos.",
+                      voglerStep: 4, voglerDesc: "Empujón final.",
+                      johakyuStep: 1, johakyuDesc: "Listo para romper.", kishoStep: 2, kishoDesc: "Desarrollo.",
+                      desc: "Ultimátum. Momento de 'ahora o nunca'.", 
+                      tip: "Se ve obligado a actuar. No puede volver al status quo antiguo." },
+                    { id: 10, beat: "Transición al 2", subBeat: "Cruce del Umbral", 
+                      harmon: 3, harmonText: "IR. Cruza a lo desconocido.",
+                      campbellStep: 4, campbellDesc: "Abandona el mundo conocido.",
+                      voglerStep: 5, voglerDesc: "Compromiso total.",
+                      johakyuStep: 2, johakyuDesc: "El ritmo acelera.", kishoStep: 2, kishoDesc: "Desarrollo.",
+                      desc: "Decisión Proactiva. El héroe elige irse.", 
+                      tip: "Va a un lugar nuevo, un mundo desconocido con reglas desconocidas." }
+                ]
+            },
+            "act2a": {
+                id: "act2a", label: "Acto 2A", title: "Antítesis: Diversión y Juegos", color: "sky",
+                desc: "Exploración. Persigue el Deseo (Want) ignorando la Necesidad (Need).",
+                cards: [
+                    { id: 11, beat: "Historia B", subBeat: "Nuevo Personaje", 
+                      harmon: 3, harmonText: "IR. Conoce guías.",
+                      campbellStep: 5, campbellDesc: "Vientre de la Ballena.",
+                      voglerStep: 6, voglerDesc: "Conociendo reglas.",
+                      johakyuStep: 2, johakyuDesc: "Velocidad.", kishoStep: 2, kishoDesc: "Desarrollo.",
+                      desc: "La Relación. Intro del mentor/amor/amigo.", 
+                      tip: "Portador del Tema.", 
+                      concept: "<span class='concept-badge concept-truth'>Portador de la Verdad</span> Desafía la Mentira del héroe." },
+                    { id: 12, beat: "Juegos y Diversión", subBeat: "Pez fuera del agua", 
+                      harmon: 3, harmonText: "IR. Adaptación.",
+                      campbellStep: 6, campbellDesc: "Camino de Pruebas.",
+                      voglerStep: 6, voglerDesc: "Aprende quién es quién.",
+                      johakyuStep: 2, johakyuDesc: "Ruptura.", kishoStep: 2, kishoDesc: "Desarrollo.",
+                      desc: "Choque Cultural. Primeros pasos torpes.", 
+                      tip: "Contraste fuerte con el mundo ordinario." },
+                    { id: 13, beat: "Juegos y Diversión", subBeat: "Exploración de Reglas", 
+                      harmon: 4, harmonText: "BUSCAR. Camino de pruebas.",
+                      campbellStep: 6, campbellDesc: "Ayudado por consejos.",
+                      voglerStep: 6, voglerDesc: "Entrenamiento.",
+                      johakyuStep: 2, johakyuDesc: "Ruptura.", kishoStep: 2, kishoDesc: "Desarrollo.",
+                      desc: "Aprendizaje. Entendiendo el nuevo mundo.", 
+                      tip: "Momentos de descubrimiento.", 
+                      concept: "<span class='concept-badge concept-want'>El Deseo</span> Persigue su objetivo externo." },
+                    { id: 14, beat: "Juegos y Diversión", subBeat: "Promesa de la Premisa (1)", 
+                      harmon: 4, harmonText: "BUSCAR. Experimenta.",
+                      campbellStep: 6, campbellDesc: "Pruebas preliminares.",
+                      voglerStep: 6, voglerDesc: "Diversión.",
+                      johakyuStep: 2, johakyuDesc: "Ruptura.", kishoStep: 2, kishoDesc: "Desarrollo.",
+                      desc: "Escena de Tráiler. Momentos icónicos.", 
+                      tip: "Dale al público lo que vino a ver." },
+                    { id: 15, beat: "Juegos y Diversión", subBeat: "Desarrollo Historia B", 
+                      harmon: 4, harmonText: "BUSCAR. Profundiza.",
+                      campbellStep: 7, campbellDesc: "Encuentro Diosa.",
+                      voglerStep: 6, voglerDesc: "Conexiones.",
+                      johakyuStep: 2, johakyuDesc: "Ruptura.", kishoStep: 2, kishoDesc: "Desarrollo.",
+                      desc: "Vínculo. La relación se profundiza.", 
+                      tip: "Un respiro emocional." },
+                    { id: 16, beat: "Juegos y Diversión", subBeat: "Promesa de la Premisa (2)", 
+                      harmon: 4, harmonText: "BUSCAR. Pequeñas victorias.",
+                      campbellStep: 8, campbellDesc: "Tentaciones.",
+                      voglerStep: 7, voglerDesc: "Aproximación.",
+                      johakyuStep: 2, johakyuDesc: "Ruptura.", kishoStep: 2, kishoDesc: "Desarrollo.",
+                      desc: "Primera Victoria. Éxito inicial.", 
+                      tip: "Falsa sensación de control." },
+                    { id: 17, beat: "Juegos y Diversión", subBeat: "El Plan Avanza", 
+                      harmon: 4, harmonText: "BUSCAR. Comodidad.",
+                      campbellStep: 6, campbellDesc: "Superación.",
+                      voglerStep: 7, voglerDesc: "Planes.",
+                      johakyuStep: 2, johakyuDesc: "Ruptura.", kishoStep: 2, kishoDesc: "Desarrollo.",
+                      desc: "Aceleración. Todo parece ir bien.", 
+                      tip: "La arrogancia precede a la caída." },
+                    { id: 18, beat: "Juegos y Diversión", subBeat: "La Sombra Crece", 
+                      harmon: 4, harmonText: "BUSCAR. Peligros.",
+                      campbellStep: 6, campbellDesc: "Oposición.",
+                      voglerStep: 7, voglerDesc: "Enemigo fuerte.",
+                      johakyuStep: 2, johakyuDesc: "Ruptura.", kishoStep: 2, kishoDesc: "Desarrollo.",
+                      desc: "Contraste. El villano se fija en el héroe.", 
+                      tip: "Recuerda el peligro.",
+                      concept: "<span class='concept-badge concept-mirror'>Espejo Opuesto</span> Personaje advertencia: mismo deseo, ignoró necesidad." },
+                    { id: 19, beat: "Juegos y Diversión", subBeat: "Preparación del Midpoint", 
+                      harmon: 4, harmonText: "BUSCAR. A punto.",
+                      campbellStep: 6, campbellDesc: "Umbral desafío.",
+                      voglerStep: 7, voglerDesc: "Umbral peligro.",
+                      johakyuStep: 2, johakyuDesc: "Ruptura.", kishoStep: 2, kishoDesc: "Desarrollo.",
+                      desc: "Antesala. Todo listo para el gran evento.", 
+                      tip: "Sube la tensión." },
+                    { id: 20, beat: "Punto Medio", subBeat: "Falsa Victoria / Derrota", 
+                      harmon: 5, harmonText: "ENCONTRAR. Logra objetivo.",
+                      campbellStep: 9, campbellDesc: "Expiación Padre.",
+                      voglerStep: 8, voglerDesc: "Ordalía.",
+                      johakyuStep: 2, johakyuDesc: "Ruptura/Pico.", kishoStep: 3, kishoDesc: "Inicio Giro.",
+                      desc: "Punto de No Retorno. Las apuestas suben.", 
+                      tip: "Cruza la línea a 'vida o muerte'. Consigue lo que quería, pero no satisface.", 
+                      concept: "<span class='concept-badge concept-truth'>Choque Deseo vs. Necesidad</span> Consigue lo que quería pero se siente vacío." }
+                ]
+            },
+            "act2b": {
+                id: "act2b", label: "Acto 2B", title: "Antítesis: Malos Estrechan Cerco", color: "indigo",
+                desc: "La caída. La Mentira falla. El héroe paga el precio.",
+                cards: [
+                    { id: 21, beat: "Malos Estrechan Cerco", subBeat: "Contraataque", 
+                      harmon: 6, harmonText: "TOMAR. Paga precio.",
+                      campbellStep: 10, campbellDesc: "Apoteosis (falsa).",
+                      voglerStep: 9, voglerDesc: "Recompensa.",
+                      johakyuStep: 2, johakyuDesc: "Ruptura.", kishoStep: 3, kishoDesc: "Complicación.",
+                      desc: "Reacción del Villano. Ataque fuerte.", 
+                      tip: "El héroe pierde la iniciativa." },
+                    { id: 22, beat: "Malos Estrechan Cerco", subBeat: "Conflicto Interno", 
+                      harmon: 6, harmonText: "TOMAR. Discordia.",
+                      campbellStep: 13, campbellDesc: "Huida.",
+                      voglerStep: 10, voglerDesc: "Camino Regreso.",
+                      johakyuStep: 2, johakyuDesc: "Ruptura.", kishoStep: 3, kishoDesc: "Giro complica.",
+                      desc: "Duda. El equipo se fractura.", 
+                      tip: "La presión externa causa grietas internas." },
+                    { id: 23, beat: "Malos Estrechan Cerco", subBeat: "Fallo del Plan A", 
+                      harmon: 6, harmonText: "TOMAR. Se escapa.",
+                      campbellStep: 13, campbellDesc: "Escape.",
+                      voglerStep: 10, voglerDesc: "Decisión volver.",
+                      johakyuStep: 2, johakyuDesc: "Ruptura.", kishoStep: 3, kishoDesc: "Giro.",
+                      desc: "Obstáculos. Viejos trucos fallan.", 
+                      tip: "Fuerza a improvisar." },
+                    { id: 24, beat: "Malos Estrechan Cerco", subBeat: "El Poder del Mal", 
+                      harmon: 6, harmonText: "TOMAR. Costo alto.",
+                      campbellStep: 14, campbellDesc: "Necesita ayuda.",
+                      voglerStep: 10, voglerDesc: "Villano fuerte.",
+                      johakyuStep: 2, johakyuDesc: "Ruptura.", kishoStep: 3, kishoDesc: "Giro.",
+                      desc: "Demostración de Fuerza del villano.", 
+                      tip: "Hazlo parecer invencible." },
+                    { id: 25, beat: "Malos Estrechan Cerco", subBeat: "Desesperación", 
+                      harmon: 6, harmonText: "TOMAR. Intenta evadir.",
+                      campbellStep: 12, campbellDesc: "Duda retorno.",
+                      voglerStep: 10, voglerDesc: "Duda/Peligro.",
+                      johakyuStep: 2, johakyuDesc: "Ruptura.", kishoStep: 3, kishoDesc: "Giro.",
+                      desc: "Malas Decisiones. Solución desesperada.", 
+                      tip: "Pendiente resbaladiza moral.", 
+                      concept: "<span class='concept-badge concept-lie'>Aferrarse a la Mentira</span> Intenta volver a su vieja forma de ser." },
+                    { id: 26, beat: "Malos Estrechan Cerco", subBeat: "El Golpe Duro", 
+                      harmon: 6, harmonText: "TOMAR. Pierde aliados.",
+                      campbellStep: 15, campbellDesc: "Choque retorno.",
+                      voglerStep: 10, voglerDesc: "Sacrificios.",
+                      johakyuStep: 2, johakyuDesc: "Ruptura.", kishoStep: 3, kishoDesc: "Giro.",
+                      desc: "Traición o herida grave.", 
+                      tip: "Giro: Algo que creía bueno resulta ser malo.",
+                      concept: "<span class='concept-badge concept-mirror'>Giro de Creencia</span> Sus creencias se ven sacudidas." },
+                    { id: 27, beat: "Malos Estrechan Cerco", subBeat: "Aislamiento", 
+                      harmon: 6, harmonText: "TOMAR. Despojado.",
+                      campbellStep: 15, campbellDesc: "Lucha sabiduría.",
+                      voglerStep: 10, voglerDesc: "Punto bajo.",
+                      johakyuStep: 2, johakyuDesc: "Ruptura.", kishoStep: 3, kishoDesc: "Giro.",
+                      desc: "Soledad. El grupo se disuelve.", 
+                      tip: "Debe enfrentar el final solo." },
+                    { id: 28, beat: "Todo está Perdido", subBeat: "Derrota Total", 
+                      harmon: 6, harmonText: "TOMAR. Muerte viejo yo.",
+                      campbellStep: 15, campbellDesc: "Muerte simbólica.",
+                      voglerStep: 10, voglerDesc: "Gran Caída.",
+                      johakyuStep: 2, johakyuDesc: "Ruptura.", kishoStep: 3, kishoDesc: "Clímax Giro.",
+                      desc: "Aroma a Muerte. Pérdida vital.", 
+                      tip: "Pierde algo importante a cambio." },
+                    { id: 29, beat: "Noche Oscura del Alma", subBeat: "Duelo y Epifanía", 
+                      harmon: 6, harmonText: "TOMAR. Aceptación.",
+                      campbellStep: 16, campbellDesc: "Dos Mundos.",
+                      voglerStep: 10, voglerDesc: "Preparación.",
+                      johakyuStep: 2, johakyuDesc: "Ruptura.", kishoStep: 3, kishoDesc: "Reflexión.",
+                      desc: "Reflexión. Encuentra la verdad en el dolor.", 
+                      tip: "Deja de creer la Mentira y sana su herida. Cambia deseo por necesidad.", 
+                      concept: "<span class='concept-badge concept-truth'>Muerte de la Mentira</span> Acepta que su vieja creencia ha muerto." },
+                    { id: 30, beat: "Transición al 3", subBeat: "La Solución", 
+                      harmon: 7, harmonText: "VOLVER. Inicia el regreso.",
+                      campbellStep: 16, campbellDesc: "Integra lección.",
+                      voglerStep: 11, voglerDesc: "Inicio Resurrección.",
+                      johakyuStep: 3, johakyuDesc: "Inicio Rápido.", kishoStep: 4, kishoDesc: "Hacia fin.",
+                      desc: "Eureka. Encuentra la solución real.", 
+                      tip: "Tiene una nueva meta. Se activa una cuenta regresiva.",
+                      concept: "<span class='concept-badge concept-clock'>Bomba de Tiempo</span> Se activa cuenta regresiva. <span class='concept-badge concept-stakes'>Apuestas</span> Desastre si falla." }
+                ]
+            },
+            "act3": {
+                id: "act3", label: "Acto 3", title: "Síntesis: El Finale", color: "emerald",
+                desc: "Renacimiento. Actúa desde la Verdad. Transforma el mundo.",
+                cards: [
+                    { id: 31, beat: "Finale", subBeat: "1. Reunir al Equipo", 
+                      harmon: 7, harmonText: "VOLVER. Lleva verdad.",
+                      campbellStep: 15, campbellDesc: "Regreso elixir.",
+                      voglerStep: 11, voglerDesc: "Resurrección.",
+                      johakyuStep: 3, johakyuDesc: "Velocidad.", kishoStep: 4, kishoDesc: "Desenlace.",
+                      desc: "Preparación. Repara relaciones.", 
+                      tip: "La bomba de tiempo obliga a actuar rápido." },
+                    { id: 32, beat: "Finale", subBeat: "2. Ejecutar el Plan", 
+                      harmon: 7, harmonText: "VOLVER. Enfrenta.",
+                      campbellStep: 15, campbellDesc: "Aplica sabiduría.",
+                      voglerStep: 11, voglerDesc: "Clímax.",
+                      johakyuStep: 3, johakyuDesc: "Rápido.", kishoStep: 4, kishoDesc: "Desenlace.",
+                      desc: "Asalto al Castillo.", 
+                      tip: "Acción proactiva hacia la nueva meta." },
+                    { id: 33, beat: "Finale", subBeat: "Progreso del Plan", 
+                      harmon: 7, harmonText: "VOLVER. Avanza.",
+                      campbellStep: 15, campbellDesc: "Batalla.",
+                      voglerStep: 11, voglerDesc: "Purificación.",
+                      johakyuStep: 3, johakyuDesc: "Rápido.", kishoStep: 4, kishoDesc: "Desenlace.",
+                      desc: "Éxito Aparente.", 
+                      tip: "Sube la esperanza." },
+                    { id: 34, beat: "Finale", subBeat: "3. Sorpresa de la Torre", 
+                      harmon: 7, harmonText: "VOLVER. Resistencia.",
+                      campbellStep: 15, campbellDesc: "Mal resiste.",
+                      voglerStep: 11, voglerDesc: "Peligro.",
+                      johakyuStep: 3, johakyuDesc: "Rápido.", kishoStep: 4, kishoDesc: "Desenlace.",
+                      desc: "El Giro. Trampa del villano.", 
+                      tip: "El plan lógico falla." },
+                    { id: 35, beat: "Finale", subBeat: "4. Cavar Profundo", 
+                      harmon: 7, harmonText: "VOLVER. Maestría.",
+                      campbellStep: 16, campbellDesc: "Maestro.",
+                      voglerStep: 11, voglerDesc: "Transformado.",
+                      johakyuStep: 3, johakyuDesc: "Rápido.", kishoStep: 4, kishoDesc: "Desenlace.",
+                      desc: "Sacrificio. Muerte del Ego.", 
+                      tip: "Mayor crecimiento.", 
+                      concept: "<span class='concept-badge concept-truth'>Abrazar la Verdad</span> Actúa desde su nueva Verdad." },
+                    { id: 36, beat: "Finale", subBeat: "5. Ejecución Nuevo Plan", 
+                      harmon: 7, harmonText: "VOLVER. Aplica.",
+                      campbellStep: 17, campbellDesc: "Sin miedo.",
+                      voglerStep: 11, voglerDesc: "Superado.",
+                      johakyuStep: 3, johakyuDesc: "Rápido.", kishoStep: 4, kishoDesc: "Desenlace.",
+                      desc: "Síntesis. Actúa de forma nueva.", 
+                      tip: "Usa lo aprendido." },
+                    { id: 37, beat: "Finale", subBeat: "Clímax Final", 
+                      harmon: 7, harmonText: "VOLVER. Vence.",
+                      campbellStep: 15, campbellDesc: "Victoria.",
+                      voglerStep: 11, voglerDesc: "Renace.",
+                      johakyuStep: 3, johakyuDesc: "Clímax.", kishoStep: 4, kishoDesc: "Desenlace.",
+                      desc: "Destrucción del Mal.", 
+                      tip: "Se enfrenta a su mayor miedo o debilidad.",
+                      concept: "<span class='concept-badge concept-weakness'>Mayor Temor</span> Enfrenta aquello que más teme." },
+                    { id: 38, beat: "Finale", subBeat: "Nuevo Orden", 
+                      harmon: 8, harmonText: "CAMBIO. Nuevo mundo.",
+                      campbellStep: 17, campbellDesc: "Viviendo.",
+                      voglerStep: 12, voglerDesc: "Elixir.",
+                      johakyuStep: 3, johakyuDesc: "Resolución.", kishoStep: 4, kishoDesc: "Nuevo.",
+                      desc: "Resolución Inmediata.", 
+                      tip: "Consecuencias. Vuelve a casa o descubre un nuevo hogar." },
+                    { id: 39, beat: "Finale", subBeat: "Cierre Historia B", 
+                      harmon: 8, harmonText: "CAMBIO. Relaciones.",
+                      campbellStep: 15, campbellDesc: "Reconciliación.",
+                      voglerStep: 12, voglerDesc: "Sanando.",
+                      johakyuStep: 3, johakyuDesc: "Resolución.", kishoStep: 4, kishoDesc: "Armonía.",
+                      desc: "Reencuentro emocional.", 
+                      tip: "Cierra el arco." },
+                    { id: 40, beat: "Imagen Final", subBeat: "Imagen Final", 
+                      harmon: 8, harmonText: "CAMBIO. Maestro.",
+                      campbellStep: 17, campbellDesc: "Ciclo.",
+                      voglerStep: 12, voglerDesc: "Cambio.",
+                      johakyuStep: 3, johakyuDesc: "Fin.", kishoStep: 4, kishoDesc: "Conclusión.",
+                      desc: "El 'Después'. Espejo de la Card 1.", 
+                      tip: "Prueba visual del cambio. Termina en el lugar opuesto o como comenzó.", 
+                      concept: "<span class='concept-badge concept-lie'>Nuevo Lugar Metafórico</span> El mundo refleja su sanación." }
+                ]
+            }
+        };
+
+        // --- STATE & DOM ---
+        let currentTotalWords = 100000;
+        let currentTotalMinutes = 120;
+        let activeCardId = null;
+        let charts = {};
+
+        const els = {
+            totalWordsInput: document.getElementById('totalWords'),
+            totalMinutesInput: document.getElementById('totalMinutes'),
+            recalcBtn: document.getElementById('recalcBtn'),
+            statWordsCard: document.getElementById('stat-words-card'),
+            statTimeCard: document.getElementById('stat-time-card'),
+            overviewTotalWords: document.getElementById('overview-total-words'),
+            actBoard: document.getElementById('act-board'),
+            actLabel: document.getElementById('act-label'),
+            actTitle: document.getElementById('act-title'),
+            actDesc: document.getElementById('act-desc'),
+            actRangeWords: document.getElementById('act-range-words'),
+            inspector: {
+                panel: document.getElementById('inspector-panel'),
+                content: document.getElementById('inspector-content'),
+                number: document.getElementById('inspector-number'),
+                beat: document.getElementById('inspector-beat'),
+                title: document.getElementById('inspector-title'),
+                desc: document.getElementById('inspector-desc'),
+                enrichedContainer: document.getElementById('inspector-enriched'),
+                enrichedText: document.getElementById('inspector-enriched-text'),
+                words: document.getElementById('inspector-words'),
+                wordsRange: document.getElementById('inspector-words-range'),
+                time: document.getElementById('inspector-time'),
+                timeRange: document.getElementById('inspector-time-range'),
+                tip: document.getElementById('inspector-tip'),
+                // Widgets Lentes
+                harmonStepName: document.getElementById('harmon-step-name'),
+                harmonProgressBar: document.getElementById('harmon-progress-bar'),
+                harmonDesc: document.getElementById('harmon-desc'),
+                campbellStepName: document.getElementById('campbell-step-name'),
+                campbellProgressBar: document.getElementById('campbell-progress'),
+                campbellDesc: document.getElementById('campbell-desc'),
+                voglerStepName: document.getElementById('vogler-step-name'),
+                voglerProgressBar: document.getElementById('vogler-progress'),
+                voglerDesc: document.getElementById('vogler-desc'),
+                johakyuStepName: document.getElementById('johakyu-step-name'),
+                johakyuProgressBar: document.getElementById('johakyu-progress'),
+                johakyuDesc: document.getElementById('johakyu-desc'),
+                kishoStepName: document.getElementById('kisho-step-name'),
+                kishoProgressBar: document.getElementById('kisho-progress'),
+                kishoDesc: document.getElementById('kisho-desc')
+            }
+        };
+
+        // --- INIT ---
+        function init() {
+            els.recalcBtn.addEventListener('click', updateCalculations);
+            els.totalWordsInput.addEventListener('change', updateCalculations);
+            updateCalculations();
+            initCharts();
+            switchTab('overview');
+            els.inspector.panel.addEventListener('click', (e) => {
+                if (e.target === els.inspector.panel) closeInspector();
+            });
+        }
+
+        // --- CORE FUNCTIONS ---
+        function updateCalculations() {
+            currentTotalWords = parseInt(els.totalWordsInput.value) || 100000;
+            currentTotalMinutes = parseInt(els.totalMinutesInput.value) || 120;
+
+            const wordsPerCard = Math.round(currentTotalWords / 40);
+            const timePerCard = (currentTotalMinutes / 40).toFixed(1);
+
+            els.statWordsCard.textContent = wordsPerCard.toLocaleString();
+            els.statTimeCard.textContent = timePerCard;
+            if(els.overviewTotalWords) els.overviewTotalWords.textContent = currentTotalWords.toLocaleString();
+
+            const activeTab = document.querySelector('.nav-btn.bg-stone-800').id.replace('tab-', '');
+            if (activeTab.startsWith('act')) {
+                renderAct(activeTab);
+            }
+            if(activeCardId) {
+                const card = findCard(activeCardId);
+                if(card) openInspector(card);
+            }
+            updateCharts();
+        }
+
+        function switchTab(tabId) {
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.classList.remove('bg-stone-800', 'text-white');
+                btn.classList.add('bg-white', 'text-stone-600');
+            });
+            const activeBtn = document.getElementById(`tab-${tabId}`);
+            if(activeBtn) {
+                activeBtn.classList.remove('bg-white', 'text-stone-600');
+                activeBtn.classList.add('bg-stone-800', 'text-white');
+            }
+
+            document.getElementById('view-overview').classList.add('hidden');
+            document.getElementById('view-internal').classList.add('hidden');
+            document.getElementById('view-matrix').classList.add('hidden');
+            document.getElementById('view-act').classList.add('hidden');
+
+            if (tabId === 'overview') {
+                document.getElementById('view-overview').classList.remove('hidden');
+            } else if (tabId === 'internal') {
+                document.getElementById('view-internal').classList.remove('hidden');
+            } else if (tabId === 'matrix') {
+                document.getElementById('view-matrix').classList.remove('hidden');
+            } else {
+                document.getElementById('view-act').classList.remove('hidden');
+                renderAct(tabId);
+            }
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+
+        function renderAct(actKey) {
+            const data = structureData[actKey];
+            if (!data) return;
+
+            els.actLabel.textContent = data.label;
+            els.actLabel.className = `text-xs font-bold tracking-widest uppercase px-2 py-1 rounded text-${data.color}-800 bg-${data.color}-200`;
+            els.actTitle.textContent = data.title;
+            els.actDesc.textContent = data.desc;
+
+            const startCard = data.cards[0].id;
+            const endCard = data.cards[data.cards.length - 1].id;
+            const wordsPerCard = currentTotalWords / 40;
+            const startWords = Math.round((startCard - 1) * wordsPerCard);
+            const endWords = Math.round(endCard * wordsPerCard);
+            els.actRangeWords.textContent = `${startWords.toLocaleString()} - ${endWords.toLocaleString()}`;
+
+            els.actBoard.innerHTML = '';
+            
+            const groupedBeats = {};
+            data.cards.forEach(card => {
+                if (!groupedBeats[card.beat]) groupedBeats[card.beat] = [];
+                groupedBeats[card.beat].push(card);
+            });
+
+            Object.keys(groupedBeats).forEach(beatName => {
+                const group = groupedBeats[beatName];
+                
+                const beatSection = document.createElement('div');
+                beatSection.className = `flex flex-col md:flex-row gap-4 border-l-4 border-${data.color}-300 pl-4 md:pl-0 md:border-l-0`;
+                
+                const labelDiv = document.createElement('div');
+                labelDiv.className = `md:w-32 flex-shrink-0 pt-2`;
+                labelDiv.innerHTML = `<h3 class="text-sm font-bold text-${data.color}-700 uppercase tracking-wide">${beatName}</h3>`;
+                beatSection.appendChild(labelDiv);
+
+                const cardsGrid = document.createElement('div');
+                cardsGrid.className = 'flex-grow grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4';
+
+                group.forEach(card => {
+                    const cardEl = document.createElement('button');
+                    const borderClass = card.concept ? `border-${data.color}-300` : 'border-stone-200';
+                    const ringClass = `focus:ring-${data.color}-400`;
+                    
+                    cardEl.className = `card-item bg-white p-4 rounded-lg border ${borderClass} text-left relative overflow-hidden group focus:outline-none focus:ring-2 ${ringClass}`;
+                    cardEl.onclick = () => openInspector(card);
+
+                    const wPerC = currentTotalWords / 40;
+                    const wStart = Math.round((card.id - 1) * wPerC);
+                    const wEnd = Math.round(card.id * wPerC);
+                    const conceptIndicator = card.concept ? `<div class="absolute top-2 left-2 w-2 h-2 rounded-full bg-rose-500" title="Concepto Extendido"></div>` : '';
+
+                    cardEl.innerHTML = `
+                        ${conceptIndicator}
+                        <div class="absolute top-0 right-0 bg-stone-100 text-stone-500 text-[10px] font-bold px-2 py-1 rounded-bl">${card.id}</div>
+                        <div class="text-xs text-${data.color}-600 font-bold uppercase mb-1 truncate pr-6 mt-1">${card.subBeat}</div>
+                        <p class="text-xs text-stone-400 mb-2 font-mono">${wStart.toLocaleString()} - ${wEnd.toLocaleString()}</p>
+                        <p class="text-sm text-stone-700 line-clamp-2 leading-snug group-hover:text-stone-900">${card.desc}</p>
+                    `;
+                    cardsGrid.appendChild(cardEl);
+                });
+
+                beatSection.appendChild(cardsGrid);
+                els.actBoard.appendChild(beatSection);
+                
+                if (beatName !== Object.keys(groupedBeats).pop()) {
+                    const sep = document.createElement('hr');
+                    sep.className = 'border-stone-200 my-2';
+                    els.actBoard.appendChild(sep);
+                }
+            });
+        }
+
+        function findCard(id) {
+            for (const act in structureData) {
+                const found = structureData[act].cards.find(c => c.id === id);
+                if (found) return found;
+            }
+            return null;
+        }
+
+        // Helper to render progress bar
+        function renderProgressBar(current, total, activeColor, container) {
+            let html = '';
+            for(let i=1; i<=total; i++) {
+                let colorClass = 'bg-stone-200';
+                if(i < current) colorClass = activeColor.replace('bg-', 'bg-opacity-40 bg-');
+                if(i === current) colorClass = activeColor;
+                html += `<div class="flex-1 ${colorClass} rounded-full h-1.5 transition-all"></div>`;
+            }
+            container.innerHTML = html;
+        }
+
+        function openInspector(card) {
+            activeCardId = card.id;
+            
+            els.inspector.number.textContent = card.id;
+            els.inspector.beat.textContent = card.beat;
+            els.inspector.title.textContent = card.subBeat;
+            els.inspector.desc.textContent = card.desc;
+            els.inspector.tip.textContent = card.tip;
+
+            // Enriched Content (Internal Engine)
+            if (card.concept) {
+                els.inspector.enrichedContainer.classList.remove('hidden');
+                els.inspector.enrichedText.innerHTML = card.concept;
+            } else {
+                els.inspector.enrichedContainer.classList.add('hidden');
+            }
+
+            // 1. Harmon Widget
+            if(card.harmon) {
+                const step = harmonSteps[card.harmon];
+                els.inspector.harmonStepName.textContent = step.name;
+                els.inspector.harmonStepName.className = `text-xs font-bold ${card.harmon >= 5 ? 'text-indigo-600' : 'text-amber-600'}`;
+                els.inspector.harmonDesc.textContent = card.harmonText;
+                
+                let barsHTML = '';
+                for(let i=1; i<=8; i++) {
+                    let colorClass = 'bg-stone-200'; 
+                    if (i < card.harmon) colorClass = harmonSteps[i].color.replace('bg-', 'bg-opacity-40 bg-'); 
+                    if (i === card.harmon) colorClass = harmonSteps[i].color; 
+                    barsHTML += `<div class="flex-1 ${colorClass} rounded-full h-1.5 transition-all"></div>`;
+                }
+                els.inspector.harmonProgressBar.innerHTML = barsHTML;
+            }
+
+            // 2. Campbell Widget
+            if(card.campbellStep) {
+                // Using generic names if not mapped in a const, or just index
+                // Since I didn't make a const for ALL 17 step names accessible by index easily without bloating, I'll use the description from data or a generic label
+                // Update: I added campbellSteps const above.
+                const stepName = campbellSteps[card.campbellStep] || `Paso ${card.campbellStep}`;
+                els.inspector.campbellStepName.textContent = `${card.campbellStep}. ${stepName}`;
+                els.inspector.campbellDesc.textContent = card.campbellDesc;
+                renderProgressBar(card.campbellStep, 17, 'bg-amber-500', els.inspector.campbellProgressBar);
+            }
+
+            // 3. Vogler Widget
+            if(card.voglerStep) {
+                const stepName = voglerSteps[card.voglerStep] || `Paso ${card.voglerStep}`;
+                els.inspector.voglerStepName.textContent = `${card.voglerStep}. ${stepName}`;
+                els.inspector.voglerDesc.textContent = card.voglerDesc;
+                renderProgressBar(card.voglerStep, 12, 'bg-emerald-500', els.inspector.voglerProgressBar);
+            }
+
+            // 4. Jo-Ha-Kyu Widget
+            if(card.johakyuStep) {
+                const stepName = johakyuSteps[card.johakyuStep] || `Paso ${card.johakyuStep}`;
+                els.inspector.johakyuStepName.textContent = stepName.split(' ')[0]; // Just JO/HA/KYU
+                els.inspector.johakyuDesc.textContent = card.johakyuDesc;
+                renderProgressBar(card.johakyuStep, 3, 'bg-gray-600', els.inspector.johakyuProgressBar);
+            }
+
+            // 5. Kishotenketsu Widget
+            if(card.kishoStep) {
+                const stepName = kishoSteps[card.kishoStep] || `Paso ${card.kishoStep}`;
+                els.inspector.kishoStepName.textContent = stepName.split(' ')[0]; // Just KI/SHO...
+                els.inspector.kishoDesc.textContent = card.kishoDesc;
+                renderProgressBar(card.kishoStep, 4, 'bg-purple-600', els.inspector.kishoProgressBar);
+            }
+
+            // Calculations
+            const wPerC = currentTotalWords / 40;
+            const wStart = Math.round((card.id - 1) * wPerC);
+            const wEnd = Math.round(card.id * wPerC);
+            const wTarget = Math.round(wPerC);
+            const tPerC = currentTotalMinutes / 40;
+            const tStart = ((card.id - 1) * tPerC).toFixed(0);
+            const tEnd = (card.id * tPerC).toFixed(0);
+            
+            els.inspector.words.textContent = wTarget.toLocaleString();
+            els.inspector.wordsRange.textContent = `${wStart.toLocaleString()} - ${wEnd.toLocaleString()}`;
+            els.inspector.time.textContent = tPerC.toFixed(1);
+            els.inspector.timeRange.textContent = `${tStart}m - ${tEnd}m`;
+
+            els.inspector.panel.classList.remove('hidden');
+            setTimeout(() => {
+                els.inspector.panel.classList.remove('opacity-0');
+                els.inspector.content.classList.remove('translate-x-full');
+            }, 10);
+        }
+
+        function closeInspector() {
+            els.inspector.panel.classList.add('opacity-0');
+            els.inspector.content.classList.add('translate-x-full');
+            setTimeout(() => {
+                els.inspector.panel.classList.add('hidden');
+                activeCardId = null;
+            }, 300);
+        }
+
+        function nextCard() {
+            if(activeCardId < 40) {
+                const next = findCard(activeCardId + 1);
+                if(next) openInspector(next);
+            }
+        }
+
+        function prevCard() {
+            if(activeCardId > 1) {
+                const prev = findCard(activeCardId - 1);
+                if(prev) openInspector(prev);
+            }
+        }
+
+        function initCharts() {
+            const ctx1 = document.getElementById('structureChart').getContext('2d');
+            charts.structure = new Chart(ctx1, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Acto 1', 'Acto 2A', 'Acto 2B', 'Acto 3'],
+                    datasets: [{
+                        data: [25, 25, 25, 25],
+                        backgroundColor: ['#f59e0b', '#0ea5e9', '#6366f1', '#10b981'],
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { position: 'bottom', labels: { usePointStyle: true, boxWidth: 8 } } }
+                }
+            });
+
+            const beatLabels = ['Planteamiento', 'Catalizador/Debate', 'Fun & Games', 'Midpoint', 'Bad Guys Close In', 'All is Lost/Dark Night', 'Finale'];
+            const beatWeights = [5, 5, 9, 1, 7, 3, 10]; 
+            const ctx2 = document.getElementById('pacingChart').getContext('2d');
+            charts.pacing = new Chart(ctx2, {
+                type: 'bar',
+                data: {
+                    labels: beatLabels,
+                    datasets: [{
+                        label: 'Tarjetas por Sección',
+                        data: beatWeights,
+                        backgroundColor: ['#fcd34d', '#fbbf24', '#7dd3fc', '#0284c7', '#a5b4fc', '#6366f1', '#6ee7b7'],
+                        borderRadius: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: { y: { beginAtZero: true, display: false }, x: { ticks: { font: { size: 10 }, maxRotation: 45, minRotation: 45 } } },
+                    plugins: { legend: { display: false } }
+                }
+            });
+        }
+        
+        function updateCharts() {
+            if (charts.structure) charts.structure.update();
+            if (charts.pacing) charts.pacing.update();
+        }
+
+        window.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
