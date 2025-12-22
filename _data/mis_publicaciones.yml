@@ -101,7 +101,7 @@ publicaciones:
   - nombreItem: mi sueño de una serpiente mítica (versión Axxioma)
     fechaItem: 2024/03/05
     institucionItem: El Axioma Revista
-    urlItem: https://lektu.com/l/el-axioma/el-axioma-no-hispanocyberpunk/22856
+    # urlItem: https://lektu.com/l/el-axioma/el-axioma-no-hispanocyberpunk/22856
     tipoItem: Ficción Corta
     datosItem: 1992 palabras
     
@@ -119,12 +119,12 @@ publicaciones:
     tipoItem: Ficción Corta
     datosItem: 6026 palabras
 
-  - nombreItem: Nullaris
-    fechaItem: 2024/09/28
-    institucionItem: 'CyberTerror: AUSTRAL'
-    urlItem: https://lektu.com/l/speedwagon-media-works/cyberterror-austral/23546
-    tipoItem: Ficción Corta - Antología
-    datosItem: 2928 palabras
+  # - nombreItem: Nullaris
+  #   fechaItem: 2024/09/28
+  #   institucionItem: 'CyberTerror: AUSTRAL'
+  #   urlItem: https://lektu.com/l/speedwagon-media-works/cyberterror-austral/23546
+  #   tipoItem: Ficción Corta - Antología
+  #   datosItem: 2928 palabras
 
   - nombreItem: El precio de cada despedida
     fechaItem: 2024/10/05

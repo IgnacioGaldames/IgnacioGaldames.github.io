@@ -12,7 +12,7 @@ urlterceraFundacion:
 urlAmazon:
 urlBuscalibre:  
 urlMercadolibre:
-urlLektu: https://lektu.com/l/speedwagon-media-works/cyberterror-austral/23546
+# urlLektu: https://lektu.com/l/speedwagon-media-works/cyberterror-austral/23546
 descripcionLibro: "CyberTerror: Austral nos transporta desde la desolación de futuros distópicos hasta el frío del espacio solitario y mecanizado.
 
  A través de siete relatos interconectados, exploramos colonias mineras en otros planetas, ancianos desmemoriados desechados en asilos robotizados, edificios tecnológicos que parecen tener vida, una mujer luchando por su familia en un mundo postapocalíptico, científicos explorando los límites del Tesla punk, niños tratando de encajar en una sociedad cada vez más exigente y astronautas explorando naves deshabitadas.

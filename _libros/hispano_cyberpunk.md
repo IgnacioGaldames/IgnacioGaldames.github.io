@@ -8,7 +8,7 @@ nombreColeccion: Axioma 008
 portadaLibro: /assets/img/71ffVhPO1qL_SL1499_.jpg
 urlGoodreads: https://www.goodreads.com/book/show/220504697-el-axioma-hispanocyberpunk
 urlterceraFundacion:
-urlLektu: https://lektu.com/l/el-axioma/el-axioma-no8-hispanocyberpunk/22856
+# urlLektu: https://lektu.com/l/el-axioma/el-axioma-no8-hispanocyberpunk/22856
 urlAmazon: https://amzn.to/4fBWFRS
 urlBuscalibre: 
 urlMercadolibre:
