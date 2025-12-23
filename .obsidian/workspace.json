@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/santiago-nueva-extremadura.md",
+                "file": "wiki/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "santiago-nueva-extremadura"
+              "title": "index"
             }
           }
         ],
@@ -216,6 +216,8 @@
   },
   "active": "189dc5fe5ef37b42",
   "lastOpenFiles": [
+    "_site/wiki/index.html",
+    "wiki/santiago-nueva-extremadura.md",
     "_site/assets/scss/main.scss",
     "_site/assets/scss",
     "_site/noticias/bienvenida/2024/06/04/bienvenidos.html",
@@ -226,7 +228,6 @@
     "_site/noticias/bienvenida/2024/06/04",
     "_site/noticias/lanzamientos/2025/03/21",
     "_site/noticias/lanzamientos/2025/06/09",
-    "_site/noticias/bienvenida/2025/12/07",
     "_site/assets/img/fanart/corceles_azules/462550271_1569664530636558_3422626735866888264_n.jpg",
     "_site/assets/img/portada_corceles_rojos_sm.jpg",
     "_site/assets/img/noise.gif",
@@ -237,8 +238,7 @@
     "_site/assets/img/neon_dreams_and_nightmares.jpg",
     "_site/assets/img/71ffVhPO1qL_SL1499_.jpg",
     "_site/assets/img/158780.jpg",
-    "wiki/Index.md",
-    "wiki/santiago-nueva-extremadura.md",
+    "wiki/index.md",
     "_site/wiki/Index.md",
     "_site/wiki/Sin título.md",
     "_site/Sin título.md",
