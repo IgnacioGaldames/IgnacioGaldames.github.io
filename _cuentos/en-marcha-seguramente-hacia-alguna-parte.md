@@ -7,13 +7,11 @@ institucionItem: Revista Iguales
 urlItem: https://drive.google.com/file/d/1TI2VzAfDXEd8YEu7hOBWxlP7pqYHwiQ4/view
 tipoItem: Ficción Corta
 datosItem: 2217 palabras
-
 descripcionItem:
-Palabras: 
-playlistSpotify: 
-playlistSAmazonMusicSRC: 
-playlistSAmazonMusicID: 
+Palabras:
+playlistSpotify:
+playlistSAmazonMusicSRC:
+playlistSAmazonMusicID:
 adobeAero:
 ItemDestacado: false
-
 ---

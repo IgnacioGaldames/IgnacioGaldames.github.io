@@ -7,13 +7,11 @@ institucionItem: Teoría Omicron
 urlItem: https://teoriaomicron.com/cronistas-omicron-el-ultimo-nivel/
 tipoItem: Ficción Corta
 datosItem: 2260 palabras
-
 descripcionItem:
-Palabras: 
-playlistSpotify: 
-playlistSAmazonMusicSRC: 
-playlistSAmazonMusicID: 
+Palabras:
+playlistSpotify:
+playlistSAmazonMusicSRC:
+playlistSAmazonMusicID:
 adobeAero:
 ItemDestacado: false
-
 ---

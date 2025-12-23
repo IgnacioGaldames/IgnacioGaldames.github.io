@@ -7,13 +7,11 @@ institucionItem: Penumbria
 urlItem: https://www.penumbria.mx/penumbria-cinefila/
 tipoItem: Ficción Flash
 datosItem: 993 palabras
-
 descripcionItem:
-Palabras: 
-playlistSpotify: 
-playlistSAmazonMusicSRC: 
-playlistSAmazonMusicID: 
+Palabras:
+playlistSpotify:
+playlistSAmazonMusicSRC:
+playlistSAmazonMusicID:
 adobeAero:
 ItemDestacado: false
-
 ---

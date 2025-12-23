@@ -1,8 +1,10 @@
 ---
 layout: post
-title: "Lanzamiento de 'Corceles Azules'"
+title: Lanzamiento de 'Corceles Azules'
 date: 2024-06-04 12:00:00 -0400
-categories: [Noticias, Lanzamientos]
+categories:
+  - Noticias
+  - Lanzamientos
 ---
 
 ## Corceles Azules

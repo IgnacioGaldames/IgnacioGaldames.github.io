@@ -2,7 +2,9 @@
 layout: post
 title: "Cuento: El paraguas y el silencio"
 date: 2025-03-21 17:00:00 -0400
-categories: [Noticias, Lanzamientos]
+categories:
+  - Noticias
+  - Lanzamientos
 ---
 
 Este texto no es un cuento realmente. Fue menos que un post malo de facebook, sin valor literario que hice en algún momento para probar como subir a goodreads y como vender libros en la app store de Apple.

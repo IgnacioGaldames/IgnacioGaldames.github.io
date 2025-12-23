@@ -1,8 +1,10 @@
 ---
 layout: post
-title: "Sintonizando el mañana"
+title: Sintonizando el mañana
 date: 2025-06-09 00:00:00 -0400
-categories: [Noticias, Lanzamientos]
+categories:
+  - Noticias
+  - Lanzamientos
 ---
 
 Un nuevo cuento de ciencia ficción ha sido publicado en la antología **En el umbral de realidades alternas** de la revista **Anapoyesis**. Este relato, titulado **"Sintonizando el mañana"**, es una exploración de la relación entre un padre y su hija en una realidad paralela.

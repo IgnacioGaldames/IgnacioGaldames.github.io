@@ -7,13 +7,11 @@ institucionItem: Weird Review
 urlItem: http://ignaciogaldames.com/assets/pdf/Fanzine3_Final.pdf
 tipoItem: Ficción Flash - Fanzine
 datosItem: 251 palabras
-
 descripcionItem:
-Palabras: 
-playlistSpotify: 
-playlistSAmazonMusicSRC: 
-playlistSAmazonMusicID: 
+Palabras:
+playlistSpotify:
+playlistSAmazonMusicSRC:
+playlistSAmazonMusicID:
 adobeAero:
 ItemDestacado: false
-
 ---
