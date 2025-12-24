@@ -1,4 +1,14 @@
 {
   "useMarkdownLinks": true,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "wiki",
+  "attachmentFolderPath": "assets/img/wiki",
+  "newLinkFormat": "relative",
+  "userIgnoreFilters": [
+    "_site",
+    "_data",
+    "_includes",
+    "_layouts"
+  ]
 }
