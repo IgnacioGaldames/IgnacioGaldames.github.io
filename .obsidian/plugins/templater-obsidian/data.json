@@ -32,7 +32,7 @@
     ""
   ],
   "startup_templates": [
-    ""
+    "wiki/_templates/Plantilla Automática.md"
   ],
   "intellisense_render": 1
 }

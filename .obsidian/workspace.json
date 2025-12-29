@@ -11,13 +11,46 @@
             "id": "2be3cf1f58351ab2",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Vista gráfica"
+              "type": "markdown",
+              "state": {
+                "file": "wiki/segunda-guerra-de-los-metales.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "segunda-guerra-de-los-metales"
+            }
+          },
+          {
+            "id": "96728788e4af927f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/la-isla.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "la-isla"
+            }
+          },
+          {
+            "id": "3e3d58a69d06d76b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/santiago-nueva-extremadura.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "santiago-nueva-extremadura"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -90,6 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "wiki/santiago-nueva-extremadura.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes"
+              "title": "Enlaces entrantes de santiago-nueva-extremadura"
             }
           },
           {
@@ -192,19 +226,24 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "2be3cf1f58351ab2",
+  "active": "3e3d58a69d06d76b",
   "lastOpenFiles": [
-    "wiki/santiago-nueva-extremadura.md",
-    "wiki/segunda-guerra-de-los-metales.md",
-    "wiki/tercera-guerra-de-los-metales.md",
-    "_site/wiki/tercera-guerra-de-los-metales.html",
+    "wiki/primera-guerra-de-los-metales.md",
+    "wiki/orcocese.md",
+    "wiki/la-isla.md",
+    "wiki/neopolinesia.md",
     "wiki/_templates/Plantilla Automática.md",
     "wiki/_templates/Plantilla Wiki.md",
-    "wiki/la-isla.md",
+    "wiki/Sin título.md",
+    "wiki/Organización Económica de Estaciones Espaciales.md",
+    "wiki/segunda-guerra-de-los-metales.md",
+    "wiki/santiago-nueva-extremadura.md",
+    "wiki/index.md",
+    "wiki/tercera-guerra-de-los-metales.md",
+    "sobre-mi.md",
+    "_site/wiki/tercera-guerra-de-los-metales.html",
     "wiki/Segunda Guerra de los Metales.md",
     "_site/wiki/la-isla.html",
-    "wiki/index.md",
-    "wiki/Sin título.md",
     "_site/wiki/Sin título.md",
     "_site/assets/scss/main.scss",
     "_site/assets/scss",
@@ -233,7 +272,6 @@
     "_site/Sin título.md",
     "().md",
     "_site/().md",
-    "sobre-mi.md",
     "README.md",
     "_cuentos/alrededor-de-la-decadencia.md"
   ]

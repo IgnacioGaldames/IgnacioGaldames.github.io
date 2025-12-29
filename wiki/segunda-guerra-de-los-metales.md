@@ -1,6 +1,7 @@
 ---
-title: Segunda guerra de los metales
+title: Segunda Guerra de los Metales
 layout: page
 ---
 
-La guerra que sucedió después de la [la-isla](la-isla.md) [tercera-guerra-de-los-metales](tercera-guerra-de-los-metales.md)
+La Segunda Guerra de los metales fue el evento bélico que siguió a la [Primera Guerra de los Metales](primera-guerra-de-los-metales.md).
+

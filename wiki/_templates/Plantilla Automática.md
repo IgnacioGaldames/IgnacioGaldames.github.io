@@ -1,3 +1,7 @@
+---
+layout: page
+title: {{title}}
+---
 <%*
 // 1. Pedir el título real al usuario
 let title = await tp.system.prompt("Ingresa el Título de la Nota");
@@ -19,6 +23,7 @@ await tp.file.rename(slug);
 ---
 title: <% title %>
 layout: page
+---
 ---
 
 # <% title %>
