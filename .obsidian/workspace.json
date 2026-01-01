@@ -48,9 +48,65 @@
               "icon": "lucide-file",
               "title": "santiago-nueva-extremadura"
             }
+          },
+          {
+            "id": "9bdb57bc14c50650",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2025-06-09-sintonizando-el-mañana.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-06-09-sintonizando-el-mañana"
+            }
+          },
+          {
+            "id": "50b956a72aa215b9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/_templates/Plantilla Wiki.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Plantilla Wiki"
+            }
+          },
+          {
+            "id": "5010b4ec389ccac1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/_templates/Plantilla Post Blog.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Plantilla Post Blog"
+            }
+          },
+          {
+            "id": "97cbaaff75daf22b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2026-01-01-ciencia-ficcin-militarista.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-01-01-ciencia-ficcin-militarista"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -123,7 +179,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/santiago-nueva-extremadura.md",
+                "file": "_posts/2026-01-01-ciencia-ficcin-militarista.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +189,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de santiago-nueva-extremadura"
+              "title": "Enlaces entrantes de 2026-01-01-ciencia-ficcin-militarista"
             }
           },
           {
@@ -226,33 +282,37 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "3e3d58a69d06d76b",
+  "active": "97cbaaff75daf22b",
   "lastOpenFiles": [
+    "_site/assets/scss/main.scss",
+    "_site/assets/scss",
+    "_site/ads.txt",
+    "_site/cuentos/una-idea-viajera.html",
+    "_site/cuentos/todos-tus-malditos-caballos-subiendo-al-cielo.html",
+    "_site/cuentos/the-scream-decelerated.html",
+    "_site/cuentos/sintonizando-el-manana.html",
+    "_site/cuentos/mi-sueno-de-una-serpiente-mitica.html",
+    "_site/noticias.html",
+    "_site/salva-el-gato.html",
+    "_plugins/binary_filter.rb",
+    "wiki/_templates/Plantilla Post Blog.md",
+    "_posts/Ciencia ficción militarista chilena.md",
+    "_posts/2026-01-01-ciencia-ficcin-militarista.md",
+    "wiki/_templates/plantilla-automtica.md",
+    "_site/wiki/Sin título.md",
+    "wiki/_templates/Plantilla Wiki.md",
+    "_posts/2025-06-09-sintonizando-el-mañana.md",
     "wiki/primera-guerra-de-los-metales.md",
     "wiki/orcocese.md",
     "wiki/la-isla.md",
     "wiki/neopolinesia.md",
-    "wiki/_templates/Plantilla Automática.md",
-    "wiki/_templates/Plantilla Wiki.md",
-    "wiki/Sin título.md",
     "wiki/Organización Económica de Estaciones Espaciales.md",
     "wiki/segunda-guerra-de-los-metales.md",
     "wiki/santiago-nueva-extremadura.md",
     "wiki/index.md",
     "wiki/tercera-guerra-de-los-metales.md",
     "sobre-mi.md",
-    "_site/wiki/tercera-guerra-de-los-metales.html",
     "wiki/Segunda Guerra de los Metales.md",
-    "_site/wiki/la-isla.html",
-    "_site/wiki/Sin título.md",
-    "_site/assets/scss/main.scss",
-    "_site/assets/scss",
-    "_site/noticias/lanzamientos/2025/06/09/sintonizando-el-mañana.html",
-    "_site/noticias/lanzamientos/2025/03/21/paraguas-silencio.html",
-    "_site/noticias/lanzamientos/2024/06/04/corceles-azules.html",
-    "_site/noticias/bienvenida/2025/12/07/ia-galdames-escritor-de-ciencia-ficcion-chilena.html",
-    "_site/noticias/bienvenida/2024/06/04/bienvenidos.html",
-    "_site/noticias/lanzamientos/2025/06/09",
     "_site/assets/minima-social-icons.svg",
     "_site/wiki/la-isla.md",
     "_site/assets/img/fanart/corceles_azules/462550271_1569664530636558_3422626735866888264_n.jpg",
@@ -269,10 +329,6 @@
     "_site/wiki/Primera Guerra de los Metales.md",
     "_site/wiki/Segunda Guerra de los Metales.md",
     "_site/wiki/Index.md",
-    "_site/Sin título.md",
-    "().md",
-    "_site/().md",
-    "README.md",
-    "_cuentos/alrededor-de-la-decadencia.md"
+    "_site/Sin título.md"
   ]
 }

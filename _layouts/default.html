@@ -14,7 +14,11 @@
 					<aside>
 						<small>
 							<div class="source-code fw-lighter text-muted glow-data text-center" id="binary-output"
-								style="font-size: 0.23rem;"></div>
+								style="font-size: 0.23rem;">
+								{% if page.binary != false %}
+								  {{ content | strip_html | strip_newlines | to_binary }}
+								{% endif %}
+							</div>
 						</small>
 					</aside>
 				</div>
