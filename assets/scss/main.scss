@@ -1,19 +1,16 @@
 // Import Bootstrap's source SCSS files (migrado a @use)
-@use "../sass/_animations.sass" as *;
-
-$enable-shadows:              true !default;
-$enable-cssgrid:              true !default;
-$enable-negative-margins: true;
-
+@use "_bootstrap-variables" as *;
 @use "bootstrap" as *;
 @use "custom" as *;
+
+@import "../sass/_animations.sass";
 // Custom styles go here
-@use "../sass/fonts/_fonts.sass" as *;
-@use "../sass/fonts/_eb-garamond.sass" as *;
-@use "../sass/fonts/_futura.sass" as *;
-@use "../sass/fonts/_source-code.sass" as *;
-@use "../sass/fonts/_spacing.sass" as *;
-@use "../sass/_fondo.sass" as *;
-@use "../sass/_gradientes.sass" as *;
-@use "../sass/_sombras.sass" as *;
-@use "../sass/_botones.sass" as *;
+@import "../sass/fonts/_fonts.sass";
+@import "../sass/fonts/_eb-garamond.sass";
+@import "../sass/fonts/_futura.sass";
+@import "../sass/fonts/_source-code.sass";
+@import "../sass/fonts/_spacing.sass";
+@import "../sass/_fondo.sass";
+@import "../sass/_gradientes.sass";
+@import "../sass/_sombras.sass";
+@import "../sass/_botones.sass";

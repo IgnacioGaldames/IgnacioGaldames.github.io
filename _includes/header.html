@@ -3,35 +3,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<nav class="navbar navbar-expand-lg ">
-					<div class="container-fluid">
-						<a class="navbar-brand" href="{{ site.baseurl }}/"><span class="source-code">-></span>Inicio</a>
-						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-							aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
-						<div class="collapse navbar-collapse text-capitalize" id="navbarNav">
-							<ul class="navbar-nav">
-								<li class="nav-item">
-									<a class="nav-link" href="{{ site.baseurl }}/libros/">Libros</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="{{ site.baseurl }}/cuentos/">cuentos</a>
-								</li>
-								<li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/cursos/">Cursos</a></li>
-								<li class="nav-item">
-									<a class="nav-link" href="{{ site.baseurl }}/iagaldames/">Sobre Mí</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="{{ site.baseurl }}/blog/">Blog</a>
-								</li>
-								<li class="nav-item border-start border-light-subtle"><a class="nav-link" href="{{ site.baseurl }}/cursos-libros/">libros sobre
-									escritura<span class="source-code">|</span></a></li>
-								<!-- Add other links here -->
-							</ul>
-						</div>
-					</div>
-				</nav>
+				{% include nav.html %}
 			</div>
 		</div>
 	</div>
