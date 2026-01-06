@@ -4,6 +4,6 @@
 
 layout: cursos-libros
 title: Libros sobre escritura
-subtitle: Cursos y talleres
-permalink: /cursos-libros/
+subtitle: Cursos y talleres que he tomado
+permalink: /escritura-creativa/cursos-libros/
 ---
