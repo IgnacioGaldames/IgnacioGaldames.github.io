@@ -97,12 +97,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2026-01-01-ciencia-ficcin-militarista.md",
+                "file": "wiki/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-01-01-ciencia-ficcin-militarista"
+              "title": "index"
             }
           }
         ],
@@ -179,7 +179,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2026-01-01-ciencia-ficcin-militarista.md",
+                "file": "wiki/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -189,7 +189,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de 2026-01-01-ciencia-ficcin-militarista"
+              "title": "Enlaces entrantes de index"
             }
           },
           {
@@ -284,6 +284,7 @@
   },
   "active": "97cbaaff75daf22b",
   "lastOpenFiles": [
+    "_posts/2026-01-01-ciencia-ficcin-militarista.md",
     "_site/assets/scss/main.scss",
     "_site/assets/scss",
     "_site/ads.txt",
@@ -294,10 +295,8 @@
     "_site/cuentos/mi-sueno-de-una-serpiente-mitica.html",
     "_site/noticias.html",
     "_site/salva-el-gato.html",
-    "_plugins/binary_filter.rb",
     "wiki/_templates/Plantilla Post Blog.md",
     "_posts/Ciencia ficción militarista chilena.md",
-    "_posts/2026-01-01-ciencia-ficcin-militarista.md",
     "wiki/_templates/plantilla-automtica.md",
     "_site/wiki/Sin título.md",
     "wiki/_templates/Plantilla Wiki.md",
