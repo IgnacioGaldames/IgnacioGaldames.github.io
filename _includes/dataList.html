@@ -8,7 +8,7 @@
     {% endif %}
     {%if miItem.tipoItem %}
     <div class="text-capitalize futura fs-6 fw-lighter text-light text-muted">
-     {{ miItem.tipoItem }}
+      {{ miItem.tipoItem }}
     </div>
     {% endif %}
     {%if miItem.datosItem %}
@@ -16,26 +16,32 @@
       |</span>
     {% endif %}
     <div class="d-flex align-items-start align-items-md-center flex-column flex-md-row">
-      <a href="{{ miItem.url }}"> <span class="text-capitalize eb-garamond fs-4 flex-grow-1">{{ miItem.nombreItem }}</span></a>
+      {%if miItem.url %}
+      <a href="{{ miItem.url }}">
+        <span class="text-capitalize eb-garamond fs-4 flex-grow-1">{{ miItem.nombreItem }}</span>
+      </a>
+      {%else%}
+      <span class="text-capitalize eb-garamond fs-4 flex-grow-1">{{ miItem.nombreItem }}</span>
+      {%endif%}
       <span class="text-uppercase fw-bolder border-start border-end px-3 mx-3 text-center">{{ miItem.institucionItem }}
-        </span>
-        <div class="flex flex-column">
-          {% if miItem.datosItem == "Libro" %}
-          <div id="date{{ forloop.index }}"
-            class="source-code text-capitalize fs-9 fw-lighter text-end text-light text-muted date ls-175 mt-n1 glow-data">
-            {{ miItem.fechaItem }}</div>
-          {% else %}
-          <div class="futura">
-            <span class="">{{ miItem.fechaItem | date: "%Y" }}</span><span class="fw-light">/{{ miItem.fechaItem |
-              date: "%m" }}/{{miItem.fechaItem | date: "%d" }}</span>
-          </div>
-          <!-- Unique ID and data-date attribute for each date -->
-          <div id="date{{ forloop.index }}"
-            class="source-code text-capitalize fs-9 fw-lighter text-end text-light text-muted date ls-175 mt-n1 glow-data"
-            data-date="{{ miItem.fechaItem  | date: " %Y-%m-%d" }}">
-          </div>
-          {% endif %}
+      </span>
+      <div class="flex flex-column">
+        {% if miItem.datosItem == "Libro" %}
+        <div id="date{{ forloop.index }}"
+          class="source-code text-capitalize fs-9 fw-lighter text-end text-light text-muted date ls-175 mt-n1 glow-data">
+          {{ miItem.fechaItem }}</div>
+        {% else %}
+        <div class="futura">
+          <span class="">{{ miItem.fechaItem | date: "%Y" }}</span><span class="fw-light">/{{ miItem.fechaItem |
+            date: "%m" }}/{{miItem.fechaItem | date: "%d" }}</span>
         </div>
+        <!-- Unique ID and data-date attribute for each date -->
+        <div id="date{{ forloop.index }}"
+          class="source-code text-capitalize fs-9 fw-lighter text-end text-light text-muted date ls-175 mt-n1 glow-data"
+          data-date="{{ miItem.fechaItem  | date: " %Y-%m-%d" }}">
+        </div>
+        {% endif %}
+      </div>
     </div>
     {% if miItem.postAsociado or miItem.urlItem %}
     <div class="text-capitalize futura fs-6 fw-lighter text-light mt-2 align-self-end">
