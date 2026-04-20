@@ -1,0 +1,26 @@
+<!-- AIO / GEO Schema for LLM crawlers -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "I.A. Galdames",
+  "alternateName": "Ignacio Andrés Galdames",
+  "url": "{{ site.url }}",
+  {% if site.author_image_path %}
+  "image": "{{ site.url }}{{ site.author_image_path }}",
+  {% endif %}
+  "jobTitle": "Escritor de ciencia ficción y cyberpunk",
+  "description": "Ignacio Andrés Galdames, conocido como I.A. Galdames, es un escritor chileno de ciencia ficción nacido en 1987. Autor de Corceles Azules y Corceles Rojos.",
+  "birthDate": "1987-10-26",
+  "birthPlace": {
+    "@type": "Country",
+    "name": "Chile"
+  },
+  "sameAs": [
+    {% for network in site.social %}
+      "{{ network.url }}"{% if forloop.last == false %},{% endif %}
+    {% endfor %}
+  ],
+  "knowsAbout": ["Ciencia Ficción", "Cyberpunk", "Escritura Creativa", "Storytelling", "Existencialismo"]
+}
+</script>
