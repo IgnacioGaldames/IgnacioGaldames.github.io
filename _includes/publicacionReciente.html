@@ -1,18 +1,34 @@
-<div class="row my-1" id="publicacionesRecientes">
+<div class="row my-1" id="publicacionReciente">
   <div class="col-12">
 
-      {% assign publicacionesOrdenadas = site.data.mis_publicaciones.publicaciones | sort: "fechaItem" | reverse
-      %}
-      {% assign ultimaPublicacion = publicacionesOrdenadas | first %}
-      {% if ultimaPublicacion %}
-      <div>
-        <span class="fs-7">{{ ultimaPublicacion.tipoItem }}</span>
-        <a href="{{ ultimaPublicacion.urlItem }}" class="text-capitalize eb-garamond fs-6" target="_blank">{{
-          ultimaPublicacion.nombreItem}} - {{ultimaPublicacion.institucionItem}}</a> <span class="source-code text-capitalize fs-9 fw-lighter text-end text-light text-muted date ls-175 mt-n1 glow-data ">{{ultimaPublicacion.datosItem}}</span>
-      </div>
-      {% else %}
-      No hay publicaciones disponibles.
-      {% endif %}
+    {% assign ultimoLibro = site.libros | sort: "fechaPublicacion" | reverse | first %}
+    {% assign ultimoCuento = site.cuentos | sort: "fechaItem" | reverse | first %}
+
+    {% assign fechaLibro = ultimoLibro.fechaPublicacion | default: "0000/00/00" %}
+    {% assign fechaCuento = ultimoCuento.fechaItem | default: "0000/00/00" %}
+
+    {% if fechaLibro >= fechaCuento %}
+      {% assign ultimaPublicacion = ultimoLibro %}
+      {% assign tipo = "Libro" %}
+      {% assign urlDestino = ultimoLibro.url %}
+      {% assign institucion = ultimoLibro.nombreEditorial %}
+    {% else %}
+      {% assign ultimaPublicacion = ultimoCuento %}
+      {% assign tipo = ultimoCuento.tipoItem | default: "Cuento" %}
+      {% assign urlDestino = ultimoCuento.urlItem | default: ultimoCuento.url %}
+      {% assign institucion = ultimoCuento.institucionItem %}
+    {% endif %}
+
+    {% if ultimaPublicacion %}
+    <div>
+      <span class="fs-7">{{ tipo }}</span>
+      <a href="{{ urlDestino }}" class="text-capitalize eb-garamond fs-6" target="_blank">{{
+        ultimaPublicacion.nombreItem}} - {{institucion}}</a> <span
+        class="source-code text-capitalize fs-9 fw-lighter text-end text-light text-muted date ls-175 mt-n1 glow-data ">{{ultimaPublicacion.datosItem}}</span>
+    </div>
+    {% else %}
+    No hay publicaciones disponibles.
+    {% endif %}
 
   </div>
 </div>
