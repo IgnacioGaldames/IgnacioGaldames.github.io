@@ -42,6 +42,7 @@ ruby -v
 rvm install ruby-3.3.4
 rvm use ruby-3.3.4
 ruby -v
+ridk install
 gem install bundler
 bundle install
 bundle exec jekyll serve
