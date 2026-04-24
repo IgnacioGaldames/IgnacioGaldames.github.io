@@ -1,11 +1,12 @@
 ---
 layout: post
 title: "Cómo construí el Santiago de Neo Extremadura: Worldbuilding en el Cyberpunk Chileno"
+seo_title: "Worldbuilding en el Cyberpunk Chileno: Santiago de Neo Extremadura"
 date: 2026-04-24 09:54:20 -04:00
 categories: [Ciencia Ficción, Cyberpunk, Literatura Chilena]
 permalink: /cyberpunk-chileno-santiago-neo-extremadura/
-meta_description: "Descubre el proceso de worldbuilding detrás de Santiago de Neo Extremadura, el universo de ciencia ficción cyberpunk chilena creado por I.A. Galdames."
-meta_keywords: "ciencia ficción cyberpunk chilena, cyberpunk latinoamericano, Santiago de Neo Extremadura, I.A. Galdames, Corceles Azules, Corceles Rojos"
+description: "Descubre el proceso de worldbuilding detrás de Santiago de Neo Extremadura, el universo de ciencia ficción cyberpunk chilena creado por I.A. Galdames."
+keywords: "ciencia ficción cyberpunk chilena, cyberpunk latinoamericano, Santiago de Neo Extremadura, I.A. Galdames, Corceles Azules, Corceles Rojos"
 ---
 
 ## El desafío de crear Ciencia Ficción Cyberpunk Chilena
@@ -26,7 +27,7 @@ El lema clásico del cyberpunk es *"High tech, low life"* (Alta tecnología, baj
 
 ## Corceles Azules y Corceles Rojos: Historias desde las Sombras
 
-El universo de Santiago de Neo Extremadura no es solo un mapa; es el ecosistema donde sobreviven mis personajes. Las colecciones de cuentos que conforman esta saga exploran la humanidad (o la falta de ella) en un mundo hiperconectado.
+El universo de Santiago de Neo Extremadura es el ecosistema donde sobreviven mis personajes. Las colecciones de cuentos que conforman esta saga exploran la humanidad (o la falta de ella) en un mundo hiperconectado.
 
 * **Corceles Azules:** Una inmersión en los dilemas éticos de la inteligencia artificial, el transhumanismo y los detectives corporativos que operan en las zonas grises de la moralidad urbana.
 * **Corceles Rojos:** Relatos que profundizan en la resistencia, el ciberespacio clandestino y las mafias que controlan el tráfico de hardware y recuerdos en los barrios periféricos.

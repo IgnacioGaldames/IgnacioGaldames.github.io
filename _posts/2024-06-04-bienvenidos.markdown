@@ -1,8 +1,11 @@
 ---
 layout: post
 title: "¡Bienvenidos a mi Sitio Web!"
+seo_title: "I.A. Galdames: Escritor de Ciencia Ficción Chilena y Cyberpunk"
 date: 2024-06-04 12:00:00 -0400
 categories: [Noticias, Bienvenida]
+description: "Sitio oficial de I.A. Galdames, escritor chileno de ciencia ficción y cyberpunk. Novedades, cuentos y lanzamientos desde Santiago, Chile para toda Latinoamérica."
+keywords: "escritor ciencia ficción chilena, autor cyberpunk latinoamericano, literatura chilena contemporánea, I.A. Galdames, libros santiago chile"
 ---
 
 ¡Hola a todos! Soy I.A. Galdames, un escritor apasionado de ciencia ficción, y estoy emocionado de darles la bienvenida a mi nuevo sitio web oficial. Aquí podrás encontrar todas las actualizaciones sobre mis últimos proyectos, libros y eventos.

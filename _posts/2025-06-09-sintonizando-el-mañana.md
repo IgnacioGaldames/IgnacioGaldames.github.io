@@ -1,10 +1,13 @@
 ---
 layout: post
 title: Sintonizando el mañana
+seo_title: "Sintonizando el mañana: Cuento de Ciencia Ficción Chilena | I.A. Galdames"
 date: 2025-06-09 00:00:00 -0400
 categories:
   - Noticias
   - Lanzamientos
+description: "Lee sobre 'Sintonizando el mañana', el nuevo cuento de ciencia ficción del escritor chileno I.A. Galdames, publicado en la antología de Anapoyesis."
+keywords: "ciencia ficción chilena, Sintonizando el mañana, cuento ciencia ficción, I.A. Galdames, literatura latinoamericana, Anapoyesis"
 ---
 
 Un nuevo cuento de ciencia ficción ha sido publicado en la antología **En el umbral de realidades alternas** de la revista **Anapoyesis**. Este relato, titulado **"Sintonizando el mañana"**, es una exploración de la relación entre un padre y su hija en una realidad paralela.
