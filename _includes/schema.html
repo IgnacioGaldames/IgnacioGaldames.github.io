@@ -1,0 +1,144 @@
+<!-- AIO / GEO Schema for LLM crawlers -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "{{ site.url }}#author",
+  "name": "I.A. Galdames",
+  "alternateName": "Ignacio Andrés Galdames",
+  "url": "{{ site.url }}",
+  {% if site.author_image_path %}
+  "image": "{{ site.url }}{{ site.author_image_path }}",
+  {% endif %}
+  "jobTitle": "Escritor de ciencia ficción y cyberpunk",
+  "description": "Ignacio Andrés Galdames, conocido como I.A. Galdames, es un escritor chileno de ciencia ficción nacido en 1987. Autor de Corceles Azules y Corceles Rojos.",
+  "birthDate": "1987-10-26",
+  "birthPlace": {
+    "@type": "Country",
+    "name": "Chile"
+  },
+  "sameAs": [
+    {% for network in site.social %}
+      "{{ network.url }}"{% if forloop.last == false %},{% endif %}
+    {% endfor %}
+  ],
+  "knowsAbout": ["Ciencia Ficción", "Cyberpunk", "Escritura Creativa", "Storytelling", "Existencialismo"]
+}
+</script>
+
+{% if page.layout == 'libro' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "{{ page.nombreItem | escape }}",
+  "author": {
+    "@id": "{{ site.url }}#author"
+  },
+  {% if page.portadaLibro %}
+  "image": "{{ site.url }}{{ page.portadaLibro }}",
+  {% endif %}
+  {% if page.descripcionLibro %}
+  "description": "{{ page.descripcionLibro | strip_html | escape }}",
+  {% endif %}
+  {% if page.fechaPublicacion %}
+  "datePublished": "{{ page.fechaPublicacion | replace: '/', '-' }}",
+  {% endif %}
+  {% if page.ISBN %}
+  "isbn": "{{ page.ISBN }}",
+  {% endif %}
+  {% if page.Paginas %}
+  "numberOfPages": {{ page.Paginas }},
+  {% endif %}
+  {% if page.nombreEditorial %}
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ page.nombreEditorial | escape }}"
+  },
+  {% endif %}
+  {% if page.urlAmazon or page.urlBuscalibre or page.urlMercadolibre %}
+  "offers": [
+    {% assign offer_count = 0 %}
+    {% if page.urlAmazon %}
+      {% assign offer_count = offer_count | plus: 1 %}
+      {
+        "@type": "Offer",
+        "url": "{{ page.urlAmazon }}",
+        "seller": {
+          "@type": "Organization",
+          "name": "Amazon"
+        }
+      }
+    {% endif %}
+    {% if page.urlBuscalibre %}
+      {% if offer_count > 0 %},{% endif %}
+      {% assign offer_count = offer_count | plus: 1 %}
+      {
+        "@type": "Offer",
+        "url": "{{ page.urlBuscalibre }}",
+        "seller": {
+          "@type": "Organization",
+          "name": "Buscalibre"
+        }
+      }
+    {% endif %}
+    {% if page.urlMercadolibre %}
+      {% if offer_count > 0 %},{% endif %}
+      {
+        "@type": "Offer",
+        "url": "{{ page.urlMercadolibre }}",
+        "seller": {
+          "@type": "Organization",
+          "name": "MercadoLibre"
+        }
+      }
+    {% endif %}
+  ],
+  {% endif %}
+  {% if page.urlGoodreads or page.urlterceraFundacion %}
+  "sameAs": [
+    {% assign sameas_count = 0 %}
+    {% if page.urlGoodreads %}
+      {% assign sameas_count = sameas_count | plus: 1 %}
+      "{{ page.urlGoodreads }}"
+    {% endif %}
+    {% if page.urlterceraFundacion %}
+      {% if sameas_count > 0 %},{% endif %}
+      "{{ page.urlterceraFundacion }}"
+    {% endif %}
+  ]
+  {% endif %}
+}
+</script>
+{% elsif page.layout == 'cuento' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ShortStory",
+  "name": "{{ page.nombreItem | escape }}",
+  "author": {
+    "@id": "{{ site.url }}#author"
+  },
+  {% if page.descripcionItem and page.descripcionItem != "" %}
+  "description": "{{ page.descripcionItem | strip_html | escape }}",
+  {% endif %}
+  {% if page.fechaItem %}
+  "datePublished": "{{ page.fechaItem | replace: '/', '-' }}",
+  {% endif %}
+  {% if page.Palabras and page.Palabras != "" %}
+  "wordCount": {{ page.Palabras }},
+  {% endif %}
+  {% if page.institucionItem and page.institucionItem != "" %}
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ page.institucionItem | escape }}"
+  },
+  {% endif %}
+  {% if page.urlItem and page.urlItem != "" %}
+  "url": "{{ page.urlItem }}"
+  {% else %}
+  "url": "{{ site.url }}{{ page.url }}"
+  {% endif %}
+}
+</script>
+{% endif %}

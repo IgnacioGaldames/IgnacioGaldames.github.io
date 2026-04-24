@@ -34,12 +34,15 @@ Cómo ADMIN instalar node, ruby y jekyll.
 ```bash
 git clone https://github.com/IgnacioGaldames/IgnacioGaldames.github.io.git
 cd IgnacioGaldames.github.io
+cd .\Users\igaldames\Documents\github\IgnacioGaldames.github.io\
 node -v
 choco install ruby
+refreshenv
 ruby -v
 rvm install ruby-3.3.4
 rvm use ruby-3.3.4
 ruby -v
+ridk install
 gem install bundler
 bundle install
 bundle exec jekyll serve
