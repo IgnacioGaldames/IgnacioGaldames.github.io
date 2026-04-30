@@ -35,11 +35,11 @@
   "author": {
     "@id": "{{ site.url }}#author"
   },
-  {% if page.portadaLibro %}
-  "image": "{{ site.url }}{{ page.portadaLibro }}",
+  {% if page.portadaItem %}
+  "image": "{{ site.url }}{{ page.portadaItem }}",
   {% endif %}
-  {% if page.descripcionLibro %}
-  "description": "{{ page.descripcionLibro | strip_html | escape }}",
+  {% if page.descripcionItem %}
+  "description": "{{ page.descripcionItem | strip_html | escape }}",
   {% endif %}
   {% if page.fechaPublicacion %}
   "datePublished": "{{ page.fechaPublicacion | replace: '/', '-' }}",

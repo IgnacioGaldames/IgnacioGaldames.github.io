@@ -2,30 +2,35 @@
 layout: libro
 title: Corceles Rojos
 nombreItem: Corceles Rojos
+tipoItem:
 nombreEditorial: Speedwagon Media Works
 nombreSello: Kaneda
-nombreColeccion:
-portadaLibro: /assets/img/portada_corceles_rojos_sm.jpg
-urlGoodreads: https://www.goodreads.com/book/show/238749099-corceles-rojos
-urlterceraFundacion:
-urlAmazon:
-urlBuscalibre: https://www.buscalibre.cl/libro-corceles-rojos/9786124969447/p/64589121?afiliado=5f3005ee34e5858176c9
-urlMercadolibre:
-descripcionLibro: "La ciudad de Santiago de Neo Extremadura sirve de fondo para once historias que, poco a poco, mapean la realidad tecnológica y obscura de una urbe hipertecnologizada en recuperación tras la guerra. Entre ellas, encontramos a un ex militar que, tras perder los brazos, se ve obligado a trabajar como botánico; una joven constructora que, en un arrebato de furia, decide destruir toda Lima; y la historia de una camionera divorciada que se enfrenta al dilema de siempre: priorizar el trabajo o la familia. Son historias donde personajes rotos se aferran a la esperanza, en un mundo donde la soledad, la alienación y la muerte parecen ser el único destino de la humanidad en historias entrelazadas de drama de ciencia ficción cyberpunk."
+nombreColeccion: 
 fechaPublicacion: 2025/07/09
-ASIN:
-ISBN: 978-612-49694-4-7
-ISBN10:
-Palabras:
-Paginas: 160
-playlistSpotify:
-playlistSAmazonMusicSRC: https://music.amazon.com/embed/8311b8c2281044c788a90f1106714153c2l0/?id=CsJNafSlUH&marketplaceId=ART4WZ8MWBX2Y&musicTerritory=CL
-playlistSAmazonMusicID: AmazonMusicEmbed8311b8c2281044c788a90f1106714153c2l0
-adobeAero:
-libroDestacado: true
+portadaItem: /assets/img/portada_corceles_rojos_sm.jpg
+descripcionItem: "La ciudad de Santiago de Neo Extremadura sirve de fondo para once historias que, poco a poco, mapean la realidad tecnológica y obscura de una urbe hipertecnologizada en recuperación tras la guerra. Entre ellas, encontramos a un ex militar que, tras perder los brazos, se ve obligado a trabajar como botánico; una joven constructora que, en un arrebato de furia, decide destruir toda Lima; y la historia de una camionera divorciada que se enfrenta al dilema de siempre: priorizar el trabajo o la familia. Son historias donde personajes rotos se aferran a la esperanza, en un mundo donde la soledad, la alienación y la muerte parecen ser el único destino de la humanidad en historias entrelazadas de drama de ciencia ficción cyberpunk."
+palabras: 
+paginas: 160
+asin: 
+isbn: 978-612-49694-4-7
+isbn10: 
+isbn13:
 alto: 21
 ancho: 14.8
-peso:
+peso: 
+urlItem:
+urlGoodreads: https://www.goodreads.com/book/show/238749099-corceles-rojos
+urlTerceraFundacion: 
+urlAmazon: 
+urlBuscalibre: https://www.buscalibre.cl/libro-corceles-rojos/9786124969447/p/64589121?afiliado=5f3005ee34e5858176c9
+urlMercadolibre: 
+urlLektu:
+playlistSpotify: 
+playlistAmazonMusicSrc: https://music.amazon.com/embed/8311b8c2281044c788a90f1106714153c2l0/?id=CsJNafSlUH&marketplaceId=ART4WZ8MWBX2Y&musicTerritory=CL
+playlistAmazonMusicId: AmazonMusicEmbed8311b8c2281044c788a90f1106714153c2l0
+adobeAero: 
+postAsociado:
+itemDestacado: true
 ---
 <div class="container py-3 my-3">
   <div class="row">

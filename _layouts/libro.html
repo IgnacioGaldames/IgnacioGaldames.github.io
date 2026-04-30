@@ -10,20 +10,20 @@ layout: page-sidebar-bottom
 		</div>
 		<div class="row">
 			<div class="col-md-6 col-lg-4 d-flex align-content-center flex-wrap">
-				<img src="{{ page.portadaLibro }}" class="card-img-top " alt="{{ page.nombreItem }}">
+				<img src="{{ page.portadaItem }}" class="card-img-top " alt="{{ page.nombreItem }}">
 				<div class="card-footer w-100">
 					{% assign book = page %}
 					{% include enlacesLibro.html %}
 				</div>
 			</div>
 			<div class="col-md-6 col-lg-8  d-flex align-content-center flex-wrap">
-				{% if page.descripcionLibro %}
+				{% if page.descripcionItem %}
 				<div class="card-body">
-					<p class="card-text fw-lighter">{{ page.descripcionLibro }}</p>
+					<p class="card-text fw-lighter">{{ page.descripcionItem }}</p>
 				</div>
 				{% endif %}
 				{% assign book = page %}
-				{% include detallesLibro.html %}
+				{% include detallesItem.html %}
 			</div>
 		</div>
 	</div>
@@ -35,7 +35,7 @@ layout: page-sidebar-bottom
 </article>
 <div class="container">
 	{% assign content = post.content | strip_newlines %}
-	{% if content != "" or page.adobeAero or page.playlistSpotify or page.playlistSAmazonMusicSRC %}
+	{% if content != "" or page.adobeAero or page.playlistSpotify or page.playlistAmazonMusicSrc %}
 	<article class="row my-5" id="Contenido">
 		<div class="col-12">
 			{{ content }}

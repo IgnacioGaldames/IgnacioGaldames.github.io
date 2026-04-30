@@ -1,11 +1,11 @@
-	{% if page.playlistSpotify or page.playlistSAmazonMusicSRC %}
+	{% if page.playlistSpotify or page.playlistAmazonMusicSrc %}
 		<div class="col-md-12" id="playlists">
 			<div class="row my-3">
 				<div class="col-12"><h2>Escucha una playlist inspirada en el libro</h2></div>
-				{% if page.playlistSAmazonMusicSRC %}
+				{% if page.playlistAmazonMusicSrc %}
 					<div class="col" id="playlistAmazon">
-						<iframe id='{{ page.playlistSAmazonMusicID }}' src='{{ page.playlistSAmazonMusicSRC }}' width='100%' height='352px' frameBorder='0' style='border-radius:20px;max-width:'></iframe>
-						<div class="source-code text-capitalize fs-9 fw-lighter  text-center text-light text-muted date ls-175 mt-2">{{ page.playlistSAmazonMusicID }}</div>
+						<iframe id='{{ page.playlistAmazonMusicId }}' src='{{ page.playlistAmazonMusicSrc }}' width='100%' height='352px' frameBorder='0' style='border-radius:20px;max-width:'></iframe>
+						<div class="source-code text-capitalize fs-9 fw-lighter  text-center text-light text-muted date ls-175 mt-2">{{ page.playlistAmazonMusicId }}</div>
 					</div>
 				{% endif %}
 				{% if page.playlistSpotify %}

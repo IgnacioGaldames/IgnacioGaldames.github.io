@@ -9,44 +9,47 @@ layout: page-sidebar-bottom
 			{% include dataLibro.html %}
 		</div>
 		<div class="row">
+			{% if page.portadaItem %}
 			<div class="col-md-6 col-lg-4 d-flex align-content-center flex-wrap">
-				<img src="{{ page.portadaLibro }}" class="card-img-top " alt="{{ page.nombreItem }}">
+				<img src="{{ page.portadaItem }}" class="card-img-top " alt="{{ page.nombreItem }}">
 				<div class="card-footer w-100">
 					{% assign book = page %}
 					{% include enlacesLibro.html %}
 				</div>
 			</div>
+			{% endif %}
 			<div class="col-md-6 col-lg-8  d-flex align-content-center flex-wrap">
-				{% if page.descripcionLibro %}
-				<div class="card-body">
-					<p class="card-text fw-lighter">{{ page.descripcionLibro }}</p>
+				{% if page.descripcionItem %}
+				<div class="card-body pb-0">
+					<p class="card-text fw-lighter">{{ page.descripcionItem }}</p>
 				</div>
 				{% endif %}
-				{% assign book = page %}
-				{% include detallesLibro.html %}
+				<div class="card-body pt-0">
+					{% assign book = page %}
+					{% include detallesItem.html %}
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<article class="row my-5" id="Contenido">
-	<div class="col-12">
-		{{ content }}
-	</div>
-</article>
-<div class="container">
-	{% assign content = post.content | strip_newlines %}
-	{% if content != "" or page.adobeAero or page.playlistSpotify or page.playlistSAmazonMusicSRC %}
 	<article class="row my-5" id="Contenido">
 		<div class="col-12">
 			{{ content }}
 		</div>
-		{% include adobeAero.html %}
-		{% include playlists.html %}
 	</article>
-	{% endif %}
-	<article class="row border-top my-3" id="include-coleccionLibros">
-		<div class="col-12 mx-auto">
-			{% include coleccionLibros.html %}
-		</div>
-	</article>
-</div>
+	<div class="container">
+		{% assign content = post.content | strip_newlines %}
+		{% if content != "" or page.adobeAero or page.playlistSpotify or page.playlistAmazonMusicSrc %}
+		<article class="row my-5" id="Contenido">
+			<div class="col-12">
+				{{ content }}
+			</div>
+			{% include adobeAero.html %}
+			{% include playlists.html %}
+		</article>
+		{% endif %}
+		<article class="row border-top my-3" id="include-coleccionLibros">
+			<div class="col-12 mx-auto">
+				{% include coleccionLibros.html %}
+			</div>
+		</article>
+	</div>

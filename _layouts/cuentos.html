@@ -5,8 +5,8 @@ layout: page-sidebar-right
   <div class="row">
     <div class="col-12">
       <div class="card shadow">
-        {% assign sortedItems = site.cuentos | sort: "fechaItem" | reverse %}
-        {% include  dataList.html %}
+        {% assign sortedItems = site.cuentos | sort: "fechaPublicacion" | reverse %}
+        {% include dataList.html %}
       </div>
     </div>
   </div>

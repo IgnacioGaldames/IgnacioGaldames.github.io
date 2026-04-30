@@ -8,7 +8,7 @@ title: "Libros"
 		{% assign librosOrdenados = site.libros | sort: "fechaPublicacion" | reverse %}
 		{% for miLibro in librosOrdenados %}
 		{%if miLibro.hidden == null or miLibro.hidden == false %}
-		{% if miLibro.libroDestacado == true %}
+		{% if miLibro.itemDestacado == true %}
 		<div class="col-12 mb-3">
 			<div class="card shadow border border-light-subtle" id="cardLibro">
 				<div class="card-header">
@@ -19,7 +19,7 @@ title: "Libros"
 				<div class="row">
 					<div class="col-md-6 col-lg-4 d-flex align-content-center flex-wrap">
 						<a href="{{ miLibro.url }}" class="">
-							<img src="{{ miLibro.portadaLibro }}" class="card-img-top" alt="{{ miLibro.nombreItem}}">
+							<img src="{{ miLibro.portadaItem }}" class="card-img-top" alt="{{ miLibro.nombreItem}}">
 						</a>
 						<div class="card-footer w-100">
 							{% assign book = miLibro %}
@@ -28,11 +28,11 @@ title: "Libros"
 						</div>
 					</div>
 					<div class="col-md-6 col-lg-8  d-flex align-content-center flex-wrap">
-						{% if miLibro.descripcionLibro %}
-						{{ miLibro.descripcionLibro | strip_html }}
+						{% if miLibro.descripcionItem %}
+						{{ miLibro.descripcionItem | strip_html }}
 						{% endif %}
 						{% assign book = miLibro %}
-						{% include detallesLibro.html %}
+						{% include detallesItem.html %}
 
 					</div>
 				</div>
@@ -51,10 +51,10 @@ title: "Libros"
 				</div>
 				{% endif %}
 				<a href="{{ miLibro.url }}" class="">
-					<img src="{{ miLibro.portadaLibro }}" class="card-img-top" alt="{{ miLibro.nombreItem}}">
+					<img src="{{ miLibro.portadaItem }}" class="card-img-top" alt="{{ miLibro.nombreItem}}">
 				</a>
 				{% assign book = miLibro %}
-				{% include detallesLibro.html %}
+				{% include detallesItem.html %}
 				<div class="card-footer">
 					{% assign book = miLibro %}
 					{% include enlacesLibro.html %}

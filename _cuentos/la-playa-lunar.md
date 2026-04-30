@@ -2,18 +2,35 @@
 layout: cuento
 title: la playa lunar (versión ojo de uk)
 nombreItem: la playa lunar
-fechaItem: 2023/11/30
-institucionItem: El ojo de Uk
-urlItem: https://elojodeuk.com/2023/11/30/la-playa-lunar/
 tipoItem: Ficción Corta
-datosItem: 1673 palabras
 
-descripcionItem:
-Palabras: 
+nombreEditorial: El ojo de Uk
+nombreSello:
+nombreColeccion:
+fechaPublicacion: 2023/11/30
+portadaItem:
+descripcionItem: 
+palabras: 
+paginas:
+asin:
+isbn:
+isbn10:
+isbn13:
+alto:
+ancho:
+peso:
+urlItem: https://elojodeuk.com/2023/11/30/la-playa-lunar/
+urlGoodreads:
+urlTerceraFundacion:
+urlAmazon:
+urlBuscalibre:
+urlMercadolibre:
+urlLektu:
 playlistSpotify: 
-playlistSAmazonMusicSRC: 
-playlistSAmazonMusicID: 
-adobeAero:
-ItemDestacado: false
+playlistAmazonMusicSrc: 
+playlistAmazonMusicId: 
+adobeAero: 
+postAsociado:
+itemDestacado: false
 
 ---

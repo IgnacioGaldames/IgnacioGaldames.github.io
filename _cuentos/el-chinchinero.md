@@ -2,16 +2,33 @@
 layout: cuento
 title: El Chinchinero (versión espejo humeante)
 nombreItem: El Chinchinero
-fechaItem: 2021/12/28
-institucionItem: Espejo Humeante
-urlItem: https://espejohumeanterevista.wordpress.com/2021/12/28/el-chinchinero/
 tipoItem: Ficción Corta
-datosItem: 1559 palabras
-descripcionItem:
-Palabras:
-playlistSpotify:
-playlistSAmazonMusicSRC:
-playlistSAmazonMusicID:
-adobeAero:
-ItemDestacado: false
+nombreEditorial: Espejo Humeante
+nombreSello:
+nombreColeccion:
+fechaPublicacion: 2021/12/28
+portadaItem:
+descripcionItem: 
+palabras: 
+paginas:
+asin:
+isbn:
+isbn10:
+isbn13:
+alto:
+ancho:
+peso:
+urlItem: https://espejohumeanterevista.wordpress.com/2021/12/28/el-chinchinero/
+urlGoodreads:
+urlTerceraFundacion:
+urlAmazon:
+urlBuscalibre:
+urlMercadolibre:
+urlLektu:
+playlistSpotify: 
+playlistAmazonMusicSrc: 
+playlistAmazonMusicId: 
+adobeAero: 
+postAsociado:
+itemDestacado: false
 ---

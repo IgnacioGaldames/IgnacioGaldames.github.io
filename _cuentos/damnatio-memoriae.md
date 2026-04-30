@@ -2,18 +2,35 @@
 layout: cuento
 title: Damnatio Memoriae
 nombreItem: Damnatio Memoriae
-fechaItem: 2026/04/20
-institucionItem: Neon Dystopia
-urlItem: https://www.neondystopia.com/?p=100043460
 tipoItem: Ficción Corta
-datosItem: 5141 palabras
 
-descripcionItem:
-Palabras: 5141
+nombreEditorial: Neon Dystopia
+nombreSello:
+nombreColeccion:
+fechaPublicacion: 2026/04/20
+portadaItem:
+descripcionItem: 
+palabras: 5141
+paginas:
+asin:
+isbn:
+isbn10:
+isbn13:
+alto:
+ancho:
+peso:
+urlItem: https://www.neondystopia.com/?p=100043460
+urlGoodreads:
+urlTerceraFundacion:
+urlAmazon:
+urlBuscalibre:
+urlMercadolibre:
+urlLektu:
 playlistSpotify: 
-playlistSAmazonMusicSRC: 
-playlistSAmazonMusicID: 
-adobeAero:
-ItemDestacado: true
+playlistAmazonMusicSrc: 
+playlistAmazonMusicId: 
+adobeAero: 
+postAsociado:
+itemDestacado: true
 
 ---

@@ -2,19 +2,35 @@
 layout: cuento
 title: Sintonizando el mañana
 nombreItem: Sintonizando el mañana
-fechaItem: 2025/05/01
-institucionItem: Anapoyesis
-urlItem: https://online.fliphtml5.com/qlffj/awer/#p=125
 tipoItem: Ficción Corta - Antología
-datosItem: 2547 palabras
+nombreEditorial: Anapoyesis
+nombreSello:
+nombreColeccion:
+fechaPublicacion: 2025/05/01
+portadaItem:
+descripcionItem: 
+palabras: 
+paginas:
+asin:
+isbn:
+isbn10:
+isbn13:
+alto:
+ancho:
+peso:
+urlItem: https://online.fliphtml5.com/qlffj/awer/#p=125
+urlGoodreads:
+urlTerceraFundacion:
+urlAmazon:
+urlBuscalibre:
+urlMercadolibre:
+urlLektu:
+playlistSpotify: 
+playlistAmazonMusicSrc: 
+playlistAmazonMusicId: 
+adobeAero: 
 postAsociado: noticias/lanzamientos/2025/06/09/sintonizando-el-mañana
 
-descripcionItem:
-Palabras: 
-playlistSpotify: 
-playlistSAmazonMusicSRC: 
-playlistSAmazonMusicID: 
-adobeAero:
-ItemDestacado: false
+itemDestacado: false
 
 ---

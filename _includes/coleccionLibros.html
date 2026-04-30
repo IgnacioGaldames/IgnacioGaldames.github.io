@@ -4,7 +4,7 @@
 	</div>
 </div>
 <div class="row my-3" id="coleccionLibros-destacados">
-	{% assign destacados = site.libros | where: "libroDestacado", true | sort: "fechaPublicacion" | reverse %}
+	{% assign destacados = site.libros | where: "itemDestacado", true | sort: "fechaPublicacion" | reverse %}
 	{% for miLibro in destacados %}
 		<div class="col-xs-12 col-md-4 mx-auto order-0 mb-3 h-100">
 			<div class="card shadow-lg border border-light-subtle">
@@ -16,7 +16,7 @@
 				</div>
 				{% endif %}
 				<a href="{{ miLibro.url }}" class="">
-					<img src="{{ miLibro.portadaLibro }}" class="card-img-top" alt="{{ miLibro.nombreItem }}">
+					<img src="{{ miLibro.portadaItem }}" class="card-img-top" alt="{{ miLibro.nombreItem }}">
 				</a>
 				<div class="card-footer h-100 d-flex align-content-end flex-wrap ">
 					{% assign book = miLibro %}
@@ -29,7 +29,7 @@
 </div>
 
 <div class="row my-3" id="coleccionLibros-otros">
-	{% assign otros = site.libros | where_exp: "item", "item.libroDestacado != true" | sort: "fechaPublicacion" | reverse %}
+	{% assign otros = site.libros | where_exp: "item", "item.itemDestacado != true" | sort: "fechaPublicacion" | reverse %}
 	{% for miLibro in otros %}
 		<div class="col-6 col-md-3 mx-auto order-1 mb-3">		
 			<div class="card shadow-sm border border-light-subtle d-flex align-Libros-stretch h-100">
@@ -41,7 +41,7 @@
 				</div>
 				{% endif %}
 				<a href="{{ miLibro.url }}" class="">
-					<img src="{{ miLibro.portadaLibro }}" class="card-img-top" alt="{{ miLibro.nombreItem }}">
+					<img src="{{ miLibro.portadaItem }}" class="card-img-top" alt="{{ miLibro.nombreItem }}">
 				</a>
 				<div class="card-footer h-100 d-flex align-content-end flex-wrap ">
 					{% assign book = miLibro %}

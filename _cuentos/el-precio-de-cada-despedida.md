@@ -2,16 +2,33 @@
 layout: cuento
 title: El precio de cada despedida
 nombreItem: El precio de cada despedida
-fechaItem: 2024/10/05
-institucionItem: Weird Review
-urlItem: http://ignaciogaldames.com/assets/pdf/Fanzine3_Final.pdf
 tipoItem: Ficción Flash - Fanzine
-datosItem: 251 palabras
-descripcionItem:
-Palabras:
-playlistSpotify:
-playlistSAmazonMusicSRC:
-playlistSAmazonMusicID:
-adobeAero:
-ItemDestacado: false
+nombreEditorial: Weird Review
+nombreSello:
+nombreColeccion:
+fechaPublicacion: 2024/10/05
+portadaItem:
+descripcionItem: 
+palabras: 
+paginas:
+asin:
+isbn:
+isbn10:
+isbn13:
+alto:
+ancho:
+peso:
+urlItem: http://ignaciogaldames.com/assets/pdf/Fanzine3_Final.pdf
+urlGoodreads:
+urlTerceraFundacion:
+urlAmazon:
+urlBuscalibre:
+urlMercadolibre:
+urlLektu:
+playlistSpotify: 
+playlistAmazonMusicSrc: 
+playlistAmazonMusicId: 
+adobeAero: 
+postAsociado:
+itemDestacado: false
 ---

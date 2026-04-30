@@ -2,18 +2,35 @@
 layout: cuento
 title: La reserva de animales
 nombreItem: La reserva de animales
-fechaItem: 2022/11/02
-institucionItem: Revista Axioma
-urlItem: https://elaxiomablog.wordpress.com/2022/11/02/la-reserva-de-animales-i-a-galdames/
 tipoItem: Ficción Corta
-datosItem: 666 palabras
 
-descripcionItem:
-Palabras: 
+nombreEditorial: Revista Axioma
+nombreSello:
+nombreColeccion:
+fechaPublicacion: 2022/11/02
+portadaItem:
+descripcionItem: 
+palabras: 
+paginas:
+asin:
+isbn:
+isbn10:
+isbn13:
+alto:
+ancho:
+peso:
+urlItem: https://elaxiomablog.wordpress.com/2022/11/02/la-reserva-de-animales-i-a-galdames/
+urlGoodreads:
+urlTerceraFundacion:
+urlAmazon:
+urlBuscalibre:
+urlMercadolibre:
+urlLektu:
 playlistSpotify: 
-playlistSAmazonMusicSRC: 
-playlistSAmazonMusicID: 
-adobeAero:
-ItemDestacado: false
+playlistAmazonMusicSrc: 
+playlistAmazonMusicId: 
+adobeAero: 
+postAsociado:
+itemDestacado: false
 
 ---

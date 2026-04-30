@@ -2,18 +2,35 @@
 layout: cuento
 title: lloverá en un día soleado (versión anapoyesis)
 nombreItem: lloverá en un día soleado
-fechaItem: 2023/01/01
-institucionItem: Anapoyesis
-urlItem: https://issuu.com/anapoyesis/docs/guerra
 tipoItem: Ficción Corta
-datosItem: 1141 palabras
 
-descripcionItem:
-Palabras: 
+nombreEditorial: Anapoyesis
+nombreSello:
+nombreColeccion:
+fechaPublicacion: 2023/01/01
+portadaItem:
+descripcionItem: 
+palabras: 
+paginas:
+asin:
+isbn:
+isbn10:
+isbn13:
+alto:
+ancho:
+peso:
+urlItem: https://issuu.com/anapoyesis/docs/guerra
+urlGoodreads:
+urlTerceraFundacion:
+urlAmazon:
+urlBuscalibre:
+urlMercadolibre:
+urlLektu:
 playlistSpotify: 
-playlistSAmazonMusicSRC: 
-playlistSAmazonMusicID: 
-adobeAero:
-ItemDestacado: false
+playlistAmazonMusicSrc: 
+playlistAmazonMusicId: 
+adobeAero: 
+postAsociado:
+itemDestacado: false
 
 ---

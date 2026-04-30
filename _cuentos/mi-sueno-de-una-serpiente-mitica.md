@@ -2,17 +2,35 @@
 layout: cuento
 title: mi sueño de una serpiente mítica (versión Axxioma)
 nombreItem: mi sueño de una serpiente mítica
-fechaItem: 2024/03/05
-institucionItem: El Axioma Revista
 tipoItem: Ficción Corta
-datosItem: 1992 palabras
 
-descripcionItem:
-Palabras: 
+nombreEditorial: El Axioma Revista
+nombreSello:
+nombreColeccion:
+fechaPublicacion: 2024/03/05
+portadaItem:
+descripcionItem: 
+palabras: 
+paginas:
+asin:
+isbn:
+isbn10:
+isbn13:
+alto:
+ancho:
+peso:
+urlItem:
+urlGoodreads:
+urlTerceraFundacion:
+urlAmazon:
+urlBuscalibre:
+urlMercadolibre:
+urlLektu:
 playlistSpotify: 
-playlistSAmazonMusicSRC: 
-playlistSAmazonMusicID: 
-adobeAero:
-ItemDestacado: false
+playlistAmazonMusicSrc: 
+playlistAmazonMusicId: 
+adobeAero: 
+postAsociado:
+itemDestacado: false
 
 ---
