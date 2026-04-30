@@ -1,10 +1,13 @@
 ---
 layout: post
 title: Lanzamiento de 'Corceles Azules'
+seo_title: "Lanzamiento Corceles Azules: Libro de Cyberpunk Chileno | I.A. Galdames"
 date: 2024-06-04 12:00:00 -0400
 categories:
   - Noticias
   - Lanzamientos
+description: "Anuncio oficial del lanzamiento de 'Corceles Azules', una antología fix-up cyberpunk del escritor chileno I.A. Galdames publicada por Speedwagon Media Works."
+keywords: "Corceles Azules, libro cyberpunk chileno, ciencia ficción latinoamericana, editorial Speedwagon, I.A. Galdames, lanzamiento libro santiago"
 ---
 
 ## Corceles Azules

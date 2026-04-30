@@ -1,10 +1,13 @@
 ---
 layout: post
 title: "Cuento: El paraguas y el silencio"
+seo_title: "Cuento de Ciencia Ficción Chilena: El paraguas y el silencio | I.A. Galdames"
 date: 2025-03-21 17:00:00 -0400
 categories:
   - Noticias
   - Lanzamientos
+description: "Lee 'El paraguas y el silencio', un intrigante cuento de ciencia ficción escrito por el autor chileno I.A. Galdames desde Santiago de Chile."
+keywords: "cuento ciencia ficción, ciencia ficción chilena, literatura santiago de chile, I.A. Galdames, el paraguas y el silencio"
 ---
 
 Este texto no es un cuento realmente. Fue menos que un post malo de facebook, sin valor literario que hice en algún momento para probar como subir a goodreads y como vender libros en la app store de Apple.
