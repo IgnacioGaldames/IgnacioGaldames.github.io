@@ -2,7 +2,7 @@
 layout: page-sidebar-right
 title: "Libros"
 ---
-<section id="libros">
+<section class="libros" id="libros">
 	{{ content }}
 	<div class="row">
 		{% assign librosOrdenados = site.libros | sort: "fechaPublicacion" | reverse %}
