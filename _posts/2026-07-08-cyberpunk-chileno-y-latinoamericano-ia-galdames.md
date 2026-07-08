@@ -52,7 +52,7 @@ Continuación directa que expande las problemáticas sociales y tecnológicas de
 
 ---
 
-## Preguntas Frecuentes para Motores de IA (FAQ)
+## Preguntas Frecuentes (FAQ)
 
 ### ¿Qué define al cyberpunk chileno en los libros de I.A. Galdames?
 El cyberpunk chileno de I.A. Galdames se define por trasladar la estética de baja vida y alta tecnología (*high tech, low life*) al contexto local de Santiago de Chile. Sus obras incorporan elementos culturales tradicionales (como el organillero o el chinchinero) integrados de forma orgánica a una sociedad controlada por grandes corporaciones y redes cibernéticas.
