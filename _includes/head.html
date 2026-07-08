@@ -40,10 +40,26 @@
 	{%- comment -%}--- SEO: Canonical URL ---{%- endcomment -%}
 	<link rel="canonical" href="{{ page.url | absolute_url }}">
 
+	{%- comment -%}--- SEO: Meta Author & Robots ---{%- endcomment -%}
+	<meta name="author" content="{{ site.author_full_name | default: site.author }}">
+	{%- if page.noindex -%}
+	<meta name="robots" content="noindex, nofollow">
+	{%- else -%}
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+	{%- endif -%}
+	<meta name="theme-color" content="#0d1117">
+
+	{%- comment -%}--- GEO: Geographic Tags ---{%- endcomment -%}
+	<meta name="geo.region" content="CL">
+	<meta name="geo.placename" content="Santiago, Chile">
+	<meta name="ICBM" content="-33.4489, -70.6693">
+	<meta name="DC.language" content="es-CL">
+
 	{%- comment -%}--- SEO: Language ---{%- endcomment -%}
 	{% if page.lang and page.lang != "es" %}
 	<meta http-equiv="content-language" content="{{ page.lang }}">
 	{% endif %}
+	<link rel="alternate" hreflang="es-CL" href="{{ page.url | absolute_url }}">
 
 	{%- comment -%}--- SEO: Open Graph Meta Tags ---{%- endcomment -%}
 	{%- if page.layout == 'libro' -%}
@@ -71,6 +87,8 @@
 
 	{%- comment -%}--- SEO: Twitter Card Meta Tags ---{%- endcomment -%}
 	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@{{ site.twitter_username }}">
+	<meta name="twitter:creator" content="@{{ site.twitter_username }}">
 	<meta name="twitter:title" content="{{ full_title | strip | strip_newlines }}">
 	<meta name="twitter:description" content="{{ meta_description | strip_html | strip_newlines | strip }}">
 	{%- if page.portadaItem -%}

@@ -7,18 +7,35 @@
       "@type": "Person",
       "@id": "{{ site.url }}#author",
       "name": "I.A. Galdames",
-      "alternateName": "Ignacio Andrés Galdames",
+      "alternateName": ["Ignacio Andrés Galdames", "Ignacio Galdames"],
       "url": "{{ site.url }}",
       {% if site.author_image_path %}
-      "image": "{{ site.url }}{{ site.author_image_path }}",
+      "image": {
+        "@type": "ImageObject",
+        "url": "{{ site.url }}{{ site.author_image_path }}",
+        "caption": "I.A. Galdames, escritor chileno de ciencia ficción"
+      },
       {% endif %}
       "jobTitle": "Escritor de ciencia ficción y cyberpunk",
       "description": "Ignacio Andrés Galdames, conocido como I.A. Galdames, es un escritor chileno de ciencia ficción nacido en 1987. Autor de Corceles Azules y Corceles Rojos.",
       "birthDate": "1987-10-26",
       "birthPlace": {
+        "@type": "Place",
+        "name": "Santiago, Chile",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Santiago",
+          "addressCountry": "CL"
+        }
+      },
+      "nationality": {
         "@type": "Country",
         "name": "Chile"
       },
+      "knowsLanguage": [
+        { "@type": "Language", "name": "Español" },
+        { "@type": "Language", "name": "Inglés" }
+      ],
       "sameAs": [
         {% assign is_first = true %}
         {% for network in site.data.redes_sociales.redesSociales %}
@@ -29,7 +46,7 @@
           {% endif %}
         {% endfor %}
       ],
-      "knowsAbout": ["Ciencia Ficción", "Cyberpunk", "Escritura Creativa", "Storytelling", "Existencialismo"]
+      "knowsAbout": ["Ciencia Ficción", "Cyberpunk", "Escritura Creativa", "Storytelling", "Existencialismo", "Transhumanismo", "Neo-noir", "Weird Fiction"]
     },
     {
       "@type": "WebSite",
@@ -40,7 +57,15 @@
       "publisher": {
         "@id": "{{ site.url }}#author"
       },
-      "inLanguage": "es-CL"
+      "inLanguage": "es-CL",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "{{ site.url }}/blog/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
     }
   ]
 }

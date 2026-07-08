@@ -31,7 +31,29 @@ Allow: /
 User-agent: anthropic-ai
 Allow: /
 
+User-agent: Gemini
+Allow: /
+
+User-agent: Google-Safety
+Allow: /
+
+User-agent: Grok
+Allow: /
+
+User-agent: DeepSeek
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
 User-agent: *
 Allow: /
 
 Sitemap: https://ignaciogaldames.com/sitemap.xml
+Sitemap: https://ignaciogaldames.com/feed.xml
