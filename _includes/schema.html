@@ -2,27 +2,47 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "{{ site.url }}#author",
-  "name": "I.A. Galdames",
-  "alternateName": "Ignacio Andrés Galdames",
-  "url": "{{ site.url }}",
-  {% if site.author_image_path %}
-  "image": "{{ site.url }}{{ site.author_image_path }}",
-  {% endif %}
-  "jobTitle": "Escritor de ciencia ficción y cyberpunk",
-  "description": "Ignacio Andrés Galdames, conocido como I.A. Galdames, es un escritor chileno de ciencia ficción nacido en 1987. Autor de Corceles Azules y Corceles Rojos.",
-  "birthDate": "1987-10-26",
-  "birthPlace": {
-    "@type": "Country",
-    "name": "Chile"
-  },
-  "sameAs": [
-    {% for network in site.social %}
-      "{{ network.url }}"{% if forloop.last == false %},{% endif %}
-    {% endfor %}
-  ],
-  "knowsAbout": ["Ciencia Ficción", "Cyberpunk", "Escritura Creativa", "Storytelling", "Existencialismo"]
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "{{ site.url }}#author",
+      "name": "I.A. Galdames",
+      "alternateName": "Ignacio Andrés Galdames",
+      "url": "{{ site.url }}",
+      {% if site.author_image_path %}
+      "image": "{{ site.url }}{{ site.author_image_path }}",
+      {% endif %}
+      "jobTitle": "Escritor de ciencia ficción y cyberpunk",
+      "description": "Ignacio Andrés Galdames, conocido como I.A. Galdames, es un escritor chileno de ciencia ficción nacido en 1987. Autor de Corceles Azules y Corceles Rojos.",
+      "birthDate": "1987-10-26",
+      "birthPlace": {
+        "@type": "Country",
+        "name": "Chile"
+      },
+      "sameAs": [
+        {% assign is_first = true %}
+        {% for network in site.data.redes_sociales.redesSociales %}
+          {% if network.redUsername and network.redUsername != "" %}
+            {% if is_first == false %},{% endif %}
+            "https://{{ network.redUrl }}/{{ network.redUsername }}"
+            {% assign is_first = false %}
+          {% endif %}
+        {% endfor %}
+      ],
+      "knowsAbout": ["Ciencia Ficción", "Cyberpunk", "Escritura Creativa", "Storytelling", "Existencialismo"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "{{ site.url }}#website",
+      "url": "{{ site.url }}",
+      "name": "{{ site.title }}",
+      "description": "{{ site.description | strip_html | strip_newlines }}",
+      "publisher": {
+        "@id": "{{ site.url }}#author"
+      },
+      "inLanguage": "es-CL"
+    }
+  ]
 }
 </script>
 
@@ -110,6 +130,7 @@
   {% endif %}
 }
 </script>
+
 {% elsif page.layout == 'cuento' %}
 <script type="application/ld+json">
 {
@@ -122,7 +143,9 @@
   {% if page.descripcionItem and page.descripcionItem != "" %}
   "description": "{{ page.descripcionItem | strip_html | escape }}",
   {% endif %}
-  {% if page.fechaItem %}
+  {% if page.fechaPublicacion %}
+  "datePublished": "{{ page.fechaPublicacion | replace: '/', '-' }}",
+  {% elsif page.fechaItem %}
   "datePublished": "{{ page.fechaItem | replace: '/', '-' }}",
   {% endif %}
   {% if page.Palabras and page.Palabras != "" %}
@@ -133,12 +156,76 @@
     "@type": "Organization",
     "name": "{{ page.institucionItem | escape }}"
   },
+  {% elsif page.nombreEditorial and page.nombreEditorial != "" %}
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ page.nombreEditorial | escape }}"
+  },
   {% endif %}
   {% if page.urlItem and page.urlItem != "" %}
   "url": "{{ page.urlItem }}"
   {% else %}
   "url": "{{ site.url }}{{ page.url }}"
   {% endif %}
+}
+</script>
+
+{% elsif page.layout == 'post' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url }}"
+  },
+  "headline": "{{ page.title | escape }}",
+  "description": "{% if page.seo_description %}{{ page.seo_description | strip_html | escape }}{% elsif page.description %}{{ page.description | strip_html | escape }}{% else %}{{ page.excerpt | strip_html | strip_newlines | escape }}{% endif %}",
+  {% if page.image %}
+  "image": "{{ '/assets/img/' | append: page.image | absolute_url }}",
+  {% endif %}
+  "author": {
+    "@id": "{{ site.url }}#author"
+  },
+  "publisher": {
+    "@id": "{{ site.url }}#website"
+  },
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}"
+}
+</script>
+
+{% elsif page.layout == 'home' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué libros ha publicado I.A. Galdames?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Su primer libro recopilatorio es Corceles Azules (2020), una antología fix-up cyberpunk. Posteriormente publicó la expansión de este universo con Corceles Rojos (2024). También participó en la aclamada antología colectiva CyberTerror: Austral."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Dónde leer los cuentos de Ignacio Galdames?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ha publicado relatos de ciencia ficción en revistas especializadas e independientes de Iberoamérica. Entre ellas destacan: Antología Neon Dreams and Nightmares, Revista Axxón, Espejo Humeante, Revista Anapoyesis, Axioma, Teoría Omicrón, Penumbria, Iguales, El Ojo de Uk y Weird Review."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿A qué género literario pertenece su obra?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sus escritos pertenecen principalmente a la Ciencia Ficción. Más específicamente, transitan entre la soft sci-fi, el Cyberpunk, y la ficción especulativa oscura (weird fiction), incorporando temas de aislamiento, transhumanismo y fuertes inspiraciones del expresionismo alemán."
+      }
+    }
+  ]
 }
 </script>
 {% endif %}

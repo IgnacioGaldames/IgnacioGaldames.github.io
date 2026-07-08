@@ -11,7 +11,7 @@ layout: page-sidebar-bottom
 		<div class="row">
 			{% if page.portadaItem %}
 			<div class="col-md-6 col-lg-4 d-flex align-content-center flex-wrap">
-				<img src="{{ page.portadaItem }}" class="card-img-top " alt="{{ page.nombreItem }}">
+				<img src="{{ page.portadaItem }}" class="card-img-top " alt="{{ page.nombreItem }}" loading="lazy" width="400" height="600">
 				<div class="card-footer w-100">
 					{% assign book = page %}
 					{% include enlacesLibro.html %}

@@ -1,42 +1,97 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>
-		{% if page.seo_title %}
-		{{ page.seo_title }}
-		{% else %}
-		{% if site.title and site.title != page.title %}
-		{{ site.title}} |
-		{% endif %}
 
-		{%if page.title %}
-		{{ page.title }}
-		{% endif %}
+	{%- comment -%}--- SEO: Clean Title Tag ---{%- endcomment -%}
+	{%- if page.seo_title -%}
+		{%- assign page_title = page.seo_title -%}
+	{%- elsif page.title -%}
+		{%- assign page_title = page.title -%}
+	{%- else -%}
+		{%- assign page_title = site.title -%}
+	{%- endif -%}
 
-		{%if page.subtitle %} | {{ page.subtitle }}
+	{%- if page.subtitle -%}
+		{%- assign full_title = page_title | append: " | " | append: page.subtitle -%}
+	{%- elsif page.title and site.title != page.title -%}
+		{%- assign full_title = page_title | append: " | " | append: site.title -%}
+	{%- else -%}
+		{%- assign full_title = page_title | append: " | " | append: site.subtitle -%}
+	{%- endif -%}
+	<title>{{ full_title | strip | strip_newlines }}</title>
 
-		{% endif %}
-		{% endif %}
-	</title>
+	{%- comment -%}--- SEO: Meta Description ---{%- endcomment -%}
+	{%- if page.seo_description -%}
+		{%- assign meta_description = page.seo_description -%}
+	{%- elsif page.description -%}
+		{%- assign meta_description = page.description -%}
+	{%- elsif page.descripcionItem -%}
+		{%- assign meta_description = page.descripcionItem | strip_html | truncate: 160 -%}
+	{%- else -%}
+		{%- assign meta_description = site.description | strip_html | strip_newlines | truncate: 160 -%}
+	{%- endif -%}
+	<meta name="description" content="{{ meta_description | strip_html | strip_newlines | strip }}">
 
-	{% if page.seo_description %}
-	<meta name="description" content="{{ page.seo_description }}">
-	{% elsif page.description %}
-	<meta name="description" content="{{ page.description }}">
-	{% else %}
-	<meta name="description" content="{% if site.title and site.title != page.title %}
-	{{ site.title}} |
-	{% endif %}
-	{%if page.title %}
-	{{ page.title }}
-	{% endif %}
-	{%if page.subtitle %} | {{ page.subtitle }}
-	{% endif %}">
-	{% endif %}
-
+	{%- comment -%}--- SEO: Keywords ---{%- endcomment -%}
 	{% if page.keywords %}
 	<meta name="keywords" content="{{ page.keywords }}">
 	{% endif %}
+
+	{%- comment -%}--- SEO: Canonical URL ---{%- endcomment -%}
+	<link rel="canonical" href="{{ page.url | absolute_url }}">
+
+	{%- comment -%}--- SEO: Language ---{%- endcomment -%}
+	{% if page.lang and page.lang != "es" %}
+	<meta http-equiv="content-language" content="{{ page.lang }}">
+	{% endif %}
+
+	{%- comment -%}--- SEO: Open Graph Meta Tags ---{%- endcomment -%}
+	{%- if page.layout == 'libro' -%}
+		{%- assign og_type = "book" -%}
+	{%- elsif page.layout == 'post' -%}
+		{%- assign og_type = "article" -%}
+	{%- elsif page.layout == 'cuento' -%}
+		{%- assign og_type = "article" -%}
+	{%- else -%}
+		{%- assign og_type = "website" -%}
+	{%- endif -%}
+	<meta property="og:title" content="{{ full_title | strip | strip_newlines }}">
+	<meta property="og:description" content="{{ meta_description | strip_html | strip_newlines | strip }}">
+	<meta property="og:type" content="{{ og_type }}">
+	<meta property="og:url" content="{{ page.url | absolute_url }}">
+	<meta property="og:site_name" content="{{ site.title }}">
+	<meta property="og:locale" content="es_CL">
+	{%- if page.portadaItem -%}
+	<meta property="og:image" content="{{ page.portadaItem | absolute_url }}">
+	{%- elsif page.image -%}
+	<meta property="og:image" content="{{ '/assets/img/' | append: page.image | absolute_url }}">
+	{%- elsif site.author_image_path -%}
+	<meta property="og:image" content="{{ site.author_image_path | absolute_url }}">
+	{%- endif -%}
+
+	{%- comment -%}--- SEO: Twitter Card Meta Tags ---{%- endcomment -%}
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="{{ full_title | strip | strip_newlines }}">
+	<meta name="twitter:description" content="{{ meta_description | strip_html | strip_newlines | strip }}">
+	{%- if page.portadaItem -%}
+	<meta name="twitter:image" content="{{ page.portadaItem | absolute_url }}">
+	{%- elsif page.image -%}
+	<meta name="twitter:image" content="{{ '/assets/img/' | append: page.image | absolute_url }}">
+	{%- elsif site.author_image_path -%}
+	<meta name="twitter:image" content="{{ site.author_image_path | absolute_url }}">
+	{%- endif -%}
+
+	{%- comment -%}--- SEO: Article-specific meta (posts and cuentos) ---{%- endcomment -%}
+	{%- if page.date -%}
+	<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+	{%- endif -%}
+	{%- if page.categories -%}
+	{%- for category in page.categories -%}
+	<meta property="article:tag" content="{{ category }}">
+	{%- endfor -%}
+	{%- endif -%}
+
+	{%- comment -%}--- Stylesheets ---{%- endcomment -%}
 	<link rel="stylesheet" href="{{ site.css_path  }}">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -60,19 +115,19 @@
 
 		gtag('config', 'G-8P2YMJKN76');
 	</script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
 		integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-		crossorigin="anonymous"></script>
+		crossorigin="anonymous" defer></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
 		integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-		crossorigin="anonymous"></script>
+		crossorigin="anonymous" defer></script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/3.5.0/luxon.min.js"
 		integrity="sha512-SN7iwxiJt9nFKiLayg3NjLItXPwRfBr4SQSIugMeBFrD4lIFJe1Z/exkTZYAg3Ul+AfZEGws2PQ+xSoaWfxRQQ=="
-		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+		crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
 
-	<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrambleTextPlugin.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrambleTextPlugin.min.js" defer></script>
 	<script
 		id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/35a0ed5690dde2f98fe552f0d/127578cacb946ee71350cd5e9.js");</script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2691096179558388"

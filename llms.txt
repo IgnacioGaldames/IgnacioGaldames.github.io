@@ -1,0 +1,49 @@
+---
+layout: null
+---
+# {{ site.title | default: "I.A. Galdames" }} - {{ site.subtitle | default: "Autor de Ciencia Ficción y Cyberpunk" }}
+
+> {{ site.description | strip_html | strip_newlines }}
+
+## Sobre el autor
+Es un desarrollador web autodidacta e ingeniero de sistemas en una compañía de retail. Sus escritos exploran la soledad, el aislamiento, la percepción temporal y el existencialismo posthumanista, con fuertes inspiraciones del expresionismo alemán, el género *neo-noir* y el *cyberpunk*. 
+
+Posee certificaciones en Escritura Creativa de Videojuegos por University of British Columbia (UBC), un Diplomado en Storytelling y fue alumno en escritura creativa de Brandon Sanderson.
+
+## Obras Principales (Libros y Antologías)
+{% assign librosOrdenados = site.libros | sort: "fechaPublicacion" | reverse %}
+{%- for libro in librosOrdenados -%}
+{%- if libro.hidden != true %}
+### {{ libro.nombreItem }}
+- **Fecha:** {{ libro.fechaPublicacion }}
+- **Editorial:** {{ libro.nombreEditorial }} {% if libro.nombreSello %}(Sello {{ libro.nombreSello }}){% endif %}
+{%- if libro.isbn %}
+- **ISBN:** {{ libro.isbn }}
+{%- endif %}
+- **Sinopsis:** {{ libro.descripcionItem | strip_html | strip_newlines }}
+- **Enlaces:** {% if libro.urlBuscalibre %}[Buscalibre]({{ libro.urlBuscalibre }}){% endif %} {% if libro.urlAmazon %}[Amazon]({{ libro.urlAmazon }}){% endif %} [Página oficial]({{ site.url }}{{ libro.url }})
+{% endif -%}
+{%- endfor %}
+
+## Publicaciones Recientes (Cuentos y Relatos Cortos)
+A continuación un listado de los cuentos que ha publicado a lo largo del tiempo:
+{% assign cuentosOrdenados = site.cuentos | sort: "fechaPublicacion" | reverse %}
+{%- for cuento in cuentosOrdenados -%}
+{%- if cuento.nombreItem %}
+- **{{ cuento.nombreItem }}** {% if cuento.nombreEditorial %} — Publicado en *{{ cuento.nombreEditorial }}*{% elsif cuento.institucionItem %} — Publicado en *{{ cuento.institucionItem }}*{% endif %}
+{%- endif -%}
+{%- endfor %}
+
+## Últimas Noticias en el Blog
+{% assign postsOrdenados = site.posts | sort: "date" | reverse %}
+{%- for post in postsOrdenados limit: 5 %}
+- **{{ post.title }}** ({{ post.date | date: "%Y-%m-%d" }}): {{ post.url | prepend: site.url }}
+{%- endfor %}
+
+## Enlaces Oficiales
+- **Sitio Web Oficial:** {{ site.url }}
+{%- for network in site.data.redes_sociales.redesSociales %}
+{%- if network.redUsername and network.redUsername != "" %}
+- **{{ network.redUrl | split: ".com" | first | capitalize }}:** https://{{ network.redUrl }}/{{ network.redUsername }}
+{%- endif %}
+{%- endfor %}
