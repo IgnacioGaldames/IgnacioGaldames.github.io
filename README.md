@@ -149,10 +149,9 @@ Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE
 
 ### Uso
 ``
-
+bundle exec jekyll clean
 bundle exec jekyll build
 
-bundle exec jekyll serve --watch --incremental --port 4000
 bundle exec jekyll serve --watch --incremental --port 4000 --config _config.yml,_config_dev.yml
 
 sass --style=expanded --color --watch assets/scss/main.scss assets/css/main.css 
