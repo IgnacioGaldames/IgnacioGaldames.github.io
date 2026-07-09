@@ -3,6 +3,7 @@ layout: cuento
 title: The scream decelerated
 nombreItem: The scream decelerated
 tipoItem: Ficción Corta
+en_libros: [corceles_azules]
     
 nombreEditorial: Neon Dreams and Nightmares
 nombreSello:
@@ -32,35 +33,17 @@ playlistAmazonMusicId:
 adobeAero: 
 postAsociado:
 itemDestacado: false
-
 ---
 
-<div class="container-fluid bg-dark-subtle py-3 my-3  ">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2>Fan Art</h2>
-       </div>
-      <div class="col-md-4">
-        <img src="/assets\img\fanart\corceles_azules\462550271_1569664530636558_3422626735866888264_n.jpg" class="img-fluid rounded shadow mb-3">
-        <div class="source-code text-capitalize fs-9 fw-lighter text-light text-muted date ls-1 mt-n1 glow-data ">462550271_1569664530636558_3422626735866888264_n.jpg</div>
-        <p>Edvardo, protagonista de "El grito desacelerado"</p>
-      </div>
-    </div>
-  </div>
-</div>
+**"El grito desacelerado"** es una visceral historia de ciencia ficción militar y cyberpunk creada por el autor chileno **Ignacio Galdames** (I.A. Galdames). Formando parte de la antología *[Corceles Azules](/libros/corceles_azules.html)*, este relato aborda los traumas de la guerra, la modificación tecnológica extrema y sus consecuencias devastadoras en la mente humana.
 
-<div class="container-fluid bg-dark-subtle py-3 my-3  ">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2>Arte e Imagenes relacionadas</h2>
-       </div>
-      <div class="col-md-4">
-        <img src="/assets\img\148203.jpg" class="img-fluid rounded shadow mb-3">
-        <div class="source-code text-capitalize fs-9 fw-lighter text-light text-muted date ls-1 mt-n1 glow-data ">148203.jpg</div>
-        <p>Imagen placeholder, antes de la portada final, por I.A. Galdames</p>
-      </div>
-    </div>
-  </div>
-</div>
+### Sinopsis y Temáticas
+
+El relato sigue a Edvardo, un veterano de guerra severamente modificado que, a causa de sus implantes cibernéticos militares, experimenta el paso del tiempo de forma alterada. Relegado a los oscuros y decadentes márgenes de Santiago de Neo Extremadura, el protagonista enfrenta sus demonios internos mientras sufre la disociación entre la realidad cronológica y su experiencia temporal ralentizada y fragmentada.
+
+Los temas centrales de esta obra exploran los rincones más oscuros del **cyberpunk latinoamericano**:
+- **Trastorno de Estrés Postraumático (TEPT) cibernético**: Las secuelas imborrables de una guerra corporativa y cómo las mejoras biónicas pueden volverse en contra de la psicología del soldado.
+- **Alteración de la percepción del tiempo**: El impacto existencial de vivir a una velocidad cognitiva diferente a la del resto de la sociedad.
+- **Decadencia y transhumanismo bélico**: La deshumanización que sufren los peones de las guerras tecnológicas cuando son descartados en una urbe implacable.
+
+A través de **"El grito desacelerado"**, Ignacio Galdames consolida su reputación literaria en el género *Neo-noir* y *cyberpunk*, entregando un retrato crudo sobre las heridas invisibles de un futuro hipertecnológico.

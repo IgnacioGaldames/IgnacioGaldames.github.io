@@ -2,6 +2,7 @@
 layout: libro
 title: Corceles Rojos
 nombreItem: Corceles Rojos
+slug: corceles_rojos
 tipoItem:
 nombreEditorial: Speedwagon Media Works
 nombreSello: Kaneda
@@ -37,33 +38,14 @@ itemDestacado: true
     <div class="col-12">
     
   <h2> Noticias y enlaces sobre Corceles Rojos</h2>
+  <p>DEBUG slug: {{ page.slug }}</p>
+  <p>DEBUG total cuentos: {{ site.cuentos.size }}</p>
+  {% assign cuentos_del_libro = site.cuentos | where_exp: "item", "item.en_libros contains page.slug" %}
+  <p>DEBUG cuentos in libro: {{ cuentos_del_libro.size }}</p>
 
   </div>
 </div>
-
-<div class="container-fluid bg-dark-subtle py-3 my-3  ">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2>Cuentos incluidos</h2>
-       </div>
-      <div class="col-md-4">
-        <p>Deseos junto a la piscina</p>
-        <p>Hacia el Norte</p>
-        <p>Señor Cetáceo</p>
-        <p>Tritón</p>
-        <p>El precio de cada despedida</p>
-        <p>Los recuerdos</p>
-        <p>Danzando sobre el bosque de mi piel</p>
-        <p>Catecolamina</p>
-        <p>La reserva de animales</p>
-        <p>Te encontraré en el siguiente otoño</p>
-        <p>Caballos salvajes, la carretera y yo</p>
-      </div>
-    </div>
-  </div>
 </div>
-
 
 <div class="container-fluid bg-dark-subtle py-3 my-3  ">
   <div class="container">

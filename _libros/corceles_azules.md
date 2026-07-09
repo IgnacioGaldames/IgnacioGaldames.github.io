@@ -2,6 +2,7 @@
 layout: libro
 title: Corceles Azules
 nombreItem: Corceles Azules
+slug: corceles_azules
 tipoItem:
 nombreEditorial: Speedwagon Media Works
 nombreSello: Kaneda
@@ -45,31 +46,6 @@ itemDestacado: true
     <a href="https://amazingstories.com/2024/07/novedades-de-julio-1-y-2-2/" target="_blank" class="btn btn-primary mb-3">Amazing Stories</a>
 
     <a href="https://amazingstories.com/2024/08/novedades-de-julio-3-3/" target="_blank" class="btn btn-primary mb-3">Amazing Stories</a>
-    </div>
-  </div>
-</div>
-
-
-<div class="container-fluid bg-dark-subtle py-3 my-3  ">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2>Cuentos incluidos</h2>
-       </div>
-      <div class="col-md-4">
-        <p>El grito desacelerado</p>
-        <p>Iris</p>
-        <p>El Chinchinero</p>
-        <p>Lloverá en un día soleado</p>
-        <p>El último nivel</p>
-        <p>Una idea viajera</p>
-        <p>En marcha, seguramente hacia alguna parte</p>
-        <p>La playa lunar</p>
-        <p>Mi sueño de una serpiente mítica</p>
-        <p>Mi pequeño y bonito veneno</p>
-        <p>Fiebre azul</p>
-        <p>Todos tus malditos caballos subiendo al cielo</p>
-      </div>
     </div>
   </div>
 </div>

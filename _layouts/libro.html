@@ -4,13 +4,14 @@ layout: page-sidebar-bottom
 <div class="container libro">
 	<div class="card shadow border border-light-subtle" id="cardLibro">
 		<div class="card-header">
-			<h5 class="card-title" id="libro-nombreItem">{{ page.nombreItem }}</h5>
+			<h1 class="card-title h5" id="libro-nombreItem">{{ page.nombreItem }}</h1>
 			{% assign book = page %}
 			{% include dataLibro.html %}
 		</div>
 		<div class="row">
 			<div class="col-md-6 col-lg-4 d-flex align-content-center flex-wrap">
-				<img src="{{ page.portadaItem }}" class="card-img-top " alt="{{ page.nombreItem }}" loading="lazy" width="400" height="600">
+				<img src="{{ page.portadaItem }}" class="card-img-top " alt="{{ page.nombreItem }}" loading="lazy" width="400"
+					height="600">
 				<div class="card-footer w-100">
 					{% assign book = page %}
 					{% include enlacesLibro.html %}
@@ -33,7 +34,23 @@ layout: page-sidebar-bottom
 		{{ content }}
 	</div>
 </article>
+
 <div class="container">
+		{% if cuentos_del_libro.size > 0 %}
+		<article class="row my-5">
+			<div class="col-12">
+				<h2>Cuentos incluidos</h2>
+				<div class="list-group">
+					{% for cuento in cuentos_del_libro %}
+					<a href="{{ cuento.url }}" class="list-group-item list-group-item-action bg-dark-subtle">{{ cuento.nombreItem
+						}}</a>
+					{% endfor %}
+				</div>
+			</div>
+		</article>
+		{% endif %}
+	{% assign cuentos_del_libro = site.cuentos | where_exp: "item", "item.en_libros contains page.slug" %}
+
 	{% assign content = post.content | strip_newlines %}
 	{% if content != "" or page.adobeAero or page.playlistSpotify or page.playlistAmazonMusicSrc %}
 	<article class="row my-5" id="Contenido">
@@ -44,6 +61,8 @@ layout: page-sidebar-bottom
 		{% include playlists.html %}
 	</article>
 	{% endif %}
+
+
 	<article class="row border-top my-3" id="include-coleccionLibros">
 		<div class="col-12 mx-auto">
 			{% include coleccionLibros.html %}

@@ -4,7 +4,7 @@ layout: page-sidebar-bottom
 <div class="container cuento">
 	<div class="card shadow border border-light-subtle" id="cardLibro">
 		<div class="card-header">
-			<h5 class="card-title" id="libro-nombreItem">{{ page.nombreItem }}</h5>
+			<h1 class="card-title h5" id="libro-nombreItem">{{ page.nombreItem }}</h1>
 			{% assign book = page %}
 			{% include dataLibro.html %}
 		</div>
@@ -47,6 +47,29 @@ layout: page-sidebar-bottom
 			{% include playlists.html %}
 		</article>
 		{% endif %}
+		{% if page.en_libros %}
+		<article class="row my-5">
+			<div class="col-12">
+				<h2>Aparece en:</h2>
+				<div class="d-flex flex-wrap gap-3 mt-3">
+					{% for libro_slug in page.en_libros %}
+						{% assign libro = site.libros | where: "slug", libro_slug | first %}
+						{% if libro %}
+						<div class="card bg-dark-subtle" style="width: 12rem;">
+							{% if libro.portadaItem %}
+							<img src="{{ libro.portadaItem }}" class="card-img-top" alt="{{ libro.nombreItem }}" loading="lazy">
+							{% endif %}
+							<div class="card-body p-2 text-center">
+								<a href="{{ libro.url }}" class="stretched-link text-decoration-none text-light">{{ libro.nombreItem }}</a>
+							</div>
+						</div>
+						{% endif %}
+					{% endfor %}
+				</div>
+			</div>
+		</article>
+		{% endif %}
+
 		<article class="row border-top my-3" id="include-coleccionLibros">
 			<div class="col-12 mx-auto">
 				{% include coleccionLibros.html %}
