@@ -12,14 +12,6 @@
 			<div class="row">
 				<div class="col-12 col-md-2 col-xxl-1 order-1 order-md-0 d-none d-md-block">
 					<aside>
-						<small>
-							<div class="source-code fw-lighter text-muted glow-data text-center" id="binary-output"
-								style="font-size: 0.23rem;">
-								{% if page.binary != false %}
-								  {{ content | strip_html | strip_newlines | to_binary }}
-								{% endif %}
-							</div>
-						</small>
 					</aside>
 				</div>
 				<div class="col-12 col-md-10 col-xxl-11 order-0 order-md-1">
@@ -60,57 +52,49 @@
 	<script src="{{ '/assets/js/bundle.js' | relative_url }}"></script>
 	<script>
 		document.addEventListener("DOMContentLoaded", () => {
-			const walker = document.createTreeWalker(
-				document.body,
-				NodeFilter.SHOW_TEXT,
-				{
-					acceptNode: function (node) {
-						if (!node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
-						let parent = node.parentNode;
-						while (parent) {
-							const tag = parent.nodeName.toLowerCase();
-							if (["script", "style", "noscript", "code", "pre"].includes(tag)) {
-								return NodeFilter.FILTER_REJECT;
-							}
-							parent = parent.parentNode;
+			const targetElements = document.querySelectorAll('h1');
+			targetElements.forEach(el => {
+				const walker = document.createTreeWalker(
+					el,
+					NodeFilter.SHOW_TEXT,
+					{
+						acceptNode: function (node) {
+							if (!node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+							return NodeFilter.FILTER_ACCEPT;
 						}
-						return NodeFilter.FILTER_ACCEPT;
 					}
+				);
+
+				const nodes = [];
+				while (walker.nextNode()) {
+					nodes.push(walker.currentNode);
 				}
-			);
 
-			const nodes = [];
-			while (walker.nextNode()) {
-				nodes.push(walker.currentNode);
-			}
+				nodes.forEach(node => {
+					const text = node.nodeValue;
+					if (!/[io01]/i.test(text)) return;
 
-			nodes.forEach(node => {
-				const text = node.nodeValue;
-				if (!/[io01]/i.test(text)) return;
+					// Reemplazo seguro: una sola pasada, sin solapamientos
+					const replacedHTML = text.replace(/io|oi|10|01|i|o|1|0/gi, match => {
+						if (/^(io|oi|10|01)$/i.test(match)) {
+							return `<span class="io io-highlight">${match}</span>`;
+						} else if (/^(i|1)$/i.test(match)) {
+							return `<span class="io">${match}</span>`;
+						} else if (/^(o|0)$/i.test(match)) {
+							return `<span class="io">${match}</span>`;
+						}
+						return match;
+					});
 
-				// Reemplazo seguro: una sola pasada, sin solapamientos
-				const replacedHTML = text.replace(/io|oi|10|01|i|o|1|0/gi, match => {
-					if (/^(io|oi|10|01)$/i.test(match)) {
-						return `<span class="io io-highlight">${match}</span>`;
-					} else if (/^(i|1)$/i.test(match)) {
-						return `<span class="io">${match}</span>`;
-					} else if (/^(o|0)$/i.test(match)) {
-						return `<span class="io">${match}</span>`;
+					if (replacedHTML !== text) {
+						const wrapper = document.createElement("span");
+						wrapper.innerHTML = replacedHTML;
+						node.parentNode.replaceChild(wrapper, node);
 					}
-					return match;
 				});
-
-				if (replacedHTML !== text) {
-					const wrapper = document.createElement("span");
-					wrapper.innerHTML = replacedHTML;
-					node.parentNode.replaceChild(wrapper, node);
-				}
 			});
 		});
 	</script>
 
 </body>
-<amp-auto-ads type="adsense" data-ad-client="ca-pub-2691096179558388">
-</amp-auto-ads>
-
 </html>

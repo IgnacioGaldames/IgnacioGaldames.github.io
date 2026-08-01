@@ -46,6 +46,7 @@ ridk install
 gem install bundler
 bundle install
 bundle exec jekyll serve
+bundle exec jekyll serve --watch --incremental --port 4000 --config _config.yml,_config_dev.yml
 ```
 Abre tu navegador y navega a http://localhost:4000 para ver el sitio.
 

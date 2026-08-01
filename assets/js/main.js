@@ -44,33 +44,4 @@ document.addEventListener('DOMContentLoaded', () => {
 // GSAP Animation
 gsap.registerPlugin(ScrambleTextPlugin);
 updateDateTime();
-
-
-// GSAP ScrambleText Animation for h1 and .source-code elements on page load
-document.addEventListener('DOMContentLoaded', () => {
-  const elementsToScramble = document.querySelectorAll('h1, .source-code');
-  const scrambleChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-
-  elementsToScramble.forEach(el => {
-    const originalText = el.textContent;
-
-    // Skip empty elements or elements with only whitespace
-    if (!originalText || originalText.trim() === '') {
-      return;
-    }
-
-    gsap.to(el, {
-      duration: 1.5, // Duration of the scramble effect
-      scrambleText: {
-        text: originalText, // Text to scramble to
-        chars: scrambleChars, // Characters to use for scrambling
-        speed: 0.2, // Speed of character cycling (lower is faster cycling, higher is slower)
-      },
-      ease: "power1.inOut", // Easing for the overall animation
-    });
-  });
-});
-
-// GSAP Animation
-gsap.registerPlugin(ScrambleTextPlugin);
-updateDateTime();
+
