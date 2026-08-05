@@ -20,11 +20,13 @@
     {% endif %}
 
     {% if ultimaPublicacion %}
-    <div>
-      <span class="fs-7">{{ tipo }}</span>
-      <a href="{{ urlDestino }}" class="text-capitalize eb-garamond fs-6" target="_blank">{{
-        ultimaPublicacion.nombreItem}} - {{institucion}}</a> <span
-        class="source-code text-capitalize fs-9 fw-lighter text-end text-light text-muted date ls-175 mt-n1 glow-data ">{{ultimaPublicacion.datosItem}}</span>
+    <div class="source-code text-start mt-2 mb-3">
+      <span class="text-success">> ÚLTIMA_ENTRADA_DETECTADA:</span>
+      <span class="fs-8 text-muted">[{{ tipo | upcase }}]</span>
+      <a href="{{ urlDestino }}" class="text-capitalize text-info glow-data fs-7" target="_blank">
+        {{ ultimaPublicacion.nombreItem }} - {{ institucion }}
+      </a>
+      <span class="ms-1 text-warning fs-8">[ESTADO: DESENCRIPTADO]</span>
     </div>
     {% else %}
     No hay publicaciones disponibles.
