@@ -38,6 +38,7 @@ itemDestacado: true
     <div class="col-12">
     
   <h2> Noticias y enlaces sobre Corceles Rojos</h2>
+  <p><a href="https://www.lafuriadellibro.com/eventos/presentacion-catalogo-del-sello-editorial-kaneda/"  target="_blank" class="btn btn-primary mb-3">Presentación del catálogo del sello editorial Kaneda</a></p>
   <p>DEBUG slug: {{ page.slug }}</p>
   <p>DEBUG total cuentos: {{ site.cuentos.size }}</p>
   {% assign cuentos_del_libro = site.cuentos | where_exp: "item", "item.en_libros contains page.slug" %}
