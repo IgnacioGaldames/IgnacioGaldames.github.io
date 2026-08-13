@@ -25,7 +25,7 @@
       {%endif%}
       {% assign editorial_revista = miItem.nombreEditorial | default: miItem.institucionItem %}
       <span class="text-uppercase fw-bolder border-start border-end px-3 mx-3 text-center fs-7">
-        {% if miItem.nombreEditorial and miItem.datosItem != "Libro" %}REVISTA: {% endif %}{{ editorial_revista }}
+        {% if miItem.nombreEditorial and miItem.datosItem != "Libro" %} {% endif %}{{ editorial_revista }}
       </span>
       <div class="flex flex-column">
         {% if miItem.datosItem == "Libro" %}
