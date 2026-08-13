@@ -93,3 +93,10 @@ cursos:
     tipoItem: Certificación Profesional
     urlItem: https://credentials.edx.org/credentials/778afea4046e41129f3e9ff722788168/
     datosItem: 778afea4046e41129f3e9ff722788168
+
+  - nombreItem: 'Taller de Creación narrativa'
+    institucionItem: Universidad Católica de Chile
+    fechaItem: 2026-07-30
+    tipoItem: taller
+    urlItem: assets/pdf/certificado_uc_galdames.pdf
+    datosItem: A22DB9ED7A

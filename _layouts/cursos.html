@@ -5,7 +5,7 @@ layout: page-sidebar-right
 <section class="cursos">
   {{ content }}
   <div class="card shadow">
-    {% assign sortedItems = site.data.mis_cursos.cursos | sort: "fechaItem" %}
+    {% assign sortedItems = site.data.mis_cursos.cursos | sort: "fechaItem"  | reverse  %}
     {% include  dataList.html %}
   </div>
 </section>
