@@ -39,6 +39,9 @@ node -v
 choco install ruby
 refreshenv
 ruby -v
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+npm config set strict-ssl false
+npm install -g rvm-windows
 rvm install ruby-3.3.4
 rvm use ruby-3.3.4
 ruby -v
