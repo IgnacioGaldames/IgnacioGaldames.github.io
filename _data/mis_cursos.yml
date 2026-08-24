@@ -100,3 +100,10 @@ cursos:
     tipoItem: taller
     urlItem: assets/pdf/certificado_uc_galdames.pdf
     datosItem: A22DB9ED7A
+
+  - nombreItem: 'Certificación en Storytelling'
+    institucionItem: Universidad de Chile
+    fechaItem: 2026-07-03
+    tipoItem: certificación
+    urlItem: https://app.fcfmonline.cl/certificates/3690cd62573a4abc85a0954a2c5aa56e
+    datosItem: 3690cd62573a4abc85a0954a2c5aa56e
