@@ -107,3 +107,11 @@ cursos:
     tipoItem: certificación
     urlItem: https://app.fcfmonline.cl/certificates/3690cd62573a4abc85a0954a2c5aa56e
     datosItem: 3690cd62573a4abc85a0954a2c5aa56e
+
+  - nombreItem: 'Creative Writing: The Craft of Plot'
+    institucionItem: Universidad Wesleyan
+    fechaItem: 2026-08-26
+    tipoItem: certificación
+    urlItem: https://www.coursera.org/account/accomplishments/certificate/QZ26MCDT00IQ
+    datosItem: QZ26MCDT00IQ
+  
