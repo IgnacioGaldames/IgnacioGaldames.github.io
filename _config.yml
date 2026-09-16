@@ -22,16 +22,11 @@ title: I. A. Galdames
 subtitle: Escritor chileno de ciencia ficción
 author: I.A. Galdames
 email: caminantestelar@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  <p>I. A. Galdames, alias de Ignacio Andrés Galdames, es un escritor chileno de ciencia ficción nacido en 1987. Es un desarrollador web autodidacta en una respetable compañía de retail y una mermelada de ayer. Autor de Corceles Azules y Corceles Rojos, sus primeros libros, dos cuentarios fix-up cyberpunk.</p>
-
-  <p>Ha publicado cuentos en la antología Neon Dreams and Nightmares, la revista Espejo Humeante, en la revista Anapoyesis, la revista Axioma, en Teoría Omicrón, la revista Penumbria,  la revista Iguales, El ojo de Uk, Weird Review y la reconocida revista Axxón.</p>
-
-  <p>Certificado en escritura creativa como alumno de Brandon Sanderson, además tiene un Diplomado en Storytelling y un certificado profesional en Escritura Creativa de Videojuegos por University of British Columbia.</p>
-
-  <p>Sus escritos son mayormente de ciencia ficción y exploran la soledad, el aislamiento, la percepción temporal y el existencialismo, con inspiraciones expresionistas, cyberpunk y neo-noir.</p>
-
-  <p>Su primer libro, Corceles Azules, es una antología fix-up cyberpunk. También participó en la antología CyberTerror: Austral.</p>
+description: >-
+  I.A. Galdames es un escritor chileno de ciencia ficción y cyberpunk.
+  Autor de Corceles Azules y Corceles Rojos, publica cuentos, ensayos y
+  artículos sobre literatura especulativa, escritura creativa y tecnología.
+  También es desarrollador web e ingeniero de sistemas.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ignaciogaldames.com" # the base hostname & protocol for your site, e.g. http://example.com
 

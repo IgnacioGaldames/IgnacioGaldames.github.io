@@ -18,7 +18,7 @@
 	{%- else -%}
 		{%- assign full_title = page_title | append: " | " | append: site.subtitle -%}
 	{%- endif -%}
-	<title>{{ full_title | strip | strip_newlines }}</title>
+	<title>{{ full_title | strip | strip_newlines | escape }}</title>
 
 	{%- comment -%}--- SEO: Meta Description ---{%- endcomment -%}
 	{%- if page.seo_description -%}
@@ -30,11 +30,11 @@
 	{%- else -%}
 		{%- assign meta_description = site.description | strip_html | strip_newlines | truncate: 160 -%}
 	{%- endif -%}
-	<meta name="description" content="{{ meta_description | strip_html | strip_newlines | strip }}">
+	<meta name="description" content="{{ meta_description | strip_html | strip_newlines | strip | escape }}">
 
 	{%- comment -%}--- SEO: Keywords ---{%- endcomment -%}
 	{% if page.keywords %}
-	<meta name="keywords" content="{{ page.keywords }}">
+	<meta name="keywords" content="{{ page.keywords | escape }}">
 	{% endif %}
 
 	{%- comment -%}--- SEO: Canonical URL ---{%- endcomment -%}
@@ -71,37 +71,37 @@
 	{%- else -%}
 		{%- assign og_type = "website" -%}
 	{%- endif -%}
-	<meta property="og:title" content="{{ full_title | strip | strip_newlines }}">
-	<meta property="og:description" content="{{ meta_description | strip_html | strip_newlines | strip }}">
+	<meta property="og:title" content="{{ full_title | strip | strip_newlines | escape }}">
+	<meta property="og:description" content="{{ meta_description | strip_html | strip_newlines | strip | escape }}">
 	<meta property="og:type" content="{{ og_type }}">
 	<meta property="og:url" content="{{ page.url | absolute_url }}">
 	<meta property="og:site_name" content="{{ site.title }}">
 	<meta property="og:locale" content="es_CL">
 	{%- if page.portadaItem -%}
-	<meta property="og:image" content="{{ page.portadaItem | absolute_url }}">
+		{%- assign social_image = page.portadaItem -%}
 	{%- elsif page.image -%}
-	<meta property="og:image" content="{{ '/assets/img/' | append: page.image | absolute_url }}">
-	{%- elsif site.author_image_path -%}
-	<meta property="og:image" content="{{ site.author_image_path | absolute_url }}">
+		{%- assign social_image = '/assets/img/' | append: page.image -%}
+	{%- else -%}
+		{%- assign social_image = site.author_image_path -%}
 	{%- endif -%}
+	<meta property="og:image" content="{{ social_image | absolute_url }}">
+	<meta property="og:image:alt" content="{{ full_title | strip | strip_newlines | escape }}">
 
 	{%- comment -%}--- SEO: Twitter Card Meta Tags ---{%- endcomment -%}
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="@{{ site.twitter_username }}">
-	<meta name="twitter:creator" content="@{{ site.twitter_username }}">
-	<meta name="twitter:title" content="{{ full_title | strip | strip_newlines }}">
-	<meta name="twitter:description" content="{{ meta_description | strip_html | strip_newlines | strip }}">
-	{%- if page.portadaItem -%}
-	<meta name="twitter:image" content="{{ page.portadaItem | absolute_url }}">
-	{%- elsif page.image -%}
-	<meta name="twitter:image" content="{{ '/assets/img/' | append: page.image | absolute_url }}">
-	{%- elsif site.author_image_path -%}
-	<meta name="twitter:image" content="{{ site.author_image_path | absolute_url }}">
-	{%- endif -%}
+	<meta name="twitter:site" content="@{{ site.twitter_username | escape }}">
+	<meta name="twitter:creator" content="@{{ site.twitter_username | escape }}">
+	<meta name="twitter:title" content="{{ full_title | strip | strip_newlines | escape }}">
+	<meta name="twitter:description" content="{{ meta_description | strip_html | strip_newlines | strip | escape }}">
+	<meta name="twitter:image" content="{{ social_image | absolute_url }}">
+	<meta name="twitter:image:alt" content="{{ full_title | strip | strip_newlines | escape }}">
 
 	{%- comment -%}--- SEO: Article-specific meta (posts and cuentos) ---{%- endcomment -%}
 	{%- if page.date -%}
 	<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+	{%- endif -%}
+	{%- if page.last_modified_at -%}
+	<meta property="article:modified_time" content="{{ page.last_modified_at | date_to_xmlschema }}">
 	{%- endif -%}
 	{%- if page.categories -%}
 	{%- for category in page.categories -%}

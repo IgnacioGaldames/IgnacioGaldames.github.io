@@ -8,11 +8,11 @@
       "@id": "{{ site.url }}#author",
       "name": "I.A. Galdames",
       "alternateName": ["Ignacio Andrés Galdames", "Ignacio Galdames"],
-      "url": "{{ site.url }}",
+      "url": "{{ site.url | append: '/' }}",
       {% if site.author_image_path %}
       "image": {
         "@type": "ImageObject",
-        "url": "{{ site.url }}{{ site.author_image_path }}",
+        "url": "{{ site.author_image_path | absolute_url }}",
         "caption": "I.A. Galdames, escritor chileno de ciencia ficción"
       },
       {% endif %}
@@ -89,8 +89,8 @@
   {% if page.fechaPublicacion %}
   "datePublished": "{{ page.fechaPublicacion | replace: '/', '-' }}",
   {% endif %}
-  {% if page.ISBN %}
-  "isbn": "{{ page.ISBN }}",
+  {% if page.isbn %}
+  "isbn": "{{ page.isbn }}",
   {% endif %}
   {% if page.Paginas %}
   "numberOfPages": {{ page.Paginas }},
@@ -140,16 +140,17 @@
     {% endif %}
   ],
   {% endif %}
-  {% if page.urlGoodreads or page.urlterceraFundacion %}
+  "url": "{{ site.url }}{{ page.url }}"
+  {% if page.urlGoodreads or page.urlTerceraFundacion %},
   "sameAs": [
     {% assign sameas_count = 0 %}
     {% if page.urlGoodreads %}
       {% assign sameas_count = sameas_count | plus: 1 %}
       "{{ page.urlGoodreads }}"
     {% endif %}
-    {% if page.urlterceraFundacion %}
+    {% if page.urlTerceraFundacion %}
       {% if sameas_count > 0 %},{% endif %}
-      "{{ page.urlterceraFundacion }}"
+      "{{ page.urlTerceraFundacion }}"
     {% endif %}
   ]
   {% endif %}
