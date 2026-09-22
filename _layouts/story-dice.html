@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+{% include head.html %}
+<body class="default d-flex flex-column min-vh-100">
+  <div class="crt-overlay"></div>
+  {% include header.html %}
+  <main class="flex-grow-1">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row my-3">
+          <div class="col-12 text-center glow-data">
+            <h1 class="display-3 text-capitalize">{{ page.title }}</h1>
+          </div>
+          {% if page.subtitle %}
+          <div class="col-12 text-center">
+            <h2 class="h3">{{ page.subtitle }}</h2>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+      <section class="container" id="content">
+        {{ content }}
+      </section>
+    </div>
+  </main>
+  {% include footer.html %}
+  <script src="{{ '/assets/js/bundle.js' | relative_url }}"></script>
+</body>
+</html>
