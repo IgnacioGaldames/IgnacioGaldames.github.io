@@ -34,6 +34,10 @@
             <li>
               <a class="dropdown-item" href="{{ site.baseurl }}/escritura-creativa/largo-historias/">Largo Historias</a>
             </li>
+            <li>
+              <a class="dropdown-item" href="{{ site.baseurl }}/escritura-creativa/dados-de-historias.html">Dados de
+                historias</a>
+            </li>
           </ul>
         </li>
       </ul>
@@ -41,3 +45,50 @@
 
   </div>
 </nav>
+
+<style>
+  @media (min-width: 992px) {
+    .navbar .dropdown {
+      position: relative;
+    }
+
+    .navbar .dropdown:hover > .dropdown-menu,
+    .navbar .dropdown.show > .dropdown-menu {
+      display: block;
+      z-index: 1050;
+    }
+  }
+
+  .navbar .dropdown-toggle {
+    cursor: pointer;
+    position: relative;
+    z-index: 1051;
+  }
+</style>
+
+<script>
+  (() => {
+    const dropdown = document.querySelector(".navbar .dropdown");
+    if (!dropdown) return;
+
+    const toggle = dropdown.querySelector(".dropdown-toggle");
+    const menu = dropdown.querySelector(".dropdown-menu");
+    if (!toggle || !menu) return;
+
+    toggle.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      const isOpen = menu.classList.toggle("show");
+      dropdown.classList.toggle("show", isOpen);
+      toggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!dropdown.contains(event.target)) {
+        menu.classList.remove("show");
+        dropdown.classList.remove("show");
+        toggle.setAttribute("aria-expanded", "false");
+      }
+    });
+  })();
+</script>

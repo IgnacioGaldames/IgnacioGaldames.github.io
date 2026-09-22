@@ -9,6 +9,11 @@ subtitle: de ciencia ficción
 
 Libros de escritura crativa recomendados para escritores de ciencia ficción.
 
+## Herramientas
+
+- [Dados de historias]({{ '/escritura-creativa/dados-de-historias.html' | relative_url }})
+  Combina una idea especulativa, un personaje y una decisión crítica para desbloquear una historia.
+
 ## Libros recomendados
 
 - **On Writing** de Stephen King  
