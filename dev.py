@@ -6,6 +6,33 @@ import os
 def run_dev_server():
     print("🚀 Iniciando entorno de desarrollo de IgnacioGaldames.com...")
     
+    # 0. Verificación e instalación de dependencias
+    print("📦 Verificando dependencias de Ruby...")
+    try:
+        subprocess.run(["bundle", "check"], check=True, shell=True, stdout=subprocess.DEVNULL)
+        print("✅ Todas las dependencias de Ruby están instaladas.")
+    except subprocess.CalledProcessError:
+        print("🔄 Faltan gemas. Ejecutando: bundle install...")
+        try:
+            subprocess.run(["bundle", "install"], check=True, shell=True)
+        except subprocess.CalledProcessError as e:
+            print(f"❌ Error al instalar dependencias de Ruby: {e}")
+            sys.exit(1)
+
+    print("📦 Verificando dependencias de Node.js...")
+    try:
+        # npm ls sale con código distinto a 0 si faltan paquetes o hay discrepancias con package.json
+        subprocess.run(["npm", "ls"], check=True, shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        print("✅ Todas las dependencias de Node están instaladas correctamente.")
+    except subprocess.CalledProcessError:
+        print("🔄 Faltan módulos de Node o están desactualizados. Ejecutando: npm install...")
+        try:
+            subprocess.run(["npm", "install"], check=True, shell=True)
+            print("✅ Dependencias de Node instaladas.")
+        except subprocess.CalledProcessError as e:
+            print(f"❌ Error al instalar dependencias de Node: {e}")
+            sys.exit(1)
+
     # 1. Limpieza y construcción inicial
     print("🧹 Ejecutando: bundle exec jekyll clean...")
     try:
