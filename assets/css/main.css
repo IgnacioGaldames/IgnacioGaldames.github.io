@@ -11880,6 +11880,17 @@ blockquote {
   animation: flicker 2s infinite alternate;
 }
 
+.bd-footer-links a {
+  display: inline-block;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bd-footer-links a:hover,
+.bd-footer-links a:focus-visible {
+  box-shadow: 0 0 22px rgba(83, 228, 237, 0.28);
+  transform: translateY(-2px);
+}
+
 @keyframes flicker {
   0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
     opacity: 0.99;
