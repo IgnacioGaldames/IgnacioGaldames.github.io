@@ -1,4 +1,4 @@
-﻿# Reglas del Agente IA — ignaciogaldames.com
+# Reglas del Agente IA — ignaciogaldames.com
 
 Este sitio es el portafolio literario de **I.A. Galdames** (Ignacio Andrés Galdames), escritor chileno de ciencia ficción y cyberpunk.  
 El agente debe priorizar siempre **SEO**, **GEO (Generative Engine Optimization)** y **UX** en cualquier tarea relacionada con este proyecto.
@@ -177,3 +177,11 @@ categories: [categoria]
 8. **Bloquear crawlers de IA en robots.txt** — perjudica el GEO.
 9. **last_modified_at desactualizado** — actualizar al editar cualquier página estratégica.
 10. **Schema sin @id** — dificulta el entity linking en Knowledge Graph de Google.
+
+---
+
+## Reglas de Pensamiento Global (Root Cause Analysis)
+
+- **Solucionar problemas de raíz:** Nunca te limites a parchar un síntoma específico (ej. verificar la existencia de un solo archivo o librería concreta). Analiza el sistema completo y aplica soluciones genéricas y robustas (ej. verificar el árbol entero de dependencias con comandos nativos).
+- **Evitar suposiciones limitadas:** Piensa en cómo tu solución afectará al resto del proyecto o si la misma falla puede indicar un problema sistémico mayor.
+- **Validación sistémica:** Si detectas que falta un componente, asume que el estado general del entorno podría estar incompleto. Prioriza la sincronización o validación global del entorno en lugar de hacer correcciones puntuales y aisladas.
