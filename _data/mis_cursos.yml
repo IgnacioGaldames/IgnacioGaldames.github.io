@@ -114,3 +114,10 @@ cursos:
     tipoItem: certificación
     urlItem: https://www.coursera.org/account/accomplishments/certificate/QZ26MCDT00IQ
     datosItem: QZ26MCDT00IQ
+
+  - nombreItem: 'Creative Writing: The Craft of Character'
+    institucionItem: Universidad Wesleyan
+    fechaItem: 2026-10-13
+    tipoItem: certificación
+    urlItem: https://www.coursera.org/account/accomplishments/certificate/0D86F0429RW2
+    datosItem: 0D86F0429RW2
