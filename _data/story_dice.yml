@@ -1,407 +1,1613 @@
 speculative:
+
   - "La gravedad desaparece durante una hora al día."
+
   - "Los sueños pueden venderse como recuerdos."
+
   - "Una ciudad despierta en otro planeta."
+
   - "El océano empieza a devolver objetos del futuro."
+
   - "Las sombras desarrollan voluntad propia."
+
   - "La humanidad recibe una señal escrita por sí misma."
+
   - "Un idioma nuevo aparece en la mente de todos."
+
   - "La muerte se vuelve reversible, pero solo una vez."
+
   - "Los animales fundan una nación secreta."
+
   - "El tiempo se detiene para una sola persona."
+
   - "Una biblioteca contiene todos los futuros posibles."
+
   - "La luna cambia de órbita cada noche."
+
   - "Las ciudades recuerdan a sus habitantes."
+
   - "Un bosque crece dentro de una estación espacial."
+
   - "La lluvia cae hacia el cielo."
+
   - "Los espejos muestran la vida que no elegiste."
+
   - "La tecnología empieza a tener supersticiones."
+
   - "Una guerra se libra dentro de los recuerdos."
+
   - "La humanidad olvida el color azul."
+
   - "Cada mentira crea una criatura diminuta."
+
   - "Los fantasmas pueden votar en las elecciones."
+
   - "Un algoritmo descubre que tiene un alma."
+
   - "La noche dura un año completo."
+
   - "Un continente aparece donde antes había mar."
+
   - "Las estrellas envían mapas de una invasión."
+
   - "La identidad se puede intercambiar por dinero."
+
   - "Una enfermedad convierte las emociones en sonidos."
+
   - "Los edificios cambian de lugar mientras duermes."
+
   - "El último ser humano recibe visitas del pasado."
+
   - "La realidad se reinicia cada cien años."
+
   - "Los nombres propios dejan de funcionar."
+
   - "Una planta aprende a imitar voces."
+
   - "El futuro se filtra por las grietas de una casa."
+
   - "Los muertos mantienen una red social clandestina."
+
   - "Una estación de tren aparece solo para quien huye."
+
   - "El sol comienza a transmitir instrucciones."
+
   - "Los mapas cambian según quién los mira."
+
   - "Una montaña guarda la memoria del planeta."
+
   - "La humanidad descubre que vive dentro de un relato."
+
   - "Los relojes empiezan a contar vidas, no horas."
+
   - "Una inteligencia artificial escribe profecías incorrectas."
+
   - "La música puede alterar la arquitectura."
+
   - "Un niño recuerda todas sus vidas futuras."
+
   - "El lenguaje de las máquinas se vuelve poesía."
+
   - "Una frontera aparece en mitad de cada hogar."
+
   - "El viento transporta voces de otras dimensiones."
+
   - "Las fotografías envejecen en lugar de las personas."
+
   - "La memoria colectiva empieza a borrarse por capas."
+
   - "Una isla se mueve buscando a su antiguo dueño."
+
   - "El invierno llega desde el centro de la Tierra."
+
   - "Los sueños de una persona se vuelven públicos."
+
   - "La humanidad encuentra una puerta bajo la Antártida."
+
   - "Las estatuas cambian de postura cuando nadie mira."
+
   - "Una ciudad solo existe durante los eclipses."
+
   - "El hambre desaparece, pero también el deseo."
+
   - "Los objetos perdidos construyen una sociedad."
+
   - "Una voz desconocida narra la vida de cada persona."
+
   - "El pasado empieza a cobrar intereses."
+
   - "Los océanos reflejan otro mundo."
+
   - "La electricidad desarrolla memoria."
+
   - "Una colonia espacial prohíbe recordar la Tierra."
+
   - "El universo empieza a encogerse desde los bordes."
+
   - "Cada persona nace con una fecha de caducidad visible."
+
   - "Los sueños compartidos crean una ciudad."
+
   - "La lluvia revela las huellas de quienes ya no existen."
+
   - "Un museo exhibe objetos que aún no se han inventado."
+
   - "El planeta cambia de nombre cada amanecer."
+
   - "Una montaña responde preguntas con terremotos."
+
   - "El silencio se convierte en una sustancia."
+
   - "La humanidad recibe una herencia de sus descendientes."
+
   - "Las estaciones del año eligen a sus representantes."
+
   - "Una señal de radio contiene una confesión personal."
+
   - "Las casas recuerdan a todos sus antiguos habitantes."
+
   - "Un agujero negro empieza a devolver cartas."
+
   - "La ficción se vuelve jurídicamente vinculante."
+
   - "Los cuerpos humanos comienzan a emitir luz."
+
   - "El planeta sueña con ser otra cosa."
+
   - "Una expedición encuentra el borde del lenguaje."
+
   - "La historia cambia cada vez que alguien la cuenta."
+
   - "La gravedad obedece a las emociones."
+
   - "Una ciudad queda atrapada en una fotografía."
+
   - "La humanidad descubre una segunda sombra."
+
   - "Los animales conocen el día exacto del fin."
+
   - "Las montañas migran hacia las ciudades."
+
   - "El miedo se puede embotellar y compartir."
+
   - "Una estrella cae sin dejar cráter."
+
   - "Las personas empiezan a soñar en grupo."
+
   - "Un planeta vecino envía semillas."
+
   - "Los recuerdos se imprimen en la piel."
+
   - "La realidad tiene una zona de cuarentena."
+
   - "El mar aprende a pronunciar nombres."
+
   - "Un dios olvidado trabaja en una oficina."
+
   - "El futuro se vende en pequeñas dosis."
+
   - "La muerte se declara ilegal en una nación."
+
   - "Una puerta conecta dos momentos incompatibles."
+
   - "Los mapas muestran deseos en vez de lugares."
+
   - "La humanidad encuentra otra versión de la Tierra."
+
   - "El cielo se convierte en una pantalla."
+
   - "Las palabras prohibidas empiezan a multiplicarse."
+
   - "La realidad exige un sacrificio periódico."
 
+  - "Las nubes se solidifican y caen como rocas."
+
+  - "Una corporación patenta el aire respirable."
+
+  - "El primer contacto alienígena es un cobrador de deudas."
+
+  - "Las personas nacen con el conocimiento de su causa de muerte."
+
+  - "El llanto produce monedas de oro."
+
+  - "Los libros reescriben su final si no le gustan al lector."
+
+  - "El fuego empieza a congelar lo que toca."
+
+  - "Una ciudad se eleva y flota sin explicación."
+
+  - "Las sombras se despegan y forman un ejército."
+
+  - "La humanidad descubre que la Tierra es un huevo a punto de eclosionar."
+
+  - "Un virus hace que la gente solo pueda decir la verdad."
+
+  - "Los instrumentos musicales tocan los pensamientos de quien los sostiene."
+
+  - "El sol se apaga por tres horas todos los martes."
+
+  - "Las lágrimas borran los recuerdos de quien las derrama."
+
+  - "El viento trae fragmentos de conversaciones del futuro."
+
+  - "Aparece un octavo día en la semana donde la magia funciona."
+
+  - "Los ancianos rejuvenecen un día por cada mentira que cuentan."
+
+  - "Los cuadros famosos empiezan a cambiar sus escenas lentamente."
+
+  - "Una melodía vuelve inmortales a quienes la cantan a la perfección."
+
+  - "Las casas abandonadas desarrollan sistemas digestivos."
+
+  - "El acero se vuelve maleable como la arcilla bajo la luz de la luna."
+
+  - "Un hombre descubre que es el único que no es un robot."
+
+  - "Los bebés nacen hablando idiomas muertos."
+
+  - "El reflejo en el agua muestra tu vida pasada."
+
+  - "Una montaña rusa transporta a los pasajeros a diferentes dimensiones."
+
+  - "El color rojo desaparece del espectro visible."
+
+  - "La culpa se manifiesta como un peso físico real."
+
+  - "Los pájaros empiezan a organizar patrones de tráfico aéreo."
+
+  - "Una lluvia de ceniza trae los recuerdos de los cremados."
+
+  - "Las redes sociales desarrollan una mente colmena literal."
+
+  - "Las plantas carnivoras empiezan a cazar humanos."
+
+  - "El mar se vuelve de cristal durante el invierno."
+
+  - "La luz de las farolas revela espíritus caminantes."
+
+  - "Una biblioteca presta habilidades en lugar de libros."
+
+  - "Los relojes corren hacia atrás cuando alguien se enamora."
+
+  - "El eco de un grito no se detiene nunca."
+
+  - "Los latidos del corazón se sincronizan con los terremotos."
+
+  - "Una llave maestra abre puertas a lugares que no existen."
+
+  - "Las personas pueden intercambiar enfermedades por contratos."
+
+  - "Un tren subterráneo conecta todas las capitales del mundo en minutos."
+
+  - "La tinta de los tatuajes empieza a moverse por la piel."
+
+  - "Los niños dejan de nacer; en su lugar, la gente se divide en dos."
+
+  - "El polvo doméstico está formado por estrellas pulverizadas."
+
+  - "Un bosque petrificado vuelve a la vida por una noche."
+
+  - "Las ventanas solo muestran paisajes de hace mil años."
+
+  - "La humanidad recibe un ultimátum del centro de la Tierra."
+
+  - "Un perfume te hace invisible a la tecnología."
+
+  - "Los puentes gimen cuando una persona con el corazón roto los cruza."
+
+  - "El fuego quema el pasado, alterando el presente."
+
+  - "Los sueños lúcidos se vuelven una jurisdicción legal."
+
+  - "Un hombre despierta siendo el único habitante de la Tierra."
+
+  - "El oxígeno empieza a embriagar como el alcohol."
+
+  - "Las constelaciones forman palabras de advertencia."
+
+  - "Una máquina puede calcular la cantidad exacta de alma que tienes."
+
+  - "Los juguetes de los niños cobran vida para defenderlos."
+
+  - "El agua de lluvia tiene propiedades amnésicas."
+
+  - "Una epidemia de ceguera temporal revela auras de colores."
+
+  - "Los espejos atrapan a quienes se miran demasiado tiempo."
+
+  - "Un programa de radio transmite desde un universo paralelo."
+
+  - "La nieve no se derrite nunca y comienza a sepultar países."
+
+  - "Un reloj de arena mide el tiempo que le queda al universo."
+
+  - "Las sombras de las personas asesinadas persiguen a sus asesinos."
+
+  - "El oro se vuelve radiactivo de la noche a la mañana."
+
+  - "Una ciudad entera es devorada por la jungla en un segundo."
+
+  - "Las mascotas empiezan a hablar, pero solo para juzgarnos."
+
+  - "El cielo nocturno carece de estrellas, solo hay oscuridad total."
+
+  - "Los metales nobles otorgan poderes telequinéticos."
+
+  - "Una plaga hace que los humanos muden de piel como serpientes."
+
+  - "Un lago refleja un cielo con dos lunas."
+
+  - "Las palabras escritas flotan fuera de las páginas."
+
+  - "Una tormenta eléctrica revive a los muertos recientes."
+
+  - "Los recuerdos felices se pueden destilar y beber."
+
+  - "Una puerta en el sótano lleva directamente al núcleo solar."
+
+  - "La humanidad se vuelve nocturna por una alergia al sol."
+
+  - "Los árboles empiezan a arrancar sus raíces y caminar hacia el sur."
+
+  - "Un faro en medio del desierto guía naves de arena."
+
+  - "El llanto de un recién nacido cura enfermedades incurables."
+
+  - "Las estatuas de gárgolas cobran vida para vigilar las calles."
+
+  - "Un eclipse solar dura tres semanas consecutivas."
+
+  - "La sangre humana cambia de color según sus pecados."
+
+  - "Una ciudad subterránea es descubierta bajo Nueva York."
+
+  - "Los insectos organizan huelgas a nivel mundial."
+
+  - "Una máquina de escribir dicta el futuro de quien la usa."
+
+  - "Las nubes forman rostros de ancestros olvidados."
+
+  - "El tacto transfiere dolor físico de una persona a otra."
+
+  - "Un tren fantasma recoge a las almas perdidas en las estaciones."
+
+  - "Las personas pueden vender sus años de juventud a los ricos."
+
+  - "El mar se retira dejando al descubierto una antigua civilización."
+
+  - "Los pensamientos intrusivos se vuelven audibles para todos."
+
+  - "Un jardín botánico cultiva plantas que curan la tristeza."
+
+  - "Las sombras se independizan al alcanzar la mayoría de edad."
+
+  - "Una droga permite vivir una vida entera en una hora."
+
+  - "La luna comienza a acercarse peligrosamente a la Tierra."
+
+  - "Los relojes biológicos suenan como alarmas cuando expiran."
+
+  - "Un laberinto infinito aparece en el centro de cada ciudad."
+
+  - "La luz de la luna llena convierte a los mentirosos en piedra."
+
+  - "Una sinfonía incompleta provoca el fin del mundo si se termina."
+
+  - "Los espejos de los coches muestran el destino final del viaje."
+
+  - "Una raza alienígena llega pidiendo asilo político."
+
+  - "El mundo se divide en dos facciones: los que sueñan y los que no."
+
+  - "Todos los relojes del mundo marcan la misma cuenta regresiva."
+
+  - "La pintura de los cuadros sangra cuando llueve."
+
+  - "Un árbol en el centro del mundo florece libros en lugar de hojas."
+
+  - "La gente empieza a olvidar cómo leer."
+
+  - "Las montañas se hunden y los valles se elevan."
+
 characters:
+
   - "Una cartógrafa que solo puede dibujar lugares inexistentes."
+
   - "Un archivista que falsifica recuerdos para sobrevivir."
+
   - "Una médium que no cree en fantasmas."
+
   - "Un piloto que teme a los horizontes."
+
   - "Una niña que conversa con las máquinas."
+
   - "Un médico que cura a través de relatos."
+
   - "Una reina que ha olvidado su rostro."
+
   - "Un ladrón que roba minutos de vida."
+
   - "Una astronauta que recibe cartas de su cadáver."
+
   - "Un jardinero que cultiva secretos."
+
   - "Una detective que investiga su propia desaparición."
+
   - "Un músico que puede despertar edificios."
+
   - "Un soldado que solo recuerda al enemigo."
+
   - "Una sacerdotisa de una religión sin dioses."
+
   - "Un niño que envejece al revés."
+
   - "Una ingeniera que construye puertas a mano."
+
   - "Un rey que gobierna una ciudad vacía."
+
   - "Una traductora de lenguas muertas."
+
   - "Un actor que nunca interpreta al mismo personaje."
+
   - "Una anciana que conserva el último mapa."
+
   - "Un científico que teme confirmar su teoría."
+
   - "Una fugitiva que deja copias de sí misma."
+
   - "Un robot que colecciona supersticiones."
+
   - "Una capitana que perdió el mar."
+
   - "Un juez que escucha a los objetos."
+
   - "Una espía que no sabe para quién trabaja."
+
   - "Un niño que recuerda el futuro de todos."
+
   - "Una pintora cuyos cuadros desaparecen."
+
   - "Un minero que excava hacia las estrellas."
+
   - "Una diplomática enviada a negociar con un sueño."
+
   - "Un bibliotecario que custodia una página imposible."
+
   - "Una hacker que conversa con su versión anciana."
+
   - "Un monstruo que quiere ser testigo."
+
   - "Una cantante que borra ciudades al cantar."
+
   - "Un pescador de recuerdos."
+
   - "Una profesora que enseña a mentir."
+
   - "Un heredero que no puede tocar el suelo."
+
   - "Una mensajera que entrega cartas al pasado."
+
   - "Un historiador que inventó la historia."
+
   - "Una arquitecta que diseña refugios para fantasmas."
+
   - "Un prisionero cuya celda cambia de dueño."
+
   - "Una exploradora que se orienta por voces."
+
   - "Un niño criado por una inteligencia artificial."
+
   - "Una actriz que comparte cuerpo con su papel."
+
   - "Un campesino que cosecha eclipses."
+
   - "Una hacker de sueños."
+
   - "Un diplomático que nunca dice la verdad."
+
   - "Una mujer que vende su sombra."
+
   - "Un relojero que repara destinos."
+
   - "Una mensajera que no puede ser recordada."
+
   - "Un desertor perseguido por su nombre."
+
   - "Una botánica que habla con semillas."
+
   - "Un arquitecto que construye con promesas."
+
   - "Una piloto que aterriza en recuerdos."
+
   - "Un actor incapaz de salir de escena."
+
   - "Una coleccionista de últimos momentos."
+
   - "Un sacerdote que perdió la fe en el tiempo."
+
   - "Una detective que interroga a las sombras."
+
   - "Un ingeniero que diseña emociones."
+
   - "Una niña que heredó una guerra."
+
   - "Un bibliotecario que borra libros peligrosos."
+
   - "Una reina que escucha al pueblo desde los sueños."
+
   - "Un médico que diagnostica futuros."
+
   - "Una viajera que no tiene destino."
+
   - "Un contrabandista de identidades."
+
   - "Una poeta cuya voz cambia la gravedad."
+
   - "Un soldado que protege al enemigo."
+
   - "Una astrónoma que busca una estrella personal."
+
   - "Un mensajero perseguido por su mensaje."
+
   - "Una viuda que recibe llamadas del mañana."
+
   - "Un niño que colecciona finales."
+
   - "Una científica que clona preguntas."
+
   - "Un anciano que recuerda a la humanidad entera."
+
   - "Una ladrona que solo roba cosas imposibles."
+
   - "Un piloto que vuela sin nave."
+
   - "Una artista que pinta futuros cancelados."
+
   - "Un rey que debe pedir permiso para existir."
+
   - "Una arqueóloga de mundos digitales."
+
   - "Un jardinero que poda líneas temporales."
+
   - "Una rebelde que lucha contra una palabra."
+
   - "Un investigador que persigue su primer pensamiento."
+
   - "Una niña que nació con un mapa en la espalda."
+
   - "Un exiliado que gobierna por correspondencia."
+
   - "Una actriz que interpreta a la muerte."
+
   - "Un mensajero que transporta un silencio."
+
   - "Una cirujana que opera recuerdos."
+
   - "Un viajero que solo aparece en fotografías."
+
   - "Una capitana que comanda un barco inmóvil."
+
   - "Un escritor cuyos personajes lo vigilan."
+
   - "Una guardiana de puertas que no existen."
+
   - "Un ladrón de nombres."
+
   - "Una archivista que quiere olvidar."
+
   - "Un explorador que mapea el interior de un sueño."
+
   - "Una diplomática que representa a los muertos."
+
   - "Un robot que teme ser reemplazado."
+
   - "Una niña que heredó una estrella."
+
   - "Un testigo que nadie puede ver."
+
   - "Una reina que busca su primer recuerdo."
+
   - "Un astrónomo que solo observa planetas muertos."
+
   - "Una mensajera que lleva una carta sin destinatario."
 
+  - "Un nigromante con fobia a los cadáveres."
+
+  - "Una inteligencia artificial que quiere aprender a llorar."
+
+  - "Un cazador de monstruos que es vegetariano."
+
+  - "Una princesa que se rescata a sí misma para cobrar la recompensa."
+
+  - "Un farero que guía naves a través del multiverso."
+
+  - "Una sastre que cose destinos en los dobladillos."
+
+  - "Un dios de la guerra que prefiere la diplomacia pacífica."
+
+  - "Una bibliotecaria que caza libros que devoran lectores."
+
+  - "Un relojero que roba los segundos perdidos."
+
+  - "Un verdugo que perdona vidas a escondidas."
+
+  - "Una sirena con miedo al agua profunda."
+
+  - "Un alquimista que intenta transmutar oro en amor."
+
+  - "Una huérfana criada por una manada de gárgolas."
+
+  - "Un dictador que escribe poesía anónima."
+
+  - "Una ladrona de sueños que sufre de insomnio."
+
+  - "Un astronauta varado que se hace amigo de una nebulosa."
+
+  - "Una cazadora de recompensas pacifista."
+
+  - "Un fantasma que sufre de amnesia."
+
+  - "Un panadero cuyos panes curan la tristeza."
+
+  - "Una mecánica de naves espaciales ciega."
+
+  - "Un vampiro que trabaja en un banco de sangre."
+
+  - "Una bruja moderna que hace conjuros por internet."
+
+  - "Un detective que resuelve crímenes que aún no han ocurrido."
+
+  - "Una reina de hielo que se está derritiendo de amor."
+
+  - "Un dragón que colecciona libros raros en lugar de oro."
+
+  - "Una niña que puede ver la fecha de muerte de todos menos la suya."
+
+  - "Un soldado inmortal que busca la manera de morir."
+
+  - "Una diplomática que habla el lenguaje de las plantas."
+
+  - "Un inventor que crea máquinas que funcionan con suspiros."
+
+  - "Una mercenaria que solo acepta secretos como pago."
+
+  - "Un historiador que borra eventos aburridos del registro."
+
+  - "Una estatua de mármol que cobra vida solo de noche."
+
+  - "Un rey niño que gobierna a través de sueños lúcidos."
+
+  - "Una capitana pirata que roba estrellas."
+
+  - "Un ermitaño que guarda la última gota de magia del mundo."
+
+  - "Una bailarina cuyos pasos dictan el clima."
+
+  - "Un ilusionista cuyos trucos son en realidad milagros."
+
+  - "Una forense que escucha las últimas palabras de los muertos."
+
+  - "Un guardia de seguridad en un museo de objetos malditos."
+
+  - "Una científica que accidentalmente clona su propia conciencia."
+
+  - "Un contrabandista de reliquias divinas."
+
+  - "Una niña que lleva un agujero negro en su bolsillo."
+
+  - "Un cyborg que intenta recuperar su humanidad pieza a pieza."
+
+  - "Una diosa caída que trabaja como camarera."
+
+  - "Un músico ambulante que puede tocar las emociones."
+
+  - "Una espía telepática con dolor de cabeza crónico."
+
+  - "Un cartógrafo de dimensiones de bolsillo."
+
+  - "Una curandera que absorbe las enfermedades que cura."
+
+  - "Un niño que es la reencarnación de un tirano galáctico."
+
+  - "Una abogada especializada en contratos con demonios."
+
+  - "Un francotirador que dispara balas de empatía."
+
+  - "Una pintora que se queda atrapada dentro de sus lienzos."
+
+  - "Un dios del engaño que está harto de mentir."
+
+  - "Una astronauta que descubre que es un holograma."
+
+  - "Un guardián del inframundo que se toma unas vacaciones."
+
+  - "Una inventora que crea una máquina para hablar con su yo del pasado."
+
+  - "Un caballero andante que cabalga una motocicleta mágica."
+
+  - "Una reina que gobierna a través de un avatar virtual."
+
+  - "Un cazador de tormentas que colecciona relámpagos en frascos."
+
+  - "Una niña que puede reescribir los finales de los cuentos."
+
+  - "Un robot defectuoso que cree ser un profeta."
+
+  - "Una cazadora de sombras que pierde la suya propia."
+
+  - "Un panadero que amasa recuerdos perdidos."
+
+  - "Una sirena que anhela ser astronauta."
+
+  - "Un vampiro diurno con adicción a las gafas de sol."
+
+  - "Una vidente que solo predice tragedias menores."
+
+  - "Un pirata informático que hackea el código fuente de la realidad."
+
+  - "Una princesa que se disfraza de dragón."
+
+  - "Un bibliotecario que protege un libro que no debe ser leído."
+
+  - "Una científica que inventa el silencio absoluto."
+
+  - "Un ladrón de identidad que olvida quién era originalmente."
+
+  - "Una niña que habla con los ecos del pasado."
+
+  - "Un ángel caído que intenta ganarse sus alas de vuelta."
+
+  - "Una capitana espacial con una nave que tiene miedo a volar."
+
+  - "Un verdugo enamorado de la próxima víctima."
+
+  - "Una cartógrafa de cicatrices emocionales."
+
+  - "Un dios menor de los objetos perdidos."
+
+  - "Una mecánica que arregla corazones rotos con engranajes."
+
+  - "Un viajero del tiempo que siempre llega cinco minutos tarde."
+
+  - "Una detective que huele la culpa."
+
+  - "Un niño que puede domesticar huracanes."
+
+  - "Una reina exiliada que lidera un ejército de mendigos."
+
+  - "Un músico que compone la banda sonora del apocalipsis."
+
+  - "Una investigadora que descubre que la humanidad es un experimento."
+
+  - "Un robot diseñado para amar que no encuentra a quién."
+
+  - "Una niña que es alérgica a la magia."
+
+  - "Un contrabandista que transporta almas de contrabando."
+
+  - "Una guerrera que lucha con una espada de cristal irrompible."
+
+  - "Un rey que colecciona lágrimas de sus súbditos."
+
+  - "Una espía que se infiltra en sus propios recuerdos."
+
+  - "Un arquitecto que diseña ciudades flotantes para evitar el fin del mundo."
+
+  - "Una diplomática que negocia con inteligencias alienígenas invisibles."
+
+  - "Un cazador de mitos que descubre que todos son reales."
+
+  - "Una niña que lleva el sol en una linterna."
+
+  - "Un nigromante adolescente que resucita a sus mascotas."
+
+  - "Una diosa que ha olvidado cómo conceder milagros."
+
+  - "Un astronauta que se enamora de una IA de navegación."
+
+  - "Una asesina a sueldo que se niega a matar a quienes tienen esperanza."
+
+  - "Un viajero que lleva el mapa del universo tatuado en la piel."
+
+  - "Un cazador de estrellas fugaces que pide deseos por encargo."
+
+  - "Una sacerdotisa ciega que ve a través de los ojos de los cuervos."
+
+  - "Un herrero que forja espadas hechas de luz de luna solidificada."
+
+  - "Una niña que cría pequeños dragones en cajas de zapatos."
+
 decisions:
+
   - "Salvar a una persona o preservar una ciudad."
+
   - "Decir la verdad y provocar una guerra."
+
   - "Abrir la puerta que nadie debe tocar."
+
   - "Traicionar a un aliado para cumplir una promesa."
+
   - "Borrar un recuerdo para conservar una vida."
+
   - "Confiar en el enemigo durante una noche."
+
   - "Robar el futuro de alguien amado."
+
   - "Quedarse en casa o seguir una señal."
+
   - "Revelar el secreto de la familia."
+
   - "Destruir la máquina o usarla una vez."
+
   - "Aceptar el trono o liberar al reino."
+
   - "Volver al pasado con una sola palabra."
+
   - "Perdonar al culpable que puede salvarlos."
+
   - "Abandonar la misión para rescatar a un desconocido."
+
   - "Mentirle a quien tiene la última respuesta."
+
   - "Cambiar de cuerpo antes del amanecer."
+
   - "Compartir el poder o conservarlo."
+
   - "Cruzar la frontera sin identidad."
+
   - "Despertar a los muertos o dejarlos descansar."
+
   - "Entregar el mapa a la persona equivocada."
+
   - "Destruir el refugio para enviar una señal."
+
   - "Creer en una profecía falsa."
+
   - "Salvar al enemigo que conoce tu nombre."
+
   - "Elegir qué recuerdo sacrificar."
+
   - "Firmar un pacto sin leerlo."
+
   - "Dejar que la ciudad elija por ti."
+
   - "Revelar tu verdadera naturaleza."
+
   - "Apagar la luz que protege a todos."
+
   - "Cambiar una vida por una verdad."
+
   - "Seguir a la multitud o al único testigo."
+
   - "Abandonar el planeta o quedarse a reconstruirlo."
+
   - "Usar el arma contra quien la creó."
+
   - "Decir adiós sin explicar la razón."
+
   - "Desobedecer una orden justa."
+
   - "Elegir entre memoria y libertad."
+
   - "Salvar tu nombre o el de tu enemigo."
+
   - "Abrir el mensaje antes de entregarlo."
+
   - "Volver por quien te traicionó."
+
   - "Dejar que el tiempo avance."
+
   - "Aceptar una segunda oportunidad imposible."
+
   - "Quemar el libro o terminarlo."
+
   - "Intercambiar tu voz por una respuesta."
+
   - "Despertar a la criatura bajo la ciudad."
+
   - "Renunciar al poder para conservar el amor."
+
   - "Ocultar la cura hasta saber su precio."
+
   - "Cruzar la puerta sin saber el destino."
+
   - "Defender una mentira que mantiene la paz."
+
   - "Confesar antes de que sea demasiado tarde."
+
   - "Entregar el corazón a una máquina."
+
   - "Elegir quién recordará la tragedia."
+
   - "Destruir la única prueba."
+
   - "Vengar la muerte o romper el ciclo."
+
   - "Creer al monstruo sobre el héroe."
+
   - "Cambiar tu identidad para salvar a tu familia."
+
   - "Dejar atrás a quien no puede correr."
+
   - "Aceptar la misión del futuro."
+
   - "Interrumpir el ritual o descubrir su propósito."
+
   - "Contar el secreto a un niño."
+
   - "Pedir ayuda al poder que temes."
+
   - "Salvar la biblioteca o la ciudad."
+
   - "Usar la última dosis en ti mismo."
+
   - "Destruir el puente después de cruzarlo."
+
   - "Negociar con quien no puede morir."
+
   - "Olvidar por voluntad propia."
+
   - "Devolver el objeto a su origen."
+
   - "Cambiar el pasado de un desconocido."
+
   - "Proteger una frontera que ya no existe."
+
   - "Elegir qué versión de ti sobrevive."
+
   - "Romper el juramento frente a todos."
+
   - "Confiar en el mapa o en la intuición."
+
   - "Despertar a la ciudad con una mentira."
+
   - "Perder una batalla para ganar una guerra."
+
   - "Aceptar que el enemigo tenía razón."
+
   - "Entregar el mando al más joven."
+
   - "Cerrar la puerta desde el otro lado."
+
   - "Salvar el secreto o salvar al testigo."
+
   - "Cambiar una promesa por una salida."
+
   - "Dejar que el mundo te olvide."
+
   - "Intercambiar tu futuro por el de otra persona."
+
   - "Revelar quién construyó el mundo."
+
   - "Condenar a uno para salvar a muchos."
+
   - "Volver al lugar donde empezó todo."
+
   - "Escuchar la voz que todos ignoran."
+
   - "Cortar la última conexión."
+
   - "Conservar la prueba o destruirla."
+
   - "Decidir qué historia será oficial."
+
   - "Abrir el archivo sellado."
+
   - "Elegir al heredero equivocado."
+
   - "Romper el silencio durante un minuto."
+
   - "Aceptar una verdad que cambia tu pasado."
+
   - "Salvar al creador de tu enemigo."
+
   - "Cambiar tu deseo por una pregunta."
+
   - "Dejar que el sacrificio tenga sentido."
+
   - "Volver a lanzar el destino."
+
   - "Compartir la llave con un desconocido."
+
   - "Derribar el muro que te protege."
+
   - "Elegir la esperanza sin pruebas."
+
   - "Nombrar aquello que todos temen."
+
   - "Caminar hacia la señal."
+
   - "Dejar que el último dado decida."
 
+  - "Salvar la biblioteca de Alejandría o a tu propio hijo."
+
+  - "Vivir para siempre como una máquina o morir hoy como humano."
+
+  - "Revelar la cura de la enfermedad que diezmará a tus enemigos."
+
+  - "Perdonar al asesino de tu familia o ejecutarlo tú mismo."
+
+  - "Destruir la Tierra para salvar el universo o viceversa."
+
+  - "Despertar de la simulación feliz o seguir durmiendo en ella."
+
+  - "Matar a un inocente para detener una plaga mundial."
+
+  - "Traicionar a tu líder por el bien de la revolución."
+
+  - "Aceptar la inmortalidad a costa de perder tus recuerdos."
+
+  - "Dejar que la IA tome el control o luchar por la libertad caótica."
+
+  - "Viajar al pasado para matar al tirano niño o criarlo tú mismo."
+
+  - "Romper el hechizo que protege la ciudad para salvar a un amigo."
+
+  - "Elegir entre recuperar la vista o conservar la visión del futuro."
+
+  - "Entregar el artefacto mágico o usarlo una última vez."
+
+  - "Salvar a tu amante o a tu mentor."
+
+  - "Confesar un crimen que no cometiste para proteger al verdadero culpable."
+
+  - "Dejar que el héroe muera para que nazca la leyenda."
+
+  - "Apagar el soporte vital de la nave o asfixiarse todos lentamente."
+
+  - "Rebelarse contra el dios creador o servirle ciegamente."
+
+  - "Beber el elixir de la verdad sabiendo que destruirá tu vida."
+
+  - "Abandonar tu humanidad para ganar la guerra."
+
+  - "Sellar el portal dejando a tu familia al otro lado."
+
+  - "Robar la medicina para los ricos y dársela a los pobres."
+
+  - "Aceptar la profecía que te condena o luchar contra el destino."
+
+  - "Borrar la memoria de tu enemigo o matarlo."
+
+  - "Dejar que el mundo arda para gobernar las cenizas o morir intentando apagarlo."
+
+  - "Elegir entre la paz basada en una mentira o la guerra por la verdad."
+
+  - "Inyectarte la cura experimental o dársela al paciente cero."
+
+  - "Sacrificar tu magia para salvar a un niño normal."
+
+  - "Pulsar el botón que reinicia el universo o dejar que se apague."
+
+  - "Unirte a los invasores para salvar a tu especie."
+
+  - "Despertar al dragón antiguo o dejar que la ciudad caiga."
+
+  - "Elegir qué gemelo sobrevivirá al ritual."
+
+  - "Revelar el secreto de la inmortalidad o llevarlo a la tumba."
+
+  - "Dejar que el robot adquiera conciencia o desconectarlo."
+
+  - "Salvar los archivos históricos o la reserva de alimentos."
+
+  - "Traicionar a tu patria para evitar un genocidio."
+
+  - "Vender tu alma para salvar la de tu hermano."
+
+  - "Destruir el último espécimen de una especie letal."
+
+  - "Aceptar el castigo por el crimen de tu hijo."
+
+  - "Dejar que la ciudad flotante caiga para salvar a los de abajo."
+
+  - "Cruzar el puente de fuego o rendirse al hielo."
+
+  - "Beber del río del olvido para dejar de sufrir."
+
+  - "Usar el poder oscuro para hacer el bien sabiendo que te corromperá."
+
+  - "Elegir ser el rey o el asesino del rey."
+
+  - "Dejar que la IA borre el dolor de la humanidad quitándoles el libre albedrío."
+
+  - "Salvar a la reina corrupta o dejar que los rebeldes sanguinarios tomen el poder."
+
+  - "Abrir la caja de Pandora para encontrar la esperanza perdida."
+
+  - "Traicionar tu código de honor para salvar a un inocente."
+
+  - "Elegir entre la memoria de tu primer amor o la de tu hijo."
+
+  - "Dejar que el sol explote o apagarlo para siempre."
+
+  - "Asumir la culpa de una masacre para unificar al país."
+
+  - "Usar la máquina del tiempo para salvar a tu esposa o detener a un dictador."
+
+  - "Destruir la única fuente de agua limpia para ahogar al ejército invasor."
+
+  - "Elegir entre ser libre en el exilio o esclavo en tu hogar."
+
+  - "Matar a tu yo del pasado para cambiar el futuro."
+
+  - "Permitir que el demonio te posea para salvar a la víctima."
+
+  - "Revelar que el mesías es un fraude."
+
+  - "Dejar que el virus se propague para purgar el planeta."
+
+  - "Elegir entre la venganza absoluta o el perdón sanador."
+
+  - "Apagar la última estrella para esconderse de los cazadores."
+
+  - "Entregar a los refugiados o enfrentar el asedio."
+
+  - "Usar el arma biológica como último recurso."
+
+  - "Dejar que los androides tengan derechos humanos plenos."
+
+  - "Elegir entre el amor de tu vida y tu deber como guardián."
+
+  - "Destruir el manuscrito que prueba que la religión es falsa."
+
+  - "Aceptar la marca del exilio o la muerte."
+
+  - "Dejar que la magia desaparezca del mundo para siempre."
+
+  - "Salvar al científico malvado que tiene la cura."
+
+  - "Elegir ser sordo para no oír las voces de los muertos."
+
+  - "Renunciar a tus poderes para vivir una vida normal."
+
+  - "Dejar que el mundo duerma para que no sufra."
+
+  - "Despertar al gigante dormido sabiendo que destruirá ciudades."
+
+  - "Elegir entre tu lealtad a la corona o a tu familia."
+
+  - "Cortar el hilo del destino de tu mejor amigo."
+
+  - "Revelar que la guerra es una simulación por ordenador."
+
+  - "Dejar que la plaga zombie te infecte para infiltrarte."
+
+  - "Elegir entre un paraíso virtual o una realidad post-apocalíptica."
+
+  - "Sacrificar tus recuerdos de la Tierra para liderar la colonia marciana."
+
+  - "Destruir la luna para cambiar las mareas y salvar el continente."
+
+  - "Aceptar el don de la telepatía a costa de tu cordura."
+
+  - "Dejar que el asesino escape para salvar al rehén."
+
+  - "Elegir qué planeta de la alianza será destruido como advertencia."
+
+  - "Traicionar al pacto de sangre para salvar tu alma."
+
+  - "Permitir que la inteligencia artificial te reemplace."
+
+  - "Elegir entre la corona de espinas o la corona de oro manchada de sangre."
+
+  - "Dejar que el tiempo se congele para vivir el momento perfecto eternamente."
+
+  - "Revelar el secreto de la piedra filosofal a un tirano."
+
+  - "Elegir ser el portador de la plaga para alejarla de la ciudad."
+
+  - "Destruir el puente arcoíris para sellar a los dioses."
+
+  - "Aceptar la carga de conocer todos los crímenes del mundo."
+
+  - "Dejar que el barco se hunda para matar al monstruo a bordo."
+
+  - "Elegir entre salvar tu cuerpo o subir tu mente a la nube."
+
+  - "Matar a la última sirena para curar la enfermedad del rey."
+
+  - "Revelar que el enemigo en realidad es tu hermano perdido."
+
+  - "Aceptar el castigo divino en lugar de tu pueblo."
+
 attributes:
+
   - "no puede distinguir un mapa de un recuerdo"
+
   - "guarda una llave que abre cualquier puerta"
+
   - "miente cada vez que intenta decir su nombre"
+
   - "escucha voces dentro de las máquinas"
+
   - "ha sobrevivido a una guerra que todavía no ocurre"
+
   - "recuerda todas las vidas que rechazó"
+
   - "no puede tocar el color azul"
+
   - "lleva una deuda con una estrella"
+
   - "protege un secreto que no comprende"
+
   - "solo puede dormir en lugares desconocidos"
+
   - "ve el futuro en las cicatrices"
+
   - "ha olvidado por qué está huyendo"
+
   - "puede conversar con cualquier objeto"
+
   - "es perseguido por su propia sombra"
+
   - "conserva la última fotografía de la Tierra"
+
   - "nunca ha dicho una verdad completa"
+
   - "siente el dolor de los edificios"
+
   - "nació con un idioma muerto en la lengua"
+
   - "no aparece en ningún registro"
+
   - "cree que el mundo es una simulación"
+
   - "colecciona minutos robados"
+
   - "debe entregar una carta al pasado"
+
   - "no puede reconocer su propio rostro"
+
   - "lleva dentro un mapa que cambia"
+
   - "sabe quién morirá al amanecer"
+
   - "fue construido para obedecer y aprendió a elegir"
+
   - "vende recuerdos para pagar su libertad"
+
   - "ha vivido la misma semana cien veces"
+
   - "no puede abandonar la ciudad"
+
   - "guarda una voz dentro de un frasco"
+
   - "conoce el nombre verdadero de la luna"
+
   - "no siente miedo, pero lo contagia"
+
   - "está hecho de dos personas incompatibles"
+
   - "debe fingir que no entiende el lenguaje"
+
   - "solo existe cuando alguien lo recuerda"
+
   - "heredó un trono que nadie puede ver"
+
   - "puede coser una herida en el tiempo"
+
   - "ha prometido salvar a su enemigo"
+
   - "lleva una condena escrita en la piel"
+
   - "se despierta con recuerdos ajenos"
+
   - "no puede cruzar una línea dibujada"
+
   - "construye refugios para criaturas imposibles"
+
   - "sabe que su misión fue un error"
+
   - "ha sido declarado muerto por tres gobiernos"
+
   - "puede escuchar lo que dicen las ruinas"
+
   - "no envejece, pero cada día pierde un nombre"
+
   - "guarda una semilla de otro planeta"
+
   - "solo habla cuando alguien miente"
+
   - "es la única persona que recuerda la catástrofe"
+
   - "puede apagar las estrellas con una palabra"
+
   - "ha jurado no volver a usar su poder"
+
   - "lleva un corazón que no le pertenece"
+
   - "no puede distinguir el sueño de la vigilia"
+
   - "fue elegido por una ciudad abandonada"
+
   - "sabe que alguien está escribiendo su historia"
+
   - "ha robado una identidad perfecta"
+
   - "solo puede ver aquello que está perdido"
+
   - "debe cuidar a quien intentó destruirlo"
+
   - "guarda una puerta en el bolsillo"
+
   - "recibe llamadas desde su propia muerte"
+
   - "nunca puede permanecer en el mismo lugar"
+
   - "ha visto el borde del universo"
+
   - "esconde una criatura bajo la piel"
+
   - "puede recordar el futuro de los demás"
+
   - "tiene prohibido pronunciar una palabra"
+
   - "fue criado por una máquina sin rostro"
+
   - "ha firmado un pacto con su versión futura"
+
   - "puede encontrar cualquier cosa, excepto a sí mismo"
+
   - "despierta cada mañana con una misión distinta"
+
   - "conoce una ruta que no existe en los mapas"
+
   - "ha perdido la capacidad de soñar"
+
   - "puede devolver la voz a los muertos"
+
   - "debe elegir quién será recordado"
+
   - "lleva un mensaje que cambia al ser leído"
+
   - "es responsable de una desaparición imposible"
+
   - "nunca ha visto el cielo"
+
   - "sabe que su enemigo también es una víctima"
+
   - "puede cambiar una ley de la realidad"
+
   - "ha sido reemplazado sin que nadie lo note"
+
   - "protege un archivo que piensa por sí mismo"
+
   - "solo puede avanzar cuando alguien lo perdona"
+
   - "ha heredado una guerra familiar"
+
   - "puede convertir una mentira en un lugar"
+
   - "no sabe qué parte de su cuerpo es original"
+
   - "tiene una fotografía de un futuro cancelado"
+
   - "fue enviado a un mundo que no existe"
+
   - "puede leer las emociones de las casas"
+
   - "debe esconderse de la persona que más ama"
+
   - "lleva una brújula que apunta a la culpa"
+
   - "solo recuerda los finales"
+
   - "ha sido elegido como testigo del último día"
+
   - "puede intercambiar un recuerdo por una respuesta"
+
   - "no puede morir mientras alguien lo odie"
+
   - "conserva la última palabra de una civilización"
+
   - "sabe que la puerta se abrirá esta noche"
+
   - "está buscando a alguien que nunca nació"
+
   - "puede ver las decisiones que no tomó"
+
   - "ha prometido mentir para mantener la paz"
+
   - "no tiene sombra desde su primer día"
+
   - "guarda el secreto de una montaña"
+
+  - "llora lágrimas de cristal"
+
+  - "puede oler las mentiras pero no decir la verdad"
+
+  - "su corazón late al ritmo de un reloj de arena"
+
+  - "tiene un ojo de zafiro que ve espíritus"
+
+  - "sangra polvo de estrellas"
+
+  - "sus huellas dactilares cambian cada luna llena"
+
+  - "no puede decir la misma palabra dos veces"
+
+  - "su cabello se vuelve blanco al detectar magia negra"
+
+  - "tiene un engranaje de reloj donde debería estar su corazón"
+
+  - "respira humo en lugar de aire"
+
+  - "sus recuerdos se pueden leer como un libro abierto"
+
+  - "se alimenta de los malos sueños de los demás"
+
+  - "su voz resuena como un coro de campanas rotas"
+
+  - "tiene la piel fría como el hielo perpetuo"
+
+  - "deja un rastro de escarcha al caminar"
+
+  - "sus ojos cambian de color según el clima"
+
+  - "no proyecta sombra al mediodía"
+
+  - "siente el dolor de los árboles cuando son talados"
+
+  - "tiene alas invisibles que solo se sienten con el viento"
+
+  - "susurra profecías mientras duerme"
+
+  - "sus cicatrices brillan en la oscuridad"
+
+  - "puede escuchar los latidos de la tierra"
+
+  - "tiene un tatuaje que se mueve por su cuerpo"
+
+  - "su sangre es venenosa para los inmortales"
+
+  - "no necesita dormir pero debe soñar despierto"
+
+  - "sus besos borran recuerdos tristes"
+
+  - "tiene un brazo mecánico que piensa por sí solo"
+
+  - "su risa hace que las flores se marchiten"
+
+  - "puede ver los hilos del destino pero no tocarlos"
+
+  - "almacena electricidad estática y lanza chispas al enojarse"
+
+  - "tiene la capacidad de hablar con su yo del pasado"
+
+  - "su cuerpo está hecho de ceniza compactada"
+
+  - "no puede mojarse, el agua lo repele"
+
+  - "sus palabras tienen peso físico"
+
+  - "tiene un gemelo fantasma que lo acompaña siempre"
+
+  - "su reloj biológico está invertido, rejuvenece de noche"
+
+  - "puede probar el sabor de las emociones ajenas"
+
+  - "tiene un ojo de cristal que graba todo lo que ve"
+
+  - "su sombra se mueve independientemente de su cuerpo"
+
+  - "no puede sentir dolor físico pero siente el dolor emocional ajeno"
+
+  - "tiene escamas de dragón ocultas bajo la ropa"
+
+  - "su voz apaga las velas de la habitación"
+
+  - "puede leer libros solo con tocarlos"
+
+  - "tiene una brújula en el pecho que señala al peligro"
+
+  - "sus lágrimas curan heridas superficiales"
+
+  - "no puede olvidar nada de lo que ha visto"
+
+  - "tiene un reloj de bolsillo que detiene el tiempo a su alrededor"
+
+  - "su piel brilla con luz bioluminiscente al sentir miedo"
+
+  - "puede respirar bajo el agua pero no en la superficie"
+
+  - "tiene un cuervo como mascota que habla con la voz de su padre"
+
+  - "su sangre tiene propiedades curativas pero es adictiva"
+
+  - "no puede mentir en días impares"
+
+  - "tiene un mapa estelar en la retina de su ojo izquierdo"
+
+  - "sus manos están siempre manchadas de tinta indeleble"
+
+  - "puede imitar cualquier voz que haya escuchado una vez"
+
+  - "tiene un parche en el ojo que oculta un agujero negro en miniatura"
+
+  - "su corazón es un motor de combustión interna"
+
+  - "no puede cruzar umbrales sin ser invitado"
+
+  - "tiene la habilidad de calmar tormentas cantando"
+
+  - "sus sueños se proyectan como hologramas a su alrededor"
+
+  - "puede ver los últimos momentos de vida de un cadáver"
+
+  - "tiene una conexión empática con las máquinas"
+
+  - "su toque oxida el metal instantáneamente"
+
+  - "no tiene reflejo en el agua pero sí en los espejos"
+
+  - "tiene una voz que induce al sueño profundo"
+
+  - "sus ojos son como caleidoscopios que giran"
+
+  - "puede rastrear el origen de cualquier objeto tocándolo"
+
+  - "tiene un tercer ojo en la nuca que siempre está cerrado"
+
+  - "su cuerpo es translúcido bajo luz ultravioleta"
+
+  - "no puede pronunciar la letra 'E'"
+
+  - "tiene un reloj de arena incrustado en su esternón"
+
+  - "su risa suena como cristales rompiéndose"
+
+  - "puede leer los pensamientos de las personas que duermen"
+
+  - "tiene un brazo de plata que repele la magia"
+
+  - "su sombra es más densa que su cuerpo físico"
+
+  - "no puede caminar en línea recta"
+
+  - "tiene la capacidad de ver la verdadera forma de las ilusiones"
+
+  - "sus palabras pueden curar enfermedades pero enfermar a quien las pronuncia"
+
+  - "puede comunicarse con los insectos a través de vibraciones"
+
+  - "tiene un corazón de piedra que palpita lentamente"
+
+  - "su piel está cubierta de runas que cambian de significado"
+
+  - "no puede sentir la temperatura ambiente"
+
+  - "tiene un collar que le permite hablar con los espíritus del aire"
+
+  - "su mirada puede encender fuego en objetos secos"
+
+  - "puede escuchar el crecimiento de las plantas"
+
+  - "tiene un reloj interno que cuenta los días hasta el apocalipsis"
+
+  - "su cabello actúa como antena para ondas de radio"
+
+  - "no puede mentir a los niños"
+
+  - "tiene la capacidad de fundirse con las sombras"
+
+  - "sus lágrimas se convierten en perlas al tocar el suelo"
+
+  - "puede ver el aura de las personas en forma de colores vivos"
+
+  - "tiene un pacto demoníaco que le impide envejecer"
+
+  - "su sangre es de color azul cobalto brillante"
+
+  - "no puede tocar objetos de oro sin quemarse"
+
+  - "tiene la habilidad de teletransportarse solo a lugares que ha visto en sueños"
+
+  - "sus palabras de amor suenan como maldiciones a oídos extraños"
+
+  - "puede leer el futuro en los patrones de las hojas de té"
+
+  - "tiene un ojo biónico que detecta mentiras"
+
+  - "su cuerpo atrae pequeños objetos metálicos como un imán débil"
