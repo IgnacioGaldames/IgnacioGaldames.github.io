@@ -121,3 +121,10 @@ cursos:
     tipoItem: certificación
     urlItem: https://www.coursera.org/account/accomplishments/certificate/0D86F0429RW2
     datosItem: 0D86F0429RW2
+
+  - nombreItem: 'Creative Writing: The Craft of Setting and Description'
+    institucionItem: Universidad Wesleyan
+    fechaItem: 2026-10-28
+    tipoItem: certificación
+    urlItem: https://www.coursera.org/account/accomplishments/certificate/PIP2738KPP5D
+    datosItem: PIP2738KPP5D
