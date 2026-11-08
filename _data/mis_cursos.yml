@@ -129,7 +129,7 @@ cursos:
     urlItem: https://www.coursera.org/account/accomplishments/certificate/PIP2738KPP5D
     datosItem: PIP2738KPP5D
 
- - nombreItem: 'Creative Writing: The Craft of Style'
+  - nombreItem: 'Creative Writing: The Craft of Style'
     institucionItem: Universidad Wesleyan
     fechaItem: 2026-11-06
     tipoItem: certificación
