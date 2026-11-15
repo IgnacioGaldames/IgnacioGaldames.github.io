@@ -135,3 +135,17 @@ cursos:
     tipoItem: certificación
     urlItem: https://www.coursera.org/account/accomplishments/certificate/EWBGH6RPK5KU
     datosItem: EWBGH6RPK5KU
+
+  - nombreItem: 'Creative Writing: Capstone'
+    institucionItem: Universidad Wesleyan
+    fechaItem: 2026-11-15
+    tipoItem: certificación
+    urlItem: https://www.coursera.org/account/accomplishments/certificate/BS1UM20PU9A9
+    datosItem: BS1UM20PU9A9
+
+  - nombreItem: 'Creative Writing'
+    institucionItem: Universidad Wesleyan
+    fechaItem: 2026-11-15
+    tipoItem: programa especializado
+    urlItem: https://coursera.org/share/6701fc033cd6db850d3929914cf67486
+    datosItem: 6701fc033cd6db850d3929914cf67486
