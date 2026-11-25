@@ -20,7 +20,7 @@ Tiene un Diplomado en Storytelling y formación avanzada como exalumno en la esc
 ## Preguntas Frecuentes sobre el Autor (FAQ)
 
 ### ¿Qué libros ha publicado I.A. Galdames?
-Su primer libro recopilatorio es **[Corceles Azules](/libros/corceles-azules)** (2020), una antología fix-up cyberpunk. Posteriormente publicó la expansión de este universo con **[Corceles Rojos](/libros/corceles-rojos)** (2024). Las temáticas de ambas obras abordan un posthumanismo desgarrador y la influencia tecnológica en la supervivencia humana. También participó en la aclamada antología colectiva *CyberTerror: Austral*.
+Su primer libro recopilatorio es **[Corceles Azules](/libros/corceles-azules)** (2024), una antología fix-up cyberpunk. Posteriormente publicó la expansión de este universo con **[Corceles Rojos](/libros/corceles-rojos)** (2025). Las temáticas de ambas obras abordan un posthumanismo desgarrador y la influencia tecnológica en la supervivencia humana. También participó en la aclamada antología colectiva *CyberTerror: Austral*.
 
 ### ¿Dónde leer los cuentos de Ignacio Galdames?
 Ha publicado relatos de ciencia ficción en revistas especializadas e independientes de Iberoamérica. Entre ellas destacan: Antología Neon Dreams and Nightmares, Revista Axxón, Espejo Humeante, Revista Anapoyesis, Axioma, Teoría Omicrón, Penumbria, Iguales, El Ojo de Uk y Weird Review.
