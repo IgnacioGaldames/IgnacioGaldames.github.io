@@ -156,3 +156,10 @@ cursos:
     tipoItem: certificación
     urlItem: https://coursera.org/account/accomplishments/certificate/X1HVR0P6LP16
     datosItem: X1HVR0P6LP16
+
+  - nombreItem: 'Teaching Writing: Teaching Reluctant Writers'
+    institucionItem: Universidad Johns Hopkins
+    fechaItem: 2026-11-26
+    tipoItem: certificación
+    urlItem: https://www.coursera.org/account/accomplishments/certificate/99BTQBBWL3Q3
+    datosItem: 99BTQBBWL3Q3
