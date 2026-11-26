@@ -149,3 +149,10 @@ cursos:
     tipoItem: programa de especialización
     urlItem: https://coursera.org/share/6701fc033cd6db850d3929914cf67486
     datosItem: 6701fc033cd6db850d3929914cf67486
+
+  - nombreItem: 'Teaching Writing: Teaching Writing Process'
+    institucionItem: Universidad Johns Hopkins
+    fechaItem: 2026-11-26
+    tipoItem: certificación
+    urlItem: https://coursera.org/account/accomplishments/certificate/X1HVR0P6LP16
+    datosItem: X1HVR0P6LP16
