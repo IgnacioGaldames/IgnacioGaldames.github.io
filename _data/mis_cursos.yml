@@ -163,3 +163,10 @@ cursos:
     tipoItem: certificación
     urlItem: https://www.coursera.org/account/accomplishments/certificate/99BTQBBWL3Q3
     datosItem: 99BTQBBWL3Q3
+
+  - nombreItem: 'Teaching Writing:Teaching Texts and Forms'
+    institucionItem: Universidad Johns Hopkins
+    fechaItem: 2026-11-26
+    tipoItem: certificación
+    urlItem: https://www.coursera.org/account/accomplishments/certificate/6C0NB5OQ87Q5
+    datosItem: 6C0NB5OQ87Q5
